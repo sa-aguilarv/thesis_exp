@@ -1,2 +1,9 @@
 __main__ - INFO - 2024-04-25 16:49:08,005 - main - 248775 - 139856115822976 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
 __main__ - INFO - 2024-04-25 16:49:08,007 - main - 248775 - 139856115822976 - Set up logging configuration: level is 10
+__main__ - INFO - 2024-04-25 17:05:18,110 - main - 268560 - 139692512563584 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:05:18,112 - main - 268560 - 139692512563584 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:05:18,122 - main - 268560 - 139692512563584 - Input arguments: Namespace(adjacency_matrix=False, eda=False, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:06:17,978 - main - 269713 - 140601723552128 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:06:17,980 - main - 269713 - 140601723552128 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:06:17,988 - main - 269713 - 140601723552128 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:06:17,989 - main - 269713 - 140601723552128 - Exploratory data analysis
