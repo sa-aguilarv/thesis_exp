@@ -7,3 +7,130 @@ __main__ - INFO - 2024-04-25 17:06:17,978 - main - 269713 - 140601723552128 - Ap
 __main__ - INFO - 2024-04-25 17:06:17,980 - main - 269713 - 140601723552128 - Set up logging configuration: level is 10
 __main__ - DEBUG - 2024-04-25 17:06:17,988 - main - 269713 - 140601723552128 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
 __main__ - INFO - 2024-04-25 17:06:17,989 - main - 269713 - 140601723552128 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:24:38,254 - main - 292008 - 139845218001280 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:24:38,255 - main - 292008 - 139845218001280 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:24:38,262 - main - 292008 - 139845218001280 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:24:38,263 - main - 292008 - 139845218001280 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:25:36,034 - main - 293216 - 140109279781248 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:25:36,036 - main - 293216 - 140109279781248 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:25:36,050 - main - 293216 - 140109279781248 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:25:36,051 - main - 293216 - 140109279781248 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:27:27,202 - main - 295475 - 140092542943616 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:27:27,207 - main - 295475 - 140092542943616 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:27:27,211 - main - 295475 - 140092542943616 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:27:27,241 - main - 295475 - 140092542943616 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:27:27,245 - main - 295475 - 140092542943616 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:29:40,269 - main - 298132 - 139844402352512 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:29:40,270 - main - 298132 - 139844402352512 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:29:40,272 - main - 298132 - 139844402352512 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:29:40,279 - main - 298132 - 139844402352512 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:29:48,901 - main - 298132 - 139844402352512 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:33:09,778 - main - 302329 - 140680580628864 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:33:09,779 - main - 302329 - 140680580628864 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:33:09,781 - main - 302329 - 140680580628864 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:33:09,788 - main - 302329 - 140680580628864 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:33:15,685 - main - 302329 - 140680580628864 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:35:31,424 - main - 305203 - 140079405560192 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:35:31,427 - main - 305203 - 140079405560192 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:35:31,429 - main - 305203 - 140079405560192 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:35:31,438 - main - 305203 - 140079405560192 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:35:31,439 - main - 305203 - 140079405560192 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:36:24,373 - main - 306383 - 140032456515968 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:36:24,694 - main - 306383 - 140032456515968 - Set up logging configuration: level is 10
+__main__ - DEBUG - 2024-04-25 17:36:24,698 - main - 306383 - 140032456515968 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:36:24,715 - main - 306383 - 140032456515968 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:36:24,716 - main - 306383 - 140032456515968 - Exploratory data analysis
+__main__ - INFO - 2024-04-25 17:38:11,866 - main - 308589 - 140096855691648 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:38:11,868 - main - 308589 - 140096855691648 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:38:11,871 - utils - 308589 - 140096855691648 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:38:11,873 - main - 308589 - 140096855691648 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:38:11,886 - main - 308589 - 140096855691648 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:38:11,886 - main - 308589 - 140096855691648 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:38:11,887 - eda - 308589 - 140096855691648 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:38:11,887 - eda - 308589 - 140096855691648 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:38:11,888 - eda - 308589 - 140096855691648 - Folder: comm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:38:11,888 - eda - 308589 - 140096855691648 - Folder: custom_license
+scripts.eda - DEBUG - 2024-04-25 17:38:11,888 - eda - 308589 - 140096855691648 - Folder: noncomm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:38:11,888 - eda - 308589 - 140096855691648 - Folder: pmc_custom_license
+__main__ - INFO - 2024-04-25 17:40:46,706 - main - 311704 - 140577663771008 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:40:46,708 - main - 311704 - 140577663771008 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:40:46,710 - utils - 311704 - 140577663771008 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:40:46,711 - main - 311704 - 140577663771008 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:40:46,729 - main - 311704 - 140577663771008 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:40:46,730 - main - 311704 - 140577663771008 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:40:46,732 - eda - 311704 - 140577663771008 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:40:46,736 - eda - 311704 - 140577663771008 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:40:46,738 - eda - 311704 - 140577663771008 - Folder: comm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:40:46,740 - eda - 311704 - 140577663771008 - Folder: custom_license
+scripts.eda - DEBUG - 2024-04-25 17:40:46,742 - eda - 311704 - 140577663771008 - Folder: noncomm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:40:46,745 - eda - 311704 - 140577663771008 - Folder: pmc_custom_license
+__main__ - INFO - 2024-04-25 17:42:02,332 - main - 313176 - 139687411466624 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:42:02,334 - main - 313176 - 139687411466624 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:42:02,337 - utils - 313176 - 139687411466624 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:42:02,338 - main - 313176 - 139687411466624 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:42:02,357 - main - 313176 - 139687411466624 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:42:02,358 - main - 313176 - 139687411466624 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:42:02,359 - eda - 313176 - 139687411466624 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:42:02,361 - eda - 313176 - 139687411466624 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:42:02,362 - eda - 313176 - 139687411466624 - Folder: comm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:42:02,363 - eda - 313176 - 139687411466624 - Folder: custom_license
+scripts.eda - DEBUG - 2024-04-25 17:42:02,364 - eda - 313176 - 139687411466624 - Folder: noncomm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:42:02,365 - eda - 313176 - 139687411466624 - Folder: pmc_custom_license
+__main__ - INFO - 2024-04-25 17:42:25,559 - main - 313671 - 140110295429504 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:42:25,561 - main - 313671 - 140110295429504 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:42:25,564 - utils - 313671 - 140110295429504 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:42:25,565 - main - 313671 - 140110295429504 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:42:25,580 - main - 313671 - 140110295429504 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:42:25,583 - main - 313671 - 140110295429504 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:42:25,586 - eda - 313671 - 140110295429504 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:42:25,589 - eda - 313671 - 140110295429504 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:42:25,591 - eda - 313671 - 140110295429504 - Folder: comm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:42:25,593 - eda - 313671 - 140110295429504 - Folder: custom_license
+scripts.eda - DEBUG - 2024-04-25 17:42:25,595 - eda - 313671 - 140110295429504 - Folder: noncomm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:42:25,597 - eda - 313671 - 140110295429504 - Folder: pmc_custom_license
+__main__ - INFO - 2024-04-25 17:43:09,598 - main - 314550 - 139810410324352 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:43:09,599 - main - 314550 - 139810410324352 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:43:09,601 - utils - 314550 - 139810410324352 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:43:09,602 - main - 314550 - 139810410324352 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:43:09,615 - main - 314550 - 139810410324352 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:43:09,615 - main - 314550 - 139810410324352 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:43:09,616 - eda - 314550 - 139810410324352 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:43:09,617 - eda - 314550 - 139810410324352 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:43:09,617 - eda - 314550 - 139810410324352 - Folder: comm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:43:09,618 - eda - 314550 - 139810410324352 - Folder: custom_license
+scripts.eda - DEBUG - 2024-04-25 17:43:09,618 - eda - 314550 - 139810410324352 - Folder: noncomm_use_subset
+scripts.eda - DEBUG - 2024-04-25 17:43:09,619 - eda - 314550 - 139810410324352 - Folder: pmc_custom_license
+scripts.eda - INFO - 2024-04-25 17:43:09,626 - eda - 314550 - 139810410324352 - Size of data: {}
+__main__ - INFO - 2024-04-25 17:43:35,411 - main - 315149 - 140604938822016 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:43:35,412 - main - 315149 - 140604938822016 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:43:35,414 - utils - 315149 - 140604938822016 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:43:35,415 - main - 315149 - 140604938822016 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:43:35,422 - main - 315149 - 140604938822016 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:43:35,423 - main - 315149 - 140604938822016 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:43:35,424 - eda - 315149 - 140604938822016 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:43:35,425 - eda - 315149 - 140604938822016 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:43:35,425 - eda - 315149 - 140604938822016 - Subfolder: ['pdf_json']
+__main__ - INFO - 2024-04-25 17:44:17,429 - main - 316065 - 139958785745280 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:44:17,430 - main - 316065 - 139958785745280 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:44:17,431 - utils - 316065 - 139958785745280 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:44:17,432 - main - 316065 - 139958785745280 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:44:17,439 - main - 316065 - 139958785745280 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:44:17,439 - main - 316065 - 139958785745280 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:44:17,440 - eda - 316065 - 139958785745280 - Loading data from ./data
+scripts.eda - DEBUG - 2024-04-25 17:44:17,441 - eda - 316065 - 139958785745280 - Folder: biorxiv_medrxiv
+scripts.eda - DEBUG - 2024-04-25 17:44:17,441 - eda - 316065 - 139958785745280 - Subfolder: ['pdf_json']
+__main__ - INFO - 2024-04-25 17:50:24,557 - main - 323403 - 139707006714240 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-04-25 17:50:24,558 - main - 323403 - 139707006714240 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-04-25 17:50:24,560 - utils - 323403 - 139707006714240 - Loaded config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:50:24,561 - main - 323403 - 139707006714240 - Config file: {'dataPath': './data'}
+__main__ - DEBUG - 2024-04-25 17:50:24,567 - main - 323403 - 139707006714240 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-04-25 17:50:24,567 - main - 323403 - 139707006714240 - Exploratory data analysis
+scripts.eda - INFO - 2024-04-25 17:50:24,568 - eda - 323403 - 139707006714240 - Loading data from ./data
+__main__ - INFO - 2024-04-25 17:50:38,268 - main - 323403 - 139707006714240 - Subfolder: ./data/., Number of files: 1
+__main__ - INFO - 2024-04-25 17:50:38,268 - main - 323403 - 139707006714240 - Subfolder: ./data/biorxiv_medrxiv/pdf_json, Number of files: 12
+__main__ - INFO - 2024-04-25 17:50:38,268 - main - 323403 - 139707006714240 - Subfolder: ./data/comm_use_subset/pdf_json, Number of files: 9918
+__main__ - INFO - 2024-04-25 17:50:38,269 - main - 323403 - 139707006714240 - Subfolder: ./data/comm_use_subset/pmc_json, Number of files: 9540
+__main__ - INFO - 2024-04-25 17:50:38,269 - main - 323403 - 139707006714240 - Subfolder: ./data/custom_license/pdf_json, Number of files: 13106
+__main__ - INFO - 2024-04-25 17:50:38,269 - main - 323403 - 139707006714240 - Subfolder: ./data/noncomm_use_subset/pdf_json, Number of files: 2584
+__main__ - INFO - 2024-04-25 17:50:38,270 - main - 323403 - 139707006714240 - Subfolder: ./data/noncomm_use_subset/pmc_json, Number of files: 2311
+__main__ - INFO - 2024-04-25 17:50:38,270 - main - 323403 - 139707006714240 - Subfolder: ./data/pmc_custom_license, Number of files: 1426
