@@ -34,7 +34,27 @@ TOTAL: 38897
 
 ## 2. Exploratory data analysis
 
+- [ ] General validation
+  - [ ] Describe the data variables/columns
+    - [ ] DataFrame shape, size, and data types
+    - [ ] Check for missing values
+    - [ ] Check for null values
+    - [ ] Check for duplicates
+    - [ ] Check for outliers
+- [ ] Analyze data columns distributions
+  - [ ] Authors data
+- [ ] Handle missing, null or duplicated values
+- [ ] Handle outliers
+
 ## 3. Data processing
+
+- [ ] Data pre-processing
+  - [ ] Remove stopwords
+  - [ ] Handle compound words
+  - [ ] Handle nulls
+  - [ ] Lemmatization & steeming --deprecated, no time
+- [ ] Data processing
+  - [ ] Build TFDF matrix
 
 ## 4. Topic model
 
