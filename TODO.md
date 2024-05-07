@@ -34,6 +34,8 @@ TOTAL: 38897
 
 ## 2. Exploratory data analysis
 
+- [ ] Prepare data
+  - [ ] Get all applicable abstracts
 - [ ] General validation
   - [ ] Describe the data variables/columns
     - [ ] DataFrame shape, size, and data types

@@ -30,9 +30,11 @@ def main():
     
     if args.eda:
         logger.info('Exploratory data analysis')
-        files_per_subfolder = eda.get_size(config['dataPath'])
-        for subfolder, file_count in files_per_subfolder.items():
-            logger.info(f"Subfolder: {subfolder}, Number of files: {file_count}")
+        # Uncomment to list the number of files in each subfolder in ./data
+        # files_per_subfolder = eda.get_size()
+        # for subfolder, file_count in files_per_subfolder.items():
+        #     logger.info(f"Subfolder: {subfolder}, Number of files: {file_count}")
+        df = eda.json_to_df(config['dataPath'])
     
 if __name__ == '__main__':
     main()

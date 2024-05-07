@@ -1,5 +1,6 @@
 import logging
 import json
+import os
 
 def load_config(path):
     """Load the config file.
@@ -21,8 +22,19 @@ def open_json_file(filename):
     Returns:
         dict: The data from the json file.
     """
-    logger = logging.getLogger(__name__)
     with open(filename) as json_file:
         data = json.load(json_file)
-    logger.debug('Opened file: %s', filename)
     return data
+
+def create_dir_if_not_exists(dir):
+    """Create a directory if it does not exist.
+    Args:
+        dir (str): The directory to create.
+    """
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+        logger = logging.getLogger(__name__)
+        logger.info('Created directory: %s', dir)
+    else:
+        logger = logging.getLogger(__name__)
+        logger.info('Directory already exists: %s', dir)
