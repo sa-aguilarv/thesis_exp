@@ -15108,3 +15108,12 @@ scripts.eda - DEBUG - 2024-05-07 02:55:21,439 - eda - 976729 - 139808159854976 -
 scripts.eda - DEBUG - 2024-05-07 02:55:22,868 - eda - 976729 - 139808159854976 - Processed 7000 files
 scripts.eda - DEBUG - 2024-05-07 02:55:24,138 - eda - 976729 - 139808159854976 - Processed 7100 files
 scripts.eda - DEBUG - 2024-05-07 02:55:25,485 - eda - 976729 - 139808159854976 - Processed 7200 files
+__main__ - INFO - 2024-05-07 03:07:18,526 - main - 986369 - 140691745284480 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-07 03:07:18,527 - main - 986369 - 140691745284480 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-07 03:07:18,528 - utils - 986369 - 140691745284480 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/'}
+__main__ - DEBUG - 2024-05-07 03:07:18,528 - main - 986369 - 140691745284480 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/'}
+__main__ - DEBUG - 2024-05-07 03:07:18,534 - main - 986369 - 140691745284480 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-05-07 03:07:18,534 - main - 986369 - 140691745284480 - Exploratory data analysis
+scripts.eda - INFO - 2024-05-07 03:07:18,535 - eda - 986369 - 140691745284480 - Loading data from ./data/comm_use_subset/pdf_json/
+scripts.eda - DEBUG - 2024-05-07 03:07:18,681 - eda - 986369 - 140691745284480 - Number of files in dataPath: 9918
+scripts.utils - INFO - 2024-05-07 03:07:18,681 - utils - 986369 - 140691745284480 - Directory already exists: results

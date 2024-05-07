@@ -34,7 +34,7 @@ TOTAL: 38897
 
 ## 2. Exploratory data analysis
 
-- [ ] Prepare data
+- [ x] Prepare data
   - [x] Get all applicable abstracts
   - [x] Get metadata --processed json
 - [ ] General validation

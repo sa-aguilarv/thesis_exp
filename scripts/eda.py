@@ -7,7 +7,6 @@ from tqdm import tqdm
 def get_size(dataPath = './data'):
     logger = logging.getLogger(__name__)
     logger.info('Loading data from %s', dataPath)
-    # list all folders in dataPath
     files_per_subfolder = {}
     root_folders = [dataPath]
     for root_folder in root_folders:
@@ -29,10 +28,6 @@ def json_to_df(dataPath):
     u.create_dir_if_not_exists(new_dir)
     
     dataList = []
-    batch_size = 100
-    chunks = len(files) // batch_size
-    logger.debug('Number of chunks: %s', chunks)
-    counter = 0
     for file in tqdm(files):
         filename = os.path.join(dataPath, file)
         if file.endswith('.json'):
@@ -40,21 +35,11 @@ def json_to_df(dataPath):
                 data = u.open_json_file(filename)
                 data = u.json_decomposition(data)
                 dataList.append(data)
-                counter += 1
-                
-                if counter % batch_size == 0:
-                    logger.debug('Processed %s files', counter)
-                    df.to_csv(f'{new_dir}/data_{chunks}.csv', index=False)
-                    logger.debug('Saved chunk %s', chunks)
-                    dataList = []
-                    counter = 0
-                    chunks -= 1
                     
             except Exception as e:
                 #logger.error('Error reading file %s: %s', filename, e)
                 continue
-    
-    if dataList:
-        df = pd.DataFrame(dataList)
-        df.to_csv(f'{new_dir}/data_{chunks}.csv', index=False)
+            
+    df = pd.DataFrame(dataList)
+    df.to_csv(f'{new_dir}/data.csv', index=False)
 
