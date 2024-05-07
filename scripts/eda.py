@@ -25,46 +25,36 @@ def json_to_df(dataPath):
     files = os.listdir(dataPath)
     logger.debug('Number of files in dataPath: %s', len(files))
     
-    #selected_columns = ['paper_id', 'metadata', 'abstract', 'back_matter']
-    #selected_subkeys = {'metadata': 'title', 'abstract': 'text', 'back_matter': 'text'}
-    dataList = []
+    new_dir = 'results'
+    u.create_dir_if_not_exists(new_dir)
     
-    for file in tqdm(files, desc='Loading data', unit='files'):
+    dataList = []
+    batch_size = 100
+    chunks = len(files) // batch_size
+    logger.debug('Number of chunks: %s', chunks)
+    counter = 0
+    for file in tqdm(files):
         filename = os.path.join(dataPath, file)
         if file.endswith('.json'):
             try: 
                 data = u.open_json_file(filename)
-                paperId = data['paper_id']
-                title = data['metadata']['title']
-                abstract = data['abstract'][0]['text']
-                back_matter = data['back_matter'][0]['text']
-                
-                names = []
-                affiliations = []
-                for author in data['metadata']['authors']:
-                    author_name = author['first'] + ' ' + author['last']
-                    if 'institution' in author['affiliation'] != None:
-                        author_affiliation = author['affiliation']['institution']
-                    names.append(author_name)
-                    affiliations.append(author_affiliation)
-                    
-                affiliations = list(set(affiliations))
-                
-                data = {'paper_id': paperId, 'title': title, 'abstract': abstract, 'back_matter': back_matter, 'names': names, 'affiliations': affiliations}
+                data = u.json_decomposition(data)
                 dataList.append(data)
+                counter += 1
+                
+                if counter % batch_size == 0:
+                    logger.debug('Processed %s files', counter)
+                    df.to_csv(f'{new_dir}/data_{chunks}.csv', index=False)
+                    logger.debug('Saved chunk %s', chunks)
+                    dataList = []
+                    counter = 0
+                    chunks -= 1
+                    
             except Exception as e:
-                logger.error('Error reading file %s: %s', filename, e)
+                #logger.error('Error reading file %s: %s', filename, e)
                 continue
     
-    logger.debug('Data type: %s', type(dataList))
-    df = pd.DataFrame.from_records(dataList)
-    # create results folder if it does not exist
-    new_dir = 'results'
-    u.create_dir_if_not_exists(new_dir)
-    # Save the dataframe to a csv file
-    df.to_csv(f'{new_dir}/data.csv', index=False)
-    logger.debug('Dataframe shape: %s', df.shape)
-    logger.debug('Dataframe columns: %s', df.columns)
-    logger.debug('df[0]: %s', df.iloc[0])
-    return df    
+    if dataList:
+        df = pd.DataFrame(dataList)
+        df.to_csv(f'{new_dir}/data_{chunks}.csv', index=False)
 

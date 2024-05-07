@@ -38,3 +38,25 @@ def create_dir_if_not_exists(dir):
     else:
         logger = logging.getLogger(__name__)
         logger.info('Directory already exists: %s', dir)
+
+def json_decomposition(data):
+    paperId = data['paper_id']
+    title = data['metadata']['title']
+    abstract = data['abstract'][0]['text']
+    back_matter = data['back_matter'][0]['text']
+    
+    names = []
+    affiliations = []
+    for author in data['metadata']['authors']:
+        author_name = author['first'] + ' ' + author['last']
+        if 'institution' in author['affiliation'] != None:
+            author_affiliation = author['affiliation']['institution']
+        else:
+            author_affiliation = ''
+        names.append(author_name)
+        affiliations.append(author_affiliation)
+        
+    affiliations = list(set(affiliations))
+    
+    data = {'paper_id': paperId, 'title': title, 'abstract': abstract, 'back_matter': back_matter, 'names': names, 'affiliations': affiliations}
+    return data
