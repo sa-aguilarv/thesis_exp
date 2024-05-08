@@ -39,7 +39,16 @@ def json_to_df(dataPath):
             except Exception as e:
                 #logger.error('Error reading file %s: %s', filename, e)
                 continue
-            
+
     df = pd.DataFrame(dataList)
     df.to_csv(f'{new_dir}/data.csv', index=False)
+    logger.info('DF shape: %s', df.shape)
+    save_df_descriptors(df)
+    logger.info('Data saved to %s', f'{new_dir}/data.csv')
+    
+def save_df_descriptors(df):
+    empty_values = df.isnull().sum()
+    save_path = 'results/eda'
+    u.create_dir_if_not_exists(save_path)
+    empty_values.to_csv(f'{save_path}/empty_values.csv')
 
