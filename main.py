@@ -4,6 +4,7 @@ import logging.config
 from scripts import input_output as io
 from scripts import eda
 from scripts import utils as u
+from scripts import etl
 
 def set_up_logging():
     """Set up the logging configuration.
@@ -35,8 +36,19 @@ def main():
         # for subfolder, file_count in files_per_subfolder.items():
         #     logger.info(f"Subfolder: {subfolder}, Number of files: {file_count}")
         eda.json_to_df(config['dataPath'])
-    elif args.processing:
+    elif args.etl:
         logger.info('Data processing')
+        # Change to the path where the data is stored
+        filename = config['resultsPath'] + 'data.csv'
+        
+        results_path = 'results/etl'
+        if os.path.exists(results_path):
+            pass
+        else:
+            etl.collect_ao_metadata(filename)
+        
+        etl.create_ao_metadata_df(results_path)
+        etl.data_cleaning(filename)
     
 if __name__ == '__main__':
     main()

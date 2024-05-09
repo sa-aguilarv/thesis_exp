@@ -94,13 +94,13 @@ TOTAL: 38897
 - [x] Handle null values for abstract and `back_matter` (i.e., acknowledgements) columns
   - [x] Drop rows with missing abstracts and acknowledgements
 
-- [ ] Get missing metadata from [Semantic Scholar S2AG](https://api.semanticscholar.org/api-docs/datasets) given paper ID
-  - [ ] Get year of publication
-  - [ ] Get the associated disciplines
-
-- [ ] Validate number of failed responses
-  - [ ] Calculate error percentage
-  - [ ] Drop rows with missing year and disciplines
+- [x] Get missing metadata from [Semantic Scholar S2AG](https://api.semanticscholar.org/api-docs/datasets) given paper ID
+  - [x] Create request to S2AG
+    - [x] Get year of publication
+    - [x] Get the associated disciplines
+  - [x] Create ao. metadata df
+    - [x] Concatenate ao. metadata df chunks into one df 
+    - [x] Drop rows with missing year and disciplines
 
 - [ ] Get meaningful nouns to make up the corpus
   - [ ] Remove special characters
@@ -110,6 +110,12 @@ TOTAL: 38897
 
 - [ ] Data processing
   - [ ] Build TFDF matrix
+
+### 3.1. Results
+
+### 3.2. Observations
+
+- Retrieved the metadata from S2AG in chunks of 500 papers
 
 ## 4. Topic model
 

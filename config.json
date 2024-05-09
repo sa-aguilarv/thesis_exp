@@ -1,3 +1,4 @@
 {
-    "dataPath": "./data/comm_use_subset/pdf_json/"
+    "dataPath": "./data/comm_use_subset/pdf_json/",
+    "resultsPath": "./results/"
 }

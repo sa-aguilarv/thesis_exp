@@ -57,6 +57,7 @@ def json_to_df(dataPath):
     save_df_descriptors(df)
     df = u.drop_nan_rows(df)
     logger.info('DF shape after dropping rows with NaN values: %s', df.shape)
+    df.to_csv(f'{new_dir}/data.csv', index=False)
     logger.info('Data saved to %s', f'{new_dir}/data.csv')
     
 def save_df_descriptors(df):

@@ -36,11 +36,8 @@ def create_dir_if_not_exists(dir):
     """
     if not os.path.exists(dir):
         os.makedirs(dir)
-        logger = logging.getLogger(__name__)
-        logger.debug('Created directory: %s', dir)
     else:
-        logger = logging.getLogger(__name__)
-        logger.debug('Directory already exists: %s', dir)
+        pass
 
 def json_decomposition(data):
     """ Decompose the json file into a dictionary.

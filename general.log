@@ -17304,3 +17304,186 @@ scripts.eda - INFO - 2024-05-08 19:18:51,307 - eda - 216075 - 140671555637632 - 
 scripts.utils - DEBUG - 2024-05-08 19:18:51,320 - utils - 216075 - 140671555637632 - Directory already exists: results/eda
 scripts.eda - INFO - 2024-05-08 19:18:51,456 - eda - 216075 - 140671555637632 - DF shape after dropping rows with NaN values: (7242, 6)
 scripts.eda - INFO - 2024-05-08 19:18:51,457 - eda - 216075 - 140671555637632 - Data saved to results/data.csv
+__main__ - INFO - 2024-05-08 20:36:33,141 - main - 248019 - 140529005355392 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:36:33,142 - main - 248019 - 140529005355392 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:36:33,197 - utils - 248019 - 140529005355392 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:36:33,197 - main - 248019 - 140529005355392 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:36:33,206 - main - 248019 - 140529005355392 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:36:33,207 - main - 248019 - 140529005355392 - Data processing
+scripts.utils - DEBUG - 2024-05-08 20:36:34,806 - utils - 248019 - 140529005355392 - Created directory: results/etl
+scripts.etl - ERROR - 2024-05-08 20:36:34,811 - etl - 248019 - 140529005355392 - Error reading file ./results/data.csv: Cannot save file into a non-existent directory: 'None'
+scripts.utils - DEBUG - 2024-05-08 20:36:36,005 - utils - 248019 - 140529005355392 - Directory already exists: results/etl
+scripts.etl - ERROR - 2024-05-08 20:36:36,006 - etl - 248019 - 140529005355392 - Error reading file ./results/data.csv: Cannot save file into a non-existent directory: 'None'
+__main__ - INFO - 2024-05-08 20:43:59,084 - main - 249517 - 140453366555008 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:43:59,098 - main - 249517 - 140453366555008 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:43:59,099 - utils - 249517 - 140453366555008 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:43:59,099 - main - 249517 - 140453366555008 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:43:59,102 - main - 249517 - 140453366555008 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:43:59,102 - main - 249517 - 140453366555008 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:43:59,102 - etl - 249517 - 140453366555008 - Reading file: ./results/data.csv
+__main__ - INFO - 2024-05-08 20:44:25,741 - main - 249608 - 139859479060864 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:44:25,741 - main - 249608 - 139859479060864 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:44:25,741 - utils - 249608 - 139859479060864 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:44:25,742 - main - 249608 - 139859479060864 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:44:25,744 - main - 249608 - 139859479060864 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:44:25,744 - main - 249608 - 139859479060864 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:44:25,744 - etl - 249608 - 139859479060864 - Reading file: ./results/data.csv
+__main__ - INFO - 2024-05-08 20:44:56,680 - main - 249703 - 140560067551616 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:44:56,680 - main - 249703 - 140560067551616 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:44:56,680 - utils - 249703 - 140560067551616 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:44:56,680 - main - 249703 - 140560067551616 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:44:56,683 - main - 249703 - 140560067551616 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:44:56,683 - main - 249703 - 140560067551616 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:44:56,683 - etl - 249703 - 140560067551616 - Reading file: ./results/data.csv
+__main__ - INFO - 2024-05-08 20:45:10,955 - main - 249797 - 140218489295232 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:45:10,956 - main - 249797 - 140218489295232 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:45:10,956 - utils - 249797 - 140218489295232 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:45:10,956 - main - 249797 - 140218489295232 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:45:10,959 - main - 249797 - 140218489295232 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:45:10,959 - main - 249797 - 140218489295232 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:45:10,960 - etl - 249797 - 140218489295232 - Reading file: ./results/data.csv
+__main__ - INFO - 2024-05-08 20:46:07,687 - main - 249898 - 139793088135552 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:46:07,688 - main - 249898 - 139793088135552 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:46:07,688 - utils - 249898 - 139793088135552 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:46:07,688 - main - 249898 - 139793088135552 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:46:07,691 - main - 249898 - 139793088135552 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:46:07,691 - main - 249898 - 139793088135552 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:46:07,692 - etl - 249898 - 139793088135552 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:46:07,819 - etl - 249898 - 139793088135552 - DF shape: (1000, 1)
+scripts.etl - DEBUG - 2024-05-08 20:46:07,819 - etl - 249898 - 139793088135552 - First 5 rows:                                    paper_id
+0  c63c4d58d170136b8d3b5a66424b5ac3f73a92d9
+1  26bdc177821e0161d138236656dafefe2f9f6900
+2  def1cf77e1ef84f4373a342e23145be05ec5e226
+3  45d2d838cb3d5ae2dabd7bb7c82329b398d1c65f
+4  367af6bb9a8bbda02206506a819656bb6f14ce4c
+__main__ - INFO - 2024-05-08 20:46:16,342 - main - 249982 - 140669566697856 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:46:16,343 - main - 249982 - 140669566697856 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:46:16,343 - utils - 249982 - 140669566697856 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:46:16,343 - main - 249982 - 140669566697856 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:46:16,346 - main - 249982 - 140669566697856 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:46:16,346 - main - 249982 - 140669566697856 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:46:16,347 - etl - 249982 - 140669566697856 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:46:16,487 - etl - 249982 - 140669566697856 - DF shape: (1000, 1)
+scripts.etl - DEBUG - 2024-05-08 20:46:16,488 - etl - 249982 - 140669566697856 - First 5 rows:                                    paper_id
+0  c63c4d58d170136b8d3b5a66424b5ac3f73a92d9
+1  26bdc177821e0161d138236656dafefe2f9f6900
+2  def1cf77e1ef84f4373a342e23145be05ec5e226
+3  45d2d838cb3d5ae2dabd7bb7c82329b398d1c65f
+4  367af6bb9a8bbda02206506a819656bb6f14ce4c
+scripts.utils - DEBUG - 2024-05-08 20:46:17,743 - utils - 249982 - 140669566697856 - Directory already exists: results/etl
+scripts.etl - ERROR - 2024-05-08 20:46:17,748 - etl - 249982 - 140669566697856 - Error reading file ./results/data.csv: Cannot save file into a non-existent directory: 'None'
+scripts.utils - DEBUG - 2024-05-08 20:46:19,158 - utils - 249982 - 140669566697856 - Directory already exists: results/etl
+scripts.etl - ERROR - 2024-05-08 20:46:19,160 - etl - 249982 - 140669566697856 - Error reading file ./results/data.csv: Cannot save file into a non-existent directory: 'None'
+__main__ - INFO - 2024-05-08 20:48:12,076 - main - 250158 - 140266369597824 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:48:12,077 - main - 250158 - 140266369597824 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:48:12,077 - utils - 250158 - 140266369597824 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:48:12,077 - main - 250158 - 140266369597824 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:48:12,080 - main - 250158 - 140266369597824 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:48:12,080 - main - 250158 - 140266369597824 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:48:12,080 - etl - 250158 - 140266369597824 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:48:12,223 - etl - 250158 - 140266369597824 - DF shape: (1000, 1)
+scripts.etl - DEBUG - 2024-05-08 20:48:12,224 - etl - 250158 - 140266369597824 - First 5 rows:                                    paper_id
+0  c63c4d58d170136b8d3b5a66424b5ac3f73a92d9
+1  26bdc177821e0161d138236656dafefe2f9f6900
+2  def1cf77e1ef84f4373a342e23145be05ec5e226
+3  45d2d838cb3d5ae2dabd7bb7c82329b398d1c65f
+4  367af6bb9a8bbda02206506a819656bb6f14ce4c
+scripts.utils - DEBUG - 2024-05-08 20:48:13,518 - utils - 250158 - 140266369597824 - Directory already exists: results/etl
+scripts.utils - DEBUG - 2024-05-08 20:48:14,906 - utils - 250158 - 140266369597824 - Directory already exists: results/etl
+__main__ - INFO - 2024-05-08 20:52:54,290 - main - 250926 - 140196262097280 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:52:54,291 - main - 250926 - 140196262097280 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:52:54,291 - utils - 250926 - 140196262097280 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:52:54,291 - main - 250926 - 140196262097280 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:52:54,296 - main - 250926 - 140196262097280 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:52:54,296 - main - 250926 - 140196262097280 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:52:54,296 - etl - 250926 - 140196262097280 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:52:54,438 - etl - 250926 - 140196262097280 - DF shape: (9918, 1)
+scripts.etl - DEBUG - 2024-05-08 20:52:55,603 - etl - 250926 - 140196262097280 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:52:56,783 - etl - 250926 - 140196262097280 - Status Code: 400
+__main__ - INFO - 2024-05-08 20:54:10,190 - main - 251056 - 140299026186624 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:54:10,190 - main - 251056 - 140299026186624 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:54:10,190 - utils - 251056 - 140299026186624 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:54:10,191 - main - 251056 - 140299026186624 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:54:10,195 - main - 251056 - 140299026186624 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:54:10,195 - main - 251056 - 140299026186624 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:54:10,195 - etl - 251056 - 140299026186624 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:54:10,346 - etl - 251056 - 140299026186624 - DF shape: (9918, 1)
+scripts.etl - DEBUG - 2024-05-08 20:54:11,479 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:12,763 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:13,884 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:15,113 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:16,138 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:17,161 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:18,184 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:19,311 - etl - 251056 - 140299026186624 - Status Code: 400
+scripts.etl - DEBUG - 2024-05-08 20:54:20,306 - etl - 251056 - 140299026186624 - Status Code: 400
+__main__ - INFO - 2024-05-08 20:56:44,504 - main - 251732 - 140668031598976 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:56:44,505 - main - 251732 - 140668031598976 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:56:44,505 - utils - 251732 - 140668031598976 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:56:44,505 - main - 251732 - 140668031598976 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:56:44,509 - main - 251732 - 140668031598976 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:56:44,510 - main - 251732 - 140668031598976 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:56:44,510 - etl - 251732 - 140668031598976 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:56:44,643 - etl - 251732 - 140668031598976 - DF shape: (9918, 1)
+__main__ - INFO - 2024-05-08 20:57:25,268 - main - 251856 - 140628612833664 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 20:57:25,269 - main - 251856 - 140628612833664 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 20:57:25,269 - utils - 251856 - 140628612833664 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:57:25,269 - main - 251856 - 140628612833664 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 20:57:25,272 - main - 251856 - 140628612833664 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 20:57:25,273 - main - 251856 - 140628612833664 - Data processing
+scripts.etl - DEBUG - 2024-05-08 20:57:25,273 - etl - 251856 - 140628612833664 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 20:57:25,415 - etl - 251856 - 140628612833664 - DF shape: (9918, 1)
+__main__ - INFO - 2024-05-08 21:18:29,172 - main - 253183 - 140600718201216 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:18:29,173 - main - 253183 - 140600718201216 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:18:29,173 - utils - 253183 - 140600718201216 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:18:29,173 - main - 253183 - 140600718201216 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:18:29,176 - main - 253183 - 140600718201216 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 21:18:29,176 - main - 253183 - 140600718201216 - Data processing
+scripts.etl - DEBUG - 2024-05-08 21:18:29,176 - etl - 253183 - 140600718201216 - Number of files in dir: 20
+__main__ - INFO - 2024-05-08 21:20:49,678 - main - 253408 - 140350233584000 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:20:49,678 - main - 253408 - 140350233584000 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:20:49,678 - utils - 253408 - 140350233584000 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:20:49,679 - main - 253408 - 140350233584000 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:20:49,681 - main - 253408 - 140350233584000 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 21:20:49,681 - main - 253408 - 140350233584000 - Data processing
+scripts.etl - DEBUG - 2024-05-08 21:20:49,682 - etl - 253408 - 140350233584000 - Number of files in dir: 20
+__main__ - INFO - 2024-05-08 21:24:12,762 - main - 253560 - 139870472241536 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:24:12,763 - main - 253560 - 139870472241536 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:24:12,763 - utils - 253560 - 139870472241536 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:24:12,972 - main - 253560 - 139870472241536 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:24:12,986 - main - 253560 - 139870472241536 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 21:24:12,988 - main - 253560 - 139870472241536 - Data processing
+scripts.etl - DEBUG - 2024-05-08 21:24:12,990 - etl - 253560 - 139870472241536 - Number of files in dir: 20
+scripts.etl - INFO - 2024-05-08 21:24:13,170 - etl - 253560 - 139870472241536 - Total no. papers with ao. metadata: 9023
+scripts.etl - INFO - 2024-05-08 21:24:13,170 - etl - 253560 - 139870472241536 - Metadata DF shape: (496, 60)
+__main__ - INFO - 2024-05-08 21:29:06,197 - main - 254399 - 140539838673280 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:29:06,197 - main - 254399 - 140539838673280 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:29:06,198 - utils - 254399 - 140539838673280 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:29:06,198 - main - 254399 - 140539838673280 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:29:06,200 - main - 254399 - 140539838673280 - Input arguments: Namespace(eda=True, etl=False)
+__main__ - INFO - 2024-05-08 21:29:06,201 - main - 254399 - 140539838673280 - Exploratory data analysis
+scripts.eda - INFO - 2024-05-08 21:29:06,201 - eda - 254399 - 140539838673280 - Loading data from ./data/comm_use_subset/pdf_json/
+scripts.eda - DEBUG - 2024-05-08 21:29:06,349 - eda - 254399 - 140539838673280 - Number of files in dataPath: 9918
+scripts.eda - INFO - 2024-05-08 21:29:29,677 - eda - 254399 - 140539838673280 - DF shape: (9918, 6)
+scripts.eda - INFO - 2024-05-08 21:29:29,839 - eda - 254399 - 140539838673280 - DF shape after dropping rows with NaN values: (7242, 6)
+scripts.eda - INFO - 2024-05-08 21:29:30,348 - eda - 254399 - 140539838673280 - Data saved to results/data.csv
+__main__ - INFO - 2024-05-08 21:32:37,334 - main - 255466 - 140153537298816 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:32:37,335 - main - 255466 - 140153537298816 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:32:37,335 - utils - 255466 - 140153537298816 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:32:37,335 - main - 255466 - 140153537298816 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:32:37,338 - main - 255466 - 140153537298816 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 21:32:37,338 - main - 255466 - 140153537298816 - Data processing
+scripts.etl - DEBUG - 2024-05-08 21:32:37,338 - etl - 255466 - 140153537298816 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-08 21:32:37,459 - etl - 255466 - 140153537298816 - DF shape: (7242, 1)
+scripts.etl - DEBUG - 2024-05-08 21:32:57,848 - etl - 255466 - 140153537298816 - Number of files in dir: 15
+scripts.etl - INFO - 2024-05-08 21:32:58,005 - etl - 255466 - 140153537298816 - Total no. papers with ao. metadata: 6669
+scripts.etl - INFO - 2024-05-08 21:32:58,005 - etl - 255466 - 140153537298816 - Metadata DF shape: (499, 45)
+__main__ - INFO - 2024-05-08 21:34:04,195 - main - 255730 - 139776864395648 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 21:34:04,195 - main - 255730 - 139776864395648 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 21:34:04,196 - utils - 255730 - 139776864395648 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:34:04,196 - main - 255730 - 139776864395648 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-08 21:34:04,199 - main - 255730 - 139776864395648 - Input arguments: Namespace(eda=False, etl=True)
+__main__ - INFO - 2024-05-08 21:34:04,199 - main - 255730 - 139776864395648 - Data processing
+scripts.etl - DEBUG - 2024-05-08 21:34:04,199 - etl - 255730 - 139776864395648 - Number of files in dir: 15
+scripts.etl - INFO - 2024-05-08 21:34:04,294 - etl - 255730 - 139776864395648 - Total no. papers with ao. metadata: 6669
+scripts.etl - INFO - 2024-05-08 21:34:04,294 - etl - 255730 - 139776864395648 - Metadata DF shape: (6669, 3)

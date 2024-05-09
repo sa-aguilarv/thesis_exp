@@ -1,0 +1,495 @@
+paperId,year,fieldsOfStudy
+26ba0cb6190e2a4b476ebf7122a0e439bbe80229,2014.0,"['Medicine', 'Biology']"
+3849786c8c14c11ae4b19b4543672421e5d169fd,2014.0,"['Biology', 'Medicine']"
+6583cfccbf4c2c87e0aadb7f90047ddb390cda59,2014.0,"['Biology', 'Medicine']"
+d2d1d6227304c56323303dc51509bf3217925dcb,2014.0,"['Medicine', 'Biology']"
+a25b41b8a618d45231323731d41a4c5ffc4d3cfb,2014.0,"['Biology', 'Medicine']"
+e91beea6c5311b0edd2a2853d185ce4a1538abd4,2014.0,"['Medicine', 'Biology']"
+4600273935786871df51c3644a39d86c3ad2cc8e,2014.0,"['Biology', 'Medicine']"
+d3ebec0e52650a8954a2ee413e0c2c2c49031b7f,2014.0,"['Biology', 'Medicine']"
+374861bab555d907099146fb05867d810fca1ad1,2014.0,['Medicine']
+fcb6388cd3f327a621aa9f5af0aafd22bc6ba449,2014.0,['Medicine']
+f2649cf16a1df8492caf50c3cc3a4a68994b02b3,2014.0,['Medicine']
+c16871e77714f27bcd07f90ba3080aae5a3b064c,2014.0,"['Biology', 'Medicine']"
+f6e6534cb423c1823ad38d7d5c0a98c303f2efdb,2014.0,"['Biology', 'Medicine']"
+06f33aa8d51ad1c6081cd855c8d274d47e1ee74e,2014.0,"['Biology', 'Medicine']"
+8134e0946079f5ef0bbbd7b65ce13657483b8160,2014.0,"['Biology', 'Medicine']"
+1613fd55dff3cde4f7f32fd5b667e548f860b5d3,2014.0,"['Medicine', 'Biology']"
+a42e22a3f6471cb9d38985544025333db855a56b,2014.0,['Medicine']
+b676ed3cdc498e3a17699647fd4dee1d97dd27ec,2014.0,"['Biology', 'Medicine']"
+f7bb1f005066cb4930f83cde4cdc1ff3fe411def,2014.0,"['Medicine', 'Biology']"
+64100002ed32bf8d3614c7634d54bf9b2cde7be2,2014.0,['Medicine']
+e0d7ff094aad4031bc73a82ae7b4dd6e5f8723c7,2014.0,"['Biology', 'Medicine']"
+302816c4913eb3fc665afd82f4735a4d814277a1,2014.0,"['Computer Science', 'Biology', 'Medicine']"
+815b5e537a3e7bdb7d5c7c7cd51181b9b2e245c5,2015.0,"['Biology', 'Medicine']"
+45bb84571df3f2e42173366750302b2315783842,2014.0,"['Biology', 'Medicine']"
+bf0d0a5f74db0e532f85d90285a96f7e70670c55,2014.0,"['Biology', 'Medicine']"
+b87ddf92d90fd58bbdf08981116cd7841d75d483,2014.0,"['Chemistry', 'Medicine']"
+883cb0158d0026f5e0b986a72e80266b60dfe98f,2015.0,['Medicine']
+9b26e1267786a1ec02d8ede9599ec416b7e9f3cf,2015.0,"['Medicine', 'Biology']"
+9fe4bb195ffbcf6f450478fa94e72e099fb7d335,2014.0,"['Biology', 'Medicine']"
+bc489624c814eedf1d191c84f7ca9efce0c98e1b,2014.0,"['Medicine', 'Biology']"
+acadcb58dfdef9e3e9981dde06e2a825c005c9c4,2014.0,"['Biology', 'Medicine']"
+4a698e56af8042a4c35a26127c4da5fc5ff7fa95,2015.0,"['Biology', 'Medicine']"
+980fa3a12d2ef54f74ed83f67750bfe48283e719,2015.0,['Medicine']
+3b4888c664b3d2fa758325160b185a453b6f8bb4,2014.0,['Medicine']
+027f86c44365e0ba6a6c26e24134c4c3e98a72ef,2014.0,"['Biology', 'Medicine']"
+0ba5c7537c4c79a2c92c09937baf2cf5ea0c0c70,2014.0,['Medicine']
+ab52aa56838160b5ec7a015a05ef76fc06129b5e,2014.0,['Medicine']
+bc589336315df8e93a0fcd4fda5442bf982e9b6d,2015.0,['Medicine']
+30228d15fe381a86a00384fbacdc4daa55d2f7b8,2014.0,"['Biology', 'Medicine']"
+368cbceb0d0e8ad64b484f330c03d950394bf397,2014.0,['Medicine']
+cec21bb25c57f0e17f672a7ed7b91a01bd371ee7,2015.0,['Medicine']
+55fff2a1e752fff28c873a4c494c24cd856dc04f,2014.0,"['Biology', 'Medicine']"
+0fc4dcbf634509ec31bbb223fc81f75761dc9d8d,2014.0,['Medicine']
+6f33e0f98099e7d33ba8f3593764955551567366,2014.0,"['Medicine', 'Biology']"
+e027c99dc80e0f4e74c6c19700f5c08d4bb57c31,2014.0,['Medicine']
+588f4f2f718477fdb35fc1d995eaa072d86e0024,2014.0,"['Medicine', 'Computer Science']"
+9ac6114492dec5eb4c4afe605b1a83c689df0dec,2015.0,"['Biology', 'Medicine']"
+49241d35c68b9ffeb0057758abdf00fc18cce2f0,2015.0,"['Biology', 'Medicine']"
+6fe504de34547cdf28c03c2933e53454db15dd31,2015.0,"['Biology', 'Medicine']"
+e8a440a669e5ed093503e9f40cb9ceb3db4667ee,2015.0,"['Geography', 'Medicine']"
+e6df142bb0b9d9a7e261c64a63cafed7c29de3ab,2015.0,"['Medicine', 'Political Science']"
+ccad0296cd729ab05015f1b5fdbe2702cc76a52c,2015.0,['Medicine']
+21fd38266c7336a6ace6ca87ee9ac07a580cfdeb,2015.0,"['Medicine', 'Biology']"
+37074fe2f857760d2f858b64f55973eeb933c80d,2015.0,"['Biology', 'Medicine']"
+396b05e6ede13dc6078ddf0eae5c14ceae695600,2015.0,"['Biology', 'Medicine']"
+238d2be0d4db41b5460bd3a50a0a374549c189aa,2015.0,"['Biology', 'Medicine']"
+66309c65612bed65732f79f347693a170e10e1f8,2015.0,"['Biology', 'Medicine']"
+b4662fd83b035e7eb06014924a4a03c854ad797f,2015.0,"['Geography', 'Medicine']"
+77888e24fe540edda3d9cd2e0aadd2e699aa466d,2015.0,['Medicine']
+d52dae140657cded56622ba9c567887dd8d522d6,2014.0,['Medicine']
+eee4686b17d29cc787ff854c0af655f7fc165a59,2015.0,"['Chemistry', 'Medicine']"
+77779295f3fcc05a193b349478b8730b226790c7,2015.0,['Medicine']
+bbc0322ac1427ea61ca213645a219daf5bd9d5ac,2014.0,['Medicine']
+cafe94db336fdb19637a233e129ea0d439321d75,2014.0,['Medicine']
+ec8d2f71fef921c5dba62ad777b49e4063534a84,2015.0,"['Medicine', 'Biology']"
+836ec77a81730c540b750253cc4ee9f8fed0fb49,2015.0,"['Biology', 'Medicine']"
+f8d824e0d3db2c4db50dde178cea01ac50b1aa73,2014.0,['Medicine']
+59acd41ff6a97e730a76fd661b5e10d8cf5290b6,2015.0,['Medicine']
+792e1e5a49f52fd40023b60186422df88a71533d,2015.0,"['Biology', 'Medicine']"
+9984fe671d61d99ab39e8e95787e9000093ea7df,2015.0,"['Biology', 'Medicine']"
+72e37ddb3310bf50385723819244148ab9a787f2,2015.0,['Medicine']
+cbfd67f3d49a7d0060dd074ad64aeda8810b21bd,2014.0,['Medicine']
+57b6dfe603cb6f1ec9f906b3a959b4809a56344c,2014.0,"['Biology', 'Medicine']"
+57b6dfe603cb6f1ec9f906b3a959b4809a56344c,2014.0,"['Biology', 'Medicine']"
+7e55726d345571690d0e3046664cfac5003c2a89,2015.0,['Medicine']
+a4cfc3e2cc8c3a69d8a6384aa77b9a9ff7a51dd7,2015.0,"['Medicine', 'Biology']"
+5fafc9012cd3406a5975bcb5be8836b9819ea09a,2016.0,"['Computer Science', 'Political Science', 'Psychology']"
+0ce0b8bb68417974932e98c094ec93fbefc5193b,2015.0,
+684a0a1db464c0c6e1571a6ca9ea5d2003f62456,2014.0,"['Biology', 'Medicine']"
+1dd423beea066568b8f497541404158a42568287,2015.0,"['Biology', 'Medicine', 'History']"
+3118aa53f6b7e539049e2a52e973f4124ba121e9,2015.0,"['Biology', 'Medicine']"
+2dbb62c7d95b021e43d2a0f558ac3a86368bcf71,2015.0,"['Biology', 'Medicine']"
+dfed2317b7db4c01405316a9dc16f17ed266aad8,2015.0,"['Medicine', 'Biology']"
+dfed2317b7db4c01405316a9dc16f17ed266aad8,2015.0,"['Medicine', 'Biology']"
+c13377750d32446f66a4bcd0bb2da626e4b2a035,2015.0,['Medicine']
+3f4dc44b33b5128f74c09157fe9ec6ae85c1814f,2015.0,['Medicine']
+0e7304e18bb79d48af1e4a60e7aa7f162f886cc3,2015.0,"['Chemistry', 'Medicine']"
+5e8f7afb92ebf8c6aa011d9e20bb062c908fbda2,2015.0,['Medicine']
+60bb4454a34fb7642d6805ff6261abc91809a135,2015.0,['Medicine']
+473b926e3266337d27883cca29c6186faf3d7ba2,2015.0,"['Biology', 'Medicine']"
+f879891cd4353fbb6baa973c04bc1cf2dc3a3fd6,2015.0,"['Medicine', 'Biology']"
+1dc4f757f425b080168840089f1f4d29bac75f51,2015.0,"['Medicine', 'Geography']"
+9718efa7298b28b740938eeca415b1703ec6f689,2015.0,"['Biology', 'Medicine']"
+18fa8238f77677678af274f3eb51169c2650e156,2015.0,['Medicine']
+17506f639d49555d5ded2ceebbc202bffdcc15f8,2015.0,['Medicine']
+1a69ce8fdab073bef95688105e20cd872ec3ee29,2015.0,"['Biology', 'Computer Science', 'Medicine']"
+758d365d79d74aee483623c5abeab0c682bf1ad3,2015.0,"['Medicine', 'Biology']"
+47bee80b5be48f84d9826c33301bf87a62340441,2015.0,['Medicine']
+7838135e9a5032fb503334e09f2f59ac171b9733,2014.0,"['Medicine', 'Biology']"
+334bc72deded9b157e7f7fcc108fe0671cc41b50,2015.0,['Medicine']
+d856e481350ef09b051060b59eca757eec92f659,2015.0,['Medicine']
+7bb2233fecf687276332f5cfe4630d5286966390,2015.0,"['Biology', 'Medicine']"
+62dd39338a12f7b81ae4e79e030c238c9ddaedfe,2015.0,"['Medicine', 'Biology']"
+4bd993ed684d4c751619da3349d569b99c861e22,2015.0,"['Medicine', 'Biology']"
+d2c64d81f9871f7b84cc90c81069098630e30dc4,2015.0,"['Medicine', 'Biology']"
+035dfb6e2398c95bbf6b65db97b443908a43e093,2015.0,"['Medicine', 'Computer Science', 'Biology']"
+3b9aeb17bc120925271e7443ebaa19f69ed34a25,2015.0,
+c32c7f59bd902e4b2ef9fbe78e87c1d683de2d42,2015.0,['Medicine']
+ca13097c0bc4ca9abed010fa69c56531749da4dd,2015.0,['Medicine']
+869eacf84d79a5b176e43988c2dea3be54f6b2ca,2015.0,['Medicine']
+38c3dce759bb53fe3d2d44c8f8a235bdc0b12b77,2014.0,"['Medicine', 'Biology']"
+bdf348d6be154ebbd7acda6e7ff4ebcf66277708,2014.0,['Medicine']
+131902a67f5e00ae13b9239427325dfd53413349,2015.0,"['Biology', 'Medicine']"
+1de1af8b8fedceba1fc6efb537a370fdf2cba8de,2015.0,['Medicine']
+aebcd8ba857b7f24e0735fa96bacdc0bc51c4773,2015.0,['Medicine']
+b7a6a987030c52cc7ecdf49c3933b6cfda488210,2015.0,"['Medicine', 'Biology']"
+826a46a1246a22c64cf5fc7525c581a432b644a3,2015.0,"['Medicine', 'Computer Science']"
+6b69fc1c727f930cdee08fc1c5643e4b526c2c00,2015.0,['Medicine']
+78fb5545880b83bbbef7058bf5c99ff618b35f7b,2015.0,"['Biology', 'Medicine']"
+d6eb9bda4e53e4ff1f2e80854fbc44b95896e242,2015.0,"['Medicine', 'Biology']"
+d469f2e82c820caea8ab2d4f92b7a5a93a23f569,2015.0,['Medicine']
+364b968c148ee72c7336bf89c06974a646683fd3,2015.0,"['Biology', 'Medicine']"
+566b8bef834de3c39713b1d2be509ef4287237c5,2015.0,"['Medicine', 'Biology']"
+963a2753dda05c4a8a3a67d725477f4b7c5aa850,2015.0,
+cfd7e1edc2ec8bec1e3ae09381d5205f6b358d08,2015.0,"['Biology', 'Medicine']"
+4157ded7442023b17abf717009c2824c85e8ae77,2015.0,['Medicine']
+625c1448192dc10ea8b243d40b301b859732ba8e,2014.0,"['Medicine', 'Biology']"
+38f94d6ff230d6a00680940606d559f893701898,2015.0,"['Medicine', 'Biology']"
+c16c86f79a95eff0e99629650c962b25249281af,2015.0,"['Biology', 'Medicine']"
+cde537507323b28a413a559c934c435b24546c63,2015.0,"['Biology', 'Medicine']"
+592c1efd20dcb1ff5644f5d20e76f2c28a2b8da0,2015.0,"['Biology', 'Medicine']"
+96ae683c7f824b0810ce750d60c15181b93181a4,2015.0,"['Chemistry', 'Medicine']"
+50c5334ead9ce88189c0840243fb64fa9599bfdb,2015.0,['Medicine']
+81c63120f2f5d2252f5f1f46ddc754d1913f68d4,2015.0,['Medicine']
+c98b61b984da63b53eeef9f81e31a5ee79396b1d,2015.0,"['Biology', 'Medicine']"
+7d2bd0d04e9e4418d308e40557a3c397eaada71d,2015.0,"['Biology', 'Medicine']"
+4d44402d0831ef5a86694ff70f9764a46fa06deb,2015.0,"['Biology', 'Medicine']"
+f3025ff285a3ab111229e38adaa5edb38406d3e1,2015.0,['Medicine']
+d83e33014be25c8a6d4157f9619016f6b04782cb,2015.0,"['Medicine', 'Biology']"
+5bb6019e68187689a44dda09d35088547ba9dbc5,2015.0,"['Biology', 'Medicine']"
+34b2b1fe3361c684f52c9a60f48f579edb8f52dc,2015.0,"['Biology', 'Medicine']"
+fff3678cfe3ce7a9ccae1e7becf17d5d71d1b54a,2015.0,"['Biology', 'Medicine']"
+b70653608d4d8838aaf1dae4e710fa03a858df43,2015.0,"['Biology', 'Medicine']"
+9413ac12d29207f16ff2983940960e00f296ec15,2015.0,
+24d93589f9edba05a3f0a95b350bc91cb551814a,2015.0,
+e39549d1d4e49cf191e2c743e6b82b738e3b21f2,2015.0,"['Biology', 'Medicine']"
+9ea1a900f1243ce3264700e9eec29b402892674c,2015.0,"['Biology', 'Medicine']"
+3faebf3f78e4b42abd134372119fde0ed298fa4b,2015.0,"['Biology', 'Medicine']"
+662d865c6858d8e9f3b7f583719579ee0aeabdfb,2015.0,['Medicine']
+02bfb5ff0f487d9b969f09b163ab673489b3069c,2015.0,['Medicine']
+dc55e7876326722cc7c5ad2a88a8d2217c296596,2015.0,['Medicine']
+c2b8b47dcfe70db8080da73d7a3941c94b31b025,2015.0,"['Biology', 'Medicine']"
+75ad8fc2d398fb3440035eb1a565b060c7ce3a04,2015.0,"['Biology', 'Medicine']"
+f1a107788ce585f3f5a7daa6b2eaf55997935192,2015.0,"['Biology', 'Medicine']"
+b5ac1d6f75cea098965bf8e6cfe492b1fab346c6,2015.0,['Medicine']
+466c7e2cf0d7aae1c4595ce0bb752df2bbaeb033,2015.0,['Medicine']
+4d4b94ef0c1fb8139c207f5cd7fe3037747fd551,2014.0,"['Biology', 'Medicine']"
+358380b255188fea466689addb8a495188eeab60,2015.0,['Medicine']
+d8e9ba5b8657f01d92a6da7558aa323fa9ec5539,2015.0,"['Biology', 'Medicine']"
+29e893a01ad314a8432d5948be971e13e48b9103,2015.0,['Medicine']
+b81a921bc4d2223e69b7fddf4f1d2a3ba7622f92,2015.0,"['Biology', 'Medicine']"
+3bc7abde53bcbdc7ca555c835d5ad34a67941a80,2015.0,"['Biology', 'Medicine']"
+c3334a3ad6a9e88664342aff618229775fb3e31a,2015.0,"['Biology', 'Medicine']"
+aa2b602e242a677b3272db5e7a2d766da99881f8,2015.0,['Medicine']
+8111c472b27463ca0dfae56c5196eb4c92fdd14f,2015.0,
+cecf04524426525d76d7bc2e58fae78a9cfcc934,2015.0,"['Biology', 'Medicine']"
+22d44e689e7d336b5977c11e0d264ca4323850fa,2015.0,"['Biology', 'Medicine']"
+5c8e391286fba644689754596eaf50c7f32b5a99,2015.0,"['Biology', 'Medicine']"
+f0f627b8e856fdf97cf414ac42f3536ff1a33134,2015.0,"['Biology', 'Medicine']"
+7ed7b23c66b9c4ad156f37619f8b88bc1c1e996b,2015.0,"['Biology', 'Medicine']"
+dd40ad3eec9f455f6ab725f007eb32e852b3439c,2013.0,"['Medicine', 'Biology']"
+e854283ba0d428f16fb5eec6a1ba210ff7925125,2015.0,"['Biology', 'Medicine']"
+8319ed84a3eddda59540170c45f5e4ac802dd204,2015.0,"['Computer Science', 'Biology', 'Medicine']"
+6858a81e65c28599c9e674b9b8aa77ab11b79fad,2015.0,"['Biology', 'Medicine']"
+0b1af480d35b739da799df76a25463bc2ee4bbe5,2015.0,"['Medicine', 'Biology']"
+28f89ac0fa6a72cf3dc315817c2e670c10dec347,2015.0,"['Biology', 'Medicine']"
+1951545d70e8568083cde219d2583c1aae0c4061,2015.0,"['Medicine', 'Biology']"
+1b42f78eee63e2f5c5a58a59759dc119ef1f73da,2015.0,
+1e0aadb9092b4f356d4679d242031d573816734a,2015.0,['Medicine']
+fb65eb83eafd59c88991b259f23bcb5cce6df80e,2015.0,['Medicine']
+8a665903721dadcf01c1dd7476a7715709cee0ad,2015.0,['Medicine']
+fed1fd6ad6a0fff6d3532a8b13f12f25347928b7,2015.0,"['Psychology', 'Medicine']"
+886c69ba9b7fb6441b3dc9c06d77abf30e3a0703,2015.0,"['Biology', 'Medicine']"
+ad00ba859cb901a728e33191c4795084743cb986,2015.0,['Medicine']
+06989a9659f1b9b10abc5b92a90ecff38a778d55,2015.0,"['Biology', 'Medicine']"
+e62f6de9bc9588f663d52ae7d998bbe160485d48,2015.0,"['Biology', 'Medicine']"
+cb6a30132287c9ab1495b4725400a04c16bc7d76,2015.0,['Medicine']
+035f1d6b6c461d045fd19d69e4e9c1de221f4a0d,2015.0,
+487c8c2d9fcd7fb769cfb4b468c6e9a9d2c77056,,
+95ab4b0ddc015a430ed865c9cdd105f1e50faf31,2015.0,"['Biology', 'Medicine']"
+0ca8648d40bee3056b3f9840de6d34b57ed121d0,2015.0,"['Biology', 'Medicine']"
+c65d806bf659507f1495a39d409f399470f421e1,2015.0,"['Biology', 'Medicine']"
+0ee82b151fb86e13a9e8de7fe983ae70fef7b9b4,2015.0,"['Medicine', 'Biology']"
+50ff548ec63f21fdb34fbdfe8fab41141c65fcb5,2015.0,"['Biology', 'Medicine']"
+a613d8d7267d15c258be90a313a47fd2f83f4a6d,2014.0,['Medicine']
+395fef2b73d1c568f900de94f5f6d908bc305f24,2015.0,
+72e1f47796b2283c03f3d7aa4f6044592f8c198d,2015.0,"['Biology', 'Medicine']"
+79ffac5ab7acd3c43a3e0866ed150fea9a0ec1c8,2015.0,
+5ac434fe1318f1965e5538621fcb2b713e8ebfae,2015.0,['Medicine']
+f3626e3ae011f562411fd929d53961f1ac42d2cf,2015.0,"['Biology', 'Medicine']"
+e35886a4c45a6f26a17e68185b4172fb32ceb452,2015.0,"['Biology', 'Medicine']"
+c1edf39ded74b76134cc304dd347a4eb20bae012,2015.0,['Medicine']
+88ccb20962dc958fc239c0ef5bed963cfd782b65,2015.0,['Medicine']
+c8233094deb36e03c7c73fd03f3bab601498e563,2014.0,"['Medicine', 'Biology']"
+5e8224da4332ec3b3998882fc55e494c9a695ede,2015.0,"['Biology', 'Medicine']"
+4f7bdcf2c47d2a788c639d31c0d7fbb9547dc812,2015.0,"['Medicine', 'Biology']"
+c805aa5e4e53d176ab29cad6e1a88778a7a0ded2,2014.0,['Medicine']
+5b9c775273ae22f06035904b36b91f22c4766bf7,2014.0,['Medicine']
+379317c0c8b61dd88b6faa235b21dd861436edcf,2015.0,"['Biology', 'Medicine']"
+902ec7158906ac390bdc04cd55350a12c8a39281,2015.0,"['Biology', 'Medicine']"
+4271774baf0182630ce43862b9e0b151eda34e8c,2015.0,"['Biology', 'Medicine']"
+2cedf6edf59b93290a68074986ee680c8c8e89a1,2015.0,"['Biology', 'Medicine']"
+03fa4232b3fbc44b6029d52c3120f4e82fdc49c0,2015.0,"['Biology', 'Medicine']"
+677aa9ee73332d6bb1dbfe34db5ec7ca13bb3d57,2015.0,"['Medicine', 'Biology']"
+4eca3df95a8bf82f07ba51b6978bd4049f8df827,2015.0,"['Medicine', 'Biology']"
+f42d99054ee1786d2e830a653236df0913bc6edc,2013.0,"['Biology', 'Medicine']"
+65dad274ae49f213826f7cb5c43415778e053ce0,2015.0,"['Medicine', 'Biology']"
+2755757906087a9b38409ff0c4eade9edfd51b55,2015.0,['Medicine']
+aa06f203a92d119e8ddcb2fdd949884dca655107,2015.0,['Medicine']
+3025f11897040ad8046b2a7ef8e94fc8615df214,2015.0,['Medicine']
+bc67c021d6e189215a0101f6e5de32daa8e4ccee,2015.0,
+27636c830ab9c45d38454d50312227747652f70e,2015.0,
+87620b2fa94ff9b59a3a84382dceae62f83259a6,2015.0,"['Biology', 'Medicine']"
+9c930b820306b68f83b4706c10aae46bf2ed70b7,2015.0,"['Medicine', 'Biology']"
+4702b1e1913a64649ff392c175768e0a1d17df53,2015.0,['Medicine']
+d17a476d549a21be3e70932a10c6fef328f42ba6,2015.0,
+b6df7cbfcacde13ebd967ec3c5ac2f9aeb3abed2,2015.0,"['Medicine', 'Biology']"
+eb0d926b1fa6dc7d9f86a001f8ccd69407c5ed86,2015.0,"['Biology', 'Medicine']"
+6bfa66e7befc8ca735ef61dc392a32d1c56ea01e,2014.0,"['Biology', 'Medicine']"
+1f37430c57ff90575215e6459a89d93a0127433f,2015.0,['Medicine']
+87a433e8f7f42e5da065be7a6be8f016d6db31b3,2015.0,['Medicine']
+1b02698e082376846f59c99c449161a7a7eb737f,2015.0,"['Biology', 'Medicine']"
+78c1291690eec42eb88c56d3c1e878b43409a928,2015.0,"['Medicine', 'Biology']"
+7bab005205a7ee772e476d7dbcf5eee3aed12826,2015.0,"['Medicine', 'Biology']"
+166142fd39f6000cf789299a7df7fedc36b300cb,2015.0,"['Biology', 'Medicine']"
+9a96f979c07729540da7fe2c5a2e54ef97ae0b9f,2015.0,['Medicine']
+fe9776ca32f2901c58c1df81f6d9767803909869,2015.0,"['Biology', 'Medicine']"
+987f9399711d8ded6bfd4b02be61ea9f94711416,2015.0,"['Biology', 'Medicine']"
+4e46e9cebc007fa4f08f6a16f82dd3b0d20fc6a0,2015.0,['Medicine']
+be86d94be6483de622f67e0c098684e4982c0441,2015.0,['Medicine']
+1495c1fa93db3b9a5d12b5ae15ff0c8639b83452,2015.0,['Medicine']
+5698dbd8e2b46b6994626018991abb4ff296fd5c,2014.0,"['Biology', 'Mathematics', 'Computer Science', 'Medicine', 'Geography']"
+0b3baf8685f86b7d620418cb17d29a60ce1d498a,2015.0,"['Biology', 'Medicine']"
+a7e4cd60dd60ff58dc4ad0ef07585053f4caad21,2015.0,"['Medicine', 'Biology']"
+7a7e072c8c70ce3f42148a4a4bbbc8800b2a03f2,2015.0,"['Biology', 'Medicine']"
+8f240d93eda7d04def440b93acf64e41910f4e7c,2015.0,"['Medicine', 'Computer Science', 'Biology']"
+29621887690af716dac0c244eeb95bce74fa8755,2015.0,"['Biology', 'Medicine']"
+9eea767756ee447d695c2d23d168d66aa1f7f3b3,2015.0,"['Biology', 'Medicine']"
+b5af7319ee1fd5e9cc3cf8c5836b19a408ac519b,2015.0,"['Biology', 'Medicine']"
+a4efe5912760797318110dec69b255d743f0f0bd,2015.0,
+a093f4ef60a47e5419181f6826ad4a45af198056,2015.0,"['Biology', 'Medicine']"
+3236c24e4656add3fbf17ed686d2b7c73bb52de9,2015.0,"['Biology', 'Medicine']"
+9df0801be110f632c616bf9e91cb72d59383b086,2015.0,['Medicine']
+f65e5a661c5fe8c30aa97a06048b5097b90978f4,2015.0,"['Geography', 'Medicine']"
+f9410459142b63fb34eac0375dda7d9b6460b3fe,2015.0,"['Biology', 'Medicine']"
+a9f21b4c08ef6cf4b7553c5666b4102d0c984243,2015.0,"['Biology', 'Medicine']"
+5a85cf34eee367f1a73ac62a05779d4c815dc767,2015.0,"['Biology', 'Medicine']"
+12aa5eeb50296d810121cc1b2f87f053c39ce204,2015.0,
+f24fbc37ac3f3e1e063303557133e936ab85ac5d,2015.0,['Medicine']
+293e8a49b5c0ee33d5e1098b3f4ca9b613c516fd,2015.0,"['Biology', 'Medicine']"
+9223fd6478822761845291fe2ac429ca6ddbb45a,2015.0,"['Biology', 'Medicine']"
+aa0b5767d850a3c8f39a16ff6b2bf10a66f19174,2015.0,"['Medicine', 'Biology']"
+1196301d4e04f2283f18f95fbbbd6bc5cf6e341f,2015.0,"['Biology', 'Medicine']"
+875e772a03f9838845eca2b752296c7450c8fbe0,2015.0,['Medicine']
+346fec9d2585e80064e41fdda7c5505e8f989b13,2015.0,['Medicine']
+e546530d3c2507a91afb8ed59c87cac0c8b501da,2015.0,"['Biology', 'Medicine']"
+2b244041ab6f2ab167b76c5b17332c5598b56431,2015.0,"['Biology', 'Medicine']"
+0b7d50ddfae18226d4a66c578d9235d872c85056,2015.0,"['Medicine', 'Biology']"
+788e0496b19957b604e4b86d8e6959ef964bfe71,2015.0,"['Biology', 'Medicine']"
+252e6f853b7025fa235432baf9869ae4f51a020d,2015.0,"['Biology', 'Medicine']"
+fe1fd782b955e7c4e066e720e4a701154018e933,2015.0,"['Biology', 'Medicine']"
+616eb9a60a8da572b0a60b6d33f4618c91c7b55c,2015.0,"['Medicine', 'Biology']"
+bb11206963e831f1652775d26e3e5e48634a4545,2015.0,"['Biology', 'Medicine']"
+50a899b105498ea4409efad7564ba22a779177d1,2015.0,['Medicine']
+fc5e4a2de7d202adad95ea3fe26625bdebe817cf,2015.0,"['Biology', 'Medicine']"
+398d60daab8b7c0cfda90b693136422394d3e563,2014.0,"['Medicine', 'Physics', 'Biology']"
+207bf71776ac6427c03a4dffa991148bb6dd4833,2015.0,"['Geography', 'Business', 'Medicine']"
+ce43f8f05a5db366babc9a6bfa086219534de208,2015.0,
+dcc14fe9ac1567bcde8412180b20c71162525235,2015.0,"['Biology', 'Medicine']"
+accf201367ac6c6c64efe39b028fe9dff59fbed1,2015.0,"['Biology', 'Medicine']"
+d97e3390c1862d10058d0456718cc6eaf97eb918,2014.0,['Medicine']
+138200f99f62c51776c9afec55d856e854ea8ff1,2015.0,"['Biology', 'Medicine']"
+c21c1ceb82da6fd475101a524780cba0a2a2fbbc,2015.0,['Medicine']
+609c3b3465c19726b4777d17e3e2b19ca9de990b,2015.0,
+af728043c4fdbde717229134e2cd8bada6760176,2015.0,"['Biology', 'Medicine']"
+f3cbc0503581249a834895fc94cd3bae24714a0d,2015.0,['Medicine']
+f0b1fa4036434b57c8307d43c39a4193f7e8053a,2015.0,"['Medicine', 'Biology']"
+90403742f692b74ea175eef945ff8560a1a6c2b5,2015.0,"['Medicine', 'Chemistry']"
+2405180506967da1f4007e49ad653c3c356a823a,2015.0,
+4b2ef217cb3fedccaffa0ecdd43344810630987b,2015.0,"['Biology', 'Medicine']"
+5f8c204d73feaf62ba6caa3be033d007e3134d5a,2015.0,"['Medicine', 'Biology']"
+6331b16803abd3819dba628d339ffadbd2ad9a84,2015.0,['Medicine']
+5cc23b0e47ece34f359c0a4349897f69bc5c3597,2015.0,['Medicine']
+05f2d4c337413ae496e31e2259020f3e328dcfa1,2015.0,"['Medicine', 'Biology']"
+12888dd0b41b4135eafff0fdf8bf6ee58e8576ad,2015.0,"['Biology', 'Medicine']"
+6a3acbb2d3cf75b9cb9221b0d8acc32559ec4cf8,2015.0,"['Biology', 'Medicine']"
+d3adf3be72d751812577d37b2f3db193b2b93cc2,2015.0,"['Medicine', 'Chemistry']"
+51c863bc37f993b3da543b91458e3ed5abd9aba9,2015.0,"['Medicine', 'Biology']"
+710a40e33a20fe517c78c06748005fea78f21105,2015.0,
+d480419719edb5f4d35e01306133b919c1474f89,2015.0,"['Biology', 'Medicine']"
+16853d835bfed5ec948486100159cebdc5435477,2015.0,"['Biology', 'Medicine']"
+617bb5a3d3a2fa2af6a3ba54ae085002cb5e3d96,2015.0,"['Geography', 'Medicine']"
+5d76f48664d2e90c67768d51a2efda3e12c316ce,2015.0,['Medicine']
+0a73b77193490e179b91f92908f7ce5ff73faea3,2015.0,"['Biology', 'Medicine']"
+804562a671732a591a2e396ac376b3c9b3481abd,2015.0,['Medicine']
+86e0ef0602ce89ac237cea2e1c278c4a97a06a82,2015.0,"['Biology', 'Medicine']"
+82d76d619e7be4f0ef2490f933d140ec9f722a55,2015.0,"['Biology', 'Medicine']"
+c831071c9229a681189522e08cfc3b64f84f95db,2015.0,"['Biology', 'Medicine']"
+32d5699f514f8d58fa7939fefaea6ef9fce1121c,2015.0,
+988bbda8166ba94eb969d418a81ea5bbb5fd1877,2015.0,['Medicine']
+933e9eb0d544bb5afe34f6d6049b4c8bc5e96d19,2015.0,
+44d9ad484dc917e82daa41c802c2157d3f20dda4,2015.0,
+d214683b28d9bcc29e340c7138fa00db70108426,2015.0,"['Biology', 'Medicine']"
+b8ac65aea78ac6c350581ef1c4e0a99faca6dd9f,2015.0,['Medicine']
+334adcddbb251335c86c3a5d79a0f66b526109ff,2015.0,"['Biology', 'Medicine']"
+ccc32d31656760db245b5cd683d144eb013624c3,2015.0,"['Biology', 'Medicine']"
+132ebff69dbef71f408ae161b8ebd53de0f2c9f4,2015.0,"['Biology', 'Medicine']"
+77b8307c0de7ad71378665456b43e4185d5e5477,2015.0,"['Business', 'Medicine']"
+389b75fa8272ae7d2ab3d90ae8c1edbdf55c0463,2015.0,"['Biology', 'Medicine']"
+1b2079db92924c2ee758d437394789b4822d0327,2015.0,['Medicine']
+4e83f87fdf5b15fb7962c1b6235b520817924a9b,2015.0,"['Biology', 'Medicine']"
+5688011525aeb581afabe204b64d4da24257aff1,2015.0,"['Biology', 'Medicine']"
+9e17fa07642900d9491bf957db97cbe70bc39610,2015.0,"['Chemistry', 'Medicine']"
+cd112b0ec918bf7400529194d4f10a625ccf9c77,2015.0,"['Biology', 'Medicine']"
+1cd2b8c47154f1ff075036e657b355719477735a,2015.0,"['Biology', 'Medicine']"
+b02612aa65049060e0a24064db96105458ac083b,2015.0,"['Biology', 'Medicine']"
+9aed1e2e3dc529e3863b89a60bb4e377e8c3a3e6,2015.0,"['Biology', 'Medicine']"
+93a3bbe86fc752fc26626e1fc3cccc2acfa035de,2015.0,"['Biology', 'Medicine']"
+c59c9a2c6315ed5aa7c437d1943fd94518119fd8,2015.0,"['Biology', 'Medicine']"
+813e30bc74d1c7c6c2bdc83651b27957e723346f,2015.0,['Medicine']
+ae44f456afccca76e1eec1637ce1af6041956c64,2015.0,
+f3218cf79278e0275382e5ed9b2830413fdbeadd,2015.0,['Medicine']
+da2e9162c4250573d17a89b76959439a04264e30,2015.0,"['Medicine', 'Biology']"
+3ca43ade94501268228e5239d1717d4f6333d462,2013.0,['Medicine']
+653c1744be45d5e3ba3e9fb48edf6c6997976324,2014.0,"['Biology', 'Medicine']"
+6be6ca48112c227ce80a36601ea8b464edbf1367,2015.0,['Medicine']
+d51485f32ff85186571e9ec9de6d517f9180abe9,2015.0,['Medicine']
+a5d44eaf14b7ed5402af3501540147d36b314824,2015.0,"['Environmental Science', 'Medicine']"
+c63e2bbb0915e7d4d40813d58286d51e80453507,2015.0,
+9f1936809149b1ca45c64b1468ba966bcdc4e331,2015.0,
+a0b13baa35ff28471952e5011f9411529d217f50,2015.0,"['Medicine', 'Biology']"
+e97dc3686befac553f8f1a09459ae59b089b4b8b,2015.0,"['Biology', 'Medicine']"
+76241f85fbee07bdf466214c02c4bccd79706436,2015.0,"['Biology', 'Medicine']"
+6044c9d0aae3d02db03c409496ca81f8f83ebeab,,
+a1d863f8297bd6185abeb6564af22eac8bdd3fd3,2015.0,"['Medicine', 'Biology']"
+ae0144eb4ec61e7765eed001bc8a9c775cd31b67,2015.0,['Medicine']
+d135acb9011d47a0f0d9e2b6542cb86539042fdf,2015.0,"['Medicine', 'Geography']"
+733c577e6a1dea9aab436bce4d918f08dfd27371,2015.0,"['Medicine', 'Biology']"
+c1722fc1da22b2ccf5565ccf81a1677c2994aeee,2015.0,"['Medicine', 'Biology']"
+fb6b4f00d820aad697369de4f7f29b709541e973,2015.0,
+333a04fb2ab37297b4591e7d6179fd731f5c1bf3,2015.0,"['Biology', 'Medicine']"
+32ce6dd4c355842afe14efdaae2426cb20432750,2015.0,['Medicine']
+69f5726e6b53f93b94630c1388479879f49f456e,2015.0,['Medicine']
+25a160364a2e056a097e4520f64c49c63140da6c,2015.0,"['Biology', 'Medicine']"
+95b1f681cfe2bb33c6433b07cd38f0ed3ce3667d,2015.0,"['Medicine', 'Biology']"
+e468e9e8cd36e9c375ac92666029b8a8a51d6a2c,2015.0,['Medicine']
+f475c055c4630c81ab519125a20ba96cd3e17e4a,2015.0,['Medicine']
+fd4b79d3d28a8c01c635987b474443590c240f4c,2015.0,"['Biology', 'Medicine']"
+20be1f9fd1f6a215b0601c898c336c6f9ada926f,2015.0,"['Biology', 'Medicine']"
+4209407487599587832fd9e5e5f10ca003d3cc36,2015.0,['Medicine']
+8da1231a64d73bc59f2af993bf1a2466265ffa4a,2015.0,"['Medicine', 'Biology']"
+fb113c8235675412d874b092faf5b997ac410434,2015.0,"['Biology', 'Medicine']"
+6e94aa9c37dd7be5b553090717c59992005d114b,2015.0,"['Biology', 'Medicine']"
+d2057831023248265b009ed7fb7710123c69feaa,2015.0,"['Biology', 'Medicine']"
+1986e96f2be6bd012fcd4d0b731caf62c7a4dea2,2015.0,"['Biology', 'Medicine']"
+ae3d16cad153ad376ec5782d74688a6f93093c37,2015.0,"['Biology', 'Medicine']"
+8e2bd29ae5f88af72cf04f8e7da51a3eb9c8258f,2015.0,"['Biology', 'Medicine']"
+902feae616d8f0ffb508ef3a4a1fbc344bb63133,2015.0,
+b79e0dae232a80e5e92f12110cc4df835c171518,2015.0,"['Biology', 'Medicine']"
+f58cfab11be3906401550ffe0ba6e444d1056853,2015.0,"['Biology', 'Medicine']"
+f44cee78ddca10254673e7f6117725f0eff95ef9,2015.0,['Medicine']
+7662c51546378eafc1e2baeed3c3232e4a4a07f6,2015.0,['Medicine']
+d37ad55db18a412c55ca07e3780ab65ec8040908,2015.0,"['Biology', 'Medicine']"
+87e6ba2c7e5748b172c7530dbb9e8a040e74a719,2015.0,
+f23aabc3a2b7b55a9267dce9b9e7f190ef966f64,2015.0,"['Biology', 'Medicine']"
+d78b99436685b3f545dedc32f1166776b916abd6,2015.0,"['Medicine', 'Biology']"
+49471df378964515ebc4e4f35f1248d84ac7d626,2014.0,"['Biology', 'Medicine']"
+1db4560940a913194230a37755d10fa154b09d15,2015.0,
+8d6ac4365bc4ab3f85ea3a5c287cddfaef482707,2015.0,"['Chemistry', 'Medicine']"
+d6ea3039fed0942c355cabc8a67f7226cd05fc8c,2015.0,"['Biology', 'Medicine']"
+f00f183d0bce0091a02349ec1eab44a76dad9bc4,2015.0,"['Medicine', 'Biology']"
+2254316015cf321204b1914214f0fc0611a02479,2015.0,"['Medicine', 'Biology']"
+4e4c62b641a7aa522a9cd68fca334476670fc753,2015.0,"['Medicine', 'Biology']"
+d38f4068c4bf5d99a9f4fc20b1914a3332a42ead,2015.0,"['Medicine', 'Biology']"
+96f74d611693ebad68d8cd10862e9a972bd3bdc5,2015.0,"['Medicine', 'Biology']"
+96f74d611693ebad68d8cd10862e9a972bd3bdc5,2015.0,"['Medicine', 'Biology']"
+43492f58c781484cc82ae01fc7e92d755c744aaf,2015.0,"['Biology', 'Medicine']"
+f29df5233e688dddd0286374e0993e43459fe04b,2015.0,['Medicine']
+078b6935fa30cd20a00da6c6182e85b41ab4d9c5,2015.0,"['Medicine', 'Biology']"
+d31b2db65b2e8d40eee096d5e67185099c10c4d2,2015.0,"['Medicine', 'Biology']"
+a3b4eba0e843b0214bd7c43535c87dfb7406e16a,2015.0,"['Medicine', 'Biology']"
+51f88d6a65a66742a19ec634400f8315fda5811e,2015.0,['Medicine']
+6d3e2a9b44f902aba943050ec1dbd4cd0b85309c,2015.0,"['Biology', 'Medicine']"
+d179a36281e2447b4dc0cada87ddd5216c5f8dcd,2015.0,"['Medicine', 'Biology']"
+1142b43a1c754a62675eeb7ae78cf4fa78bc60fa,2015.0,"['Medicine', 'Biology']"
+706638a3e976937414ec6067da71ce627fd47ce6,2015.0,['Medicine']
+56e7f3e210952c559633020f5910284c76111fde,2015.0,"['Medicine', 'Biology']"
+60721983c03cfb1fd6e277fb6cc20bd117a3df80,2015.0,"['Biology', 'Medicine']"
+cb763a61411514366d16bb2571461b6df1361517,2015.0,"['Biology', 'Medicine']"
+d0812df257e4fb4f247f98f53298adea60585674,2015.0,"['Geography', 'Medicine']"
+384cdcda67c8a385d6a571ba5f9fb09e16d130b5,2015.0,
+3fe17722a3541e556994dcad8f8d173be7f3ea88,2015.0,"['Biology', 'Medicine']"
+7a573001d0844b483871d264983ef4a6d9fde937,2015.0,['Medicine']
+a4c922f362c4d59ebe0b890776670e406d9dc985,2015.0,"['Biology', 'Medicine']"
+850087dea2553c4099418c170742e85fcc4a5feb,2015.0,"['Biology', 'Medicine']"
+9e18d347f53f6d982a394b2d082a5b32729d16df,2015.0,['Medicine']
+321b52395b93c47e73056916c8693e5bcb9b8fb5,2015.0,['Medicine']
+4c4dd391e165ce712cb8871ce3082927bbf21ec9,2015.0,"['Biology', 'Medicine']"
+7aea98cf7d30beea6043c5e62be3dafce08bdc0e,2015.0,"['Medicine', 'Biology']"
+1d720a06cad9b69f7f45a4e7549142738114287e,2015.0,
+c3b1f22e16b5f9f5961e135d3a79eaad57061aa2,2015.0,"['Medicine', 'Sociology']"
+f9829bb6505b6d3c48658b6e9babed793eb884d0,2015.0,['Medicine']
+f2e06c174008ed721d0a244309601c9923548901,2015.0,
+4d8961a34a2613f6423b3402925d40b275afdab6,2020.0,
+7ae3b890e876f9c11f8ebd764a8e07c0b0812d55,2015.0,"['Biology', 'Medicine']"
+77361db3ae17729e18971ae8641a20691e44afab,2015.0,['Medicine']
+8a387a670706c2009e6c5e7a39c112a9e645f963,2015.0,"['Biology', 'Medicine']"
+dec1d801c2d5a971207df424ede4b1d65267b212,2015.0,"['Medicine', 'Biology']"
+7266d5a2b588f4bd08e301590247156d59a7f227,2015.0,"['Chemistry', 'Medicine']"
+92f4de5e3cd8e63cd679d4af3db2d4d44e929ecd,2015.0,"['Medicine', 'Biology']"
+7432dbac9b72daf18b639ba85a59b2e676b6b09c,2015.0,"['Biology', 'Medicine']"
+8147b5b09a09887d1b4c4871d9d49746d8c4d418,2015.0,"['Biology', 'Medicine']"
+e4065a39d9df47f5987404da83abbf7a10fa57db,2015.0,"['Medicine', 'Chemistry']"
+e62bebc2ecb5a648b06eb708f88a8024231a474d,2015.0,"['Biology', 'Medicine']"
+a087143ccafb8699cca687a6548e99633a98fe21,2015.0,"['Biology', 'Medicine']"
+75964abb7d9b187aab3a205e851fa6c646e9f96b,2015.0,
+f0a4290cd848787a5b81b3570d3a0ccaf7f2f084,2015.0,['Medicine']
+6cad43bc914661354dc70f971c5517021eb3a823,2015.0,['Medicine']
+208f4d527c8ac85c04dd9e431babfaaa54e66428,2015.0,['Medicine']
+5043e522b8cb9c69caa702ee14d34cd67d6f090e,2015.0,"['Medicine', 'Biology']"
+cd9086c9edba2e717fab23027e7debb9c21c23e4,2015.0,"['Biology', 'Medicine']"
+9693856e92c2183e9b8c8dfe3e1ebb34a59c3ad2,2015.0,"['Medicine', 'Biology']"
+f3284e9c3eef64c4badcedf21d266309a360374a,2015.0,"['Materials Science', 'Medicine']"
+1e8ec294fcc4507fcc89872f84adcf4633bb10e6,2015.0,"['Biology', 'Medicine']"
+72fdf69e89a733f20b5ce03cac050d2c3dad05f0,2015.0,"['Biology', 'Medicine']"
+1e9719d2d1a523240172b19f822f7a956c553fdf,2015.0,
+dd9f6d51d902c4493f797715278469d4c19bf65d,2015.0,"['Medicine', 'Biology']"
+0b0208d63d06379d846edf649d47041fc2c1aa86,2015.0,"['Geography', 'Medicine']"
+d9223ca5c87dc44aaea7c163ee8c499dfd92fc39,2015.0,"['Biology', 'Medicine']"
+44d44932862cc0ecb265b633b07e24904ffc9d01,2015.0,"['Biology', 'Medicine']"
+80229bc73fc274591a2f0c6472a0d8c6fb966dd0,2015.0,"['Biology', 'Medicine']"
+75622daf6a8bde4809687a432c5bd991d8a849ea,2015.0,"['Medicine', 'Biology']"
+75622daf6a8bde4809687a432c5bd991d8a849ea,2015.0,"['Medicine', 'Biology']"
+701c45faf9c500cb038c9272f7275feea16f34bf,2015.0,"['Biology', 'Medicine']"
+427c25eb5418afb2f27b6f27b6c7c07b4ea7af08,2015.0,"['Biology', 'Medicine']"
+e658837e4d77ef0bccdd849648e2db595f5ec65b,2015.0,"['Biology', 'Medicine']"
+cb319d0a23085784accf7bb8d2813f4df5529e50,2015.0,"['Medicine', 'Biology']"
+8f962ad62ba3d5af7c52898283c4827ff71a5949,2015.0,"['Biology', 'Medicine']"
+9d18d8401ce2aa056ff228fce06c4a2d8c7f67f0,2015.0,"['Medicine', 'Biology']"
+5578dcb4f631bb4fabcf4d607327ee0bf1f133d1,2015.0,"['Biology', 'Medicine']"
+5bd910b6b8b82e7b70c97ebe2c34ad638236c67d,2015.0,"['Biology', 'Medicine']"
+1c07f420a5a01bec7481025a89f2621596a99782,2015.0,"['Biology', 'Medicine']"
+b51c5f53980e0118362f26862e1243aac186a4ab,2015.0,"['Biology', 'Medicine']"
+f793bcacac81ad9341709c9351c6c40c49f4c52e,2015.0,"['Biology', 'Medicine']"
+85e2e6e405d5c26bc5981ae18090e39074b6a409,2015.0,['Medicine']
+3a2b5c17dbcef92339379488e821deefc7901fe8,2015.0,['Medicine']
+76dcc76a0d6041517a4d88f763269bd0196488cb,2015.0,['Medicine']
+bdbd31a62a5349c1275720fa3ba4ea9d4c2550e0,2015.0,['Medicine']
+76d6014c9fac61e50caf256e5ca92ea007219c29,2015.0,"['Biology', 'Medicine']"
+01980601baba3a0611371abc3d813b44a2459857,2017.0,['Medicine']
+ee5b43d20a640664510cb7a540caaae4a8e19933,2015.0,"['Geography', 'Medicine']"
+73560247ea59c1db0dd80dc9022c7d6795f7d671,2015.0,"['Biology', 'Medicine']"
+1679d2d946adeb59a2ce943f067d4bde57f5577d,2015.0,"['Biology', 'Medicine']"
+a969190e8cae42cb65e639aee83d71d9f78c4dc0,2015.0,"['Biology', 'Medicine']"
+24f4f393fb59daab089844e7af64e913d2951034,2015.0,"['Biology', 'Medicine']"
+a5360f18c21cf7f9a04e9b21663301b4548eadd9,2015.0,"['Biology', 'Medicine']"
+8feaa6f0bac0c30c9b3cf6634082e8923d99b070,2015.0,"['Biology', 'Medicine']"
+37ccce8ae7e88c57b8e47bcb169847608493f23f,2015.0,"['Biology', 'Medicine']"
+4d2e434006533cb3bbb701dffb53169b40a9c315,2015.0,"['Biology', 'Medicine']"
+608a7194b225bedf27e124dfbe8f2acecbca587f,2015.0,"['Biology', 'Medicine']"
+48c20fe82a21edeefb8e1966189db32213a446fc,2015.0,"['Biology', 'Medicine']"
+f057fa2845067210cbd31e79d8a83cdff0aa96f1,2015.0,
+595582a254c921f28d7c5cb9cb42e1dcabff7108,2015.0,"['Biology', 'Medicine']"
+bd1d9c526a0194d356d7a65ebcebc322dd872a36,2015.0,"['Biology', 'Medicine']"
+e7b85f49d8b3f1b65e7a293f3d048afbee03ba02,2015.0,['Medicine']
+6401e18fcc7f37a658fd55df07ebbb294942742d,2015.0,"['Computer Science', 'Medicine', 'Mathematics']"
+8f52b8e32c39a080ed116e889c11ad66240313a4,2015.0,['Medicine']
+a9075cf8e6853657941c799058d329b3e386fecd,2015.0,"['Biology', 'Medicine']"
+a6b2ef20209179fb9d94b84a6caabfef764b895a,2014.0,"['Geography', 'Medicine']"
+84475a97fa79820e876737c7cc45dde421191691,2015.0,['Medicine']
+570d152e048cea2c98e4bc080d5cfadca3873ea0,2015.0,"['Medicine', 'Computer Science']"
+70bae0f6fbce9a54e7574b4309c5a3ebd1be7133,2015.0,"['Medicine', 'Biology']"
+6f06d1fd7c4ae1397b0a8f5192e9f0c7dc5e62df,2015.0,"['Biology', 'Medicine']"
+9c73b6a1d2959f72722042a4b7e0b04282fc119a,2015.0,['Medicine']
+334b202da3abae2695868424f4e86f7a9ad6b75b,2015.0,"['Medicine', 'Biology']"
+d4c687275097c11a1900e5f627c0c28c998e3d65,2015.0,['Medicine']
+f855caf8ce1ff7639676fbf089f96990959a779e,2015.0,"['Biology', 'Medicine']"
+3bfdf7dff1f50821c7fd782b0c6c0b4d56bf1815,2015.0,['Medicine']
+edea2cda674c33bb251b64e5416f5380f13d5489,2015.0,"['Biology', 'Medicine']"
+4d1f8955a62f01fe7a4d7d19593bdbd6047f4f41,2015.0,"['Medicine', 'Biology']"
+eb018f450fa6903ccf3c0c151b24a814ee81fd55,2015.0,"['Biology', 'Medicine']"
+cada5ab8069fa39139ce27d9568654e67993adbf,2015.0,['Medicine']
+72b1311ad0c502a391201bff5805dcc57ee1c9e1,2015.0,"['Biology', 'Medicine']"
+04be45dba1c24d640d5da8298c5f01e3165d84c4,2015.0,['Medicine']
