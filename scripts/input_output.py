@@ -7,7 +7,8 @@ def parse_input() -> argparse.Namespace:
     """
     parser = argparse.ArgumentParser(description="On Finding Megadiversity Among the Corpus of Scientific Literature")
     parser.add_argument("--eda", action="store_true", help="Exploratory data analysis")
-    parser.add_argument("--etl", action="store_true", help="Data processing")
+    parser.add_argument("--metadata", action="store_true", help="Collection of papers publication year and discipline from S2AG")
+    parser.add_argument("--cleaning", action="store_true", help="Data cleaning")
     return parser.parse_args()
 
 def write_output_file(): #TODO: create a function to write the output to a file

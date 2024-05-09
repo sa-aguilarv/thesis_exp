@@ -107,26 +107,34 @@ TOTAL: 38897
   - [x] Calculate the error percentage
   - [x] Drop rows from data df based on ao metadata df
 
-- [ ] Get meaningful nouns to make up the corpus
-  - [ ] Remove special characters
-  - [ ] Remove stopwords
-  - [ ] Handle compound words
-  - [ ] Lemmatization & steeming
-
-- [ ] Data processing
-  - [ ] Build TFDF matrix
+- [x] Data cleaning
+  - [x] Abstracts: Get meaningful nouns to make up the corpus
+    - [x] Lowercase
+    - [x] Handle compound words --made them into one word
+    - [x] Remove special characters/punctuation, numbers, extra spaces, trailing spaces
+    - [x] Remove stopwords
+    - [x] Remove non-nouns
+    - [x] Lemmatization --no stemming since we won't do sentiment analysis
+    - [x] Get unique words
+  - [ ] Affiliations: Get list of unique affiliations --deprecated, will do at later stages
+  - [ ] Disciplines: Get list of unique disciplines --deprecated, will do at later stages
 
 ### 3.1. Results
 
 - Retrieved the metadata from S2AG in chunks of 500 papers. Total: 6669
   - No. common IDs between data and ao. metadata dfs: 4097
   - Error percentage: %43.42
+- No. publications size after merging data and ao. metadata dfs: 4123 // NOTE - Why did the data size increase after merging? There are probably NaN values
 
 ### 3.2. Observations
 
 - Even though we are retrieving the metadata from papers using S2 paper IDs, some requests failed and provided the metadata from unrequested paper IDs
+- The dimension size increased after merging the data and ao. metadata dfs. No NaN values were detected. **The error percentage is probably wrong, re-calculate it later** // NOTE - Validate the error percentage function
 
 ## 4. Topic model
+
+- [ ] Data processing
+  - [ ] Build TFDF matrix
 
 - [ ] Optimal number of topics
   - [ ] Estimate optimal number of topics with [tmtoolkit](https://tmtoolkit.readthedocs.io/en/latest/)

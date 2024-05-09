@@ -1,11 +1,21 @@
+from scripts import utils as u
 import pandas as pd
 import requests
 import time
 import random
+import string
 import logging
 from tqdm import tqdm
-from scripts import utils as u
 import os
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk.corpus import wordnet
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 
 def collect_ao_metadata(filename):
     logger = logging.getLogger(__name__)
@@ -115,8 +125,52 @@ def filter_data(df_path, ao_df_path):
 
 
 def data_cleaning(filename):
-    # load paper ids and abstracts only, process abstracts and save clean df to new folder under results
-    pass
+    logger = logging.getLogger(__name__)
+    try:
+        df_abstracts = handle_abstracts(filename)
+        logger.debug('DF abstracts shape: %s', df_abstracts.shape)
+        df_abstracts.to_csv('results/cleaned_abstracts.csv', index=False)
+    except Exception as e:
+        logger.error('Error: %s', e)
 
-def calc_error_percentage():
-    pass
+def handle_abstracts(filename):
+    logger = logging.getLogger(__name__)
+    df = pd.read_csv(filename, usecols=['paper_id', 'abstract'])
+
+    logger.debug('DF shape: %s', df.shape)
+
+    df['abstract'] = df['abstract'].str.lower()
+    df['abstract'] = df['abstract'].apply(lambda x: x.replace('-', ''))
+    df['abstract'] = df['abstract'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
+    df['abstract'] = df['abstract'].str.replace(r'\d+', '') # Removes numbers
+    df['abstract'] = df['abstract'].str.replace(r'\n', ' ') # Removes new lines
+    df['abstract'] = df['abstract'].str.replace(r'\s+', ' ') # Removes extra spaces
+    df['abstract'] = df['abstract'].str.strip() # Removes leading and trailing spaces
+    df['abstract'] = df['abstract'].apply(remove_stopwords)
+    df['abstract'] = df['abstract'].apply(remove_non_nouns)
+    df['abstract'] = df['abstract'].apply(lemmatize)
+    df['abstract'] = df['abstract'].apply(lambda x: ' '.join(set(x.split())))
+    return df
+
+def lemmatize(text):
+    lemmatizer = WordNetLemmatizer()
+    token_words = word_tokenize(text)
+    lemma_text = ""
+    for word in token_words:
+        lemma_text = lemma_text + lemmatizer.lemmatize(word) + " "
+    return lemma_text
+
+def remove_non_nouns(text):
+    tokenized_text = word_tokenize(text)
+    pos_tagged_text = nltk.pos_tag(tokenized_text)
+    noun_text = " ".join([word for word, pos in pos_tagged_text if pos in ['NN', 'NNS', 'NNP', 'NNPS']])
+    return noun_text
+
+def remove_stopwords(text):
+    stop_words = set(stopwords.words('english'))
+    token_words = word_tokenize(text)
+    filtered_text = ""
+    for word in token_words:
+        if word not in stop_words:
+            filtered_text = filtered_text + word + " "
+    return filtered_text
