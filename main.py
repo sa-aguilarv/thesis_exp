@@ -43,8 +43,8 @@ def main():
         # Change to the path where the data is stored
         filename = config['resultsPath'] + 'data.csv'
         results_path = 'results/etl'
-        etl.collect_ao_metadata(filename)
-        etl.create_ao_metadata_df(results_path)
+        #etl.collect_ao_metadata(filename)
+        #etl.create_ao_metadata_df(results_path)
         etl.filter_data(filename, 'results/ao_metadata.csv')
 
     elif args.cleaning:

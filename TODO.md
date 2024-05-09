@@ -84,9 +84,11 @@ TOTAL: 38897
 ### 2.2. Observations
 
 - All papers from Semantic Scholar that were not PMC papers had affiliations data.
+
 - Regarding handling null values:
   - Papers without abstract: 1163
   - Papers without acknowledgements: 2006
+
 - Total papers dropped because they had NaN values in abstract and/or acknowledgements columns: 2676
 
 ## 3. Data processing
@@ -106,8 +108,8 @@ TOTAL: 38897
   - [x] Get number of common paper IDs between data and ao. metadata df
   - [x] Calculate the error percentage
   - [ ] Drop rows from data df based on ao metadata df
-    - [ ] Validate all non-common paper IDs are removed
-    - [ ] Validate df indexes are reset after merging
+    - [ ] **Validate all non-common paper IDs are removed**
+    - [ ] **Validate df indexes are reset after merging**
 
 - [x] Data cleaning
   - [x] Abstracts: Get meaningful nouns to make up the corpus
@@ -123,15 +125,25 @@ TOTAL: 38897
 
 ### 3.1. Results
 
+- Papers sizes during processing:
+  - Source df: 7242
+  - Ao. medatata df: 6669
+  - Merged df (source and ao. metadata): 4025
+
 - Retrieved the metadata from S2AG in chunks of 500 papers. Total: 6669
   - No. common IDs between data and ao. metadata dfs: 4097
   - Error percentage: %43.42
-- No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~ After validation, I found the number of common IDs between all dfs is 4097. This suggests that I either (1) didn't drop all uncommon IDs after merging source data with ao. metadata, or (2) didn't reset the indexes after merging.
+
+- No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~ After validation, **I found the number of common IDs between all dfs is 4097**. This suggests that I either (1) didn't drop all uncommon IDs after merging source data with ao. metadata, or (2) didn't reset the indexes after merging.
+  - The real number of publications after merging data and droppin the rows with NaN values is 4025.
 
 ### 3.2. Observations
 
-- Even though we are retrieving the metadata from papers using S2 paper IDs, some requests failed and provided the metadata from unrequested paper IDs
-- The dimension size increased after merging the data and ao. metadata dfs. No NaN values were detected. **The error percentage is probably wrong, re-calculate it later** // ~~TODO: Validate the error percentage function~~ The percentage function is correct, the problem lays in how the dfs were merged.
+- Even though we are retrieving the metadata from papers using S2 paper IDs, some requests failed and provided the metadata from unrequested paper IDs. Either that or the character matching built-in functions in Python are limited while handling S2 paper IDs format (char).
+
+- The dimension size increased after merging the data and ao. metadata dfs. No NaN values were detected. **The error percentage is probably wrong, re-calculate it later** // ~~TODO: Validate the error percentage function~~ The percentage function is correct, the problem related to how the dfs were merged.
+
+- The real number of publications after merging data and droppin the rows with NaN values was 4025. This means some requests succeeded in finding the matches between the source df paper IDs and the ao. metadata df paper IDs, yet they retrieved NaN values for one or both of the target columns (year, disciplines).
 
 ## 4. Topic model
 

@@ -17843,3 +17843,245 @@ scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648
 scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df1 and df2: 4097
 scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df1 and df3: 4097
 scripts.utils - INFO - 2024-05-09 11:39:34,566 - utils - 14954 - 140279201931648 - No. of common paper ids between df2 and df3: 4097
+__main__ - INFO - 2024-05-09 11:49:53,368 - main - 15687 - 140589355471232 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:49:53,369 - main - 15687 - 140589355471232 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:49:53,370 - utils - 15687 - 140589355471232 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:49:53,370 - main - 15687 - 140589355471232 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:49:53,376 - main - 15687 - 140589355471232 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 11:49:53,377 - main - 15687 - 140589355471232 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 11:49:53,703 - etl - 15687 - 140589355471232 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 11:49:53,703 - etl - 15687 - 140589355471232 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 11:49:53,711 - etl - 15687 - 140589355471232 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 11:49:53,712 - etl - 15687 - 140589355471232 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 11:49:53,712 - etl - 15687 - 140589355471232 - No. of papers with ao. metadata: 6669
+scripts.etl - DEBUG - 2024-05-09 11:49:53,721 - etl - 15687 - 140589355471232 - Filtered DF shape: (4097, 6)
+scripts.etl - DEBUG - 2024-05-09 11:49:53,744 - etl - 15687 - 140589355471232 - Merged DF shape: (4123, 8)
+__main__ - INFO - 2024-05-09 11:52:43,534 - main - 15927 - 139892270219648 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:52:43,535 - main - 15927 - 139892270219648 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:52:43,536 - utils - 15927 - 139892270219648 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:52:43,536 - main - 15927 - 139892270219648 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:52:43,545 - main - 15927 - 139892270219648 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 11:52:43,546 - main - 15927 - 139892270219648 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 11:52:43,877 - etl - 15927 - 139892270219648 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 11:52:43,878 - etl - 15927 - 139892270219648 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 11:52:43,884 - etl - 15927 - 139892270219648 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 11:52:43,884 - etl - 15927 - 139892270219648 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 11:52:43,885 - etl - 15927 - 139892270219648 - No. of papers with ao. metadata: 6669
+scripts.etl - DEBUG - 2024-05-09 11:52:43,892 - etl - 15927 - 139892270219648 - Filtered DF shape: (4097, 6)
+scripts.etl - DEBUG - 2024-05-09 11:52:43,898 - etl - 15927 - 139892270219648 - Number of nan values in Filtered DF: paper_id         0
+title           72
+abstract         0
+back_matter      0
+names            0
+affiliations     0
+dtype: int64
+scripts.etl - DEBUG - 2024-05-09 11:52:43,927 - etl - 15927 - 139892270219648 - Merged DF shape: (4123, 8)
+scripts.etl - DEBUG - 2024-05-09 11:52:43,933 - etl - 15927 - 139892270219648 - No. of nan values in Merged DF: paper_id          0
+title            73
+abstract          0
+back_matter       0
+names             0
+affiliations      0
+year              0
+fieldsOfStudy     0
+dtype: int64
+__main__ - INFO - 2024-05-09 11:57:25,294 - main - 16555 - 140388789055872 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:57:25,295 - main - 16555 - 140388789055872 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:57:25,296 - utils - 16555 - 140388789055872 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:57:25,297 - main - 16555 - 140388789055872 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:57:25,303 - main - 16555 - 140388789055872 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 11:57:25,304 - main - 16555 - 140388789055872 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 11:57:25,627 - etl - 16555 - 140388789055872 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 11:57:25,627 - etl - 16555 - 140388789055872 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 11:57:25,633 - etl - 16555 - 140388789055872 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 11:57:25,633 - etl - 16555 - 140388789055872 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 11:57:25,655 - etl - 16555 - 140388789055872 - Filtered DF shape: (4025, 6)
+scripts.etl - DEBUG - 2024-05-09 11:57:25,661 - etl - 16555 - 140388789055872 - Number of nan values in Filtered DF: paper_id        0
+title           0
+abstract        0
+back_matter     0
+names           0
+affiliations    0
+dtype: int64
+scripts.etl - DEBUG - 2024-05-09 11:57:25,688 - etl - 16555 - 140388789055872 - Merged DF shape: (4050, 8)
+scripts.etl - DEBUG - 2024-05-09 11:57:25,696 - etl - 16555 - 140388789055872 - No. of nan values in Merged DF: paper_id         0
+title            0
+abstract         0
+back_matter      0
+names            0
+affiliations     0
+year             0
+fieldsOfStudy    0
+dtype: int64
+__main__ - INFO - 2024-05-09 11:59:07,671 - main - 16850 - 140477800882560 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:59:07,673 - main - 16850 - 140477800882560 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:59:07,673 - utils - 16850 - 140477800882560 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:59:07,673 - main - 16850 - 140477800882560 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:59:07,679 - main - 16850 - 140477800882560 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 11:59:07,679 - main - 16850 - 140477800882560 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 11:59:07,986 - etl - 16850 - 140477800882560 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 11:59:07,986 - etl - 16850 - 140477800882560 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 11:59:07,992 - etl - 16850 - 140477800882560 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 11:59:07,993 - etl - 16850 - 140477800882560 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 11:59:07,999 - etl - 16850 - 140477800882560 - Filtered DF shape: (4123, 3)
+scripts.etl - DEBUG - 2024-05-09 11:59:08,003 - etl - 16850 - 140477800882560 - Number of nan values in Filtered DF: paper_id         0
+year             0
+fieldsOfStudy    0
+dtype: int64
+scripts.etl - DEBUG - 2024-05-09 11:59:08,023 - etl - 16850 - 140477800882560 - Merged DF shape: (4177, 5)
+scripts.etl - DEBUG - 2024-05-09 11:59:08,026 - etl - 16850 - 140477800882560 - No. of nan values in Merged DF: paper_id           0
+year_x             0
+fieldsOfStudy_x    0
+year_y             0
+fieldsOfStudy_y    0
+dtype: int64
+__main__ - INFO - 2024-05-09 11:59:46,636 - main - 17021 - 140148268343680 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:59:46,637 - main - 17021 - 140148268343680 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:59:46,638 - utils - 17021 - 140148268343680 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:59:46,638 - main - 17021 - 140148268343680 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:59:46,643 - main - 17021 - 140148268343680 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 11:59:46,644 - main - 17021 - 140148268343680 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 11:59:46,980 - etl - 17021 - 140148268343680 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 11:59:46,980 - etl - 17021 - 140148268343680 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 11:59:46,986 - etl - 17021 - 140148268343680 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 11:59:46,987 - etl - 17021 - 140148268343680 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 11:59:47,000 - etl - 17021 - 140148268343680 - Filtered DF shape: (4123, 3)
+scripts.etl - DEBUG - 2024-05-09 11:59:47,005 - etl - 17021 - 140148268343680 - Number of nan values in Filtered DF: paper_id         0
+year             0
+fieldsOfStudy    0
+dtype: int64
+scripts.etl - DEBUG - 2024-05-09 11:59:47,025 - etl - 17021 - 140148268343680 - Merged DF shape: (4177, 5)
+scripts.etl - DEBUG - 2024-05-09 11:59:47,029 - etl - 17021 - 140148268343680 - No. of nan values in Merged DF: paper_id           0
+year_x             0
+fieldsOfStudy_x    0
+year_y             0
+fieldsOfStudy_y    0
+dtype: int64
+__main__ - INFO - 2024-05-09 12:00:34,247 - main - 17218 - 140104222364032 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:00:34,248 - main - 17218 - 140104222364032 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:00:34,249 - utils - 17218 - 140104222364032 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:00:34,249 - main - 17218 - 140104222364032 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:00:34,257 - main - 17218 - 140104222364032 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:00:34,257 - main - 17218 - 140104222364032 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:00:34,563 - etl - 17218 - 140104222364032 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:00:34,563 - etl - 17218 - 140104222364032 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:00:34,569 - etl - 17218 - 140104222364032 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:00:34,569 - etl - 17218 - 140104222364032 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:00:34,582 - etl - 17218 - 140104222364032 - Filtered DF shape: (4123, 3)
+scripts.etl - DEBUG - 2024-05-09 12:00:34,585 - etl - 17218 - 140104222364032 - Number of nan values in Filtered DF: paper_id         0
+year             0
+fieldsOfStudy    0
+dtype: int64
+scripts.etl - DEBUG - 2024-05-09 12:00:34,604 - etl - 17218 - 140104222364032 - Merged DF shape: (4177, 5)
+scripts.etl - DEBUG - 2024-05-09 12:00:34,607 - etl - 17218 - 140104222364032 - No. of nan values in Merged DF: paper_id           0
+year_x             0
+fieldsOfStudy_x    0
+year_y             0
+fieldsOfStudy_y    0
+dtype: int64
+__main__ - INFO - 2024-05-09 12:01:46,007 - main - 17489 - 139927010206080 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:01:46,009 - main - 17489 - 139927010206080 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:01:46,009 - utils - 17489 - 139927010206080 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:01:46,010 - main - 17489 - 139927010206080 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:01:46,020 - main - 17489 - 139927010206080 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:01:46,021 - main - 17489 - 139927010206080 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:01:46,353 - etl - 17489 - 139927010206080 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:01:46,353 - etl - 17489 - 139927010206080 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:01:46,359 - etl - 17489 - 139927010206080 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:01:46,360 - etl - 17489 - 139927010206080 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:01:46,373 - etl - 17489 - 139927010206080 - Filtered DF shape: (4123, 3)
+scripts.etl - DEBUG - 2024-05-09 12:01:46,395 - etl - 17489 - 139927010206080 - Merged DF shape: (4177, 5)
+__main__ - INFO - 2024-05-09 12:04:51,871 - main - 17876 - 139631885365632 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:04:51,872 - main - 17876 - 139631885365632 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:04:51,873 - utils - 17876 - 139631885365632 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:04:51,873 - main - 17876 - 139631885365632 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:04:51,880 - main - 17876 - 139631885365632 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:04:51,881 - main - 17876 - 139631885365632 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:04:52,194 - etl - 17876 - 139631885365632 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:04:52,194 - etl - 17876 - 139631885365632 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:04:52,200 - etl - 17876 - 139631885365632 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:04:52,201 - etl - 17876 - 139631885365632 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:04:52,224 - etl - 17876 - 139631885365632 - Merged DF shape: (7268, 8)
+__main__ - INFO - 2024-05-09 12:05:32,899 - main - 18071 - 140562712920448 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:05:32,900 - main - 18071 - 140562712920448 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:05:32,901 - utils - 18071 - 140562712920448 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:05:32,901 - main - 18071 - 140562712920448 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:05:32,906 - main - 18071 - 140562712920448 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:05:32,907 - main - 18071 - 140562712920448 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:05:33,307 - etl - 18071 - 140562712920448 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:05:33,307 - etl - 18071 - 140562712920448 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:05:33,313 - etl - 18071 - 140562712920448 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:05:33,313 - etl - 18071 - 140562712920448 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:05:33,332 - etl - 18071 - 140562712920448 - Merged DF shape: (4123, 8)
+__main__ - INFO - 2024-05-09 12:06:22,361 - main - 18184 - 140655421170048 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:06:22,362 - main - 18184 - 140655421170048 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:06:22,363 - utils - 18184 - 140655421170048 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:06:22,363 - main - 18184 - 140655421170048 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:06:22,368 - main - 18184 - 140655421170048 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:06:22,368 - main - 18184 - 140655421170048 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:06:22,687 - etl - 18184 - 140655421170048 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:06:22,687 - etl - 18184 - 140655421170048 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:06:22,693 - etl - 18184 - 140655421170048 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:06:22,694 - etl - 18184 - 140655421170048 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:06:22,714 - etl - 18184 - 140655421170048 - Merged DF shape: (4123, 8)
+__main__ - INFO - 2024-05-09 12:08:32,884 - main - 19113 - 140422926528896 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:08:32,885 - main - 19113 - 140422926528896 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:08:32,885 - utils - 19113 - 140422926528896 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:08:32,886 - main - 19113 - 140422926528896 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:08:32,891 - main - 19113 - 140422926528896 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:08:32,892 - main - 19113 - 140422926528896 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:08:33,217 - etl - 19113 - 140422926528896 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:08:33,217 - etl - 19113 - 140422926528896 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:08:33,223 - etl - 19113 - 140422926528896 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:08:33,224 - etl - 19113 - 140422926528896 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:08:33,253 - etl - 19113 - 140422926528896 - Merged DF shape: (4123, 8)
+scripts.etl - DEBUG - 2024-05-09 12:08:33,259 - etl - 19113 - 140422926528896 - No. of nan values in Merged DF: paper_id          0
+title            73
+abstract          0
+back_matter       0
+names             0
+affiliations      0
+year              0
+fieldsOfStudy     0
+dtype: int64
+__main__ - INFO - 2024-05-09 12:12:35,811 - main - 20184 - 140345752007040 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:12:35,812 - main - 20184 - 140345752007040 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:12:35,812 - utils - 20184 - 140345752007040 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:12:35,813 - main - 20184 - 140345752007040 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:12:35,819 - main - 20184 - 140345752007040 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:12:35,820 - main - 20184 - 140345752007040 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:12:36,145 - etl - 20184 - 140345752007040 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:12:36,145 - etl - 20184 - 140345752007040 - AO DF shape: (6669, 3)
+scripts.etl - DEBUG - 2024-05-09 12:12:36,151 - etl - 20184 - 140345752007040 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:12:36,151 - etl - 20184 - 140345752007040 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:12:36,189 - etl - 20184 - 140345752007040 - Merged DF shape: (4050, 8)
+__main__ - INFO - 2024-05-09 12:15:09,091 - main - 20521 - 140352758686080 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:15:09,092 - main - 20521 - 140352758686080 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:15:09,093 - utils - 20521 - 140352758686080 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:15:09,093 - main - 20521 - 140352758686080 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:15:09,099 - main - 20521 - 140352758686080 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:15:09,099 - main - 20521 - 140352758686080 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:15:09,405 - etl - 20521 - 140352758686080 - DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:15:09,405 - etl - 20521 - 140352758686080 - AO DF shape: (6669, 3)
+scripts.etl - INFO - 2024-05-09 12:15:09,407 - etl - 20521 - 140352758686080 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-09 12:15:09,411 - etl - 20521 - 140352758686080 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:15:09,412 - etl - 20521 - 140352758686080 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:15:09,446 - etl - 20521 - 140352758686080 - Merged DF shape: (4050, 8)
+scripts.etl - INFO - 2024-05-09 12:15:09,447 - etl - 20521 - 140352758686080 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-09 12:15:09,449 - etl - 20521 - 140352758686080 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-09 12:15:09,450 - etl - 20521 - 140352758686080 - Error percentage: 44.421430544048604
+__main__ - INFO - 2024-05-09 12:21:34,148 - main - 21003 - 140070004896128 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 12:21:34,149 - main - 21003 - 140070004896128 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 12:21:34,150 - utils - 21003 - 140070004896128 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:21:34,150 - main - 21003 - 140070004896128 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 12:21:34,156 - main - 21003 - 140070004896128 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 12:21:34,157 - main - 21003 - 140070004896128 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 12:21:34,466 - etl - 21003 - 140070004896128 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 12:21:34,467 - etl - 21003 - 140070004896128 - Ao metadata DF shape: (6669, 3)
+scripts.etl - INFO - 2024-05-09 12:21:34,469 - etl - 21003 - 140070004896128 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-09 12:21:34,473 - etl - 21003 - 140070004896128 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 12:21:34,473 - etl - 21003 - 140070004896128 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 12:21:34,520 - etl - 21003 - 140070004896128 - Merged DF shape: (4050, 8)
+scripts.etl - INFO - 2024-05-09 12:21:34,520 - etl - 21003 - 140070004896128 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-09 12:21:34,522 - etl - 21003 - 140070004896128 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-09 12:21:34,523 - etl - 21003 - 140070004896128 - Error percentage: 44.421430544048604

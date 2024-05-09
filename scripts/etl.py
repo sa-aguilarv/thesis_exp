@@ -106,20 +106,26 @@ def filter_data(df_path, ao_df_path):
     logger = logging.getLogger(__name__)
     df = pd.read_csv(df_path)
     ao_df = pd.read_csv(ao_df_path)
-    logger.debug('DF shape: %s', df.shape)
-    logger.debug('AO DF shape: %s', ao_df.shape) 
+    logger.debug('Source DF shape: %s', df.shape)
+    logger.debug('Ao metadata DF shape: %s', ao_df.shape) 
     
     ao_df.rename(columns={'paperId': 'paper_id'}, inplace=True)
+    logger.info('Validation of source and ao metadata')
     validate_responses(df, ao_df)
 
-    id_list = ao_df['paper_id'].tolist()
-    logger.debug('No. of papers with ao. metadata: %s', len(id_list))
+    # id_list = df['paper_id'].tolist()
 
-    filtered_df = df[df['paper_id'].isin(id_list)]
-    logger.debug('Filtered DF shape: %s', filtered_df.shape)
+    # filtered_df = ao_df[ao_df['paper_id'].isin(id_list)]
+    # filtered_df = u.drop_nan_rows(filtered_df)
 
-    filtered_df = pd.merge(filtered_df, ao_df, on='paper_id', how='inner')
+    # logger.debug('Filtered DF shape: %s', filtered_df.shape)
+    #logger.debug('Number of nan values in Filtered DF: %s', filtered_df.isnull().sum())
+
+    filtered_df = pd.merge(df, ao_df, on='paper_id', how='left').reset_index(drop=True)
+    filtered_df = u.drop_nan_rows(filtered_df)
     logger.debug('Merged DF shape: %s', filtered_df.shape)
+    logger.info('Validation of source and filtered metadata')
+    validate_responses(df, filtered_df)
 
     filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
 
