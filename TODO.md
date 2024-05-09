@@ -105,7 +105,9 @@ TOTAL: 38897
 - [x] Validate S2AG responses
   - [x] Get number of common paper IDs between data and ao. metadata df
   - [x] Calculate the error percentage
-  - [x] Drop rows from data df based on ao metadata df
+  - [ ] Drop rows from data df based on ao metadata df
+    - [ ] Validate all non-common paper IDs are removed
+    - [ ] Validate df indexes are reset after merging
 
 - [x] Data cleaning
   - [x] Abstracts: Get meaningful nouns to make up the corpus
@@ -124,12 +126,12 @@ TOTAL: 38897
 - Retrieved the metadata from S2AG in chunks of 500 papers. Total: 6669
   - No. common IDs between data and ao. metadata dfs: 4097
   - Error percentage: %43.42
-- No. publications size after merging data and ao. metadata dfs: 4123 // NOTE - Why did the data size increase after merging? There are probably NaN values
+- No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~ After validation, I found the number of common IDs between all dfs is 4097. This suggests that I either (1) didn't drop all uncommon IDs after merging source data with ao. metadata, or (2) didn't reset the indexes after merging.
 
 ### 3.2. Observations
 
 - Even though we are retrieving the metadata from papers using S2 paper IDs, some requests failed and provided the metadata from unrequested paper IDs
-- The dimension size increased after merging the data and ao. metadata dfs. No NaN values were detected. **The error percentage is probably wrong, re-calculate it later** // NOTE - Validate the error percentage function
+- The dimension size increased after merging the data and ao. metadata dfs. No NaN values were detected. **The error percentage is probably wrong, re-calculate it later** // ~~TODO: Validate the error percentage function~~ The percentage function is correct, the problem lays in how the dfs were merged.
 
 ## 4. Topic model
 
@@ -154,7 +156,7 @@ TOTAL: 38897
 - [ ] Topic aggregation
   - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They aggregated multiple topic models
-    - They created clusters using cosine distances. **What is the advantage of using that over Jensen Shannon divergence?** //NOTE - Cover this in the discusion
+    - They created clusters using cosine distances. **What is the advantage of using that over Jensen Shannon divergence?** //TODO: Cover this in the discusion
   - [ ] Get cosine distances between papers
   - [ ] Get clusters
     - [ ] Selection of clustering parameters
@@ -177,7 +179,7 @@ TOTAL: 38897
 - [ ] Get diagnostic topics
   - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They identified which topics are the most characteristic and distinguishing for each discipline, i.e., those that mainly caused the disciplines to become cohesive clusters. They did this based on the Silhouette and topic entropy scores
-      - **Are the most diagnostic topics unique to their respective disciplines?** //NOTE - Address this in the discussion
+      - **Are the most diagnostic topics unique to their respective disciplines?** //TODO: Address this in the discussion
 
 - [ ] Get knowledge claims of diagnostic topics
   - [ ] Get the corresponding corpus (i.e., set of uncleaned abstracts) of each diagnostic topic

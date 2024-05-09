@@ -56,5 +56,8 @@ def main():
         filename = config['resultsPath'] + 'cleaned_abstracts.csv'
         df = pd.read_csv(filename)
         logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
+        # Validation
+        u.after_processing_validation()
+        
 if __name__ == '__main__':
     main()

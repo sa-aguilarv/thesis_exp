@@ -2,6 +2,7 @@ import logging
 import json
 import os
 import numpy as np
+import pandas as pd
 
 def load_config(path):
     """Load the config file.
@@ -109,3 +110,25 @@ def drop_nan_rows(df):
     df = df.replace('None', np.nan)
     df = df.dropna()     
     return df
+
+def after_processing_validation():
+    source_df = pd.read_csv('results/data.csv', usecols=['paper_id'])
+    ao_metadata_df = pd.read_csv('results/ao_metadata.csv', usecols=['paperId'])
+    ao_metadata_df.rename(columns={'paperId': 'paper_id'}, inplace=True)
+    source_w_ao_metadata_df = pd.read_csv('results/data_w_ao_metadata.csv', usecols=['paper_id'])
+    cleaned_abstracts_df = pd.read_csv('results/cleaned_abstracts.csv', usecols=['paper_id'])
+    names = ['source_df', 'ao_metadata_df', 'source_w_ao_metadata_df', 'cleaned_abstracts_df']
+
+    logger = logging.getLogger(__name__)
+    dfList = [source_df, ao_metadata_df, source_w_ao_metadata_df, cleaned_abstracts_df]
+
+    no_common_ids_dict = {}
+    for i in range(len(dfList)):
+        for j in range(i+1, len(dfList)):
+            logger.info(f'Comparing {names[i]} and {names[j]}')
+            logger.info(f'Shape of df{i} - df{j}: {dfList[i].shape} - {dfList[j].shape}')
+            common_ids = set(dfList[i]['paper_id']).intersection(dfList[j]['paper_id'])
+            no_common_ids_dict[(i, j)] = len(common_ids)
+    
+    for key, value in no_common_ids_dict.items():
+        logger.info(f'No. of common paper ids between df{key[0]} and df{key[1]}: {value}')

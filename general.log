@@ -17729,3 +17729,117 @@ __main__ - INFO - 2024-05-09 00:28:18,497 - main - 269648 - 139753875186048 - Da
 __main__ - INFO - 2024-05-09 00:28:18,536 - main - 269648 - 139753875186048 - Number of nan values in cleaned_abstracts.csv: paper_id    0
 abstract    0
 dtype: int64
+__main__ - INFO - 2024-05-09 11:28:16,166 - main - 12880 - 140470816444800 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:28:16,167 - main - 12880 - 140470816444800 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:28:16,168 - utils - 12880 - 140470816444800 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:28:16,168 - main - 12880 - 140470816444800 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:28:16,175 - main - 12880 - 140470816444800 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:28:16,175 - main - 12880 - 140470816444800 - Data cleaning
+__main__ - INFO - 2024-05-09 11:28:16,237 - main - 12880 - 140470816444800 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+__main__ - INFO - 2024-05-09 11:31:17,458 - main - 13897 - 139926127923584 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:31:17,459 - main - 13897 - 139926127923584 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:31:17,460 - utils - 13897 - 139926127923584 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:31:17,461 - main - 13897 - 139926127923584 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:31:17,467 - main - 13897 - 139926127923584 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:31:17,468 - main - 13897 - 139926127923584 - Data cleaning
+__main__ - INFO - 2024-05-09 11:31:17,537 - main - 13897 - 139926127923584 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 11:31:17,921 - utils - 13897 - 139926127923584 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 11:31:17,921 - utils - 13897 - 139926127923584 - No. of common paper ids between df0 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:31:17,922 - utils - 13897 - 139926127923584 - No. of common paper ids between df0 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:31:17,922 - utils - 13897 - 139926127923584 - No. of common paper ids between df1 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:31:17,922 - utils - 13897 - 139926127923584 - No. of common paper ids between df1 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:31:17,923 - utils - 13897 - 139926127923584 - No. of common paper ids between df2 and df3: 4097
+__main__ - INFO - 2024-05-09 11:34:42,915 - main - 14202 - 139947667313024 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:34:42,916 - main - 14202 - 139947667313024 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:34:42,917 - utils - 14202 - 139947667313024 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:34:42,918 - main - 14202 - 139947667313024 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:34:42,926 - main - 14202 - 139947667313024 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:34:42,927 - main - 14202 - 139947667313024 - Data cleaning
+__main__ - INFO - 2024-05-09 11:34:43,014 - main - 14202 - 139947667313024 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 11:34:43,327 - utils - 14202 - 139947667313024 - Shape of df0: (7242, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,327 - utils - 14202 - 139947667313024 - Shape of df1: (6669, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,332 - utils - 14202 - 139947667313024 - Shape of df0: (7242, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,332 - utils - 14202 - 139947667313024 - Shape of df2: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,335 - utils - 14202 - 139947667313024 - Shape of df0: (7242, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,335 - utils - 14202 - 139947667313024 - Shape of df3: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,338 - utils - 14202 - 139947667313024 - Shape of df1: (6669, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,338 - utils - 14202 - 139947667313024 - Shape of df2: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,341 - utils - 14202 - 139947667313024 - Shape of df1: (6669, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,341 - utils - 14202 - 139947667313024 - Shape of df3: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,345 - utils - 14202 - 139947667313024 - Shape of df2: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,345 - utils - 14202 - 139947667313024 - Shape of df3: (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:34:43,348 - utils - 14202 - 139947667313024 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 11:34:43,348 - utils - 14202 - 139947667313024 - No. of common paper ids between df0 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:34:43,348 - utils - 14202 - 139947667313024 - No. of common paper ids between df0 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:34:43,349 - utils - 14202 - 139947667313024 - No. of common paper ids between df1 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:34:43,349 - utils - 14202 - 139947667313024 - No. of common paper ids between df1 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:34:43,349 - utils - 14202 - 139947667313024 - No. of common paper ids between df2 and df3: 4097
+__main__ - INFO - 2024-05-09 11:38:37,400 - main - 14586 - 139787800510848 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:38:37,401 - main - 14586 - 139787800510848 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:38:37,402 - utils - 14586 - 139787800510848 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:38:37,402 - main - 14586 - 139787800510848 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:38:37,410 - main - 14586 - 139787800510848 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:38:37,411 - main - 14586 - 139787800510848 - Data cleaning
+__main__ - INFO - 2024-05-09 11:38:37,472 - main - 14586 - 139787800510848 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+__main__ - INFO - 2024-05-09 11:38:59,466 - main - 14724 - 140103120564608 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:38:59,467 - main - 14724 - 140103120564608 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:38:59,467 - utils - 14724 - 140103120564608 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:38:59,468 - main - 14724 - 140103120564608 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:38:59,475 - main - 14724 - 140103120564608 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:38:59,476 - main - 14724 - 140103120564608 - Data cleaning
+__main__ - INFO - 2024-05-09 11:38:59,538 - main - 14724 - 140103120564608 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 11:38:59,870 - utils - 14724 - 140103120564608 - Comparing ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 11:38:59,870 - utils - 14724 - 140103120564608 - Shape of df0 - df1: (7242, 1) - (6669, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,876 - utils - 14724 - 140103120564608 - Comparing ao_metadata_df and source_df
+scripts.utils - INFO - 2024-05-09 11:38:59,876 - utils - 14724 - 140103120564608 - Shape of df0 - df2: (7242, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,880 - utils - 14724 - 140103120564608 - Comparing ao_metadata_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:38:59,880 - utils - 14724 - 140103120564608 - Shape of df0 - df3: (7242, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,885 - utils - 14724 - 140103120564608 - Comparing cleaned_abstracts_df and source_df
+scripts.utils - INFO - 2024-05-09 11:38:59,885 - utils - 14724 - 140103120564608 - Shape of df1 - df2: (6669, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,888 - utils - 14724 - 140103120564608 - Comparing cleaned_abstracts_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:38:59,888 - utils - 14724 - 140103120564608 - Shape of df1 - df3: (6669, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,891 - utils - 14724 - 140103120564608 - Comparing source_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:38:59,891 - utils - 14724 - 140103120564608 - Shape of df2 - df3: (4123, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:38:59,894 - utils - 14724 - 140103120564608 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 11:38:59,894 - utils - 14724 - 140103120564608 - No. of common paper ids between df0 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:38:59,895 - utils - 14724 - 140103120564608 - No. of common paper ids between df0 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:38:59,895 - utils - 14724 - 140103120564608 - No. of common paper ids between df1 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:38:59,895 - utils - 14724 - 140103120564608 - No. of common paper ids between df1 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:38:59,896 - utils - 14724 - 140103120564608 - No. of common paper ids between df2 and df3: 4097
+__main__ - INFO - 2024-05-09 11:39:34,165 - main - 14954 - 140279201931648 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 11:39:34,166 - main - 14954 - 140279201931648 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 11:39:34,167 - utils - 14954 - 140279201931648 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:39:34,167 - main - 14954 - 140279201931648 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 11:39:34,172 - main - 14954 - 140279201931648 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 11:39:34,173 - main - 14954 - 140279201931648 - Data cleaning
+__main__ - INFO - 2024-05-09 11:39:34,230 - main - 14954 - 140279201931648 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 11:39:34,539 - utils - 14954 - 140279201931648 - Comparing source_df and ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:39:34,539 - utils - 14954 - 140279201931648 - Shape of df0 - df1: (7242, 1) - (6669, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,544 - utils - 14954 - 140279201931648 - Comparing source_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:39:34,544 - utils - 14954 - 140279201931648 - Shape of df0 - df2: (7242, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,548 - utils - 14954 - 140279201931648 - Comparing source_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 11:39:34,548 - utils - 14954 - 140279201931648 - Shape of df0 - df3: (7242, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,552 - utils - 14954 - 140279201931648 - Comparing ao_metadata_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 11:39:34,552 - utils - 14954 - 140279201931648 - Shape of df1 - df2: (6669, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,557 - utils - 14954 - 140279201931648 - Comparing ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 11:39:34,558 - utils - 14954 - 140279201931648 - Shape of df1 - df3: (6669, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,561 - utils - 14954 - 140279201931648 - Comparing source_w_ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 11:39:34,561 - utils - 14954 - 140279201931648 - Shape of df2 - df3: (4123, 1) - (4123, 1)
+scripts.utils - INFO - 2024-05-09 11:39:34,564 - utils - 14954 - 140279201931648 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df0 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df0 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df1 and df2: 4097
+scripts.utils - INFO - 2024-05-09 11:39:34,565 - utils - 14954 - 140279201931648 - No. of common paper ids between df1 and df3: 4097
+scripts.utils - INFO - 2024-05-09 11:39:34,566 - utils - 14954 - 140279201931648 - No. of common paper ids between df2 and df3: 4097
