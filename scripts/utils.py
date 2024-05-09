@@ -1,6 +1,7 @@
 import logging
 import json
 import os
+import numpy as np
 
 def load_config(path):
     """Load the config file.
@@ -85,3 +86,14 @@ def check_key(dictionary, key):
     if value is None or value == []:
         return False
     return True
+
+def drop_nan_rows(df):
+    """Drop columns with NaN values.
+    Args:
+        df (pd.DataFrame): The DataFrame.
+    Returns:
+        pd.DataFrame: The DataFrame without columns with NaN values.
+    """
+    df = df.replace('None', np.nan)
+    df = df.dropna()     
+    return df

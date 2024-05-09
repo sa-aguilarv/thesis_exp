@@ -17291,3 +17291,16 @@ scripts.utils - DEBUG - 2024-05-07 19:25:27,575 - utils - 354388 - 1407140105875
 scripts.eda - INFO - 2024-05-07 19:26:05,526 - eda - 354388 - 140714010587520 - DF shape: (9918, 6)
 scripts.utils - DEBUG - 2024-05-07 19:26:05,550 - utils - 354388 - 140714010587520 - Directory already exists: results/eda
 scripts.eda - INFO - 2024-05-07 19:26:05,659 - eda - 354388 - 140714010587520 - Data saved to results/data.csv
+__main__ - INFO - 2024-05-08 19:18:07,690 - main - 216075 - 140671555637632 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-08 19:18:07,711 - main - 216075 - 140671555637632 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-08 19:18:07,720 - utils - 216075 - 140671555637632 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/'}
+__main__ - DEBUG - 2024-05-08 19:18:07,720 - main - 216075 - 140671555637632 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/'}
+__main__ - DEBUG - 2024-05-08 19:18:07,724 - main - 216075 - 140671555637632 - Input arguments: Namespace(adjacency_matrix=False, eda=True, etl=None, network_analysis=False, sampling=False, topic_aggregation=False, topic_modeling=False)
+__main__ - INFO - 2024-05-08 19:18:07,724 - main - 216075 - 140671555637632 - Exploratory data analysis
+scripts.eda - INFO - 2024-05-08 19:18:07,724 - eda - 216075 - 140671555637632 - Loading data from ./data/comm_use_subset/pdf_json/
+scripts.eda - DEBUG - 2024-05-08 19:18:07,734 - eda - 216075 - 140671555637632 - Number of files in dataPath: 9918
+scripts.utils - DEBUG - 2024-05-08 19:18:07,734 - utils - 216075 - 140671555637632 - Directory already exists: results
+scripts.eda - INFO - 2024-05-08 19:18:51,307 - eda - 216075 - 140671555637632 - DF shape: (9918, 6)
+scripts.utils - DEBUG - 2024-05-08 19:18:51,320 - utils - 216075 - 140671555637632 - Directory already exists: results/eda
+scripts.eda - INFO - 2024-05-08 19:18:51,456 - eda - 216075 - 140671555637632 - DF shape after dropping rows with NaN values: (7242, 6)
+scripts.eda - INFO - 2024-05-08 19:18:51,457 - eda - 216075 - 140671555637632 - Data saved to results/data.csv

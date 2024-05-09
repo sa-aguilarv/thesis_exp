@@ -41,9 +41,10 @@ def json_to_df(dataPath):
                 continue
 
     df = pd.DataFrame(dataList)
-    df.to_csv(f'{new_dir}/data.csv', index=False)
     logger.info('DF shape: %s', df.shape)
     save_df_descriptors(df)
+    df = u.drop_nan_rows(df)
+    logger.info('DF shape after dropping rows with NaN values: %s', df.shape)
     logger.info('Data saved to %s', f'{new_dir}/data.csv')
     
 def save_df_descriptors(df):

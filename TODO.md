@@ -18,7 +18,7 @@
 
     - Solution not implemented: `custom_license` dataset won't be used anyway since it contains files with a custom license.
 
-### Results
+### 1.1. Results
 
 Downloaded datasets:
 
@@ -41,14 +41,14 @@ INFO - Subfolder: ./data/pmc_custom_license, Number of files: 1426
 TOTAL: 38897
 ```
 
-### Observations
+### 1.2. Observations
 
 - Not all papers in all datasets are free to use for research purposes.
   1. `biorvix_medrxiv` --no, we want published papers
   2. `comm_use_subset` --only `pdf_json` since `pmc_json` or Pubmed papers lack acknowledgements and authors affiliations.
 - “Semantic Scholar updates the dataset every friday, so on fridays and saturdays be sure to redownload data” --taken from [cord-19-tools](https://pypi.org/project/cord-19-tools/)
 
-## 2. Exploratory data analysis
+## 2. Exploratory data analysis (EDA)
 
 - [x] Prepare data
   - [x] Select dataset
@@ -77,10 +77,22 @@ TOTAL: 38897
   1. geography (affiliations)
   2. PMI words (abstracts)
 
-- [ ] Handle missing, null or duplicated values for abstract and `back_matter` (i.e., acknowledgements) columns
-  - [ ] Drop rows with missing abstracts and acknowledgements
+### 2.1. Results
+
+- Total papers after removing those without abstract nor acknowledgements: 7242
+
+### 2.2. Observations
+
+- All papers from Semantic Scholar that were not PMC papers had affiliations data.
+- Regarding handling null values:
+  - Papers without abstract: 1163
+  - Papers without acknowledgements: 2006
+- Total papers dropped because they had NaN values in abstract and/or acknowledgements columns: 2676
 
 ## 3. Data processing
+
+- [x] Handle null values for abstract and `back_matter` (i.e., acknowledgements) columns
+  - [x] Drop rows with missing abstracts and acknowledgements
 
 - [ ] Get missing metadata from [Semantic Scholar S2AG](https://api.semanticscholar.org/api-docs/datasets) given paper ID
   - [ ] Get year of publication
