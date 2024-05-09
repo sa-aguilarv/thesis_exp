@@ -81,6 +81,37 @@ def create_ao_metadata_df(dir):
     save_path = 'results/'
     df.to_csv(f'{save_path}/ao_metadata.csv', index=False)
 
+def validate_responses(df, ao_df):
+    logger = logging.getLogger(__name__)
+    df_ids = df['paper_id'].tolist()
+    ao_ids = ao_df['paper_id'].tolist()
+    common_ids = set(df_ids).intersection(ao_ids)
+    logger.debug('Common IDs: %s', len(common_ids))
+
+    error_percentage = (len(df_ids) - len(common_ids)) / len(df_ids) * 100
+    logger.info('Error percentage: %s', error_percentage)
+
+
+def filter_data(df_path, ao_df_path):
+    logger = logging.getLogger(__name__)
+    df = pd.read_csv(df_path)
+    ao_df = pd.read_csv(ao_df_path)
+    logger.debug('DF shape: %s', df.shape)
+    logger.debug('AO DF shape: %s', ao_df.shape) 
+    
+    ao_df.rename(columns={'paperId': 'paper_id'}, inplace=True)
+    validate_responses(df, ao_df)
+
+    id_list = ao_df['paper_id'].tolist()
+    logger.debug('No. of papers with ao. metadata: %s', len(id_list))
+
+    filtered_df = df[df['paper_id'].isin(id_list)]
+    logger.debug('Filtered DF shape: %s', filtered_df.shape)
+
+    filtered_df = pd.merge(filtered_df, ao_df, on='paper_id', how='inner')
+    logger.debug('Merged DF shape: %s', filtered_df.shape)
+
+    filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
 
 
 def data_cleaning(filename):

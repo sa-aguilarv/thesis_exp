@@ -40,15 +40,26 @@ def main():
         logger.info('Data processing')
         # Change to the path where the data is stored
         filename = config['resultsPath'] + 'data.csv'
-        
         results_path = 'results/etl'
+
         if os.path.exists(results_path):
             pass
         else:
             etl.collect_ao_metadata(filename)
+            etl.create_ao_metadata_df(results_path)
+
+        etl.filter_data(filename, 'results/ao_metadata.csv')
+
+        # merge data_w_ao_metadata with ao_metadata.csv
+
+
+        # keep data.csv rows if paper_id is in ao_metadata.csv
+
         
-        etl.create_ao_metadata_df(results_path)
-        etl.data_cleaning(filename)
+        try:
+            etl.data_cleaning(filename)
+        except Exception as e:
+            logger.error('Error cleaning data: %s', e)
     
 if __name__ == '__main__':
     main()

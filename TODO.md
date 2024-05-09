@@ -99,8 +99,13 @@ TOTAL: 38897
     - [x] Get year of publication
     - [x] Get the associated disciplines
   - [x] Create ao. metadata df
-    - [x] Concatenate ao. metadata df chunks into one df 
+    - [x] Concatenate ao. metadata df chunks into one df
     - [x] Drop rows with missing year and disciplines
+
+- [x] Validate S2AG responses
+  - [x] Get number of common paper IDs between data and ao. metadata df
+  - [x] Calculate the error percentage
+  - [x] Drop rows from data df based on ao metadata df
 
 - [ ] Get meaningful nouns to make up the corpus
   - [ ] Remove special characters
@@ -113,9 +118,13 @@ TOTAL: 38897
 
 ### 3.1. Results
 
+- Retrieved the metadata from S2AG in chunks of 500 papers. Total: 6669
+  - No. common IDs between data and ao. metadata dfs: 4097
+  - Error percentage: %43.42
+
 ### 3.2. Observations
 
-- Retrieved the metadata from S2AG in chunks of 500 papers
+- Even though we are retrieving the metadata from papers using S2 paper IDs, some requests failed and provided the metadata from unrequested paper IDs
 
 ## 4. Topic model
 
