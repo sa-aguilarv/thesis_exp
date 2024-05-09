@@ -31,6 +31,8 @@ def create_dir_if_not_exists(dir):
     """Create a directory if it does not exist.
     Args:
         dir (str): The directory to create.
+    Returns:
+        None
     """
     if not os.path.exists(dir):
         os.makedirs(dir)
@@ -41,6 +43,12 @@ def create_dir_if_not_exists(dir):
         logger.debug('Directory already exists: %s', dir)
 
 def json_decomposition(data):
+    """ Decompose the json file into a dictionary.
+    Args:
+        data (dict): The data from the json file.
+    Returns:
+        dict: The decomposed data in a dictionary. Keys are paper_id, title, abstract, back_matter, names, affiliations.
+    """
     paperId = data['paper_id']
     title = data['metadata']['title']
     
@@ -82,17 +90,24 @@ def json_decomposition(data):
     return data
 
 def check_key(dictionary, key):
+    """ Check if a key exists in a dictionary.
+    Args:
+        dictionary (dict): The dictionary.
+        key (str): The key.
+    Returns:
+        bool: True if the key exists, False otherwise.
+    """
     value = dictionary.get(key)
     if value is None or value == []:
         return False
     return True
 
 def drop_nan_rows(df):
-    """Drop columns with NaN values.
+    """ Drop rows with NaN values.
     Args:
-        df (pd.DataFrame): The DataFrame.
+        df (pd.DataFrame): The dataframe.
     Returns:
-        pd.DataFrame: The DataFrame without columns with NaN values.
+        pd.DataFrame: The dataframe with NaN rows dropped.
     """
     df = df.replace('None', np.nan)
     df = df.dropna()     

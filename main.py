@@ -35,6 +35,8 @@ def main():
         # for subfolder, file_count in files_per_subfolder.items():
         #     logger.info(f"Subfolder: {subfolder}, Number of files: {file_count}")
         eda.json_to_df(config['dataPath'])
+    elif args.processing:
+        logger.info('Data processing')
     
 if __name__ == '__main__':
     main()

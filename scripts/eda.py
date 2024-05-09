@@ -5,6 +5,12 @@ import pandas as pd
 from tqdm import tqdm
 
 def get_size(dataPath = './data'):
+    """ Get the number of files in each subfolder in the dataPath.
+    Args:
+        dataPath (str): The path to the data.
+    Returns:
+        dict: The number of files in each subfolder.
+    """
     logger = logging.getLogger(__name__)
     logger.info('Loading data from %s', dataPath)
     files_per_subfolder = {}
@@ -19,6 +25,12 @@ def get_size(dataPath = './data'):
     return files_per_subfolder
 
 def json_to_df(dataPath):
+    """ Convert json files to a pandas DataFrame.
+    Args:
+        dataPath (str): The path to the data.
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     logger.info('Loading data from %s', dataPath)
     files = os.listdir(dataPath)
@@ -48,6 +60,12 @@ def json_to_df(dataPath):
     logger.info('Data saved to %s', f'{new_dir}/data.csv')
     
 def save_df_descriptors(df):
+    """ Save the DataFrame descriptors.
+    Args:
+        df (pd.DataFrame): The DataFrame.
+    Returns:
+        None
+    """
     empty_values = df.isnull().sum()
     save_path = 'results/eda'
     u.create_dir_if_not_exists(save_path)
