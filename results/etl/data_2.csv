@@ -15,7 +15,7 @@ d55f09671ad483ed5c25dbff97c970e08c6be947,2009.0,"['Medicine', 'Biology']"
 00a54d30b2f29c63e389d7127926c7c1bdc5cdcb,2009.0,
 dcdc6089c0d8fd821a55664bd941cd32bb432fa7,2009.0,['Medicine']
 5e8669392733113d4bbaeebd9347764807872fa2,2009.0,"['Biology', 'Medicine']"
-0165069ce55291f363e2d9982dd60683152054a8,2009.0,
+028d65ff8e902cfac803c832c27cba260d71a767,2009.0,
 ffe33d5305400ecb448c35252016c178c59fef3a,2009.0,"['Biology', 'Medicine']"
 1ab437107d25b2c0b49c1333e973ba5bedc35b6c,2008.0,
 1ab437107d25b2c0b49c1333e973ba5bedc35b6c,2008.0,
@@ -24,7 +24,7 @@ f17e9d03c652c04a62854b60f08632513b4871ec,2009.0,"['Biology', 'Medicine']"
 87a937ec2cd698b7d24ade1803a22852747ec8c7,2009.0,['Medicine']
 41f496d3b5ef9881fd2acd5fe510144e371a0714,2010.0,"['Biology', 'Medicine']"
 0e23b62f7dca85c31f4f90603d2a28dfc7177947,2010.0,"['Biology', 'Medicine']"
-0165069ce55291f363e2d9982dd60683152054a8,2009.0,
+028d65ff8e902cfac803c832c27cba260d71a767,2009.0,
 702a1c29ec321d826010c5ecc76c57a67cbb9819,2010.0,"['Biology', 'Medicine']"
 95d6b47d51b17a1f41ab4df0ed64086ebc11e589,2009.0,['Medicine']
 b1e962fdaafce72e84af1d6a68dd0c162375bd67,2010.0,"['Biology', 'Medicine']"
@@ -79,7 +79,7 @@ d232ea6acac7c4c9def9598a9f05f2966118db10,2010.0,['Medicine']
 5ca920dabf09c2c2dd2c62f8ef5917e3bd72f087,2010.0,"['Biology', 'Medicine']"
 f7c3160bef4169d29e2a8bdd79dd6e9056d4774c,2010.0,['Medicine']
 f407fa076e02563e41223d43873e7fd604bdd637,2010.0,"['Biology', 'Medicine']"
-4cee9d137c80befc87ba37b22b077821f5b0ec01,2001.0,
+4cee9d137c80befc87ba37b22b077821f5b0ec01,,
 6fb63e6ddb93b95e451c44a18ca67e506e126c3d,2010.0,['Medicine']
 44ab6aecdacb870226ce4ce36606e227f0a6ac00,2010.0,"['Biology', 'Medicine']"
 7ffe193a44bc9dc253b7af877bf1c5c32978af49,2010.0,"['Biology', 'Medicine']"
@@ -256,7 +256,7 @@ b708da1945a7a42cd61526e043d527592d4d9518,2011.0,"['Biology', 'Medicine']"
 af601b05f96c8e88b5c1d84c0b1557cbb9d6b444,2011.0,['Medicine']
 9bff285847e6573b613d937df23f57355afcbd5f,2011.0,"['Biology', 'Medicine']"
 86239535bbc306bd90a85a6145840c784fa35d82,2011.0,"['Business', 'Computer Science', 'Medicine']"
-ee1c1ce969723a295aea1cb81393846c8a6b5d33,2010.0,"['Medicine', 'Environmental Science', 'Geography', 'Psychology', 'Chemistry', 'Biology']"
+2d9068d415ef5a385ddc6be39ec23fd061da4e67,2010.0,"['Medicine', 'Environmental Science', 'Geography', 'Chemistry']"
 0a58093b7ecefbe6528a073a8fdb95b0e8430bc1,2011.0,"['Biology', 'Medicine']"
 cfb06153bd9db651c6c7c268aecf6e65113fe008,2011.0,"['Biology', 'Medicine']"
 6606f7964096d15ffdcb9772acbe40ae415dcb97,2011.0,['Medicine']

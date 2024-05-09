@@ -97,8 +97,8 @@ def validate_responses(df, ao_df):
     ao_ids = ao_df['paper_id'].tolist()
     common_ids = set(df_ids).intersection(ao_ids)
     logger.debug('Common IDs: %s', len(common_ids))
-
-    error_percentage = (len(df_ids) - len(common_ids)) / len(df_ids) * 100
+    # The error percentage measures the number of IDs in the ao metadata that are not in the source data
+    error_percentage = (len(ao_ids) - len(common_ids)) / len(ao_ids) * 100
     logger.info('Error percentage: %s', error_percentage)
 
 
@@ -112,29 +112,26 @@ def filter_data(df_path, ao_df_path):
     ao_df.rename(columns={'paperId': 'paper_id'}, inplace=True)
     logger.info('Validation of source and ao metadata')
     validate_responses(df, ao_df)
+    
+    filtered_df = merge_dfs(df, ao_df)
 
-    # id_list = df['paper_id'].tolist()
+    filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
 
-    # filtered_df = ao_df[ao_df['paper_id'].isin(id_list)]
-    # filtered_df = u.drop_nan_rows(filtered_df)
-
-    # logger.debug('Filtered DF shape: %s', filtered_df.shape)
-    #logger.debug('Number of nan values in Filtered DF: %s', filtered_df.isnull().sum())
-
+def merge_dfs(df, ao_df):
+    logger = logging.getLogger(__name__)
     filtered_df = pd.merge(df, ao_df, on='paper_id', how='left').reset_index(drop=True)
     filtered_df = u.drop_nan_rows(filtered_df)
     logger.debug('Merged DF shape: %s', filtered_df.shape)
     logger.info('Validation of source and filtered metadata')
     validate_responses(df, filtered_df)
-
-    filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
-
+    return filtered_df
 
 def data_cleaning(filename):
     logger = logging.getLogger(__name__)
     try:
         df_abstracts = handle_abstracts(filename)
         logger.debug('DF abstracts shape: %s', df_abstracts.shape)
+        
         df_abstracts.to_csv('results/cleaned_abstracts.csv', index=False)
     except Exception as e:
         logger.error('Error: %s', e)

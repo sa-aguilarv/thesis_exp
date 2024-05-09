@@ -51,12 +51,11 @@ def main():
         logger.info('Data cleaning')
         # Change to the path where the data is stored
         filename = config['resultsPath'] + 'data_w_ao_metadata.csv'
-        #etl.data_cleaning(filename)
+        etl.data_cleaning(filename)
         # Check for nan values in cleaned_abstracts.csv
         filename = config['resultsPath'] + 'cleaned_abstracts.csv'
         df = pd.read_csv(filename)
         logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
-        # Validation
         u.after_processing_validation()
         
 if __name__ == '__main__':

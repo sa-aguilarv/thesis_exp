@@ -18085,3 +18085,115 @@ scripts.etl - DEBUG - 2024-05-09 12:21:34,520 - etl - 21003 - 140070004896128 - 
 scripts.etl - INFO - 2024-05-09 12:21:34,520 - etl - 21003 - 140070004896128 - Validation of source and filtered metadata
 scripts.etl - DEBUG - 2024-05-09 12:21:34,522 - etl - 21003 - 140070004896128 - Common IDs: 4025
 scripts.etl - INFO - 2024-05-09 12:21:34,523 - etl - 21003 - 140070004896128 - Error percentage: 44.421430544048604
+__main__ - INFO - 2024-05-09 13:01:29,757 - main - 24924 - 139919783498112 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 13:01:29,758 - main - 24924 - 139919783498112 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 13:01:29,759 - utils - 24924 - 139919783498112 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:01:29,760 - main - 24924 - 139919783498112 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:01:29,766 - main - 24924 - 139919783498112 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 13:01:29,767 - main - 24924 - 139919783498112 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 13:01:29,767 - etl - 24924 - 139919783498112 - Reading file: ./results/data.csv
+scripts.etl - DEBUG - 2024-05-09 13:01:29,962 - etl - 24924 - 139919783498112 - DF shape: (7242, 1)
+scripts.etl - DEBUG - 2024-05-09 13:01:52,037 - etl - 24924 - 139919783498112 - Number of files in dir: 15
+scripts.etl - INFO - 2024-05-09 13:01:52,216 - etl - 24924 - 139919783498112 - Total no. papers with ao. metadata: 6668
+scripts.etl - INFO - 2024-05-09 13:01:52,217 - etl - 24924 - 139919783498112 - Metadata DF shape: (6668, 3)
+scripts.etl - DEBUG - 2024-05-09 13:01:52,666 - etl - 24924 - 139919783498112 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 13:01:52,667 - etl - 24924 - 139919783498112 - Ao metadata DF shape: (6668, 3)
+scripts.etl - INFO - 2024-05-09 13:01:52,669 - etl - 24924 - 139919783498112 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-09 13:01:52,672 - etl - 24924 - 139919783498112 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 13:01:52,672 - etl - 24924 - 139919783498112 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 13:01:52,714 - etl - 24924 - 139919783498112 - Merged DF shape: (4050, 8)
+scripts.etl - INFO - 2024-05-09 13:01:52,714 - etl - 24924 - 139919783498112 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-09 13:01:52,716 - etl - 24924 - 139919783498112 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-09 13:01:52,716 - etl - 24924 - 139919783498112 - Error percentage: 44.421430544048604
+__main__ - INFO - 2024-05-09 13:03:44,710 - main - 25974 - 140405567644032 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 13:03:44,711 - main - 25974 - 140405567644032 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 13:03:44,711 - utils - 25974 - 140405567644032 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:03:44,712 - main - 25974 - 140405567644032 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:03:44,717 - main - 25974 - 140405567644032 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 13:03:44,718 - main - 25974 - 140405567644032 - Data cleaning
+scripts.etl - DEBUG - 2024-05-09 13:03:44,871 - etl - 25974 - 140405567644032 - DF shape: (4050, 2)
+scripts.etl - DEBUG - 2024-05-09 13:05:51,100 - etl - 25974 - 140405567644032 - DF abstracts shape: (4050, 2)
+__main__ - INFO - 2024-05-09 13:05:51,674 - main - 25974 - 140405567644032 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 13:05:52,015 - utils - 25974 - 140405567644032 - Comparing source_df and ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:05:52,015 - utils - 25974 - 140405567644032 - Shape of df0 - df1: (7242, 1) - (6668, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,020 - utils - 25974 - 140405567644032 - Comparing source_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:05:52,020 - utils - 25974 - 140405567644032 - Shape of df0 - df2: (7242, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,023 - utils - 25974 - 140405567644032 - Comparing source_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:05:52,024 - utils - 25974 - 140405567644032 - Shape of df0 - df3: (7242, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,029 - utils - 25974 - 140405567644032 - Comparing ao_metadata_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:05:52,030 - utils - 25974 - 140405567644032 - Shape of df1 - df2: (6668, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,034 - utils - 25974 - 140405567644032 - Comparing ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:05:52,035 - utils - 25974 - 140405567644032 - Shape of df1 - df3: (6668, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,039 - utils - 25974 - 140405567644032 - Comparing source_w_ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:05:52,039 - utils - 25974 - 140405567644032 - Shape of df2 - df3: (4050, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:05:52,042 - utils - 25974 - 140405567644032 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 13:05:52,042 - utils - 25974 - 140405567644032 - No. of common paper ids between df0 and df2: 4025
+scripts.utils - INFO - 2024-05-09 13:05:52,043 - utils - 25974 - 140405567644032 - No. of common paper ids between df0 and df3: 4025
+scripts.utils - INFO - 2024-05-09 13:05:52,043 - utils - 25974 - 140405567644032 - No. of common paper ids between df1 and df2: 4025
+scripts.utils - INFO - 2024-05-09 13:05:52,043 - utils - 25974 - 140405567644032 - No. of common paper ids between df1 and df3: 4025
+scripts.utils - INFO - 2024-05-09 13:05:52,044 - utils - 25974 - 140405567644032 - No. of common paper ids between df2 and df3: 4025
+__main__ - INFO - 2024-05-09 13:35:56,052 - main - 28479 - 140098941845888 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 13:35:56,156 - main - 28479 - 140098941845888 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 13:35:56,158 - utils - 28479 - 140098941845888 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:35:56,158 - main - 28479 - 140098941845888 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 13:35:56,169 - main - 28479 - 140098941845888 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False)
+__main__ - INFO - 2024-05-09 13:35:56,170 - main - 28479 - 140098941845888 - Data cleaning
+scripts.etl - DEBUG - 2024-05-09 13:35:56,324 - etl - 28479 - 140098941845888 - DF shape: (4050, 2)
+scripts.etl - DEBUG - 2024-05-09 13:38:12,046 - etl - 28479 - 140098941845888 - DF abstracts shape: (4050, 2)
+__main__ - INFO - 2024-05-09 13:38:12,287 - main - 28479 - 140098941845888 - Number of nan values in cleaned_abstracts.csv: paper_id    0
+abstract    0
+dtype: int64
+scripts.utils - INFO - 2024-05-09 13:38:12,654 - utils - 28479 - 140098941845888 - 3 rows of the cleaned abstracts df that are not in source df:
+scripts.utils - INFO - 2024-05-09 13:38:12,663 - utils - 28479 - 140098941845888 - Empty DataFrame
+Columns: [paper_id]
+Index: []
+scripts.utils - INFO - 2024-05-09 13:38:12,675 - utils - 28479 - 140098941845888 - Comparing source_df and ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:38:12,675 - utils - 28479 - 140098941845888 - Shape of df0 - df1: (7242, 1) - (6668, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,682 - utils - 28479 - 140098941845888 - Comparing source_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:38:12,683 - utils - 28479 - 140098941845888 - Shape of df0 - df2: (7242, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,687 - utils - 28479 - 140098941845888 - Comparing source_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:38:12,687 - utils - 28479 - 140098941845888 - Shape of df0 - df3: (7242, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,690 - utils - 28479 - 140098941845888 - Comparing ao_metadata_df and source_w_ao_metadata_df
+scripts.utils - INFO - 2024-05-09 13:38:12,690 - utils - 28479 - 140098941845888 - Shape of df1 - df2: (6668, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,694 - utils - 28479 - 140098941845888 - Comparing ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:38:12,694 - utils - 28479 - 140098941845888 - Shape of df1 - df3: (6668, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,697 - utils - 28479 - 140098941845888 - Comparing source_w_ao_metadata_df and cleaned_abstracts_df
+scripts.utils - INFO - 2024-05-09 13:38:12,697 - utils - 28479 - 140098941845888 - Shape of df2 - df3: (4050, 1) - (4050, 1)
+scripts.utils - INFO - 2024-05-09 13:38:12,700 - utils - 28479 - 140098941845888 - No. of common paper ids between df0 and df1: 4097
+scripts.utils - INFO - 2024-05-09 13:38:12,701 - utils - 28479 - 140098941845888 - No. of common paper ids between df0 and df2: 4025
+scripts.utils - INFO - 2024-05-09 13:38:12,701 - utils - 28479 - 140098941845888 - No. of common paper ids between df0 and df3: 4025
+scripts.utils - INFO - 2024-05-09 13:38:12,702 - utils - 28479 - 140098941845888 - No. of common paper ids between df1 and df2: 4025
+scripts.utils - INFO - 2024-05-09 13:38:12,702 - utils - 28479 - 140098941845888 - No. of common paper ids between df1 and df3: 4025
+scripts.utils - INFO - 2024-05-09 13:38:12,703 - utils - 28479 - 140098941845888 - No. of common paper ids between df2 and df3: 4025
+__main__ - INFO - 2024-05-09 14:03:46,783 - main - 31231 - 140645221388672 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 14:03:46,784 - main - 31231 - 140645221388672 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 14:03:46,784 - utils - 31231 - 140645221388672 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 14:03:46,784 - main - 31231 - 140645221388672 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 14:03:46,791 - main - 31231 - 140645221388672 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 14:03:46,792 - main - 31231 - 140645221388672 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 14:03:47,105 - etl - 31231 - 140645221388672 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 14:03:47,105 - etl - 31231 - 140645221388672 - Ao metadata DF shape: (6668, 3)
+scripts.etl - INFO - 2024-05-09 14:03:47,108 - etl - 31231 - 140645221388672 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-09 14:03:47,112 - etl - 31231 - 140645221388672 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 14:03:47,112 - etl - 31231 - 140645221388672 - Error percentage: 43.42723004694836
+scripts.etl - DEBUG - 2024-05-09 14:03:47,157 - etl - 31231 - 140645221388672 - Merged DF shape: (4050, 8)
+scripts.etl - INFO - 2024-05-09 14:03:47,157 - etl - 31231 - 140645221388672 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-09 14:03:47,159 - etl - 31231 - 140645221388672 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-09 14:03:47,159 - etl - 31231 - 140645221388672 - Error percentage: 44.421430544048604
+__main__ - INFO - 2024-05-09 14:07:33,585 - main - 31501 - 139862959100288 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 14:07:33,586 - main - 31501 - 139862959100288 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 14:07:33,587 - utils - 31501 - 139862959100288 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 14:07:33,588 - main - 31501 - 139862959100288 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 14:07:33,593 - main - 31501 - 139862959100288 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True)
+__main__ - INFO - 2024-05-09 14:07:33,594 - main - 31501 - 139862959100288 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-09 14:07:33,905 - etl - 31501 - 139862959100288 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-09 14:07:33,905 - etl - 31501 - 139862959100288 - Ao metadata DF shape: (6668, 3)
+scripts.etl - INFO - 2024-05-09 14:07:33,908 - etl - 31501 - 139862959100288 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-09 14:07:33,912 - etl - 31501 - 139862959100288 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-09 14:07:33,913 - etl - 31501 - 139862959100288 - Error percentage: 38.55728854229154
+scripts.etl - DEBUG - 2024-05-09 14:07:33,965 - etl - 31501 - 139862959100288 - Merged DF shape: (4050, 8)
+scripts.etl - INFO - 2024-05-09 14:07:33,966 - etl - 31501 - 139862959100288 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-09 14:07:33,967 - etl - 31501 - 139862959100288 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-09 14:07:33,967 - etl - 31501 - 139862959100288 - Error percentage: 0.6172839506172839
