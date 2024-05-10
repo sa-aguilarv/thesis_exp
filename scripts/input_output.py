@@ -12,8 +12,8 @@ def parse_input() -> argparse.Namespace:
     """
     parser = argparse.ArgumentParser(description="On Finding Megadiversity Among the Corpus of Scientific Literature")
     parser.add_argument("--eda", action="store_true", help="Exploratory data analysis")
-    parser.add_argument("--metadata", action="store_true", help="Collection of papers publication year and discipline from S2AG")
-    parser.add_argument("--cleaning", action="store_true", help="Data cleaning")
+    parser.add_argument("--metadata", action="store_true", help="Additional metadata collection from S2AG")
+    parser.add_argument("--corpus", action="store_true", help="Corpus formation and preprocessing")
     parser.add_argument("--tm", action="store_true", help="Topic modeling")
     return parser.parse_args()
 

@@ -70,7 +70,7 @@ TOTAL: 38897
     - [x] DataFrame shape, size, and data types
     - [x] Check for missing values
     - [x] Check for null values
-    - [ ] Check for duplicates --deprecated, NA
+    - [x] Check for duplicates // TODO: Address importance of checking for duplicate paper IDs after sending requests to S2AG
     - [ ] Check for outliers --deprecated, NA
 
 - [x] Choose social biases to analyze:
@@ -112,7 +112,7 @@ TOTAL: 38897
     - [x] **Validate all non-common paper IDs are removed**
     - [x] **Validate df indexes are reset after merging**
 
-- [x] Data cleaning
+- [x] Data cleaning --deprecated, preferred tmtoolkit methods
   - [x] Abstracts: Get meaningful nouns to make up the corpus
     - [x] Lowercase
     - [x] Handle compound words --made them into one word
@@ -129,8 +129,19 @@ TOTAL: 38897
   - [x] Get shape for all dfs
   - [x] Validate error percentages
 
-- [ ] Data cleaning with tmtoolkit
-  - [ ] Create Corpus instance
+- [x] Data cleaning with tmtoolkit
+  - [x] Create Corpus instance
+    - Make sure to retrieve the model that was used for NER to clean the corpus
+  - [x] Preprocessing
+    - [x] Lemmatize
+    - [x] Filter for POS (only nouns, 'N')
+    - [x] Lowercase
+    - [x] Remove tokens shorter than 2
+    - [x] Remove common tokens (0.90)
+    - [x] Removed uncommon tokens (0.05)
+    - [ ] Handle compund words --deprecated, kept only nouns
+  - [x] Save raw and clean corpora objects
+  - [x] Save tokens table
 
   ```python
   ERROR - Error: duplicate document label "data_w_ao_metadata-aae1603af1bb84087248441716a5c0bd373603b7" not allowed
@@ -138,7 +149,7 @@ TOTAL: 38897
 
   - [x] Find number of duplicate IDs in the source and ao. metadata dfs
     - This were probably introduced during the ao. metadata download from S2AG
-    - [ ] Remove duplicate paper IDs from ao. metadata df
+    - [x] Remove duplicate paper IDs from ao. metadata df
 
 ### 3.1. Results
 
@@ -177,7 +188,8 @@ TOTAL: 38897
 - The real number of publications after merging source data with ao. metadata dfs and dropping the rows with NaN values was 4025. This means some requests succeeded in finding the matches between the source df paper IDs and the ao. metadata df paper IDs, yet they might retrieved NaN values for one or both of the target columns (year, disciplines).
   - UPDATE-1: It seems that there are two parsing issues regarding S2AG paper IDs:
     1. S2AG fails in some instances to retrieve metadata given a paper ID. Given 7242 paper IDs, it retrieved 6668 instances, and the error percentage was of %38.55. This suggests there is a probability of 0.38 of getting an incorrect response even while using S2AG's defined paper IDs.
-    2. Python fails in some instances during merging of dfs based on common S2AG's paper IDs. Given 4050 paper IDs, it successfully matched 4025 instances, and the error percentage was of %0.61. This suggests there is a probability of 0.061 of merging data incorrectly using pandas given common S2AG paper IDs.  
+    2. Python fails in some instances during merging of dfs based on common S2AG's paper IDs. Given 4050 paper IDs, it successfully matched 4025 instances, and the error percentage was of %0.61. This suggests there is a probability of 0.061 of merging data incorrectly using pandas given common S2AG paper IDs.
+  - UPDATE-2: The %0.61 error was related to the duplicate paper IDs. Python was handling duplicate entries because S2AG retrieved them. 
 
 ## 4. Topic model
 

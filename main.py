@@ -45,21 +45,19 @@ def main():
         eda.json_to_df(config['dataPath'])
 
     elif args.metadata:
-        logger.info('Collection of papers publication year and discipline from S2AG')
+        logger.info('Additional metadata collection from S2AG')
         filename = config['resultsPath'] + 'data.csv'
         results_path = 'results/etl'
         etl.collect_ao_metadata(filename)
         etl.create_ao_metadata_df(results_path)
         etl.filter_data(filename, 'results/ao_metadata.csv')
 
-    elif args.cleaning:
-        logger.info('Data cleaning')
+    elif args.corpus:
+        logger.info('Corpus formation and preprocessing')
         filename = config['resultsPath'] + 'data_w_ao_metadata.csv'
-        etl.data_cleaning(filename)
-        # filename = config['resultsPath'] + 'cleaned_abstracts.csv'
-        # df = pd.read_csv(filename)
-        # logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
-        # u.after_processing_validation()
+        etl.corpus_creation(filename)
+        filename = 'results/corpus/raw_corpus.pkl'
+        etl.corpus_preprocessing(filename)
 
     elif args.tm:
         logger.info('Topic modeling')

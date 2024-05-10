@@ -5,11 +5,9 @@ Functions:
     create_ao_metadata_df: Create a single dataframe from the files in the directory.
     validate_responses: Validate the responses from the source data and the ao metadata.
     filter_data: Filters and measures the number of common papers between the source data and the ao. metadata instances given the source data paper IDs.
-    data_cleaning: Clean the data.
-    handle_abstracts: Handle the abstracts.
-    lemmatize: Lemmatize the text.
-    remove_non_nouns: Remove non-nouns from the text.
-    remove_stopwords: Remove stopwords from the text.
+    merge_dfs: Merge the source data and the ao metadata.
+    corpus_creation: Corpus formation. This function creates a corpus from a tabular file.
+    corpus_preprocessing: Data cleaning. This function lemmatizes the text, removes non-nouns, removes common and uncommon words, and saves the clean corpus.
 """
 from scripts import utils as u
 import pandas as pd
@@ -19,25 +17,14 @@ import random
 random.seed(20191113) # to make the sampling reproducible
 import numpy as np
 np.set_printoptions(precision=5)
-import string
 import logging
 from tqdm import tqdm
 import os
-# from nltk.stem import WordNetLemmatizer
-# from nltk.corpus import stopwords
-# from nltk.tokenize import word_tokenize
-# import nltk
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
-# nltk.download('averaged_perceptron_tagger')
-import spacy
-from tmtoolkit.corpus import Corpus
+from tmtoolkit.corpus import print_summary
 from tmtoolkit.utils import enable_logging
 enable_logging()
-from tmtoolkit.corpus import (lemmatize, filter_for_pos, to_lowercase,
-    remove_punctuation, filter_clean_tokens, remove_common_tokens,
-    tokens_table)
+from tmtoolkit.corpus import (Corpus, save_corpus_to_picklefile, load_corpus_from_picklefile, print_summary, lemmatize, filter_for_pos, to_lowercase,
+    remove_punctuation, filter_clean_tokens, remove_common_tokens, remove_uncommon_tokens, tokens_table)
 
 def collect_ao_metadata(filename):
     """ Collect metadata from Semantic Scholar API.
@@ -184,93 +171,48 @@ def merge_dfs(df, ao_df):
     validate_responses(df, filtered_df)
     return filtered_df
 
-def data_cleaning(filename):
-    """ Clean the data.
+def corpus_creation(filename):
+    """ Corpus formation. This function creates a corpus from a tabular file.
+    Args:
+        filename (str): The filename.
+    Returns:
+        None 
+    """
+    logger = logging.getLogger(__name__)
+    corpus = Corpus.from_tabular(filename, language='en', id_column='paper_id', text_column='abstract')
+    logger.debug('Raw corpus: %s', corpus)
+    logger.debug(print_summary(corpus))
+
+    save_path = 'results/corpus'
+    u.create_dir_if_not_exists(save_path)
+    save_corpus_to_picklefile(corpus, f'{save_path}/raw_corpus.pkl')
+    logger.debug('Saved raw corpus to %s', f'{save_path}/raw_corpus.pkl')
+
+def corpus_preprocessing(filename):
+    """ Data cleaning. This function lemmatizes the text, removes non-nouns, removes common and uncommon words, and saves the clean corpus.
     Args:
         filename (str): The filename.
     Returns:
         None
     """
     logger = logging.getLogger(__name__)
-    try:
-        corpus_preprocessing(filename)
-        #df_abstracts = handle_abstracts(filename)
-        # logger.debug('DF abstracts shape: %s', df_abstracts.shape)
-        
-        # df_abstracts.to_csv('results/cleaned_abstracts.csv', index=False)
-    except Exception as e:
-        logger.error('Error: %s', e)
+    corpus = load_corpus_from_picklefile(filename)
+    
+    corpus_norm = lemmatize(corpus, inplace=False)
+    del corpus
+    filter_for_pos(corpus_norm, 'N')
+    to_lowercase(corpus_norm)
+    remove_punctuation(corpus_norm)
+    filter_clean_tokens(corpus_norm, remove_shorter_than=2)
+    remove_common_tokens(corpus_norm, df_threshold=0.90)
+    remove_uncommon_tokens(corpus_norm, df_threshold=0.05)
+    tokens_df = tokens_table(corpus_norm)
 
-def corpus_preprocessing(filename):
-    logger = logging.getLogger(__name__)
-    #df = pd.read_csv(filename, usecols=['paper_id', 'abstract'])
-    # Create Corpus object from DataFrame
-    corpus = Corpus.from_tabular(filename, language='en', id_column='paper_id', text_column='abstract')
-    logger.debug('Corpus object: %s', corpus)
-    # log corpus 
+    logger.debug('Clean corpus: %s', corpus_norm)
+    logger.debug(print_summary(corpus_norm))
 
-def handle_abstracts(filename):
-    """ Handle the abstracts. This includes cleaning, lemmatization, and removing stopwords.
-    Args:
-        filename (str): The filename.
-    Returns:
-        pd.DataFrame: The dataframe with cleaned abstracts.
-    """
-    logger = logging.getLogger(__name__)
-    df = pd.read_csv(filename, usecols=['paper_id', 'abstract'])
+    save_path = 'results/corpus'
+    tokens_df.to_csv(f'{save_path}/tokens_table.csv', index=False)
 
-    logger.debug('DF shape: %s', df.shape)
-
-    df['abstract'] = df['abstract'].str.lower()
-    df['abstract'] = df['abstract'].apply(lambda x: x.replace('-', ''))
-    df['abstract'] = df['abstract'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
-    df['abstract'] = df['abstract'].str.replace(r'\d+', '') # Removes numbers
-    df['abstract'] = df['abstract'].str.replace(r'\n', ' ') # Removes new lines
-    df['abstract'] = df['abstract'].str.replace(r'\s+', ' ') # Removes extra spaces
-    df['abstract'] = df['abstract'].str.strip() # Removes leading and trailing spaces
-    df['abstract'] = df['abstract'].apply(remove_stopwords)
-    df['abstract'] = df['abstract'].apply(remove_non_nouns)
-    df['abstract'] = df['abstract'].apply(lemmatize)
-    df['abstract'] = df['abstract'].apply(lambda x: ' '.join(set(x.split())))
-    return df
-
-def lemmatize(text):
-    """ Lemmatize the text.
-    Args:
-        text (str): The text.
-    Returns:
-        str: The lemmatized text.
-    """
-    lemmatizer = WordNetLemmatizer()
-    token_words = word_tokenize(text)
-    lemma_text = ""
-    for word in token_words:
-        lemma_text = lemma_text + lemmatizer.lemmatize(word) + " "
-    return lemma_text
-
-def remove_non_nouns(text):
-    """ Remove non-nouns from the text.
-    Args:
-        text (str): The text.
-    Returns:
-        str: The text with only nouns. 
-    """
-    tokenized_text = word_tokenize(text)
-    pos_tagged_text = nltk.pos_tag(tokenized_text)
-    noun_text = " ".join([word for word, pos in pos_tagged_text if pos in ['NN', 'NNS', 'NNP', 'NNPS']])
-    return noun_text
-
-def remove_stopwords(text):
-    """ Remove stopwords from the text.
-    Args:
-        text (str): The text.
-    Returns:
-        str: The text with stopwords removed.
-    """
-    stop_words = set(stopwords.words('english'))
-    token_words = word_tokenize(text)
-    filtered_text = ""
-    for word in token_words:
-        if word not in stop_words:
-            filtered_text = filtered_text + word + " "
-    return filtered_text
+    save_corpus_to_picklefile(corpus_norm, f'{save_path}/clean_corpus.pkl')
+    logger.debug('Saved clean corpus to %s', f'{save_path}/clean_corpus.pkl')
