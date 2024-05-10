@@ -18197,3 +18197,25 @@ scripts.etl - DEBUG - 2024-05-09 14:07:33,965 - etl - 31501 - 139862959100288 - 
 scripts.etl - INFO - 2024-05-09 14:07:33,966 - etl - 31501 - 139862959100288 - Validation of source and filtered metadata
 scripts.etl - DEBUG - 2024-05-09 14:07:33,967 - etl - 31501 - 139862959100288 - Common IDs: 4025
 scripts.etl - INFO - 2024-05-09 14:07:33,967 - etl - 31501 - 139862959100288 - Error percentage: 0.6172839506172839
+__main__ - INFO - 2024-05-09 18:33:13,349 - main - 56133 - 140246854881664 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 18:33:13,351 - main - 56133 - 140246854881664 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 18:33:13,352 - utils - 56133 - 140246854881664 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:33:13,352 - main - 56133 - 140246854881664 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:33:13,359 - main - 56133 - 140246854881664 - Input arguments: Namespace(cleaning=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-09 18:33:13,360 - main - 56133 - 140246854881664 - Topic modeling
+scripts.tm - DEBUG - 2024-05-09 18:33:13,871 - tm - 56133 - 140246854881664 - Document-term matrix shape is (4050, 18320)
+__main__ - INFO - 2024-05-09 18:35:56,282 - main - 56420 - 139780036723072 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 18:35:56,285 - main - 56420 - 139780036723072 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 18:35:56,286 - utils - 56420 - 139780036723072 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:35:56,287 - main - 56420 - 139780036723072 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:35:56,298 - main - 56420 - 139780036723072 - Input arguments: Namespace(cleaning=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-09 18:35:56,299 - main - 56420 - 139780036723072 - Topic modeling
+scripts.tm - DEBUG - 2024-05-09 18:35:56,810 - tm - 56420 - 139780036723072 - Document-term matrix shape is (4050, 18320)
+__main__ - INFO - 2024-05-09 18:37:07,633 - main - 56573 - 140651487576448 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-09 18:37:07,635 - main - 56573 - 140651487576448 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-09 18:37:07,636 - utils - 56573 - 140651487576448 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:37:07,637 - main - 56573 - 140651487576448 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-09 18:37:07,650 - main - 56573 - 140651487576448 - Input arguments: Namespace(cleaning=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-09 18:37:07,652 - main - 56573 - 140651487576448 - Topic modeling
+scripts.tm - DEBUG - 2024-05-09 18:37:08,160 - tm - 56573 - 140651487576448 - Document-term matrix shape is (4050, 18320)
+scripts.tm - INFO - 2024-05-09 18:37:08,270 - tm - 56573 - 140651487576448 - Data-term matrix saved in results/tm/dtm.pkl

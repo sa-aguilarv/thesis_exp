@@ -1,5 +1,6 @@
 import logging
 import json
+import pickle
 import os
 import numpy as np
 import pandas as pd
@@ -136,3 +137,24 @@ def after_processing_validation():
     
     for key, value in no_common_ids_dict.items():
         logger.info(f'No. of common paper ids between df{key[0]} and df{key[1]}: {value}')
+
+def save_object(matrix, save_path):
+    """ Save an object.
+    Args:
+        matrix (object): The object to save.
+    Returns:
+        None
+    """
+    with open(save_path, 'wb') as f:
+        pickle.dump(matrix, f)
+
+def load_object(filename):
+    """ Load an object.
+    Args:
+        filename (str): The filename.
+    Returns:
+        object: The object.
+    """
+    with open(filename, 'rb') as f:
+        matrix = pickle.load(f)
+    return matrix
