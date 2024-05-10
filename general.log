@@ -18275,3 +18275,39 @@ __main__ - DEBUG - 2024-05-10 11:40:09,003 - main - 17150 - 139662059602304 - Co
 __main__ - DEBUG - 2024-05-10 11:40:09,008 - main - 17150 - 139662059602304 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
 __main__ - INFO - 2024-05-10 11:40:09,008 - main - 17150 - 139662059602304 - Data cleaning
 scripts.etl - ERROR - 2024-05-10 11:40:10,007 - etl - 17150 - 139662059602304 - Error: duplicate document label "data_w_ao_metadata-aae1603af1bb84087248441716a5c0bd373603b7" not allowed
+__main__ - INFO - 2024-05-10 11:55:37,057 - main - 18166 - 139942688797056 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:55:37,057 - main - 18166 - 139942688797056 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:55:37,058 - utils - 18166 - 139942688797056 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:55:37,058 - main - 18166 - 139942688797056 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - INFO - 2024-05-10 11:57:03,451 - main - 18448 - 139842445414784 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:57:03,452 - main - 18448 - 139842445414784 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:57:03,452 - utils - 18448 - 139842445414784 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:57:03,453 - main - 18448 - 139842445414784 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:57:03,456 - main - 18448 - 139842445414784 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True, tm=False)
+__main__ - INFO - 2024-05-10 11:57:03,457 - main - 18448 - 139842445414784 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-10 11:57:03,657 - etl - 18448 - 139842445414784 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-10 11:57:03,657 - etl - 18448 - 139842445414784 - Ao metadata DF shape: (6668, 3)
+scripts.etl - INFO - 2024-05-10 11:57:03,662 - etl - 18448 - 139842445414784 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-10 11:57:03,666 - etl - 18448 - 139842445414784 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-10 11:57:03,667 - etl - 18448 - 139842445414784 - Error percentage: 38.55728854229154
+scripts.etl - INFO - 2024-05-10 11:57:03,668 - etl - 18448 - 139842445414784 - Counting duplicate paper IDs
+scripts.etl - DEBUG - 2024-05-10 11:57:03,671 - etl - 18448 - 139842445414784 - Source DF duplicates: 0
+scripts.etl - DEBUG - 2024-05-10 11:57:03,673 - etl - 18448 - 139842445414784 - Ao metadata DF duplicates: 46
+__main__ - INFO - 2024-05-10 12:08:55,079 - main - 19029 - 139835683754368 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 12:08:55,080 - main - 19029 - 139835683754368 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 12:08:55,081 - utils - 19029 - 139835683754368 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 12:08:55,081 - main - 19029 - 139835683754368 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 12:08:55,086 - main - 19029 - 139835683754368 - Input arguments: Namespace(cleaning=False, eda=False, metadata=True, tm=False)
+__main__ - INFO - 2024-05-10 12:08:55,087 - main - 19029 - 139835683754368 - Collection of papers publication year and discipline from S2AG
+scripts.etl - DEBUG - 2024-05-10 12:08:55,404 - etl - 19029 - 139835683754368 - Source DF shape: (7242, 6)
+scripts.etl - DEBUG - 2024-05-10 12:08:55,404 - etl - 19029 - 139835683754368 - Ao metadata DF shape: (6668, 3)
+scripts.etl - INFO - 2024-05-10 12:08:55,406 - etl - 19029 - 139835683754368 - Validation of source and ao metadata
+scripts.etl - DEBUG - 2024-05-10 12:08:55,409 - etl - 19029 - 139835683754368 - Common IDs: 4097
+scripts.etl - INFO - 2024-05-10 12:08:55,409 - etl - 19029 - 139835683754368 - Error percentage: 38.55728854229154
+scripts.etl - DEBUG - 2024-05-10 12:08:55,410 - etl - 19029 - 139835683754368 - Counting duplicate paper IDs
+scripts.etl - DEBUG - 2024-05-10 12:08:55,412 - etl - 19029 - 139835683754368 - Source DF duplicates: 0
+scripts.etl - DEBUG - 2024-05-10 12:08:55,413 - etl - 19029 - 139835683754368 - Ao metadata DF duplicates: 46
+scripts.etl - DEBUG - 2024-05-10 12:08:55,463 - etl - 19029 - 139835683754368 - Merged DF shape: (4025, 8)
+scripts.etl - INFO - 2024-05-10 12:08:55,463 - etl - 19029 - 139835683754368 - Validation of source and filtered metadata
+scripts.etl - DEBUG - 2024-05-10 12:08:55,465 - etl - 19029 - 139835683754368 - Common IDs: 4025
+scripts.etl - INFO - 2024-05-10 12:08:55,466 - etl - 19029 - 139835683754368 - Error percentage: 0.0

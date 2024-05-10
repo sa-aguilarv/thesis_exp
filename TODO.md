@@ -136,8 +136,9 @@ TOTAL: 38897
   ERROR - Error: duplicate document label "data_w_ao_metadata-aae1603af1bb84087248441716a5c0bd373603b7" not allowed
   ```
 
-  - [ ] Find number of duplicate IDs in the dataset
+  - [x] Find number of duplicate IDs in the source and ao. metadata dfs
     - This were probably introduced during the ao. metadata download from S2AG
+    - [ ] Remove duplicate paper IDs from ao. metadata df
 
 ### 3.1. Results
 
@@ -155,13 +156,15 @@ TOTAL: 38897
   - Filtered df: 4050
   - No. common IDs between source and filtered dfs: 4025
   - Error percentage: **%0.61**
+  - Error percentage after removing **duplicates (46)**: **%0.0**
 
 - No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~
   - UPDATE-1: After validation, **I found the number of common IDs between all dfs is 4097**. This suggests that I either (1) didn't drop all uncommon IDs after merging source data with ao. metadata, or (2) didn't reset the indexes after merging.
   - UPDATE-2: The real number of common IDs after merging data and dropping the rows with NaN values is 4025.
 
 - Why does the merged dataframe has a shape of 4050, but the shared IDs are only 4025?
-  - This is probably related with **parsing errors while handling the papers IDs**. // TODO: Address this in the discussion: This suggests S2AG's paper IDs have issues while being processed with Python. This might be related with why S2AG seems to fail in retrieving some papers metadata by paper IDs.
+  - UPDATE-1: This is probably related with **parsing errors while handling the papers IDs**. // TODO: Address this in the discussion: This suggests S2AG's paper IDs have issues while being processed with Python. This might be related with why S2AG seems to fail in retrieving some papers metadata by paper IDs.
+  - UPDATE-2: **Found out ao. metadata df had duplicate paper IDs**. This suggests that some requests either (1) retrieved the same paper twice, or (2) found two different papers for the same paper ID. // TODO: Address this in the discussion. Further analysis is needed to make sure what happened, but that's out of the scope of this work. Here we will just remove those duplicate paper IDs instances.
 
 ### 3.2. Observations
 

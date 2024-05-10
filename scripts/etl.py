@@ -159,6 +159,11 @@ def filter_data(df_path, ao_df_path):
     logger.info('Validation of source and ao metadata')
     validate_responses(df, ao_df)
     
+    logger.debug('Counting duplicate paper IDs')
+    logger.debug('Source DF duplicates: %s', df.duplicated(subset='paper_id').sum())
+    logger.debug('Ao metadata DF duplicates: %s', ao_df.duplicated(subset='paper_id').sum())
+    ao_df = ao_df.drop_duplicates(subset='paper_id')
+
     filtered_df = merge_dfs(df, ao_df)
 
     filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
