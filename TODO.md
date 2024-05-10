@@ -129,6 +129,16 @@ TOTAL: 38897
   - [x] Get shape for all dfs
   - [x] Validate error percentages
 
+- [ ] Data cleaning with tmtoolkit
+  - [ ] Create Corpus instance
+
+  ```python
+  ERROR - Error: duplicate document label "data_w_ao_metadata-aae1603af1bb84087248441716a5c0bd373603b7" not allowed
+  ```
+
+  - [ ] Find number of duplicate IDs in the dataset
+    - This were probably introduced during the ao. metadata download from S2AG
+
 ### 3.1. Results
 
 - Papers sizes during processing:
@@ -140,7 +150,7 @@ TOTAL: 38897
   - Ao. metadata df: 6669
   - No. common IDs between source and ao. metadata dfs: 4097
   - Error percentage: **%38.55**
-**
+
 - Filtered ao. metadata df paper IDs information that wasn't in source df:
   - Filtered df: 4050
   - No. common IDs between source and filtered dfs: 4025
@@ -168,11 +178,38 @@ TOTAL: 38897
 
 ## 4. Topic model
 
-- [ ] Data processing
-  - [ ] Build TFDF matrix
+- [x] Data processing
+  - [x] Build TFDF matrix
 
-- [ ] Optimal number of topics
-  - [ ] Estimate optimal number of topics with [tmtoolkit](https://tmtoolkit.readthedocs.io/en/latest/)
+- [x] Define how to estimate number of topics
+  - [x] Analize viability of using [tmtoolkit](https://tmtoolkit.readthedocs.io/en/latest/)
+    - [x] Is this the most up-to-date library to accomplish this?
+      - I couldn't find any newer libraries, and tmtoolkit has the advantage of having multiple metrics implemented already.
+    - [x] Check how they estimated the number of topics in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
+      - They considered different numbers of topics: K = 50-2000
+      - They fit each model for 1000 iterations since that's when the **log-likelihood values started to converge** // TODO: Identify when the log-likelihood values (see perplexity graph) start to converge with my data
+      - They considered three metircs:
+        1. Perplexity (minimize)
+        2. Topic coherence (maximize)
+        3. Topic distinctiveness (maximize)
+    - [x] Does tmtoolkit have these metrics? [Yes](https://tmtoolkit.readthedocs.io/en/latest/index.html#topic-modeling)
+      - Papers: perplexity ([Griffiths, Steyvers 2004](https://www.pnas.org/doi/full/10.1073/pnas.0307752101)), topic coherence ([Mimno et al. 2011](https://dl.acm.org/doi/10.5555/2145432.2145462)), topic distinctiveness ([Chuang et al. 2012](https://dl.acm.org/doi/10.1145/2254556.2254572)).
+
+- [ ] Estimate the number of topics with tmtoolkit
+  - [x] Install tmtoolkit and needed set up to use chosen evaluation metrics
+    - Installed following [guidelines](https://tmtoolkit.readthedocs.io/en/latest/install.html):
+
+    ```Python
+    pip install -U tmtoolkit[recommended,lda,topic_modeling_eval_extra] 
+    ```
+
+    ```Python
+    python -m tmtoolkit setup en
+    ```
+
+    - Noticed that tmtoolkit has a more comprehensive [data cleaning pipenline](https://tmtoolkit.readthedocs.io/en/latest/bow.html)
+      - **Decided to re-do the data cleaning with tmtoolkit** to check which performs is better.
+
   - [ ] [Save model](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
 
 - [ ] Get topics

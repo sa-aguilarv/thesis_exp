@@ -16,19 +16,28 @@ import pandas as pd
 import requests
 import time
 import random
+random.seed(20191113) # to make the sampling reproducible
+import numpy as np
+np.set_printoptions(precision=5)
 import string
 import logging
 from tqdm import tqdm
 import os
-from nltk.stem import PorterStemmer, WordNetLemmatizer
-from nltk.corpus import wordnet
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
+# from nltk.stem import WordNetLemmatizer
+# from nltk.corpus import stopwords
+# from nltk.tokenize import word_tokenize
+# import nltk
+# nltk.download('punkt')
+# nltk.download('wordnet')
+# nltk.download('stopwords')
+# nltk.download('averaged_perceptron_tagger')
+import spacy
+from tmtoolkit.corpus import Corpus
+from tmtoolkit.utils import enable_logging
+enable_logging()
+from tmtoolkit.corpus import (lemmatize, filter_for_pos, to_lowercase,
+    remove_punctuation, filter_clean_tokens, remove_common_tokens,
+    tokens_table)
 
 def collect_ao_metadata(filename):
     """ Collect metadata from Semantic Scholar API.
@@ -179,12 +188,21 @@ def data_cleaning(filename):
     """
     logger = logging.getLogger(__name__)
     try:
-        df_abstracts = handle_abstracts(filename)
-        logger.debug('DF abstracts shape: %s', df_abstracts.shape)
+        corpus_preprocessing(filename)
+        #df_abstracts = handle_abstracts(filename)
+        # logger.debug('DF abstracts shape: %s', df_abstracts.shape)
         
-        df_abstracts.to_csv('results/cleaned_abstracts.csv', index=False)
+        # df_abstracts.to_csv('results/cleaned_abstracts.csv', index=False)
     except Exception as e:
         logger.error('Error: %s', e)
+
+def corpus_preprocessing(filename):
+    logger = logging.getLogger(__name__)
+    #df = pd.read_csv(filename, usecols=['paper_id', 'abstract'])
+    # Create Corpus object from DataFrame
+    corpus = Corpus.from_tabular(filename, language='en', id_column='paper_id', text_column='abstract')
+    logger.debug('Corpus object: %s', corpus)
+    # log corpus 
 
 def handle_abstracts(filename):
     """ Handle the abstracts. This includes cleaning, lemmatization, and removing stopwords.

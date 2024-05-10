@@ -18219,3 +18219,59 @@ __main__ - DEBUG - 2024-05-09 18:37:07,650 - main - 56573 - 140651487576448 - In
 __main__ - INFO - 2024-05-09 18:37:07,652 - main - 56573 - 140651487576448 - Topic modeling
 scripts.tm - DEBUG - 2024-05-09 18:37:08,160 - tm - 56573 - 140651487576448 - Document-term matrix shape is (4050, 18320)
 scripts.tm - INFO - 2024-05-09 18:37:08,270 - tm - 56573 - 140651487576448 - Data-term matrix saved in results/tm/dtm.pkl
+__main__ - INFO - 2024-05-10 11:30:52,033 - main - 15603 - 140175831691648 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:30:52,036 - main - 15603 - 140175831691648 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:30:52,038 - utils - 15603 - 140175831691648 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:30:52,038 - main - 15603 - 140175831691648 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:30:52,053 - main - 15603 - 140175831691648 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:30:52,054 - main - 15603 - 140175831691648 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:30:52,178 - etl - 15603 - 140175831691648 - Error: type object 'Corpus' has no attribute 'from_df'
+__main__ - INFO - 2024-05-10 11:33:46,795 - main - 15899 - 139966432276864 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:33:46,795 - main - 15899 - 139966432276864 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:33:46,797 - utils - 15899 - 139966432276864 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:33:46,799 - main - 15899 - 139966432276864 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:33:46,810 - main - 15899 - 139966432276864 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:33:46,811 - main - 15899 - 139966432276864 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:33:46,811 - etl - 15899 - 139966432276864 - Error: __init__() got an unexpected keyword argument 'doc_col'
+__main__ - INFO - 2024-05-10 11:35:42,509 - main - 16135 - 140524455936384 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:35:42,510 - main - 16135 - 140524455936384 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:35:42,512 - utils - 16135 - 140524455936384 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:35:42,514 - main - 16135 - 140524455936384 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:35:42,527 - main - 16135 - 140524455936384 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:35:42,527 - main - 16135 - 140524455936384 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:35:42,528 - etl - 16135 - 140524455936384 - Error: either `language`, `language_model` or `spacy_instance` must be given
+__main__ - INFO - 2024-05-10 11:36:15,923 - main - 16317 - 140296508600704 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:36:15,924 - main - 16317 - 140296508600704 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:36:15,925 - utils - 16317 - 140296508600704 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:36:15,926 - main - 16317 - 140296508600704 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:36:15,940 - main - 16317 - 140296508600704 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:36:15,940 - main - 16317 - 140296508600704 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:36:15,941 - etl - 16317 - 140296508600704 - Error: __init__() got an unexpected keyword argument 'text_col'
+__main__ - INFO - 2024-05-10 11:38:18,408 - main - 16707 - 140630137000320 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:38:18,409 - main - 16707 - 140630137000320 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:38:18,409 - utils - 16707 - 140630137000320 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:38:18,409 - main - 16707 - 140630137000320 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:38:18,415 - main - 16707 - 140630137000320 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:38:18,415 - main - 16707 - 140630137000320 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:38:18,416 - etl - 16707 - 140630137000320 - Error: `language` must be a two-letter ISO 639-1 language code
+__main__ - INFO - 2024-05-10 11:38:37,329 - main - 16838 - 139994566099328 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:38:37,329 - main - 16838 - 139994566099328 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:38:37,330 - utils - 16838 - 139994566099328 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:38:37,330 - main - 16838 - 139994566099328 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:38:37,332 - main - 16838 - 139994566099328 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:38:37,333 - main - 16838 - 139994566099328 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:38:38,273 - etl - 16838 - 139994566099328 - Error: corpus_add_tabular() got multiple values for argument 'docs'
+__main__ - INFO - 2024-05-10 11:39:34,422 - main - 17019 - 139652951753088 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:39:34,423 - main - 17019 - 139652951753088 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:39:34,423 - utils - 17019 - 139652951753088 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:39:34,424 - main - 17019 - 139652951753088 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:39:34,426 - main - 17019 - 139652951753088 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:39:34,427 - main - 17019 - 139652951753088 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:39:35,249 - etl - 17019 - 139652951753088 - Error: corpus_add_tabular() missing 2 required positional arguments: 'id_column' and 'text_column'
+__main__ - INFO - 2024-05-10 11:40:09,002 - main - 17150 - 139662059602304 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 11:40:09,002 - main - 17150 - 139662059602304 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 11:40:09,003 - utils - 17150 - 139662059602304 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:40:09,003 - main - 17150 - 139662059602304 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 11:40:09,008 - main - 17150 - 139662059602304 - Input arguments: Namespace(cleaning=True, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-10 11:40:09,008 - main - 17150 - 139662059602304 - Data cleaning
+scripts.etl - ERROR - 2024-05-10 11:40:10,007 - etl - 17150 - 139662059602304 - Error: duplicate document label "data_w_ao_metadata-aae1603af1bb84087248441716a5c0bd373603b7" not allowed

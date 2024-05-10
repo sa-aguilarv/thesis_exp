@@ -56,10 +56,10 @@ def main():
         logger.info('Data cleaning')
         filename = config['resultsPath'] + 'data_w_ao_metadata.csv'
         etl.data_cleaning(filename)
-        filename = config['resultsPath'] + 'cleaned_abstracts.csv'
-        df = pd.read_csv(filename)
-        logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
-        u.after_processing_validation()
+        # filename = config['resultsPath'] + 'cleaned_abstracts.csv'
+        # df = pd.read_csv(filename)
+        # logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
+        # u.after_processing_validation()
 
     elif args.tm:
         logger.info('Topic modeling')
