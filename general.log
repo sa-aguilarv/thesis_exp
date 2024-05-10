@@ -18468,3 +18468,45 @@ scripts.etl - DEBUG - 2024-05-10 17:26:48,472 - etl - 16080 - 139953991758208 - 
 scripts.etl - DEBUG - 2024-05-10 17:27:15,236 - etl - 16080 - 139953991758208 - Clean corpus: <Corpus [4025 documents  / language "en"]>
 scripts.etl - DEBUG - 2024-05-10 17:27:15,249 - etl - 16080 - 139953991758208 - None
 scripts.etl - DEBUG - 2024-05-10 17:27:16,416 - etl - 16080 - 139953991758208 - Saved clean corpus to results/corpus/clean_corpus.pkl
+__main__ - INFO - 2024-05-10 17:48:31,082 - main - 17704 - 140136535871872 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 17:48:31,084 - main - 17704 - 140136535871872 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 17:48:31,085 - utils - 17704 - 140136535871872 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:48:31,086 - main - 17704 - 140136535871872 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:48:31,098 - main - 17704 - 140136535871872 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 17:48:31,098 - main - 17704 - 140136535871872 - Topic modeling
+__main__ - INFO - 2024-05-10 17:49:41,637 - main - 17842 - 140025449898368 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 17:49:41,639 - main - 17842 - 140025449898368 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 17:49:41,640 - utils - 17842 - 140025449898368 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:49:41,641 - main - 17842 - 140025449898368 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:49:41,651 - main - 17842 - 140025449898368 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 17:49:41,651 - main - 17842 - 140025449898368 - Topic modeling
+__main__ - INFO - 2024-05-10 17:54:38,327 - main - 18172 - 140461181837696 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 17:54:38,328 - main - 18172 - 140461181837696 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 17:54:38,328 - utils - 18172 - 140461181837696 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:54:38,328 - main - 18172 - 140461181837696 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:54:38,334 - main - 18172 - 140461181837696 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 17:54:38,334 - main - 18172 - 140461181837696 - Topic modeling
+scripts.tm - DEBUG - 2024-05-10 17:54:41,045 - tm - 18172 - 140461181837696 - First 10 document labels: ['data_w_ao_metadata-00352a58c8766861effed18a4b079d1683fec2ec', 'data_w_ao_metadata-0043d044273b8eb1585d3a66061e9b4e03edc062', 'data_w_ao_metadata-00623bf2715e25d3acacb3f210d6888ed840e3cb', 'data_w_ao_metadata-0072159e1ebecc889e9bcabb58bb45c47e18a403', 'data_w_ao_metadata-007618ad76a3548195ab5d11c1e2459931c91cd1', 'data_w_ao_metadata-007bf75961da42a7e0cc8e2855e5c208a5ec65c1', 'data_w_ao_metadata-0080d3bd9fb92e022c27715c2d1249042aa998b8', 'data_w_ao_metadata-0094b25e2500306fadbdfb41d520f2970bb086d3', 'data_w_ao_metadata-009892e02bc1a4c9abf6f547b979e68ecbde8087', 'data_w_ao_metadata-00acd3fd31ed0cde8df286697caefc5298e54df1']
+scripts.tm - DEBUG - 2024-05-10 17:54:41,046 - tm - 18172 - 140461181837696 - First 10 vocabulary tokens: ['ability', 'acid', 'activation', 'activity', 'addition', 'age', 'agent', 'analysis', 'animal', 'antibody']
+scripts.tm - DEBUG - 2024-05-10 17:54:41,046 - tm - 18172 - 140461181837696 - Document-term matrix shape: (4025, 130)
+__main__ - INFO - 2024-05-10 17:55:31,001 - main - 18309 - 140614209565056 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 17:55:31,002 - main - 18309 - 140614209565056 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 17:55:31,002 - utils - 18309 - 140614209565056 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:55:31,002 - main - 18309 - 140614209565056 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:55:31,005 - main - 18309 - 140614209565056 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 17:55:31,005 - main - 18309 - 140614209565056 - Topic modeling
+scripts.tm - DEBUG - 2024-05-10 17:55:33,837 - tm - 18309 - 140614209565056 - First 10 document labels: ['data_w_ao_metadata-00352a58c8766861effed18a4b079d1683fec2ec', 'data_w_ao_metadata-0043d044273b8eb1585d3a66061e9b4e03edc062', 'data_w_ao_metadata-00623bf2715e25d3acacb3f210d6888ed840e3cb', 'data_w_ao_metadata-0072159e1ebecc889e9bcabb58bb45c47e18a403', 'data_w_ao_metadata-007618ad76a3548195ab5d11c1e2459931c91cd1', 'data_w_ao_metadata-007bf75961da42a7e0cc8e2855e5c208a5ec65c1', 'data_w_ao_metadata-0080d3bd9fb92e022c27715c2d1249042aa998b8', 'data_w_ao_metadata-0094b25e2500306fadbdfb41d520f2970bb086d3', 'data_w_ao_metadata-009892e02bc1a4c9abf6f547b979e68ecbde8087', 'data_w_ao_metadata-00acd3fd31ed0cde8df286697caefc5298e54df1']
+scripts.tm - DEBUG - 2024-05-10 17:55:33,837 - tm - 18309 - 140614209565056 - First 10 vocabulary tokens: ['ability', 'acid', 'activation', 'activity', 'addition', 'age', 'agent', 'analysis', 'animal', 'antibody']
+scripts.tm - DEBUG - 2024-05-10 17:55:33,838 - tm - 18309 - 140614209565056 - Document-term matrix shape: (4025, 130)
+scripts.tm - DEBUG - 2024-05-10 17:55:34,243 - tm - 18309 - 140614209565056 - Saved DTM, doc_labels, and vocab in results/tm
+__main__ - INFO - 2024-05-10 17:56:59,325 - main - 18472 - 139677477319040 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 17:56:59,599 - main - 18472 - 139677477319040 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 17:56:59,601 - utils - 18472 - 139677477319040 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:56:59,601 - main - 18472 - 139677477319040 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/'}
+__main__ - DEBUG - 2024-05-10 17:56:59,616 - main - 18472 - 139677477319040 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 17:56:59,618 - main - 18472 - 139677477319040 - Topic modeling
+scripts.tm - DEBUG - 2024-05-10 17:57:02,701 - tm - 18472 - 139677477319040 - First 10 document labels: ['data_w_ao_metadata-00352a58c8766861effed18a4b079d1683fec2ec', 'data_w_ao_metadata-0043d044273b8eb1585d3a66061e9b4e03edc062', 'data_w_ao_metadata-00623bf2715e25d3acacb3f210d6888ed840e3cb', 'data_w_ao_metadata-0072159e1ebecc889e9bcabb58bb45c47e18a403', 'data_w_ao_metadata-007618ad76a3548195ab5d11c1e2459931c91cd1', 'data_w_ao_metadata-007bf75961da42a7e0cc8e2855e5c208a5ec65c1', 'data_w_ao_metadata-0080d3bd9fb92e022c27715c2d1249042aa998b8', 'data_w_ao_metadata-0094b25e2500306fadbdfb41d520f2970bb086d3', 'data_w_ao_metadata-009892e02bc1a4c9abf6f547b979e68ecbde8087', 'data_w_ao_metadata-00acd3fd31ed0cde8df286697caefc5298e54df1']
+scripts.tm - DEBUG - 2024-05-10 17:57:02,702 - tm - 18472 - 139677477319040 - First 10 vocabulary tokens: ['ability', 'acid', 'activation', 'activity', 'addition', 'age', 'agent', 'analysis', 'animal', 'antibody']
+scripts.tm - DEBUG - 2024-05-10 17:57:02,702 - tm - 18472 - 139677477319040 - Document-term matrix shape: (4025, 130)
+scripts.tm - DEBUG - 2024-05-10 17:57:02,913 - tm - 18472 - 139677477319040 - First 10 document labels: ['data_w_ao_metadata-00352a58c8766861effed18a4b079d1683fec2ec', 'data_w_ao_metadata-0043d044273b8eb1585d3a66061e9b4e03edc062', 'data_w_ao_metadata-00623bf2715e25d3acacb3f210d6888ed840e3cb', 'data_w_ao_metadata-0072159e1ebecc889e9bcabb58bb45c47e18a403', 'data_w_ao_metadata-007618ad76a3548195ab5d11c1e2459931c91cd1', 'data_w_ao_metadata-007bf75961da42a7e0cc8e2855e5c208a5ec65c1', 'data_w_ao_metadata-0080d3bd9fb92e022c27715c2d1249042aa998b8', 'data_w_ao_metadata-0094b25e2500306fadbdfb41d520f2970bb086d3', 'data_w_ao_metadata-009892e02bc1a4c9abf6f547b979e68ecbde8087', 'data_w_ao_metadata-00acd3fd31ed0cde8df286697caefc5298e54df1']
+scripts.tm - DEBUG - 2024-05-10 17:57:03,131 - tm - 18472 - 139677477319040 - Saved DTM, doc_labels, and vocab in results/tm

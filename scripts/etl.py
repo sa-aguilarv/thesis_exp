@@ -20,7 +20,6 @@ np.set_printoptions(precision=5)
 import logging
 from tqdm import tqdm
 import os
-from tmtoolkit.corpus import print_summary
 from tmtoolkit.utils import enable_logging
 enable_logging()
 from tmtoolkit.corpus import (Corpus, save_corpus_to_picklefile, load_corpus_from_picklefile, print_summary, lemmatize, filter_for_pos, to_lowercase,

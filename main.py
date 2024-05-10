@@ -46,7 +46,7 @@ def main():
 
     elif args.metadata:
         logger.info('Additional metadata collection from S2AG')
-        filename = config['resultsPath'] + 'data.csv'
+        filename = 'results/data.csv'
         results_path = 'results/etl'
         etl.collect_ao_metadata(filename)
         etl.create_ao_metadata_df(results_path)
@@ -54,15 +54,15 @@ def main():
 
     elif args.corpus:
         logger.info('Corpus formation and preprocessing')
-        filename = config['resultsPath'] + 'data_w_ao_metadata.csv'
+        filename = 'results/data_w_ao_metadata.csv'
         etl.corpus_creation(filename)
         filename = 'results/corpus/raw_corpus.pkl'
         etl.corpus_preprocessing(filename)
 
     elif args.tm:
         logger.info('Topic modeling')
-        filename = config['resultsPath'] + 'cleaned_abstracts.csv'
-        tm.get_topics(filename)
+        filename = 'results/corpus/clean_corpus.pkl'
+        tm.get_dtm(filename)
         
         
 if __name__ == '__main__':
