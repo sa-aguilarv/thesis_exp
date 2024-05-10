@@ -1,3 +1,10 @@
+""" Exploratory Data Analysis (EDA) module.
+This module contains functions to perform EDA on the data.
+Functions: 
+    get_size: Get the number of files in each subfolder in the dataPath.
+    json_to_df: Convert json files to a pandas DataFrame.
+    save_df_descriptors: Save the DataFrame descriptors.
+"""
 import logging
 from scripts import utils as u
 import os

@@ -112,6 +112,10 @@ def drop_nan_rows(df):
     return df
 
 def after_processing_validation():
+    """ Validate the data after processing.
+    Returns:
+        None
+    """
     source_df = pd.read_csv('results/data.csv', usecols=['paper_id'])
     ao_metadata_df = pd.read_csv('results/ao_metadata.csv', usecols=['paperId'])
     ao_metadata_df.rename(columns={'paperId': 'paper_id'}, inplace=True)
@@ -121,11 +125,6 @@ def after_processing_validation():
 
     logger = logging.getLogger(__name__)
     dfList = [source_df, ao_metadata_df, source_w_ao_metadata_df, cleaned_abstracts_df]
-    
-    # print 3 rows of the cleaned abstracts df that are not in source df
-    logger.info('3 rows of the cleaned abstracts df that are not in source df:')
-    cleaned_abstracts_not_in_source_df = cleaned_abstracts_df[~cleaned_abstracts_df['paper_id'].isin(source_df['paper_id'])]
-    logger.info(cleaned_abstracts_not_in_source_df.head(3))
 
     no_common_ids_dict = {}
     for i in range(len(dfList)):

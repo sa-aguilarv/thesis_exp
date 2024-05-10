@@ -146,7 +146,7 @@ TOTAL: 38897
   - No. common IDs between source and filtered dfs: 4025
   - Error percentage: **%0.61**
 
-- No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~ 
+- No. publications size after merging data and ao. metadata dfs: 4123 // ~~TODO: Why did the data size increase after merging? There are probably NaN values.~~
   - UPDATE-1: After validation, **I found the number of common IDs between all dfs is 4097**. This suggests that I either (1) didn't drop all uncommon IDs after merging source data with ao. metadata, or (2) didn't reset the indexes after merging.
   - UPDATE-2: The real number of common IDs after merging data and dropping the rows with NaN values is 4025.
 

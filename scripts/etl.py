@@ -1,3 +1,16 @@
+""" This module contains functions for the ETL process.
+Functions:
+    collect_ao_metadata: Collect metadata from Semantic Scholar API.
+    s2_fetch_metadata: Fetch metadata from Semantic Scholar API.
+    create_ao_metadata_df: Create a single dataframe from the files in the directory.
+    validate_responses: Validate the responses from the source data and the ao metadata.
+    filter_data: Filters and measures the number of common papers between the source data and the ao. metadata instances given the source data paper IDs.
+    data_cleaning: Clean the data.
+    handle_abstracts: Handle the abstracts.
+    lemmatize: Lemmatize the text.
+    remove_non_nouns: Remove non-nouns from the text.
+    remove_stopwords: Remove stopwords from the text.
+"""
 from scripts import utils as u
 import pandas as pd
 import requests
@@ -18,6 +31,12 @@ nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
 
 def collect_ao_metadata(filename):
+    """ Collect metadata from Semantic Scholar API.
+    Args:
+        filename (str): The filename.
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     chunk_size = 500
     base_url = 'https://api.semanticscholar.org/graph/v1/paper/batch'
@@ -43,11 +62,12 @@ def collect_ao_metadata(filename):
             continue
 
 def s2_fetch_metadata(base_url, chunk_ids):
-    """
-    Query definition to fetch metadata from Semantic Scholar API
-    :param base_url: Semantic Scholar API base url [str]
-    :param chunk_ids: List of doc_ids to fetch [list]
-    :return: List of Semantic Scholar API responses [list of dicts]
+    """ Fetch metadata from Semantic Scholar API.
+    Args:
+        base_url (str): The base URL.
+        chunk_ids (list): The list of IDs.
+    Returns:
+        dictList (list): The list of dictionaries.
     """
     logger = logging.getLogger(__name__)
     e = 5
@@ -70,13 +90,17 @@ def s2_fetch_metadata(base_url, chunk_ids):
             time.sleep(random.randint(60, 65) + (2 ** (5 - e)))
 
 def create_ao_metadata_df(dir):
-    # list all files in dir
+    """ Create a single dataframe from the files in the directory.
+    Args:
+        dir (str): The directory.
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     files = os.listdir(dir)
     files.sort(key=lambda x: int(x.split("_")[-1].split(".")[0]))
     logger.debug('Number of files in dir: %s', len(files))
 
-    # read each file and concatenate to a single df
     dfList = []
     n_rows = 0
     for file in files:
@@ -92,6 +116,13 @@ def create_ao_metadata_df(dir):
     df.to_csv(f'{save_path}/ao_metadata.csv', index=False)
 
 def validate_responses(df, ao_df):
+    """ Validate the responses from the source data and the ao metadata.
+    Args:
+        df (pd.DataFrame): The source data.
+        ao_df (pd.DataFrame): The ao metadata.
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     df_ids = df['paper_id'].tolist()
     ao_ids = ao_df['paper_id'].tolist()
@@ -101,8 +132,14 @@ def validate_responses(df, ao_df):
     error_percentage = (len(ao_ids) - len(common_ids)) / len(ao_ids) * 100
     logger.info('Error percentage: %s', error_percentage)
 
-
 def filter_data(df_path, ao_df_path):
+    """ Filters and measures the number of common papers between the source data and the ao. metadata instances given the source data paper IDs.
+    Args:
+        df_path (str): The path to the source data.
+        ao_df_path (str): The path to the ao metadata.
+    Returns:
+        None
+    """ 
     logger = logging.getLogger(__name__)
     df = pd.read_csv(df_path)
     ao_df = pd.read_csv(ao_df_path)
@@ -118,6 +155,13 @@ def filter_data(df_path, ao_df_path):
     filtered_df.to_csv(f'results/data_w_ao_metadata.csv', index=False)
 
 def merge_dfs(df, ao_df):
+    """ Merge the source data and the ao metadata.
+    Args:
+        df (pd.DataFrame): The source data.
+        ao_df (pd.DataFrame): The ao metadata.
+    Returns:
+        pd.DataFrame: The merged dataframe.
+    """
     logger = logging.getLogger(__name__)
     filtered_df = pd.merge(df, ao_df, on='paper_id', how='left').reset_index(drop=True)
     filtered_df = u.drop_nan_rows(filtered_df)
@@ -127,6 +171,12 @@ def merge_dfs(df, ao_df):
     return filtered_df
 
 def data_cleaning(filename):
+    """ Clean the data.
+    Args:
+        filename (str): The filename.
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     try:
         df_abstracts = handle_abstracts(filename)
@@ -137,6 +187,12 @@ def data_cleaning(filename):
         logger.error('Error: %s', e)
 
 def handle_abstracts(filename):
+    """ Handle the abstracts. This includes cleaning, lemmatization, and removing stopwords.
+    Args:
+        filename (str): The filename.
+    Returns:
+        pd.DataFrame: The dataframe with cleaned abstracts.
+    """
     logger = logging.getLogger(__name__)
     df = pd.read_csv(filename, usecols=['paper_id', 'abstract'])
 
@@ -156,6 +212,12 @@ def handle_abstracts(filename):
     return df
 
 def lemmatize(text):
+    """ Lemmatize the text.
+    Args:
+        text (str): The text.
+    Returns:
+        str: The lemmatized text.
+    """
     lemmatizer = WordNetLemmatizer()
     token_words = word_tokenize(text)
     lemma_text = ""
@@ -164,12 +226,24 @@ def lemmatize(text):
     return lemma_text
 
 def remove_non_nouns(text):
+    """ Remove non-nouns from the text.
+    Args:
+        text (str): The text.
+    Returns:
+        str: The text with only nouns. 
+    """
     tokenized_text = word_tokenize(text)
     pos_tagged_text = nltk.pos_tag(tokenized_text)
     noun_text = " ".join([word for word, pos in pos_tagged_text if pos in ['NN', 'NNS', 'NNP', 'NNPS']])
     return noun_text
 
 def remove_stopwords(text):
+    """ Remove stopwords from the text.
+    Args:
+        text (str): The text.
+    Returns:
+        str: The text with stopwords removed.
+    """
     stop_words = set(stopwords.words('english'))
     token_words = word_tokenize(text)
     filtered_text = ""

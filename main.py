@@ -1,3 +1,8 @@
+""" Main script to run the application.
+Functions: 
+    set_up_logging: Set up the logging configuration.
+    main: Main function to run the application.
+"""
 import os
 import logging
 import logging.config
@@ -5,6 +10,7 @@ from scripts import input_output as io
 from scripts import eda
 from scripts import utils as u
 from scripts import etl
+from scripts import tm
 import pandas as pd
 
 def set_up_logging():
@@ -40,23 +46,26 @@ def main():
 
     elif args.metadata:
         logger.info('Collection of papers publication year and discipline from S2AG')
-        # Change to the path where the data is stored
         filename = config['resultsPath'] + 'data.csv'
         results_path = 'results/etl'
-        #etl.collect_ao_metadata(filename)
-        #etl.create_ao_metadata_df(results_path)
+        etl.collect_ao_metadata(filename)
+        etl.create_ao_metadata_df(results_path)
         etl.filter_data(filename, 'results/ao_metadata.csv')
 
     elif args.cleaning:
         logger.info('Data cleaning')
-        # Change to the path where the data is stored
         filename = config['resultsPath'] + 'data_w_ao_metadata.csv'
         etl.data_cleaning(filename)
-        # Check for nan values in cleaned_abstracts.csv
         filename = config['resultsPath'] + 'cleaned_abstracts.csv'
         df = pd.read_csv(filename)
         logger.info('Number of nan values in cleaned_abstracts.csv: %s', df.isnull().sum())
         u.after_processing_validation()
+
+    elif args.tm:
+        logger.info('Topic modeling')
+        filename = config['resultsPath'] + 'cleaned_abstracts.csv'
+        tm.get_topics(filename)
+        
         
 if __name__ == '__main__':
     main()
