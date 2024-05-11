@@ -11,7 +11,6 @@ from scripts import eda
 from scripts import utils as u
 from scripts import etl
 from scripts import tm
-import pandas as pd
 
 def set_up_logging():
     """Set up the logging configuration.
@@ -62,7 +61,8 @@ def main():
     elif args.tm:
         logger.info('Topic modeling')
         filename = 'results/corpus/clean_corpus.pkl'
-        tm.get_dtm(filename)
+        dtm = tm.get_dtm(filename)
+        tm.estimate_topics(dtm, config["ldaParams"])
         
         
 if __name__ == '__main__':

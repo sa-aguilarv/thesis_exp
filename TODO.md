@@ -193,8 +193,9 @@ TOTAL: 38897
 
 ## 4. Topic model
 
-- [x] Data processing
-  - [x] Build TFDF matrix
+- [x] Get DTM, labels and vocabulary
+  - [ ] DTM with CountVectorizer --deprecated, used tmtoolkit instead
+  - [x] DTM, labels and vocabulary with tmtoolkit
 
 - [x] Define how to estimate number of topics
   - [x] Analize viability of using [tmtoolkit](https://tmtoolkit.readthedocs.io/en/latest/)
@@ -224,11 +225,28 @@ TOTAL: 38897
 
     - Noticed that tmtoolkit has a more comprehensive [data cleaning pipenline](https://tmtoolkit.readthedocs.io/en/latest/bow.html)
       - **Decided to re-do the data cleaning with tmtoolkit** to check which performs is better.
+  - [ ] Implement tmtoolkit topic evaluation function with desired metrics
+
+    ```Python
+    ModuleNotFoundError: No module named 'lda'
+    ```
+
+    - Installed lda package with `pip install lda>=2.0` according to setup file in [repository](https://github.com/WZBSocialScienceCenter/tmtoolkit/blob/master/setup.py)
+
+    ```Python
+    TypeError: cannot convert the series to <class 'int'>
+    ```
+
+    - The lda module is still not recognized
+    - [x] Decide whether to debug the library or choose another method to apply the topic model
+      - Made sure the import was correct, yet the error persisted. Decided to not use tmtoolkit
 
   - [ ] [Save model](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
 
 - [ ] Get topics
   - [ ] Apply topic model to the corpus
+    - [ ] With K = #disciplines in corpus
+    - [ ] With K = #estimated topics
   - [ ] Save [topic modeling results](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results)
 
 - [ ] Topics evaluation
@@ -252,6 +270,18 @@ TOTAL: 38897
     - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
       - They used UMAP for dimension reduction
     - [ ] Get UMAP plot
+
+### 4.1. Results
+
+- Corpus descriptors:
+  - Raw corpus #tokens: 861383
+  - Raw corpus vocabulary size: 36773
+  - Clean corpus #tokens: 276248
+  - Clean corpus vocabulary size: 18920
+
+### 4.2. Observations
+
+- The corpus vocabulary size (130) and #tokens (99380) were too small after removing common tokens (0.90) and uncommon tokens (0.05). Hence, I decided to not remove these uncommon and common tokens. This resulted in a vocabulary size of 18920.
 
 ## 5. Evaluation of interdisciplinary research
 

@@ -23,7 +23,7 @@ import os
 from tmtoolkit.utils import enable_logging
 enable_logging()
 from tmtoolkit.corpus import (Corpus, save_corpus_to_picklefile, load_corpus_from_picklefile, print_summary, lemmatize, filter_for_pos, to_lowercase,
-    remove_punctuation, filter_clean_tokens, remove_common_tokens, remove_uncommon_tokens, tokens_table)
+    remove_punctuation, filter_clean_tokens, remove_common_tokens, remove_uncommon_tokens, tokens_table, dtm)
 
 def collect_ao_metadata(filename):
     """ Collect metadata from Semantic Scholar API.
@@ -179,13 +179,22 @@ def corpus_creation(filename):
     """
     logger = logging.getLogger(__name__)
     corpus = Corpus.from_tabular(filename, language='en', id_column='paper_id', text_column='abstract')
-    logger.debug('Raw corpus: %s', corpus)
-    logger.debug(print_summary(corpus))
+
+    dtm_df, doc_labels, vocab = dtm(corpus, as_table=True, return_doc_labels=True, return_vocab=True)
+
+    logger.info('Raw corpus shape: %s', dtm_df.shape)
+    logger.info('Raw corpus vocabulary size: %s', len(vocab))
+    logger.info(print_summary(corpus))
 
     save_path = 'results/corpus'
     u.create_dir_if_not_exists(save_path)
     save_corpus_to_picklefile(corpus, f'{save_path}/raw_corpus.pkl')
     logger.debug('Saved raw corpus to %s', f'{save_path}/raw_corpus.pkl')
+
+    # objects = [doc_labels, vocab]
+    # for obj, name in zip(objects, ['doc_labels', 'vocab']):
+    #     u.save_object(obj, f'{save_path}/{name}.pkl')
+    # dtm_df.to_csv(f'{save_path}/dtm.csv', index=False)
 
 def corpus_preprocessing(filename):
     """ Data cleaning. This function lemmatizes the text, removes non-nouns, removes common and uncommon words, and saves the clean corpus.
@@ -203,12 +212,13 @@ def corpus_preprocessing(filename):
     to_lowercase(corpus_norm)
     remove_punctuation(corpus_norm)
     filter_clean_tokens(corpus_norm, remove_shorter_than=2)
-    remove_common_tokens(corpus_norm, df_threshold=0.90)
-    remove_uncommon_tokens(corpus_norm, df_threshold=0.05)
     tokens_df = tokens_table(corpus_norm)
 
-    logger.debug('Clean corpus: %s', corpus_norm)
-    logger.debug(print_summary(corpus_norm))
+    dtm_df, doc_labels, vocab = dtm(corpus_norm, as_table=True, return_doc_labels=True, return_vocab=True)
+
+    logger.info('Clean corpus shape: %s', dtm_df.shape)
+    logger.info('Clean corpus vocabulary size: %s', len(vocab))
+    logger.info(print_summary(corpus_norm))
 
     save_path = 'results/corpus'
     tokens_df.to_csv(f'{save_path}/tokens_table.csv', index=False)

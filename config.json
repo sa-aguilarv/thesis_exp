@@ -1,4 +1,12 @@
 {
     "dataPath": "./data/comm_use_subset/pdf_json/",
-    "resultsPath": "./results/"
+    "resultsPath": "./results/",
+    "ldaParams": {
+        "numIter": 1000,
+        "randomState": 20191122,
+        "eta": 0.1,
+        "maxTopics": 10,
+        "minTopics": 5,
+        "stepTopics": 5
+    }
 }
