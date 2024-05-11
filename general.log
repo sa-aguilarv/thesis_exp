@@ -18660,3 +18660,18 @@ scripts.etl - INFO - 2024-05-10 21:38:12,114 - etl - 11425 - 140334745469312 - C
 scripts.etl - INFO - 2024-05-10 21:38:12,114 - etl - 11425 - 140334745469312 - Clean corpus vocabulary size: 18920
 scripts.etl - INFO - 2024-05-10 21:38:12,126 - etl - 11425 - 140334745469312 - None
 scripts.etl - DEBUG - 2024-05-10 21:38:14,169 - etl - 11425 - 140334745469312 - Saved clean corpus to results/corpus/clean_corpus.pkl
+__main__ - INFO - 2024-05-10 22:00:10,999 - main - 12995 - 140260509163904 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 22:00:11,002 - main - 12995 - 140260509163904 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 22:00:11,003 - utils - 12995 - 140260509163904 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:00:11,004 - main - 12995 - 140260509163904 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:00:11,012 - main - 12995 - 140260509163904 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 22:00:11,013 - main - 12995 - 140260509163904 - Topic modeling
+scripts.tm - INFO - 2024-05-10 22:00:29,343 - tm - 12995 - 140260509163904 - DTM shape: (4025, 18920)
+__main__ - INFO - 2024-05-10 22:05:50,722 - main - 13518 - 139881380917632 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 22:05:50,725 - main - 13518 - 139881380917632 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 22:05:50,726 - utils - 13518 - 139881380917632 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:05:50,727 - main - 13518 - 139881380917632 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:05:50,736 - main - 13518 - 139881380917632 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 22:05:50,737 - main - 13518 - 139881380917632 - Topic modeling
+scripts.tm - INFO - 2024-05-10 22:06:08,111 - tm - 13518 - 139881380917632 - DTM shape: (4025, 18920)
+scripts.tm - DEBUG - 2024-05-10 22:06:08,552 - tm - 13518 - 139881380917632 - Saved DTM, doc_labels, and vocab in results/tm

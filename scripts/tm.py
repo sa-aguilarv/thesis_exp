@@ -13,24 +13,26 @@ from tmtoolkit.corpus import (load_corpus_from_picklefile, dtm)
 from tmtoolkit.topicmod.tm_lda import evaluate_topic_models
 from tmtoolkit.topicmod.evaluate import results_by_parameter
 from tmtoolkit.topicmod.model_stats import (word_distinctiveness, most_distinct_words, least_distinct_words)
+import scipy as sp
 
 def get_dtm(filename):
     logger = logging.getLogger(__name__)
     corpus = load_corpus_from_picklefile(filename)
-    dtm_df, doc_labels, vocab = dtm(corpus, as_table=True, return_doc_labels=True, return_vocab=True)
+    dtm_sparse, doc_labels, vocab = dtm(corpus, return_doc_labels=True, return_vocab=True)
 
-    logger.debug('First 10 vocabulary tokens: %s', vocab[:10])
-    logger.debug('Document-term matrix shape: %s', dtm_df.shape)
+    logger.info('DTM shape: %s', dtm_sparse.shape)
 
     save_path = 'results/tm'
     u.create_dir_if_not_exists(save_path)
     objects = [doc_labels, vocab]
     for obj, name in zip(objects, ['doc_labels', 'vocab']):
         u.save_object(obj, f'{save_path}/{name}.pkl')
-    dtm_df.to_csv(f'{save_path}/dtm.csv', index=False)
 
+    #dtm_df.to_csv(f'{save_path}/dtm.csv', index=False) #To save as dense matrix
+    #np.savetxt(f'{save_path}/dtm.txt', dtm_sparse, delimiter=',', fmt='%1.5f') #To save as dense matrix
+    sp.sparse.save_npz(f'{save_path}/dtm_sparse.npz', dtm_sparse)
     logger.debug('Saved DTM, doc_labels, and vocab in %s', save_path)
-    return dtm_df
+    return dtm_sparse
 
 def estimate_topics(dtm, params):
     disable_logging()

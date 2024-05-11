@@ -211,7 +211,7 @@ TOTAL: 38897
     - [x] Does tmtoolkit have these metrics? [Yes](https://tmtoolkit.readthedocs.io/en/latest/index.html#topic-modeling)
       - Papers: perplexity ([Griffiths, Steyvers 2004](https://www.pnas.org/doi/full/10.1073/pnas.0307752101)), topic coherence ([Mimno et al. 2011](https://dl.acm.org/doi/10.5555/2145432.2145462)), topic distinctiveness ([Chuang et al. 2012](https://dl.acm.org/doi/10.1145/2254556.2254572)).
 
-- [ ] Estimate the number of topics with tmtoolkit
+- [ ] Estimate the number of topics with tmtoolkit --deprecated, lda module is no longer supported
   - [x] Install tmtoolkit and needed set up to use chosen evaluation metrics
     - Installed following [guidelines](https://tmtoolkit.readthedocs.io/en/latest/install.html):
 
@@ -243,10 +243,13 @@ TOTAL: 38897
 
   - [ ] [Save model](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
 
+- [ ] Define the number of topics based on the number of disciplines in the corpus // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
+  - [ ] Set the #topics to the #unique disciplines that the paper IDs belonging to the clean corpus have
+
 - [ ] Get topics
   - [ ] Apply topic model to the corpus
     - [ ] With K = #disciplines in corpus
-    - [ ] With K = #estimated topics
+    - [ ] With K = #estimated topics --deprecated, see above
   - [ ] Save [topic modeling results](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results)
 
 - [ ] Topics evaluation
