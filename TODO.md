@@ -211,7 +211,7 @@ TOTAL: 38897
     - [x] Does tmtoolkit have these metrics? [Yes](https://tmtoolkit.readthedocs.io/en/latest/index.html#topic-modeling)
       - Papers: perplexity ([Griffiths, Steyvers 2004](https://www.pnas.org/doi/full/10.1073/pnas.0307752101)), topic coherence ([Mimno et al. 2011](https://dl.acm.org/doi/10.5555/2145432.2145462)), topic distinctiveness ([Chuang et al. 2012](https://dl.acm.org/doi/10.1145/2254556.2254572)).
 
-- [ ] Estimate the number of topics with tmtoolkit --deprecated, lda module is no longer supported
+- [ ] Estimate the number of topics with tmtoolkit --deprecated, tmtoolkit raises errors while running the lda module
   - [x] Install tmtoolkit and needed set up to use chosen evaluation metrics
     - Installed following [guidelines](https://tmtoolkit.readthedocs.io/en/latest/install.html):
 
@@ -241,18 +241,34 @@ TOTAL: 38897
     - [x] Decide whether to debug the library or choose another method to apply the topic model
       - Made sure the import was correct, yet the error persisted. Decided to not use tmtoolkit
 
+    - UPDATE-1: Re-installed tmtoolkit packages in a different conda environment
+
+    ```Python
+    conda create --name tm-topiceval python=3.8
+    ```
+
+    ```Python
+    pip install -U tmtoolkit[recommended,lda,sklearn,gensim]
+    ```
+
+    ```Python
+    python -m tmtoolkit setup en
+    ```
+
+      - DASD
+
   - [ ] [Save model](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
 
-- [ ] Define the number of topics based on the number of disciplines in the corpus // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
-  - [ ] Set the #topics to the #unique disciplines that the paper IDs belonging to the clean corpus have
+- [ ] Estimate the #topics (K) based on the #disciplines in the corpus, and the loglikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
+  - [x] Get the #unique disciplines
+  - [ ] Get at which #topics the loglikelihood metric converges.
 
 - [ ] Get topics
-  - [ ] Apply topic model to the corpus
-    - [ ] With K = #disciplines in corpus
-    - [ ] With K = #estimated topics --deprecated, see above
-  - [ ] Save [topic modeling results](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results)
+  - [ ] Run LDA models
+    - [ ] With K = #disciplines
+    - [ ] With K = #estimated topics
 
-- [ ] Topics evaluation
+- [ ] Topics evaluation metrics in tmtoolkit // TODO: Validate viability of using them over scikitlearn's metrics
   - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
   - [ ] Get [marginal topics and word distributions](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Marginal-topic-and-word-distributions)
   - [ ] Get [word disctinctiveness and saliency](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Word-distinctiveness-and-saliency)
@@ -282,11 +298,33 @@ TOTAL: 38897
   - Clean corpus #tokens: 276248
   - Clean corpus vocabulary size: 18920
 
+- Approaches to estimate the #topics:
+  - Unique disciplines in dataset: **16**
+    - Disciplines: Medicine, Mathematics, Engineering, Sociology, Materials Science, Physics, Environmental Science, Psychology, Computer Science, Chemistry, Business, Economics, Biology, Geography, Political Science, History
+
 ### 4.2. Observations
 
-- The corpus vocabulary size (130) and #tokens (99380) were too small after removing common tokens (0.90) and uncommon tokens (0.05). Hence, I decided to not remove these uncommon and common tokens. This resulted in a vocabulary size of 18920.
+- The corpus vocabulary size (130) and #tokens (99380) were too small after removing common tokens (0.90) and uncommon tokens (0.05). Hence, I decided to not remove these uncommon and common tokens. This resulted in a vocabulary size of 18920
+
+- The distribution of disciplines in the overall dataset is probably skewed. **We didn't balance the dataset since our goal was to find how biases play part in creating interdisciplinary research**. // TODO: Address this in the methodology and discussion. Validate if the distribution is skewed.
 
 ## 5. Evaluation of interdisciplinary research
+
+- [ ] Description of publications through scientometrics
+  - [ ] Papers yearly distributions
+    - [x] Get papers publication year
+    - [ ] Get #papers published each year
+    - [ ] Plot line diagram: x-year, y-#papers published
+  - [ ] Papers disciplines distributions
+    - [x] Get papers disciplines
+    - [ ] Get #papers per discipline
+    - [ ] Create circle plot to visualize disciplines representation in the dataset
+  - [ ] Papers country distributions
+    - [x] Get papers affiliations
+    - [ ] Get countries from papers affiliations
+    - [ ] Get #papers per country
+    - [ ] Create circle plot to visualize countries representaiton in the dataset
+  - [ ] Get authors sex distribution --deprecated, no time
 
 - [ ] Capture the dispersion of disciplines
   - [ ] Get Silhouette values

@@ -18675,3 +18675,185 @@ __main__ - DEBUG - 2024-05-10 22:05:50,736 - main - 13518 - 139881380917632 - In
 __main__ - INFO - 2024-05-10 22:05:50,737 - main - 13518 - 139881380917632 - Topic modeling
 scripts.tm - INFO - 2024-05-10 22:06:08,111 - tm - 13518 - 139881380917632 - DTM shape: (4025, 18920)
 scripts.tm - DEBUG - 2024-05-10 22:06:08,552 - tm - 13518 - 139881380917632 - Saved DTM, doc_labels, and vocab in results/tm
+__main__ - INFO - 2024-05-10 22:10:59,883 - main - 14023 - 140150654607744 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-10 22:10:59,884 - main - 14023 - 140150654607744 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-10 22:10:59,885 - utils - 14023 - 140150654607744 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:10:59,885 - main - 14023 - 140150654607744 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-10 22:10:59,889 - main - 14023 - 140150654607744 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-10 22:10:59,889 - main - 14023 - 140150654607744 - Topic modeling
+scripts.tm - DEBUG - 2024-05-10 22:10:59,891 - tm - 14023 - 140150654607744 - 4025
+scripts.tm - DEBUG - 2024-05-10 22:10:59,891 - tm - 14023 - 140150654607744 - ['data_w_ao_metadata-00352a58c8766861effed18a4b079d1683fec2ec', 'data_w_ao_metadata-0043d044273b8eb1585d3a66061e9b4e03edc062', 'data_w_ao_metadata-00623bf2715e25d3acacb3f210d6888ed840e3cb']
+__main__ - INFO - 2024-05-11 11:42:11,211 - main - 6817 - 140691205063040 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:42:11,212 - main - 6817 - 140691205063040 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:42:11,212 - utils - 6817 - 140691205063040 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:42:11,212 - main - 6817 - 140691205063040 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:42:11,214 - main - 6817 - 140691205063040 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=False)
+__main__ - INFO - 2024-05-11 11:42:21,631 - main - 7045 - 139716346462592 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:42:21,632 - main - 7045 - 139716346462592 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:42:21,632 - utils - 7045 - 139716346462592 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:42:21,633 - main - 7045 - 139716346462592 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:42:21,638 - main - 7045 - 139716346462592 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:42:21,638 - main - 7045 - 139716346462592 - Topic modeling
+scripts.tm - DEBUG - 2024-05-11 11:42:21,754 - tm - 7045 - 139716346462592 - 62 unique fields of study: ["['Medicine']" "['Biology', 'Medicine']" "['Medicine', 'Biology']"
+ "['Medicine', 'Computer Science']"
+ "['Biology', 'Computer Science', 'Medicine']" "['Sociology']"
+ "['Biology', 'Medicine', 'Computer Science']" "['Medicine', 'Sociology']"
+ "['Medicine', 'Biology', 'Computer Science']" "['Medicine', 'Chemistry']"
+ "['Computer Science', 'Medicine', 'Biology']" "['Physics', 'Medicine']"
+ "['Geography', 'Medicine']" "['Computer Science', 'Biology', 'Medicine']"
+ "['Medicine', 'Political Science']" "['Chemistry', 'Medicine']"
+ "['Computer Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Materials Science']" "['Medicine', 'Physics']"
+ "['Business', 'Computer Science', 'Medicine']"
+ "['Computer Science', 'Physics', 'Medicine']" "['Medicine', 'Geography']"
+ "['Geography', 'Business', 'Medicine']"
+ "['Mathematics', 'Computer Science', 'Medicine']"
+ "['Chemistry', 'Computer Science', 'Medicine']"
+ "['Medicine', 'Computer Science', 'Biology']"
+ "['Political Science', 'Medicine']" "['Mathematics', 'Medicine']"
+ "['Chemistry', 'Medicine', 'Biology']"
+ "['Medicine', 'Environmental Science']"
+ "['Materials Science', 'Medicine', 'Computer Science']"
+ "['Biology', 'Medicine', 'Physics']" "['Materials Science', 'Medicine']"
+ "['Psychology', 'Medicine']" "['Business', 'Medicine']"
+ "['Environmental Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Geography']"
+ "['Environmental Science', 'Medicine', 'Materials Science']"
+ "['Economics', 'Medicine']" "['Medicine', 'Materials Science']"
+ "['Medicine', 'Business']" "['Medicine', 'Psychology']"
+ "['Computer Science', 'Medicine', 'Geography']"
+ "['Business', 'Geography', 'Medicine']"
+ "['Computer Science', 'Materials Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Chemistry']"
+ "['Biology', 'Geography', 'Medicine']"
+ "['Mathematics', 'Medicine', 'Computer Science']"
+ "['Computer Science', 'Environmental Science', 'Medicine']"
+ "['Medicine', 'Biology', 'Chemistry']" "['Medicine', 'Engineering']"
+ "['Medicine', 'History']"
+ "['Medicine', 'Mathematics', 'Computer Science']"
+ "['Physics', 'Biology', 'Medicine']"
+ "['Physics', 'Biology', 'Medicine', 'Computer Science', 'Mathematics']"
+ "['Medicine', 'Chemistry', 'Biology']" "['Biology']"
+ "['Medicine', 'Mathematics']" "['Political Science']" "['Business']"
+ "['Medicine', 'Computer Science', 'Biology', 'Mathematics']"
+ "['Biology', 'Mathematics', 'Medicine']"]
+__main__ - INFO - 2024-05-11 11:44:14,525 - main - 7402 - 140321407054208 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:44:14,527 - main - 7402 - 140321407054208 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:44:14,527 - utils - 7402 - 140321407054208 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:44:14,527 - main - 7402 - 140321407054208 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:44:14,534 - main - 7402 - 140321407054208 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:44:14,535 - main - 7402 - 140321407054208 - Topic modeling
+scripts.tm - DEBUG - 2024-05-11 11:44:14,654 - tm - 7402 - 140321407054208 - 62 unique fields of study: ["['Medicine']" "['Biology', 'Medicine']" "['Medicine', 'Biology']"
+ "['Medicine', 'Computer Science']"
+ "['Biology', 'Computer Science', 'Medicine']" "['Sociology']"
+ "['Biology', 'Medicine', 'Computer Science']" "['Medicine', 'Sociology']"
+ "['Medicine', 'Biology', 'Computer Science']" "['Medicine', 'Chemistry']"
+ "['Computer Science', 'Medicine', 'Biology']" "['Physics', 'Medicine']"
+ "['Geography', 'Medicine']" "['Computer Science', 'Biology', 'Medicine']"
+ "['Medicine', 'Political Science']" "['Chemistry', 'Medicine']"
+ "['Computer Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Materials Science']" "['Medicine', 'Physics']"
+ "['Business', 'Computer Science', 'Medicine']"
+ "['Computer Science', 'Physics', 'Medicine']" "['Medicine', 'Geography']"
+ "['Geography', 'Business', 'Medicine']"
+ "['Mathematics', 'Computer Science', 'Medicine']"
+ "['Chemistry', 'Computer Science', 'Medicine']"
+ "['Medicine', 'Computer Science', 'Biology']"
+ "['Political Science', 'Medicine']" "['Mathematics', 'Medicine']"
+ "['Chemistry', 'Medicine', 'Biology']"
+ "['Medicine', 'Environmental Science']"
+ "['Materials Science', 'Medicine', 'Computer Science']"
+ "['Biology', 'Medicine', 'Physics']" "['Materials Science', 'Medicine']"
+ "['Psychology', 'Medicine']" "['Business', 'Medicine']"
+ "['Environmental Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Geography']"
+ "['Environmental Science', 'Medicine', 'Materials Science']"
+ "['Economics', 'Medicine']" "['Medicine', 'Materials Science']"
+ "['Medicine', 'Business']" "['Medicine', 'Psychology']"
+ "['Computer Science', 'Medicine', 'Geography']"
+ "['Business', 'Geography', 'Medicine']"
+ "['Computer Science', 'Materials Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Chemistry']"
+ "['Biology', 'Geography', 'Medicine']"
+ "['Mathematics', 'Medicine', 'Computer Science']"
+ "['Computer Science', 'Environmental Science', 'Medicine']"
+ "['Medicine', 'Biology', 'Chemistry']" "['Medicine', 'Engineering']"
+ "['Medicine', 'History']"
+ "['Medicine', 'Mathematics', 'Computer Science']"
+ "['Physics', 'Biology', 'Medicine']"
+ "['Physics', 'Biology', 'Medicine', 'Computer Science', 'Mathematics']"
+ "['Medicine', 'Chemistry', 'Biology']" "['Biology']"
+ "['Medicine', 'Mathematics']" "['Political Science']" "['Business']"
+ "['Medicine', 'Computer Science', 'Biology', 'Mathematics']"
+ "['Biology', 'Mathematics', 'Medicine']"]
+__main__ - INFO - 2024-05-11 11:52:31,107 - main - 8623 - 140166674911616 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:52:31,109 - main - 8623 - 140166674911616 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:52:31,111 - utils - 8623 - 140166674911616 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:52:31,111 - main - 8623 - 140166674911616 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:52:31,123 - main - 8623 - 140166674911616 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:52:31,125 - main - 8623 - 140166674911616 - Topic modeling
+scripts.tm - DEBUG - 2024-05-11 11:52:31,325 - tm - 8623 - 140166674911616 - 37 unique fields of study: ["['Medicine']" "['Biology', 'Medicine']"
+ "['Computer Science', 'Medicine']"
+ "['Biology', 'Computer Science', 'Medicine']" "['Sociology']"
+ "['Medicine', 'Sociology']" "['Chemistry', 'Medicine']"
+ "['Medicine', 'Physics']" "['Geography', 'Medicine']"
+ "['Medicine', 'Political Science']"
+ "['Biology', 'Materials Science', 'Medicine']"
+ "['Business', 'Computer Science', 'Medicine']"
+ "['Computer Science', 'Medicine', 'Physics']"
+ "['Business', 'Geography', 'Medicine']"
+ "['Computer Science', 'Mathematics', 'Medicine']"
+ "['Chemistry', 'Computer Science', 'Medicine']"
+ "['Mathematics', 'Medicine']" "['Biology', 'Chemistry', 'Medicine']"
+ "['Environmental Science', 'Medicine']"
+ "['Computer Science', 'Materials Science', 'Medicine']"
+ "['Biology', 'Medicine', 'Physics']" "['Materials Science', 'Medicine']"
+ "['Medicine', 'Psychology']" "['Business', 'Medicine']"
+ "['Biology', 'Geography', 'Medicine']"
+ "['Environmental Science', 'Materials Science', 'Medicine']"
+ "['Economics', 'Medicine']"
+ "['Computer Science', 'Geography', 'Medicine']"
+ "['Computer Science', 'Environmental Science', 'Medicine']"
+ "['Engineering', 'Medicine']" "['History', 'Medicine']"
+ "['Biology', 'Computer Science', 'Mathematics', 'Medicine', 'Physics']"
+ "['Biology']" "['Political Science']" "['Business']"
+ "['Biology', 'Computer Science', 'Mathematics', 'Medicine']"
+ "['Biology', 'Mathematics', 'Medicine']"]
+__main__ - INFO - 2024-05-11 11:53:32,669 - main - 9475 - 140551392321920 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:53:33,004 - main - 9475 - 140551392321920 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:53:33,005 - utils - 9475 - 140551392321920 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:53:33,005 - main - 9475 - 140551392321920 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:53:33,015 - main - 9475 - 140551392321920 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:53:33,041 - main - 9475 - 140551392321920 - Topic modeling
+__main__ - INFO - 2024-05-11 11:56:50,758 - main - 14333 - 139661883322752 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:56:50,848 - main - 14333 - 139661883322752 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:56:50,849 - utils - 14333 - 139661883322752 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:56:50,850 - main - 14333 - 139661883322752 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:56:50,864 - main - 14333 - 139661883322752 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:56:50,866 - main - 14333 - 139661883322752 - Topic modeling
+__main__ - INFO - 2024-05-11 11:57:09,391 - main - 14493 - 139898992902528 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:57:09,392 - main - 14493 - 139898992902528 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:57:09,393 - utils - 14493 - 139898992902528 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:57:09,393 - main - 14493 - 139898992902528 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:57:09,399 - main - 14493 - 139898992902528 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:57:09,399 - main - 14493 - 139898992902528 - Topic modeling
+scripts.tm - DEBUG - 2024-05-11 11:57:09,674 - tm - 14493 - 139898992902528 - 37 unique fields of study: [['History', 'Medicine'], ['Economics', 'Medicine'], ['Biology', 'Geography', 'Medicine'], ['Environmental Science', 'Medicine'], ['Biology', 'Materials Science', 'Medicine'], ['Medicine', 'Physics'], ['Political Science'], ['Business', 'Geography', 'Medicine'], ['Chemistry', 'Medicine'], ['Environmental Science', 'Materials Science', 'Medicine'], ['Engineering', 'Medicine'], ['Medicine', 'Sociology'], ['Computer Science', 'Geography', 'Medicine'], ['Medicine', 'Psychology'], ['Mathematics', 'Medicine'], ['Biology', 'Medicine', 'Physics'], ['Biology', 'Mathematics', 'Medicine'], ['Biology'], ['Computer Science', 'Materials Science', 'Medicine'], ['Computer Science', 'Medicine', 'Physics'], ['Business'], ['Medicine', 'Political Science'], ['Computer Science', 'Medicine'], ['Computer Science', 'Environmental Science', 'Medicine'], ['Biology', 'Chemistry', 'Medicine'], ['Chemistry', 'Computer Science', 'Medicine'], ['Biology', 'Computer Science', 'Medicine'], ['Biology', 'Computer Science', 'Mathematics', 'Medicine'], ['Business', 'Medicine'], ['Biology', 'Medicine'], ['Medicine'], ['Computer Science', 'Mathematics', 'Medicine'], ['Business', 'Computer Science', 'Medicine'], ['Biology', 'Computer Science', 'Mathematics', 'Medicine', 'Physics'], ['Materials Science', 'Medicine'], ['Sociology'], ['Geography', 'Medicine']]
+__main__ - INFO - 2024-05-11 11:57:54,269 - main - 14695 - 140395072905600 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 11:57:54,270 - main - 14695 - 140395072905600 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 11:57:54,271 - utils - 14695 - 140395072905600 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:57:54,272 - main - 14695 - 140395072905600 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 11:57:54,277 - main - 14695 - 140395072905600 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 11:57:54,278 - main - 14695 - 140395072905600 - Topic modeling
+__main__ - INFO - 2024-05-11 12:00:29,633 - main - 14922 - 140576140525952 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 12:00:29,963 - main - 14922 - 140576140525952 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 12:00:29,964 - utils - 14922 - 140576140525952 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 12:00:29,965 - main - 14922 - 140576140525952 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 12:00:29,972 - main - 14922 - 140576140525952 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 12:00:29,972 - main - 14922 - 140576140525952 - Topic modeling
+__main__ - INFO - 2024-05-11 12:00:43,823 - main - 15057 - 140702825943424 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 12:00:43,824 - main - 15057 - 140702825943424 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 12:00:43,825 - utils - 15057 - 140702825943424 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 12:00:43,825 - main - 15057 - 140702825943424 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 10, 'minTopics': 5, 'stepTopics': 5}}
+__main__ - DEBUG - 2024-05-11 12:00:43,830 - main - 15057 - 140702825943424 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 12:00:43,831 - main - 15057 - 140702825943424 - Topic modeling
+scripts.tm - DEBUG - 2024-05-11 12:00:44,072 - tm - 15057 - 140702825943424 - 16 total unique fields of study: {'Medicine', 'Mathematics', 'Engineering', 'Sociology', 'Materials Science', 'Physics', 'Environmental Science', 'Psychology', 'Computer Science', 'Chemistry', 'Business', 'Economics', 'Biology', 'Geography', 'Political Science', 'History'}
