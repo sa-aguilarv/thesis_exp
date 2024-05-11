@@ -61,8 +61,9 @@ def main():
     elif args.tm:
         logger.info('Topic modeling')
         filename = 'results/corpus/clean_corpus.pkl'
-        #dtm_sparse = tm.get_dtm(filename)
-        tm.estimate_topics()
+        dtm_sparse = tm.get_dtm(filename)
+        tm.models_evaluation(dtm_sparse, config['ldaParams'])
+        #tm.estimate_topics()
         
         
 if __name__ == '__main__':

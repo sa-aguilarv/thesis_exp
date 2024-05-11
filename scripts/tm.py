@@ -8,7 +8,7 @@ import numpy as np
 np.set_printoptions(precision=5)
 from tqdm import tqdm
 import os
-from tmtoolkit.utils import disable_logging
+from tmtoolkit.utils import enable_logging, disable_logging
 from tmtoolkit.corpus import (load_corpus_from_picklefile, dtm)
 from tmtoolkit.topicmod.tm_lda import evaluate_topic_models
 from tmtoolkit.topicmod.evaluate import results_by_parameter
@@ -66,26 +66,30 @@ def sort_list(lst_str):
     sorted_lst = sorted(lst)  # Sort the list
     return sorted_lst
 
-# def estimate_topics(dtm, params):
-#     disable_logging()
-#     logger = logging.getLogger('lda')
-#     logger.addHandler(logging.NullHandler())
-#     logger.propagate = False
-#     warnings.filterwarnings('ignore')
+def models_evaluation(dtm, params):
+    logger = logging.getLogger(__name__)
+    # disable_logging()
+    # logger = logging.getLogger('lda')
+    # logger.addHandler(logging.NullHandler())
+    # logger.propagate = False
+    # warnings.filterwarnings('ignore')
     
-#     const_params = {
-#         'n_iter': params['numIter'],
-#         'random_state': params['randomState'],
-#         'eta': params['eta']
-#     }
+    const_params = {
+        'n_iter': params['numIter'],
+        'random_state': params['randomState'],
+        'eta': params['eta']
+    }
 
-#     var_params = [{'n_topics': k, 'alpha': 1/k} for k in range(params['minTopics'], params['maxTopics'], params['stepTopics'])]
+    var_params = [{'n_topics': k, 'alpha': 1/k} for k in range(params['minTopics'], params['maxTopics'], params['stepTopics'])]
 
-#     metrics = ['loglikelihood', 'coherence_mimno_2011']
+    metrics = ['loglikelihood', 'coherence_mimno_2011']
 
-#     eval_results = evaluate_topic_models(dtm,
-#                                         varying_parameters=var_params,
-#                                         constant_parameters=const_params,
-#                                         metric=metrics,
-#                                         return_models=True)
-#     logger.debug(eval_results[:3])
+    logger.info('Metrics to evaluate: %s', metrics)
+
+    logger.info('Starting evaluation of topic models')
+    eval_results = evaluate_topic_models(dtm,
+                                        varying_parameters=var_params,
+                                        constant_parameters=const_params,
+                                        metric=metrics,
+                                        return_models=True)
+    logger.info(eval_results)

@@ -18857,3 +18857,128 @@ __main__ - DEBUG - 2024-05-11 12:00:43,825 - main - 15057 - 140702825943424 - Co
 __main__ - DEBUG - 2024-05-11 12:00:43,830 - main - 15057 - 140702825943424 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
 __main__ - INFO - 2024-05-11 12:00:43,831 - main - 15057 - 140702825943424 - Topic modeling
 scripts.tm - DEBUG - 2024-05-11 12:00:44,072 - tm - 15057 - 140702825943424 - 16 total unique fields of study: {'Medicine', 'Mathematics', 'Engineering', 'Sociology', 'Materials Science', 'Physics', 'Environmental Science', 'Psychology', 'Computer Science', 'Chemistry', 'Business', 'Economics', 'Biology', 'Geography', 'Political Science', 'History'}
+__main__ - INFO - 2024-05-11 12:48:29,282 - main - 18510 - 140653957702016 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 12:48:29,285 - main - 18510 - 140653957702016 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 12:48:29,287 - utils - 18510 - 140653957702016 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 50, 'minTopics': 10, 'stepTopics': 10}}
+__main__ - DEBUG - 2024-05-11 12:48:29,288 - main - 18510 - 140653957702016 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 50, 'minTopics': 10, 'stepTopics': 10}}
+__main__ - DEBUG - 2024-05-11 12:48:29,299 - main - 18510 - 140653957702016 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 12:48:29,300 - main - 18510 - 140653957702016 - Topic modeling
+scripts.tm - INFO - 2024-05-11 12:49:03,835 - tm - 18510 - 140653957702016 - DTM shape: (4025, 18920)
+scripts.tm - DEBUG - 2024-05-11 12:49:04,437 - tm - 18510 - 140653957702016 - Saved DTM, doc_labels, and vocab in results/tm
+__main__ - INFO - 2024-05-11 12:56:40,346 - main - 19368 - 139932536910208 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 12:56:40,348 - main - 19368 - 139932536910208 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 12:56:40,349 - utils - 19368 - 139932536910208 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 3, 'minTopics': 2, 'stepTopics': 1}}
+__main__ - DEBUG - 2024-05-11 12:56:40,349 - main - 19368 - 139932536910208 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 3, 'minTopics': 2, 'stepTopics': 1}}
+__main__ - DEBUG - 2024-05-11 12:56:40,358 - main - 19368 - 139932536910208 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 12:56:40,359 - main - 19368 - 139932536910208 - Topic modeling
+scripts.tm - INFO - 2024-05-11 12:57:13,254 - tm - 19368 - 139932536910208 - DTM shape: (4025, 18920)
+scripts.tm - DEBUG - 2024-05-11 12:57:13,993 - tm - 19368 - 139932536910208 - Saved DTM, doc_labels, and vocab in results/tm
+scripts.tm - INFO - 2024-05-11 12:57:14,005 - tm - 19368 - 139932536910208 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-11 12:57:14,007 - tm - 19368 - 139932536910208 - Starting evaluation of topic models
+lda - INFO - 2024-05-11 12:57:14,600 - lda - 19478 - 139932536910208 - n_documents: 4025
+lda - INFO - 2024-05-11 12:57:14,601 - lda - 19478 - 139932536910208 - vocab_size: 18920
+lda - INFO - 2024-05-11 12:57:14,601 - lda - 19478 - 139932536910208 - n_words: 276248
+lda - INFO - 2024-05-11 12:57:14,601 - lda - 19478 - 139932536910208 - n_topics: 2
+lda - INFO - 2024-05-11 12:57:14,602 - lda - 19478 - 139932536910208 - n_iter: 1000
+lda - INFO - 2024-05-11 12:57:19,863 - lda - 19478 - 139932536910208 - <0> log likelihood: -2383460
+lda - INFO - 2024-05-11 12:57:20,035 - lda - 19478 - 139932536910208 - <10> log likelihood: -2184389
+lda - INFO - 2024-05-11 12:57:20,190 - lda - 19478 - 139932536910208 - <20> log likelihood: -2157240
+lda - INFO - 2024-05-11 12:57:20,346 - lda - 19478 - 139932536910208 - <30> log likelihood: -2154760
+lda - INFO - 2024-05-11 12:57:20,498 - lda - 19478 - 139932536910208 - <40> log likelihood: -2154500
+lda - INFO - 2024-05-11 12:57:20,649 - lda - 19478 - 139932536910208 - <50> log likelihood: -2154095
+lda - INFO - 2024-05-11 12:57:20,800 - lda - 19478 - 139932536910208 - <60> log likelihood: -2154350
+lda - INFO - 2024-05-11 12:57:20,953 - lda - 19478 - 139932536910208 - <70> log likelihood: -2153727
+lda - INFO - 2024-05-11 12:57:21,105 - lda - 19478 - 139932536910208 - <80> log likelihood: -2154044
+lda - INFO - 2024-05-11 12:57:21,258 - lda - 19478 - 139932536910208 - <90> log likelihood: -2154103
+lda - INFO - 2024-05-11 12:57:21,410 - lda - 19478 - 139932536910208 - <100> log likelihood: -2153995
+lda - INFO - 2024-05-11 12:57:21,563 - lda - 19478 - 139932536910208 - <110> log likelihood: -2154114
+lda - INFO - 2024-05-11 12:57:21,716 - lda - 19478 - 139932536910208 - <120> log likelihood: -2153591
+lda - INFO - 2024-05-11 12:57:21,869 - lda - 19478 - 139932536910208 - <130> log likelihood: -2153723
+lda - INFO - 2024-05-11 12:57:22,022 - lda - 19478 - 139932536910208 - <140> log likelihood: -2153898
+lda - INFO - 2024-05-11 12:57:22,174 - lda - 19478 - 139932536910208 - <150> log likelihood: -2154019
+lda - INFO - 2024-05-11 12:57:22,327 - lda - 19478 - 139932536910208 - <160> log likelihood: -2153816
+lda - INFO - 2024-05-11 12:57:22,479 - lda - 19478 - 139932536910208 - <170> log likelihood: -2153891
+lda - INFO - 2024-05-11 12:57:22,630 - lda - 19478 - 139932536910208 - <180> log likelihood: -2153530
+lda - INFO - 2024-05-11 12:57:22,782 - lda - 19478 - 139932536910208 - <190> log likelihood: -2153614
+lda - INFO - 2024-05-11 12:57:22,933 - lda - 19478 - 139932536910208 - <200> log likelihood: -2153613
+lda - INFO - 2024-05-11 12:57:23,087 - lda - 19478 - 139932536910208 - <210> log likelihood: -2153748
+lda - INFO - 2024-05-11 12:57:23,245 - lda - 19478 - 139932536910208 - <220> log likelihood: -2153945
+lda - INFO - 2024-05-11 12:57:23,402 - lda - 19478 - 139932536910208 - <230> log likelihood: -2153761
+lda - INFO - 2024-05-11 12:57:23,556 - lda - 19478 - 139932536910208 - <240> log likelihood: -2153534
+lda - INFO - 2024-05-11 12:57:23,708 - lda - 19478 - 139932536910208 - <250> log likelihood: -2153244
+lda - INFO - 2024-05-11 12:57:23,862 - lda - 19478 - 139932536910208 - <260> log likelihood: -2153644
+lda - INFO - 2024-05-11 12:57:24,015 - lda - 19478 - 139932536910208 - <270> log likelihood: -2153819
+lda - INFO - 2024-05-11 12:57:24,166 - lda - 19478 - 139932536910208 - <280> log likelihood: -2153819
+lda - INFO - 2024-05-11 12:57:24,320 - lda - 19478 - 139932536910208 - <290> log likelihood: -2153713
+lda - INFO - 2024-05-11 12:57:24,475 - lda - 19478 - 139932536910208 - <300> log likelihood: -2153316
+lda - INFO - 2024-05-11 12:57:24,628 - lda - 19478 - 139932536910208 - <310> log likelihood: -2154018
+lda - INFO - 2024-05-11 12:57:24,780 - lda - 19478 - 139932536910208 - <320> log likelihood: -2153625
+lda - INFO - 2024-05-11 12:57:24,932 - lda - 19478 - 139932536910208 - <330> log likelihood: -2153636
+lda - INFO - 2024-05-11 12:57:25,085 - lda - 19478 - 139932536910208 - <340> log likelihood: -2153644
+lda - INFO - 2024-05-11 12:57:25,238 - lda - 19478 - 139932536910208 - <350> log likelihood: -2153940
+lda - INFO - 2024-05-11 12:57:25,393 - lda - 19478 - 139932536910208 - <360> log likelihood: -2153369
+lda - INFO - 2024-05-11 12:57:25,544 - lda - 19478 - 139932536910208 - <370> log likelihood: -2153173
+lda - INFO - 2024-05-11 12:57:25,696 - lda - 19478 - 139932536910208 - <380> log likelihood: -2153356
+lda - INFO - 2024-05-11 12:57:25,852 - lda - 19478 - 139932536910208 - <390> log likelihood: -2154035
+lda - INFO - 2024-05-11 12:57:26,023 - lda - 19478 - 139932536910208 - <400> log likelihood: -2153825
+lda - INFO - 2024-05-11 12:57:26,184 - lda - 19478 - 139932536910208 - <410> log likelihood: -2153936
+lda - INFO - 2024-05-11 12:57:26,413 - lda - 19478 - 139932536910208 - <420> log likelihood: -2153569
+lda - INFO - 2024-05-11 12:57:26,568 - lda - 19478 - 139932536910208 - <430> log likelihood: -2153779
+lda - INFO - 2024-05-11 12:57:26,722 - lda - 19478 - 139932536910208 - <440> log likelihood: -2153632
+lda - INFO - 2024-05-11 12:57:26,895 - lda - 19478 - 139932536910208 - <450> log likelihood: -2153736
+lda - INFO - 2024-05-11 12:57:27,056 - lda - 19478 - 139932536910208 - <460> log likelihood: -2153701
+lda - INFO - 2024-05-11 12:57:27,219 - lda - 19478 - 139932536910208 - <470> log likelihood: -2153915
+lda - INFO - 2024-05-11 12:57:27,400 - lda - 19478 - 139932536910208 - <480> log likelihood: -2153748
+lda - INFO - 2024-05-11 12:57:27,560 - lda - 19478 - 139932536910208 - <490> log likelihood: -2153600
+lda - INFO - 2024-05-11 12:57:27,715 - lda - 19478 - 139932536910208 - <500> log likelihood: -2153973
+lda - INFO - 2024-05-11 12:57:27,870 - lda - 19478 - 139932536910208 - <510> log likelihood: -2153576
+lda - INFO - 2024-05-11 12:57:28,027 - lda - 19478 - 139932536910208 - <520> log likelihood: -2153963
+lda - INFO - 2024-05-11 12:57:28,199 - lda - 19478 - 139932536910208 - <530> log likelihood: -2153650
+lda - INFO - 2024-05-11 12:57:28,374 - lda - 19478 - 139932536910208 - <540> log likelihood: -2153914
+lda - INFO - 2024-05-11 12:57:28,526 - lda - 19478 - 139932536910208 - <550> log likelihood: -2153872
+lda - INFO - 2024-05-11 12:57:28,691 - lda - 19478 - 139932536910208 - <560> log likelihood: -2153896
+lda - INFO - 2024-05-11 12:57:28,850 - lda - 19478 - 139932536910208 - <570> log likelihood: -2153719
+lda - INFO - 2024-05-11 12:57:29,006 - lda - 19478 - 139932536910208 - <580> log likelihood: -2153714
+lda - INFO - 2024-05-11 12:57:29,160 - lda - 19478 - 139932536910208 - <590> log likelihood: -2154021
+lda - INFO - 2024-05-11 12:57:29,318 - lda - 19478 - 139932536910208 - <600> log likelihood: -2154184
+lda - INFO - 2024-05-11 12:57:29,474 - lda - 19478 - 139932536910208 - <610> log likelihood: -2154039
+lda - INFO - 2024-05-11 12:57:29,628 - lda - 19478 - 139932536910208 - <620> log likelihood: -2153548
+lda - INFO - 2024-05-11 12:57:29,785 - lda - 19478 - 139932536910208 - <630> log likelihood: -2153805
+lda - INFO - 2024-05-11 12:57:29,943 - lda - 19478 - 139932536910208 - <640> log likelihood: -2154071
+lda - INFO - 2024-05-11 12:57:30,100 - lda - 19478 - 139932536910208 - <650> log likelihood: -2153327
+lda - INFO - 2024-05-11 12:57:30,256 - lda - 19478 - 139932536910208 - <660> log likelihood: -2153720
+lda - INFO - 2024-05-11 12:57:30,411 - lda - 19478 - 139932536910208 - <670> log likelihood: -2153345
+lda - INFO - 2024-05-11 12:57:30,565 - lda - 19478 - 139932536910208 - <680> log likelihood: -2153816
+lda - INFO - 2024-05-11 12:57:30,718 - lda - 19478 - 139932536910208 - <690> log likelihood: -2154064
+lda - INFO - 2024-05-11 12:57:30,872 - lda - 19478 - 139932536910208 - <700> log likelihood: -2153477
+lda - INFO - 2024-05-11 12:57:31,026 - lda - 19478 - 139932536910208 - <710> log likelihood: -2153569
+lda - INFO - 2024-05-11 12:57:31,182 - lda - 19478 - 139932536910208 - <720> log likelihood: -2153687
+lda - INFO - 2024-05-11 12:57:31,334 - lda - 19478 - 139932536910208 - <730> log likelihood: -2153671
+lda - INFO - 2024-05-11 12:57:31,487 - lda - 19478 - 139932536910208 - <740> log likelihood: -2153467
+lda - INFO - 2024-05-11 12:57:31,641 - lda - 19478 - 139932536910208 - <750> log likelihood: -2153758
+lda - INFO - 2024-05-11 12:57:31,794 - lda - 19478 - 139932536910208 - <760> log likelihood: -2153382
+lda - INFO - 2024-05-11 12:57:31,948 - lda - 19478 - 139932536910208 - <770> log likelihood: -2153783
+lda - INFO - 2024-05-11 12:57:32,103 - lda - 19478 - 139932536910208 - <780> log likelihood: -2153639
+lda - INFO - 2024-05-11 12:57:32,259 - lda - 19478 - 139932536910208 - <790> log likelihood: -2153537
+lda - INFO - 2024-05-11 12:57:32,414 - lda - 19478 - 139932536910208 - <800> log likelihood: -2153751
+lda - INFO - 2024-05-11 12:57:32,572 - lda - 19478 - 139932536910208 - <810> log likelihood: -2153411
+lda - INFO - 2024-05-11 12:57:32,730 - lda - 19478 - 139932536910208 - <820> log likelihood: -2153589
+lda - INFO - 2024-05-11 12:57:32,888 - lda - 19478 - 139932536910208 - <830> log likelihood: -2153216
+lda - INFO - 2024-05-11 12:57:33,046 - lda - 19478 - 139932536910208 - <840> log likelihood: -2153202
+lda - INFO - 2024-05-11 12:57:33,200 - lda - 19478 - 139932536910208 - <850> log likelihood: -2153617
+lda - INFO - 2024-05-11 12:57:33,357 - lda - 19478 - 139932536910208 - <860> log likelihood: -2153859
+lda - INFO - 2024-05-11 12:57:33,514 - lda - 19478 - 139932536910208 - <870> log likelihood: -2153349
+lda - INFO - 2024-05-11 12:57:33,667 - lda - 19478 - 139932536910208 - <880> log likelihood: -2153849
+lda - INFO - 2024-05-11 12:57:33,825 - lda - 19478 - 139932536910208 - <890> log likelihood: -2153913
+lda - INFO - 2024-05-11 12:57:33,981 - lda - 19478 - 139932536910208 - <900> log likelihood: -2154113
+lda - INFO - 2024-05-11 12:57:34,136 - lda - 19478 - 139932536910208 - <910> log likelihood: -2153503
+lda - INFO - 2024-05-11 12:57:34,293 - lda - 19478 - 139932536910208 - <920> log likelihood: -2153804
+lda - INFO - 2024-05-11 12:57:34,448 - lda - 19478 - 139932536910208 - <930> log likelihood: -2153635
+lda - INFO - 2024-05-11 12:57:34,602 - lda - 19478 - 139932536910208 - <940> log likelihood: -2153447
+lda - INFO - 2024-05-11 12:57:34,774 - lda - 19478 - 139932536910208 - <950> log likelihood: -2154351
+lda - INFO - 2024-05-11 12:57:34,937 - lda - 19478 - 139932536910208 - <960> log likelihood: -2153537
+lda - INFO - 2024-05-11 12:57:35,090 - lda - 19478 - 139932536910208 - <970> log likelihood: -2153910
+lda - INFO - 2024-05-11 12:57:35,243 - lda - 19478 - 139932536910208 - <980> log likelihood: -2153605
+lda - INFO - 2024-05-11 12:57:35,414 - lda - 19478 - 139932536910208 - <990> log likelihood: -2154147
+lda - INFO - 2024-05-11 12:57:35,568 - lda - 19478 - 139932536910208 - <999> log likelihood: -2153448
+scripts.tm - INFO - 2024-05-11 12:57:35,699 - tm - 19368 - 139932536910208 - [({'n_topics': 2, 'alpha': 0.5, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}, {'model': <lda.lda.LDA object at 0x7f444b5aed90>, 'loglikelihood': -2154146.7828325736, 'coherence_mimno_2011': -314.7177124025262})]

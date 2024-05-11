@@ -5,8 +5,8 @@
         "numIter": 1000,
         "randomState": 20191122,
         "eta": 0.1,
-        "maxTopics": 10,
-        "minTopics": 5,
-        "stepTopics": 5
+        "maxTopics": 3,
+        "minTopics": 2,
+        "stepTopics": 1
     }
 }

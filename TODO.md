@@ -211,7 +211,7 @@ TOTAL: 38897
     - [x] Does tmtoolkit have these metrics? [Yes](https://tmtoolkit.readthedocs.io/en/latest/index.html#topic-modeling)
       - Papers: perplexity ([Griffiths, Steyvers 2004](https://www.pnas.org/doi/full/10.1073/pnas.0307752101)), topic coherence ([Mimno et al. 2011](https://dl.acm.org/doi/10.5555/2145432.2145462)), topic distinctiveness ([Chuang et al. 2012](https://dl.acm.org/doi/10.1145/2254556.2254572)).
 
-- [ ] Estimate the number of topics with tmtoolkit --deprecated, tmtoolkit raises errors while running the lda module
+- [ ] Estimate the number of topics with tmtoolkit --~~deprecated, tmtoolkit raises errors while running the lda module~~ only works with Python 3.8
   - [x] Install tmtoolkit and needed set up to use chosen evaluation metrics
     - Installed following [guidelines](https://tmtoolkit.readthedocs.io/en/latest/install.html):
 
@@ -225,7 +225,7 @@ TOTAL: 38897
 
     - Noticed that tmtoolkit has a more comprehensive [data cleaning pipenline](https://tmtoolkit.readthedocs.io/en/latest/bow.html)
       - **Decided to re-do the data cleaning with tmtoolkit** to check which performs is better.
-  - [ ] Implement tmtoolkit topic evaluation function with desired metrics
+  - [x] Implement tmtoolkit topic evaluation function with desired metrics
 
     ```Python
     ModuleNotFoundError: No module named 'lda'
@@ -255,13 +255,12 @@ TOTAL: 38897
     python -m tmtoolkit setup en
     ```
 
-      - DASD
-
-  - [ ] [Save model](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
+    - **SUCCESS*: I was able to run the lda module in tmtoolkit with this separate conda environment.
 
 - [ ] Estimate the #topics (K) based on the #disciplines in the corpus, and the loglikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
   - [x] Get the #unique disciplines
   - [ ] Get at which #topics the loglikelihood metric converges.
+  - [ ] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
 
 - [ ] Get topics
   - [ ] Run LDA models
