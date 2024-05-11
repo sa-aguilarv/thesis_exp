@@ -15,6 +15,7 @@ from tmtoolkit.topicmod.evaluate import results_by_parameter
 from tmtoolkit.topicmod.model_stats import (word_distinctiveness, most_distinct_words, least_distinct_words)
 import scipy as sp
 import pandas as pd
+from tmtoolkit.topicmod.visualize import plot_eval_results
 
 def get_dtm(filename):
     logger = logging.getLogger(__name__)
@@ -67,12 +68,12 @@ def sort_list(lst_str):
     return sorted_lst
 
 def models_evaluation(dtm, params):
-    logger = logging.getLogger(__name__)
-    # disable_logging()
-    # logger = logging.getLogger('lda')
-    # logger.addHandler(logging.NullHandler())
-    # logger.propagate = False
-    # warnings.filterwarnings('ignore')
+    disable_logging()
+    logger = logging.getLogger('lda')
+    logger.addHandler(logging.NullHandler())
+    logger.propagate = False
+    warnings.filterwarnings('ignore')
+    gen_logger = logging.getLogger(__name__)
     
     const_params = {
         'n_iter': params['numIter'],
@@ -84,12 +85,28 @@ def models_evaluation(dtm, params):
 
     metrics = ['loglikelihood', 'coherence_mimno_2011']
 
-    logger.info('Metrics to evaluate: %s', metrics)
+    gen_logger.info('Metrics to evaluate: %s', metrics)
 
-    logger.info('Starting evaluation of topic models')
+    gen_logger.info('Starting evaluation of topic models')
     eval_results = evaluate_topic_models(dtm,
                                         varying_parameters=var_params,
                                         constant_parameters=const_params,
                                         metric=metrics,
                                         return_models=True)
-    logger.info(eval_results)
+    gen_logger.info(eval_results)
+
+    min_topics = str(params['minTopics'])
+    max_topics = str(params['maxTopics'])
+
+    save_path = 'results/tm/eval/topics_' + min_topics + '_' + max_topics
+    u.create_dir_if_not_exists(save_path)
+    u.save_object(eval_results, f'{save_path}/eval_results.pkl')
+
+    eval_results_by_topics = results_by_parameter(eval_results, 'n_topics')
+    u.save_object(eval_results, f'{save_path}/eval_results_by_topics.pkl')
+
+    for metric in metrics:
+        fig, subfig, axes = plot_eval_results(eval_results_by_topics, metric=metric)
+        fig.savefig(f'{save_path}/plot_eval_results_{metric}.png')
+    # fig, subfig, axes = plot_eval_results(eval_results_by_topics, metric=metrics)
+    # fig.savefig(f'{save_path}/plot_eval_results.png')
