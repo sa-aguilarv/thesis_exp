@@ -189,13 +189,14 @@ TOTAL: 38897
   - UPDATE-1: It seems that there are two parsing issues regarding S2AG paper IDs:
     1. S2AG fails in some instances to retrieve metadata given a paper ID. Given 7242 paper IDs, it retrieved 6668 instances, and the error percentage was of %38.55. This suggests there is a probability of 0.38 of getting an incorrect response even while using S2AG's defined paper IDs.
     2. Python fails in some instances during merging of dfs based on common S2AG's paper IDs. Given 4050 paper IDs, it successfully matched 4025 instances, and the error percentage was of %0.61. This suggests there is a probability of 0.061 of merging data incorrectly using pandas given common S2AG paper IDs.
-  - UPDATE-2: The %0.61 error was related to the duplicate paper IDs. Python was handling duplicate entries because S2AG retrieved them. 
+  - UPDATE-2: The %0.61 error was related to the duplicate paper IDs. Python was handling duplicate entries because S2AG retrieved them.
 
 ## 4. Topic model
 
 - [x] Get DTM, labels and vocabulary
   - [ ] DTM with CountVectorizer --deprecated, used tmtoolkit instead
   - [x] DTM, labels and vocabulary with tmtoolkit
+  - [x] Save DTM as sparse matrix
 
 - [x] Define how to estimate number of topics
   - [x] Analize viability of using [tmtoolkit](https://tmtoolkit.readthedocs.io/en/latest/)
@@ -255,6 +256,10 @@ TOTAL: 38897
     python -m tmtoolkit setup en
     ```
 
+    ```Python
+    from lda.lda import LDA #Validate lda imports in tmtoolkit 
+    ```
+
     - **SUCCESS*: I was able to run the lda module in tmtoolkit with this separate conda environment.
   
   - [x] [Plot](https://tmtoolkit.readthedocs.io/en/latest/api.html#plot-topic-model-evaluation-results) eval results
@@ -266,16 +271,18 @@ TOTAL: 38897
       ...
     ```
 
-- [ ] Estimate the #topics (K) based on the #disciplines in the corpus, and the loglikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
+- [x] Estimate the #topics (K) based on the #disciplines in the corpus, and the logikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
   - [x] Get the #unique disciplines
     - #unique disciplines: 16
-  - [ ] Identify at which #topics the loglikelihood metric converges.
-  - [ ] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) and eval results with optimal number of topics
+  - [x] Identify at which #topics the loglikelihood metric converges.
+    - #optimal topics: 7
+  - [x] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) and eval results with optimal number of topics
 
-- [ ] Get topics
-  - [ ] Run [LDA models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Evaluation-of-topic-models)
-    - [ ] With K = #disciplines
-    - [ ] With K = #estimated topics
+- [x] Get document-topic and topic-word distributions
+  - [x] Run [LDA models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Evaluation-of-topic-models)
+    - [ ] With K = #disciplines --deprecated, no time
+    - [x] With K = #optimal topics
+  - [x] Save document-topic and topic-word distributions as dense matrices
 
 - [ ] Topics evaluation metrics in tmtoolkit // ~~TODO: Validate viability of using them over scikitlearn's metrics~~
   - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)

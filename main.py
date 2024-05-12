@@ -58,12 +58,16 @@ def main():
         filename = 'results/corpus/raw_corpus.pkl'
         etl.corpus_preprocessing(filename)
 
-    elif args.tm:
-        logger.info('Topic modeling')
+    elif args.eval:
+        logger.info('Evaluation of topic models given different K values')
         filename = 'results/corpus/clean_corpus.pkl'
-        #tm.get_dtm(filename)
+        tm.get_dtm(filename)
         tm.models_evaluation(config['ldaParams'])
-        #tm.get_number_disciplines()
+        tm.get_number_disciplines()
+
+    elif args.lda:
+        logger.info('Estimation of document-topic and topic-word distributions with LDA model')
+        tm.get_topics(config['ldaParams'])
         
         
 if __name__ == '__main__':

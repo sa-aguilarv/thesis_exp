@@ -132,3 +132,23 @@ def models_evaluation(params):
 
         plt.savefig(f'{save_path}/plot_eval_results_{metrics[index]}.png')
         gen_logger.info('Saved %s metric plot', metrics[index])
+
+def get_topics(params):
+    logger = logging.getLogger(__name__)
+    eval_results_by_topics = u.load_object('results/tm/eval/topics_1_20/eval_results_by_topics.pkl')
+
+    best_tm, lda_object = next((item for item in eval_results_by_topics if item[0]['n_topics'] == params['bestK']), None)
+    logger.info('Best topic model: %s', best_tm)
+
+    lda_model = lda_object['model']
+    doc_topic_distr = lda_model.doc_topic_
+    topic_word_distr = lda_model.topic_word_
+
+    save_path = 'results/tm/' + str(params['bestK']) + '_topics'
+    u.create_dir_if_not_exists(save_path)
+
+    u.save_dense_matrix(doc_topic_distr, f'{save_path}/doc_topic_distr.txt')
+    u.save_dense_matrix(topic_word_distr, f'{save_path}/topic_word_distr.txt')
+    logger.info('Saved document-topic and topic-word distributions in %s', save_path)
+
+

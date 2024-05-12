@@ -14,7 +14,8 @@ def parse_input() -> argparse.Namespace:
     parser.add_argument("--eda", action="store_true", help="Exploratory data analysis")
     parser.add_argument("--metadata", action="store_true", help="Additional metadata collection from S2AG")
     parser.add_argument("--corpus", action="store_true", help="Corpus formation and preprocessing")
-    parser.add_argument("--tm", action="store_true", help="Topic modeling")
+    parser.add_argument("--eval", action="store_true", help="Topic modeling")
+    parser.add_argument("--lda", action="store_true", help="Get topics with LDA model")
     return parser.parse_args()
 
 def write_output_file(): #TODO: create a function to write the output to a file

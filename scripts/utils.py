@@ -138,15 +138,15 @@ def after_processing_validation():
     for key, value in no_common_ids_dict.items():
         logger.info(f'No. of common paper ids between df{key[0]} and df{key[1]}: {value}')
 
-def save_object(matrix, save_path):
+def save_object(object, save_path):
     """ Save an object.
     Args:
-        matrix (object): The object to save.
+        object (object): The object to save.
     Returns:
         None
     """
     with open(save_path, 'wb') as f:
-        pickle.dump(matrix, f)
+        pickle.dump(object, f)
 
 def load_object(filename):
     """ Load an object.
@@ -156,5 +156,25 @@ def load_object(filename):
         object: The object.
     """
     with open(filename, 'rb') as f:
-        matrix = pickle.load(f)
+        object = pickle.load(f)
+    return object
+
+def save_dense_matrix(matrix, save_path):
+    """ Save a dense matrix.
+    Args:
+        matrix (np.array): The matrix to save.
+        save_path (str): The path to save the matrix.
+    Returns:
+        None
+    """
+    np.savetxt(save_path, matrix, delimiter='\t', fmt='%1.5f')
+
+def load_dense_matrix(filename):
+    """ Load a dense matrix.
+    Args:
+        filename (str): The filename.
+    Returns:
+        np.array: The matrix.
+    """
+    matrix = np.loadtxt(filename, delimiter='\t')
     return matrix

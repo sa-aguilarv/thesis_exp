@@ -8,3 +8,6 @@
 /results/tm/eval/topics_1_20/eval_results.pkl
 /results/tm/eval/topics_1_100/eval_results_by_topics.pkl
 /results/tm/eval/topics_1_100/eval_results.pkl
+
+/results/tm/7_topics/doc_topic_distr.txt
+/results/tm/7_topics/topic_word_distr.txt
