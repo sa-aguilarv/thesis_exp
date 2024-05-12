@@ -269,7 +269,7 @@ TOTAL: 38897
 - [ ] Estimate the #topics (K) based on the #disciplines in the corpus, and the loglikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
   - [x] Get the #unique disciplines
     - #unique disciplines: 16
-  - [ ] Get at which #topics the loglikelihood metric converges.
+  - [ ] Identify at which #topics the loglikelihood metric converges.
   - [ ] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) and eval results with optimal number of topics
 
 - [ ] Get topics
@@ -277,12 +277,18 @@ TOTAL: 38897
     - [ ] With K = #disciplines
     - [ ] With K = #estimated topics
 
-- [ ] Topics evaluation metrics in tmtoolkit // TODO: Validate viability of using them over scikitlearn's metrics
+- [ ] Topics evaluation metrics in tmtoolkit // ~~TODO: Validate viability of using them over scikitlearn's metrics~~
   - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
+    - We use top words to label the topics to get an **abstract representation** of their meaning
   - [ ] Get [marginal topics and word distributions](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Marginal-topic-and-word-distributions)
-  - [ ] Get [word disctinctiveness and saliency](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Word-distinctiveness-and-saliency)
+    - We identify which topics are more important for the corpus, and which words are more important for the topics
+    - We get the **topic word distribution** with `best_tm.topic_word_`
+  - [ ] Get [word disctinctiveness](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Word-distinctiveness-and-saliency)
+    - We identify which words are the most informative words in the corpus
   - [ ] Get [topic word relevance](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-word-relevance)
+    - We get the most and least relevant words for each topic considering the corpus
   - [ ] Get [topic coherence](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-coherence)
+    - We get the coherence of each topic, and identify which are the worst and best topics // TODO: **Which knowledge claims are in these 'worst' and 'best' topics? Which social biases were involved?** Address this in the discussion.
 
 - [ ] Topic aggregation
   - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
@@ -336,20 +342,34 @@ TOTAL: 38897
   - [ ] Get authors sex distribution --deprecated, no time
 
 - [ ] Capture the dispersion of disciplines
-  - [ ] Get Silhouette values
+  - [ ] Get Silhouette values --deprecated, no time
     - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
   - [ ] Get topic entropy values
     - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
+    - How diverse are the topics? Which one is the most diverse?
+    - Which characteristics do these topics have? e.g., affiliations, disciplines, funding institutions
+    - What is the topic entropy over time?
 
-- [ ] Get diagnostic topics
+- [ ] Get diagnostic topics --deprecated, no time
   - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They identified which topics are the most characteristic and distinguishing for each discipline, i.e., those that mainly caused the disciplines to become cohesive clusters. They did this based on the Silhouette and topic entropy scores
       - **Are the most diagnostic topics unique to their respective disciplines?** //TODO: Address this in the discussion
 
-- [ ] Get knowledge claims of diagnostic topics
+- [ ] Get knowledge claims of diagnostic topics --deprecated, no time
   - [ ] Get the corresponding corpus (i.e., set of uncleaned abstracts) of each diagnostic topic
   - [ ] Get the "words that go together" with the 5 top words of each diagnostic topic based on [Point-wise Mutual Information (PMI)](https://tedboy.github.io/nlps/generated/generated/nltk.BigramAssocMeasures.html)
 
-- [ ] Qualitative analysis of knowledge claims
+- [ ] Qualitative analysis of knowledge claims --deprecated, no time
   - [ ] For all 5 top words of each diagnostic topic, get the sentences that contain the 5 words with the highest PMI
     - Are these common premises within the field?
+
+## 6. Replicate results
+
+- [ ] Re-run the project and compare original results with these Observations --deprecated, no time
+
+## Additional
+
+- [ ] Review documentation
+  - [ ] Verify requirements.txt file
+
+- [ ] Untrack ``TODO.md`` file

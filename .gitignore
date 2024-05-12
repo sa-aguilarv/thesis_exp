@@ -1,4 +1,10 @@
-/data/*
-/.vscode/*
-/cord-19-tools/*
-/inspiration/*
+/data
+/.vscode
+/cord-19-tools
+/inspiration
+/deprecated
+
+/results/tm/eval/topics_1_20/eval_results_by_topics.pkl
+/results/tm/eval/topics_1_20/eval_results.pkl
+/results/tm/eval/topics_1_100/eval_results_by_topics.pkl
+/results/tm/eval/topics_1_100/eval_results.pkl

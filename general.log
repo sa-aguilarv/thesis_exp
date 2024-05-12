@@ -19773,3 +19773,53 @@ scripts.tm - INFO - 2024-05-11 22:22:55,654 - tm - 23088 - 139776093290880 - Sta
 scripts.tm - INFO - 2024-05-11 22:24:45,204 - tm - 23088 - 139776093290880 - [({'n_topics': 16, 'alpha': 0.0625, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}, {'model': <lda.lda.LDA object at 0x7f1fdf307340>, 'loglikelihood': -2131273.3350453577, 'coherence_mimno_2011': -388.0514510303825}), ({'n_topics': 17, 'alpha': 0.058823529411764705, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}, {'model': <lda.lda.LDA object at 0x7f1fdf2c8610>, 'loglikelihood': -2134860.1940028965, 'coherence_mimno_2011': -387.04810665639155}), ({'n_topics': 18, 'alpha': 0.05555555555555555, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}, {'model': <lda.lda.LDA object at 0x7f1fdf26b310>, 'loglikelihood': -2132854.822451425, 'coherence_mimno_2011': -389.3218617690287}), ({'n_topics': 19, 'alpha': 0.05263157894736842, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}, {'model': <lda.lda.LDA object at 0x7f1fdf26b4c0>, 'loglikelihood': -2131428.474790431, 'coherence_mimno_2011': -390.26294666457403})]
 scripts.tm - INFO - 2024-05-11 22:24:47,242 - tm - 23088 - 139776093290880 - Saved loglikelihood metric plot
 scripts.tm - INFO - 2024-05-11 22:24:48,177 - tm - 23088 - 139776093290880 - Saved coherence_mimno_2011 metric plot
+__main__ - INFO - 2024-05-11 22:40:01,026 - main - 24125 - 140714280665472 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-11 22:40:01,027 - main - 24125 - 140714280665472 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-11 22:40:01,027 - utils - 24125 - 140714280665472 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 2000, 'minTopics': 1, 'stepTopics': 250}}
+__main__ - DEBUG - 2024-05-11 22:40:01,028 - main - 24125 - 140714280665472 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 2000, 'minTopics': 1, 'stepTopics': 250}}
+__main__ - DEBUG - 2024-05-11 22:40:01,032 - main - 24125 - 140714280665472 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-11 22:40:01,032 - main - 24125 - 140714280665472 - Topic modeling
+scripts.tm - INFO - 2024-05-11 22:40:01,069 - tm - 24125 - 140714280665472 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-11 22:40:01,070 - tm - 24125 - 140714280665472 - Starting evaluation of topic models
+__main__ - INFO - 2024-05-12 01:44:21,614 - main - 27203 - 140356679225728 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 01:44:21,615 - main - 27203 - 140356679225728 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 01:44:21,615 - utils - 27203 - 140356679225728 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10}}
+__main__ - DEBUG - 2024-05-12 01:44:21,615 - main - 27203 - 140356679225728 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10}}
+__main__ - DEBUG - 2024-05-12 01:44:21,618 - main - 27203 - 140356679225728 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-12 01:44:21,618 - main - 27203 - 140356679225728 - Topic modeling
+scripts.tm - INFO - 2024-05-12 01:44:21,655 - tm - 27203 - 140356679225728 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-12 01:44:21,656 - tm - 27203 - 140356679225728 - Starting evaluation of topic models
+scripts.tm - INFO - 2024-05-12 01:51:58,702 - tm - 27203 - 140356679225728 - Saved loglikelihood metric plot
+scripts.tm - INFO - 2024-05-12 01:51:59,289 - tm - 27203 - 140356679225728 - Saved coherence_mimno_2011 metric plot
+__main__ - INFO - 2024-05-12 01:56:47,401 - main - 27751 - 139788598542720 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 01:56:47,402 - main - 27751 - 139788598542720 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 01:56:47,402 - utils - 27751 - 139788598542720 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 20, 'minTopics': 1, 'stepTopics': 1}}
+__main__ - DEBUG - 2024-05-12 01:56:47,402 - main - 27751 - 139788598542720 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 20, 'minTopics': 1, 'stepTopics': 1}}
+__main__ - DEBUG - 2024-05-12 01:56:47,408 - main - 27751 - 139788598542720 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-12 01:56:47,409 - main - 27751 - 139788598542720 - Topic modeling
+scripts.tm - INFO - 2024-05-12 01:56:47,444 - tm - 27751 - 139788598542720 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-12 01:56:47,444 - tm - 27751 - 139788598542720 - Starting evaluation of topic models
+scripts.tm - INFO - 2024-05-12 01:59:48,521 - tm - 27751 - 139788598542720 - Saved loglikelihood metric plot
+scripts.tm - INFO - 2024-05-12 01:59:49,373 - tm - 27751 - 139788598542720 - Saved coherence_mimno_2011 metric plot
+__main__ - INFO - 2024-05-12 02:03:53,255 - main - 28311 - 139820652712320 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 02:03:53,256 - main - 28311 - 139820652712320 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 02:03:53,256 - utils - 28311 - 139820652712320 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 1000, 'minTopics': 1, 'stepTopics': 250}}
+__main__ - DEBUG - 2024-05-12 02:03:53,257 - main - 28311 - 139820652712320 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 1000, 'minTopics': 1, 'stepTopics': 250}}
+__main__ - DEBUG - 2024-05-12 02:03:53,260 - main - 28311 - 139820652712320 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-12 02:03:53,260 - main - 28311 - 139820652712320 - Topic modeling
+scripts.tm - INFO - 2024-05-12 02:03:53,294 - tm - 28311 - 139820652712320 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-12 02:03:53,294 - tm - 28311 - 139820652712320 - Starting evaluation of topic models
+__main__ - INFO - 2024-05-12 08:06:04,378 - main - 34005 - 140594376507776 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 08:06:04,379 - main - 34005 - 140594376507776 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 08:06:04,380 - utils - 34005 - 140594376507776 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50}}
+__main__ - DEBUG - 2024-05-12 08:06:04,380 - main - 34005 - 140594376507776 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50}}
+__main__ - DEBUG - 2024-05-12 08:06:04,386 - main - 34005 - 140594376507776 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-12 08:06:04,387 - main - 34005 - 140594376507776 - Topic modeling
+__main__ - INFO - 2024-05-12 08:08:16,172 - main - 34220 - 140436268704128 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 08:08:16,172 - main - 34220 - 140436268704128 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 08:08:16,173 - utils - 34220 - 140436268704128 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50}}
+__main__ - DEBUG - 2024-05-12 08:08:16,173 - main - 34220 - 140436268704128 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50}}
+__main__ - DEBUG - 2024-05-12 08:08:16,178 - main - 34220 - 140436268704128 - Input arguments: Namespace(corpus=False, eda=False, metadata=False, tm=True)
+__main__ - INFO - 2024-05-12 08:08:16,178 - main - 34220 - 140436268704128 - Topic modeling
+scripts.tm - INFO - 2024-05-12 08:08:16,211 - tm - 34220 - 140436268704128 - Metrics to evaluate: ['loglikelihood', 'coherence_mimno_2011']
+scripts.tm - INFO - 2024-05-12 08:08:16,212 - tm - 34220 - 140436268704128 - Starting evaluation of topic models
