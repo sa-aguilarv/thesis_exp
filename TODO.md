@@ -304,7 +304,7 @@ TOTAL: 38897
   - [ ] Get cosine distances between papers
   - [ ] Get clusters
     - [ ] Selection of clustering parameters
-      - [ ] Check parameters used in that same [paper]([paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533))
+      - [ ] Check parameters used in that same [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - [ ] Apply Hierarchical agglomerative clustering
   
   - [ ] Projection of inter-article distances
