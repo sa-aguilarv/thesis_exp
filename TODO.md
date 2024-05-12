@@ -211,7 +211,7 @@ TOTAL: 38897
     - [x] Does tmtoolkit have these metrics? [Yes](https://tmtoolkit.readthedocs.io/en/latest/index.html#topic-modeling)
       - Papers: perplexity ([Griffiths, Steyvers 2004](https://www.pnas.org/doi/full/10.1073/pnas.0307752101)), topic coherence ([Mimno et al. 2011](https://dl.acm.org/doi/10.5555/2145432.2145462)), topic distinctiveness ([Chuang et al. 2012](https://dl.acm.org/doi/10.1145/2254556.2254572)).
 
-- [ ] Estimate the number of topics with tmtoolkit --~~deprecated, tmtoolkit raises errors while running the lda module~~ only works with Python 3.8
+- [x] Implement function to estimate the number of topics with tmtoolkit --~~deprecated, tmtoolkit raises errors while running the lda module~~ only works with Python 3.8
   - [x] Install tmtoolkit and needed set up to use chosen evaluation metrics
     - Installed following [guidelines](https://tmtoolkit.readthedocs.io/en/latest/install.html):
 
@@ -256,14 +256,24 @@ TOTAL: 38897
     ```
 
     - **SUCCESS*: I was able to run the lda module in tmtoolkit with this separate conda environment.
+  
+  - [x] [Plot](https://tmtoolkit.readthedocs.io/en/latest/api.html#plot-topic-model-evaluation-results) eval results
+    - NOTE: I went to the definition of the `plot_eval_results` function and added preferred formatting: marker and color
+
+    ```Python
+      ...
+      ax.plot(x, y, label=m, marker='o', color='black')
+      ...
+    ```
 
 - [ ] Estimate the #topics (K) based on the #disciplines in the corpus, and the loglikehood values. // TODO: Address this in the discussion. We will evaluate this strict disciplines as a social bias. **Are my knowledge claims similar to those in my cluster?**
   - [x] Get the #unique disciplines
+    - #unique disciplines: 16
   - [ ] Get at which #topics the loglikelihood metric converges.
-  - [ ] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) with optimal number of topics
+  - [ ] [Save models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Displaying-and-exporting-topic-modeling-results) and eval results with optimal number of topics
 
 - [ ] Get topics
-  - [ ] Run LDA models
+  - [ ] Run [LDA models](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Evaluation-of-topic-models)
     - [ ] With K = #disciplines
     - [ ] With K = #estimated topics
 

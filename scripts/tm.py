@@ -16,6 +16,8 @@ from tmtoolkit.topicmod.model_stats import (word_distinctiveness, most_distinct_
 import scipy as sp
 import pandas as pd
 from tmtoolkit.topicmod.visualize import plot_eval_results
+import matplotlib.pyplot as plt
+from scripts import utils as u
 
 def get_dtm(filename):
     logger = logging.getLogger(__name__)
@@ -34,9 +36,8 @@ def get_dtm(filename):
     #np.savetxt(f'{save_path}/dtm.txt', dtm_sparse, delimiter=',', fmt='%1.5f') #To save as dense matrix
     sp.sparse.save_npz(f'{save_path}/dtm_sparse.npz', dtm_sparse)
     logger.debug('Saved DTM, doc_labels, and vocab in %s', save_path)
-    return dtm_sparse
 
-def estimate_topics():
+def get_number_disciplines():
     logger = logging.getLogger(__name__)
     filename = 'results/data_w_ao_metadata.csv'
     df = pd.read_csv(filename, usecols=['fieldsOfStudy'])
@@ -67,7 +68,9 @@ def sort_list(lst_str):
     sorted_lst = sorted(lst)  # Sort the list
     return sorted_lst
 
-def models_evaluation(dtm, params):
+def models_evaluation(params):
+    dtm = sp.sparse.load_npz('results/tm/dtm_sparse.npz')
+
     disable_logging()
     logger = logging.getLogger('lda')
     logger.addHandler(logging.NullHandler())
@@ -93,7 +96,6 @@ def models_evaluation(dtm, params):
                                         constant_parameters=const_params,
                                         metric=metrics,
                                         return_models=True)
-    gen_logger.info(eval_results)
 
     min_topics = str(params['minTopics'])
     max_topics = str(params['maxTopics'])
@@ -105,8 +107,28 @@ def models_evaluation(dtm, params):
     eval_results_by_topics = results_by_parameter(eval_results, 'n_topics')
     u.save_object(eval_results, f'{save_path}/eval_results_by_topics.pkl')
 
-    for metric in metrics:
-        fig, subfig, axes = plot_eval_results(eval_results_by_topics, metric=metric)
-        fig.savefig(f'{save_path}/plot_eval_results_{metric}.png')
-    # fig, subfig, axes = plot_eval_results(eval_results_by_topics, metric=metrics)
-    # fig.savefig(f'{save_path}/plot_eval_results.png')
+    xaxislabel = 'Number of topics'
+    title = ['Perplexity\n(minimize)', 'Topic coherence\n(maximize)']
+    yaxislabel = ['perplexity', 'NPMI']
+
+    for index in range(0, len(metrics)):
+        fig, subfig, axes = plot_eval_results(eval_results_by_topics,
+                                            metric=metrics[index],
+                                            xaxislabel=xaxislabel, 
+                                            yaxislabel=yaxislabel[index], 
+                                            show_metric_direction=False,
+                                            figsize=(12, 6),
+                                            title=title[index])
+
+        for ax in axes:
+            ax.set_title("")
+            ax.grid(True)
+            ax.set_xlabel(ax.get_xlabel(), fontsize=18)
+            ax.set_ylabel(ax.get_ylabel(), fontsize=18)
+            ax.set_xticks(np.arange(params['minTopics'], params['maxTopics'], params['stepTopics']))
+            ax.tick_params(axis='both', which='major', labelsize=16)
+            ax.ticklabel_format(style='sci')
+            ax.yaxis.get_offset_text().set_fontsize(16)
+
+        plt.savefig(f'{save_path}/plot_eval_results_{metrics[index]}.png')
+        gen_logger.info('Saved %s metric plot', metrics[index])
