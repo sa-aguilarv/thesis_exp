@@ -191,11 +191,6 @@ def corpus_creation(filename):
     save_corpus_to_picklefile(corpus, f'{save_path}/raw_corpus.pkl')
     logger.debug('Saved raw corpus to %s', f'{save_path}/raw_corpus.pkl')
 
-    # objects = [doc_labels, vocab]
-    # for obj, name in zip(objects, ['doc_labels', 'vocab']):
-    #     u.save_object(obj, f'{save_path}/{name}.pkl')
-    # dtm_df.to_csv(f'{save_path}/dtm.csv', index=False)
-
 def corpus_preprocessing(filename):
     """ Data cleaning. This function lemmatizes the text, removes non-nouns, removes common and uncommon words, and saves the clean corpus.
     Args:

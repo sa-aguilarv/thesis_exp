@@ -1,3 +1,18 @@
+""" Utility functions for the project.
+Functions:
+    load_config: Load the config file.
+    open_json_file: Open a json file.
+    create_dir_if_not_exists: Create a directory if it does not exist.
+    json_decomposition: Decompose the json file into a dictionary.
+    check_key: Check if a key exists in a dictionary.
+    drop_nan_rows: Drop rows with NaN values.
+    after_processing_validation: Validate the data after processing.
+    save_object: Save an object.
+    load_object: Load an object.
+    save_dense_matrix: Save a dense matrix.
+    load_dense_matrix: Load a dense matrix.
+"""
+
 import logging
 import json
 import pickle

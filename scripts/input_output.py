@@ -16,6 +16,7 @@ def parse_input() -> argparse.Namespace:
     parser.add_argument("--corpus", action="store_true", help="Corpus formation and preprocessing")
     parser.add_argument("--eval", action="store_true", help="Topic modeling")
     parser.add_argument("--lda", action="store_true", help="Get topics with LDA model")
+    parser.add_argument("--umap", action="store_true", help="Visualize topics with UMAP")
     return parser.parse_args()
 
 def write_output_file(): #TODO: create a function to write the output to a file

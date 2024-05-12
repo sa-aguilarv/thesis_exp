@@ -69,6 +69,9 @@ def main():
         logger.info('Estimation of document-topic and topic-word distributions with LDA model')
         tm.get_topics(config['ldaParams'])
         
+    elif args.umap:
+        logger.info('Projection of inter-article distances with UMAP')
+        
         
 if __name__ == '__main__':
     main()
