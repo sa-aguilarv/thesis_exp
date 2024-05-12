@@ -19868,3 +19868,25 @@ __main__ - DEBUG - 2024-05-12 17:21:36,855 - main - 18130 - 140639724769664 - In
 __main__ - INFO - 2024-05-12 17:21:36,857 - main - 18130 - 140639724769664 - Estimation of document-topic and topic-word distributions with LDA model
 scripts.tm - INFO - 2024-05-12 17:21:37,274 - tm - 18130 - 140639724769664 - Best topic model: {'n_topics': 7, 'alpha': 0.14285714285714285, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}
 scripts.tm - INFO - 2024-05-12 17:21:37,797 - tm - 18130 - 140639724769664 - Saved document-topic and topic-word distributions in results/tm/7_topics
+__main__ - INFO - 2024-05-12 17:48:21,942 - main - 20228 - 140451794682240 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 17:48:21,944 - main - 20228 - 140451794682240 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 17:48:21,946 - utils - 20228 - 140451794682240 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 7}}
+__main__ - DEBUG - 2024-05-12 17:48:21,946 - main - 20228 - 140451794682240 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 7}}
+__main__ - DEBUG - 2024-05-12 17:48:21,960 - main - 20228 - 140451794682240 - Input arguments: Namespace(corpus=False, eda=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-12 17:48:21,961 - main - 20228 - 140451794682240 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-12 17:48:22,068 - tm - 20228 - 140451794682240 - Best topic model: {'n_topics': 7, 'alpha': 0.14285714285714285, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}
+__main__ - INFO - 2024-05-12 17:51:15,956 - main - 20572 - 140174827368832 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 17:51:15,959 - main - 20572 - 140174827368832 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 17:51:15,960 - utils - 20572 - 140174827368832 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 16}}
+__main__ - DEBUG - 2024-05-12 17:51:15,960 - main - 20572 - 140174827368832 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 16}}
+__main__ - DEBUG - 2024-05-12 17:51:15,973 - main - 20572 - 140174827368832 - Input arguments: Namespace(corpus=False, eda=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-12 17:51:15,974 - main - 20572 - 140174827368832 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-12 17:51:16,045 - tm - 20572 - 140174827368832 - Best topic model: {'n_topics': 16, 'alpha': 0.0625, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}
+__main__ - INFO - 2024-05-12 17:55:29,268 - main - 20820 - 139997925949824 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-12 17:55:29,269 - main - 20820 - 139997925949824 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-12 17:55:29,270 - utils - 20820 - 139997925949824 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 16}}
+__main__ - DEBUG - 2024-05-12 17:55:29,270 - main - 20820 - 139997925949824 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 500, 'minTopics': 1, 'stepTopics': 50, 'bestK': 16}}
+__main__ - DEBUG - 2024-05-12 17:55:29,277 - main - 20820 - 139997925949824 - Input arguments: Namespace(corpus=False, eda=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-12 17:55:29,278 - main - 20820 - 139997925949824 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-12 17:55:29,348 - tm - 20820 - 139997925949824 - Best topic model: {'n_topics': 16, 'alpha': 0.0625, 'n_iter': 1000, 'random_state': 20191122, 'eta': 0.1}
+scripts.tm - INFO - 2024-05-12 17:55:29,981 - tm - 20820 - 139997925949824 - Saved document-topic and topic-word distributions in results/tm/16_topics

@@ -8,6 +8,6 @@
         "maxTopics": 500,
         "minTopics": 1,
         "stepTopics": 50,
-        "bestK": 7
+        "bestK": 16
     }
 }

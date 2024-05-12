@@ -297,6 +297,39 @@ TOTAL: 38897
   - [ ] Get [topic coherence](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-coherence)
     - We get the coherence of each topic, and identify which are the worst and best topics // TODO: **Which knowledge claims are in these 'worst' and 'best' topics? Which social biases were involved?** Address this in the discussion.
 
+### 4.1. Results
+
+- Corpus descriptors:
+  - Raw corpus #tokens: 861383
+  - Raw corpus vocabulary size: 36773
+  - Clean corpus #tokens: 276248
+  - Clean corpus vocabulary size: 18920
+
+- Parameters:
+  - #iterations: 1000
+  - eta: 0.1
+  - random state: 20191122
+  - alpha: 1/k
+
+- Topic models evaluation:
+  - #optimal topics: 7
+    - perplexity: -2142812.760859973
+    - coherence: -350.63710556159606
+  - #unique disciplines: 16
+    - perplexity: -2131273.3350453577
+    - coherence: -388.0514510303825
+
+- Unique disciplines in dataset: **16**
+  - Disciplines: Medicine, Mathematics, Engineering, Sociology, Materials Science, Physics, Environmental Science, Psychology, Computer Science, Chemistry, Business, Economics, Biology, Geography, Political Science, History
+
+### 4.2. Observations
+
+- The corpus vocabulary size (130) and #tokens (99380) were too small after removing common tokens (0.90) and uncommon tokens (0.05). Hence, I decided to not remove these uncommon and common tokens. This resulted in a vocabulary size of 18920
+
+- The distribution of disciplines in the overall dataset is probably skewed. **We didn't balance the dataset since our goal was to find how biases play part in creating interdisciplinary research**. // TODO: Address this in the methodology and discussion. Validate if the distribution is skewed.
+
+## 5. Hierarchichal Agglomerative Clustering
+
 - [ ] Topic aggregation
   - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They aggregated multiple topic models
@@ -312,25 +345,7 @@ TOTAL: 38897
       - They used UMAP for dimension reduction
     - [ ] Get UMAP plot
 
-### 4.1. Results
-
-- Corpus descriptors:
-  - Raw corpus #tokens: 861383
-  - Raw corpus vocabulary size: 36773
-  - Clean corpus #tokens: 276248
-  - Clean corpus vocabulary size: 18920
-
-- Approaches to estimate the #topics:
-  - Unique disciplines in dataset: **16**
-    - Disciplines: Medicine, Mathematics, Engineering, Sociology, Materials Science, Physics, Environmental Science, Psychology, Computer Science, Chemistry, Business, Economics, Biology, Geography, Political Science, History
-
-### 4.2. Observations
-
-- The corpus vocabulary size (130) and #tokens (99380) were too small after removing common tokens (0.90) and uncommon tokens (0.05). Hence, I decided to not remove these uncommon and common tokens. This resulted in a vocabulary size of 18920
-
-- The distribution of disciplines in the overall dataset is probably skewed. **We didn't balance the dataset since our goal was to find how biases play part in creating interdisciplinary research**. // TODO: Address this in the methodology and discussion. Validate if the distribution is skewed.
-
-## 5. Evaluation of interdisciplinary research
+## 6. Evaluation of interdisciplinary research
 
 - [ ] Description of publications through scientometrics
   - [ ] Papers yearly distributions
@@ -370,7 +385,7 @@ TOTAL: 38897
   - [ ] For all 5 top words of each diagnostic topic, get the sentences that contain the 5 words with the highest PMI
     - Are these common premises within the field?
 
-## 6. Replicate results
+## 7. Replicate results
 
 - [ ] Re-run the project and compare original results with these Observations --deprecated, no time
 
