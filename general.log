@@ -20341,3 +20341,856 @@ scripts.entropy - INFO - 2024-05-13 04:11:11,185 - entropy - 62437 - 13978965060
 entropy    6.819762
 Name: 4, dtype: object
 scripts.entropy - INFO - 2024-05-13 04:11:12,406 - entropy - 62437 - 139789650604416 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 12:28:04,526 - main - 13548 - 139778081190272 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 12:28:04,527 - main - 13548 - 139778081190272 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 12:28:04,527 - utils - 13548 - 139778081190272 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:28:04,527 - main - 13548 - 139778081190272 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:28:04,530 - main - 13548 - 139778081190272 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 12:28:54,833 - main - 13744 - 140667855126912 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 12:28:54,834 - main - 13744 - 140667855126912 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 12:28:54,835 - utils - 13744 - 140667855126912 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:28:54,836 - main - 13744 - 140667855126912 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:28:54,845 - main - 13744 - 140667855126912 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 12:28:54,846 - main - 13744 - 140667855126912 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 12:28:54,870 - hac - 13744 - 140667855126912 - Describing clusters
+scripts.hac - INFO - 2024-05-13 12:28:54,893 - hac - 13744 - 140667855126912 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,902 - hac - 13744 - 140667855126912 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,912 - hac - 13744 - 140667855126912 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,922 - hac - 13744 - 140667855126912 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,931 - hac - 13744 - 140667855126912 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,939 - hac - 13744 - 140667855126912 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:54,946 - hac - 13744 - 140667855126912 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:28:57,743 - hac - 13744 - 140667855126912 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 12:35:37,879 - main - 14186 - 139674932117888 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 12:35:37,881 - main - 14186 - 139674932117888 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 12:35:37,882 - utils - 14186 - 139674932117888 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:35:37,883 - main - 14186 - 139674932117888 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:35:37,893 - main - 14186 - 139674932117888 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 12:35:37,894 - main - 14186 - 139674932117888 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 12:35:37,917 - hac - 14186 - 139674932117888 - Describing clusters
+scripts.hac - INFO - 2024-05-13 12:35:37,930 - hac - 14186 - 139674932117888 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,941 - hac - 14186 - 139674932117888 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,951 - hac - 14186 - 139674932117888 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,961 - hac - 14186 - 139674932117888 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,972 - hac - 14186 - 139674932117888 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,983 - hac - 14186 - 139674932117888 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:37,993 - hac - 14186 - 139674932117888 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:35:41,030 - hac - 14186 - 139674932117888 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 12:58:29,810 - main - 15586 - 140334281085312 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 12:58:29,813 - main - 15586 - 140334281085312 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 12:58:29,813 - utils - 15586 - 140334281085312 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:58:29,814 - main - 15586 - 140334281085312 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 12:58:29,821 - main - 15586 - 140334281085312 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 12:58:29,822 - main - 15586 - 140334281085312 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 12:58:29,840 - hac - 15586 - 140334281085312 - Describing clusters
+scripts.hac - INFO - 2024-05-13 12:58:29,852 - hac - 15586 - 140334281085312 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,862 - hac - 15586 - 140334281085312 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,870 - hac - 15586 - 140334281085312 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,879 - hac - 15586 - 140334281085312 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,887 - hac - 15586 - 140334281085312 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,895 - hac - 15586 - 140334281085312 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:29,904 - hac - 15586 - 140334281085312 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 12:58:33,554 - hac - 15586 - 140334281085312 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:04:47,464 - main - 16196 - 140429830398336 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:04:47,466 - main - 16196 - 140429830398336 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:04:47,466 - utils - 16196 - 140429830398336 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:04:47,467 - main - 16196 - 140429830398336 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:04:47,472 - main - 16196 - 140429830398336 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:04:47,473 - main - 16196 - 140429830398336 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:04:47,490 - hac - 16196 - 140429830398336 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:04:47,516 - hac - 16196 - 140429830398336 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,525 - hac - 16196 - 140429830398336 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,531 - hac - 16196 - 140429830398336 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,539 - hac - 16196 - 140429830398336 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,545 - hac - 16196 - 140429830398336 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,550 - hac - 16196 - 140429830398336 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:47,558 - hac - 16196 - 140429830398336 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:04:50,085 - hac - 16196 - 140429830398336 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:11:47,851 - main - 16745 - 140524985741696 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:11:47,852 - main - 16745 - 140524985741696 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:11:47,853 - utils - 16745 - 140524985741696 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:11:47,853 - main - 16745 - 140524985741696 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:11:47,859 - main - 16745 - 140524985741696 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:11:47,859 - main - 16745 - 140524985741696 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:11:47,873 - hac - 16745 - 140524985741696 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:12:26,211 - hac - 16745 - 140524985741696 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+__main__ - INFO - 2024-05-13 13:18:02,969 - main - 17290 - 140089295712640 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:18:02,970 - main - 17290 - 140089295712640 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:18:02,971 - utils - 17290 - 140089295712640 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:18:02,972 - main - 17290 - 140089295712640 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:18:02,978 - main - 17290 - 140089295712640 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:18:02,980 - main - 17290 - 140089295712640 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:18:02,998 - hac - 17290 - 140089295712640 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:18:10,090 - hac - 17290 - 140089295712640 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,102 - hac - 17290 - 140089295712640 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,107 - hac - 17290 - 140089295712640 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,113 - hac - 17290 - 140089295712640 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,119 - hac - 17290 - 140089295712640 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,125 - hac - 17290 - 140089295712640 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:10,133 - hac - 17290 - 140089295712640 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:18:11,797 - hac - 17290 - 140089295712640 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:26:30,640 - main - 17796 - 140457139151232 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:26:30,641 - main - 17796 - 140457139151232 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:26:30,642 - utils - 17796 - 140457139151232 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:26:30,642 - main - 17796 - 140457139151232 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:26:30,647 - main - 17796 - 140457139151232 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:26:30,648 - main - 17796 - 140457139151232 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:26:30,665 - hac - 17796 - 140457139151232 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:26:30,684 - hac - 17796 - 140457139151232 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,691 - hac - 17796 - 140457139151232 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,696 - hac - 17796 - 140457139151232 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,701 - hac - 17796 - 140457139151232 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,707 - hac - 17796 - 140457139151232 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,713 - hac - 17796 - 140457139151232 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:30,718 - hac - 17796 - 140457139151232 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:26:33,007 - hac - 17796 - 140457139151232 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:31:51,139 - main - 18198 - 140026750284160 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:31:51,502 - main - 18198 - 140026750284160 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:31:51,504 - utils - 18198 - 140026750284160 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:31:51,504 - main - 18198 - 140026750284160 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:31:51,514 - main - 18198 - 140026750284160 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:31:51,515 - main - 18198 - 140026750284160 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:31:51,527 - hac - 18198 - 140026750284160 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:31:51,544 - hac - 18198 - 140026750284160 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,550 - hac - 18198 - 140026750284160 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,555 - hac - 18198 - 140026750284160 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,560 - hac - 18198 - 140026750284160 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,565 - hac - 18198 - 140026750284160 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,571 - hac - 18198 - 140026750284160 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:51,577 - hac - 18198 - 140026750284160 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:31:53,797 - hac - 18198 - 140026750284160 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:34:20,930 - main - 18423 - 140216567546240 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:34:20,932 - main - 18423 - 140216567546240 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:34:20,932 - utils - 18423 - 140216567546240 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:34:20,933 - main - 18423 - 140216567546240 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:34:20,938 - main - 18423 - 140216567546240 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:34:20,939 - main - 18423 - 140216567546240 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:34:20,954 - hac - 18423 - 140216567546240 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:34:20,972 - hac - 18423 - 140216567546240 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:20,981 - hac - 18423 - 140216567546240 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:20,987 - hac - 18423 - 140216567546240 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:20,993 - hac - 18423 - 140216567546240 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:21,001 - hac - 18423 - 140216567546240 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:21,008 - hac - 18423 - 140216567546240 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:21,014 - hac - 18423 - 140216567546240 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:34:23,268 - hac - 18423 - 140216567546240 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:37:25,483 - main - 18906 - 139895961678208 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:37:25,810 - main - 18906 - 139895961678208 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:37:25,812 - utils - 18906 - 139895961678208 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:37:25,812 - main - 18906 - 139895961678208 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:37:25,823 - main - 18906 - 139895961678208 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:37:25,825 - main - 18906 - 139895961678208 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:37:25,849 - hac - 18906 - 139895961678208 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:37:25,865 - hac - 18906 - 139895961678208 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,872 - hac - 18906 - 139895961678208 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,877 - hac - 18906 - 139895961678208 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,883 - hac - 18906 - 139895961678208 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,889 - hac - 18906 - 139895961678208 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,896 - hac - 18906 - 139895961678208 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:37:25,903 - hac - 18906 - 139895961678208 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+matplotlib.legend - WARNING - 2024-05-13 13:37:27,611 - legend - 18906 - 139895961678208 - No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+scripts.hac - INFO - 2024-05-13 13:37:28,759 - hac - 18906 - 139895961678208 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:43:19,038 - main - 19394 - 139740192620928 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:43:19,039 - main - 19394 - 139740192620928 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:43:19,040 - utils - 19394 - 139740192620928 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:43:19,040 - main - 19394 - 139740192620928 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:43:19,045 - main - 19394 - 139740192620928 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:43:19,046 - main - 19394 - 139740192620928 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:43:19,061 - hac - 19394 - 139740192620928 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:46:45,721 - hac - 19394 - 139740192620928 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:47:29,031 - main - 19721 - 140245646205312 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:47:29,032 - main - 19721 - 140245646205312 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:47:29,033 - utils - 19721 - 140245646205312 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:47:29,033 - main - 19721 - 140245646205312 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:47:29,039 - main - 19721 - 140245646205312 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:47:29,039 - main - 19721 - 140245646205312 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:47:29,056 - hac - 19721 - 140245646205312 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:47:32,092 - hac - 19721 - 140245646205312 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:48:35,235 - main - 19931 - 140672850149760 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:48:35,236 - main - 19931 - 140672850149760 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:48:35,237 - utils - 19931 - 140672850149760 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:48:35,237 - main - 19931 - 140672850149760 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:48:35,242 - main - 19931 - 140672850149760 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:48:35,243 - main - 19931 - 140672850149760 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:48:35,257 - hac - 19931 - 140672850149760 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:48:38,961 - hac - 19931 - 140672850149760 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:52:02,254 - main - 20303 - 140382500172160 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:52:02,255 - main - 20303 - 140382500172160 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:52:02,255 - utils - 20303 - 140382500172160 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:52:02,255 - main - 20303 - 140382500172160 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:52:02,261 - main - 20303 - 140382500172160 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:52:02,262 - main - 20303 - 140382500172160 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:52:02,276 - hac - 20303 - 140382500172160 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:52:02,292 - hac - 20303 - 140382500172160 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,299 - hac - 20303 - 140382500172160 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,304 - hac - 20303 - 140382500172160 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,311 - hac - 20303 - 140382500172160 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,316 - hac - 20303 - 140382500172160 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,321 - hac - 20303 - 140382500172160 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:02,327 - hac - 20303 - 140382500172160 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:52:04,652 - hac - 20303 - 140382500172160 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 13:58:04,659 - main - 20533 - 140559887421824 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 13:58:04,660 - main - 20533 - 140559887421824 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 13:58:04,661 - utils - 20533 - 140559887421824 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:58:04,661 - main - 20533 - 140559887421824 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 13:58:04,666 - main - 20533 - 140559887421824 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 13:58:04,667 - main - 20533 - 140559887421824 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 13:58:04,682 - hac - 20533 - 140559887421824 - Describing clusters
+scripts.hac - INFO - 2024-05-13 13:58:04,700 - hac - 20533 - 140559887421824 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,708 - hac - 20533 - 140559887421824 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,713 - hac - 20533 - 140559887421824 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,719 - hac - 20533 - 140559887421824 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,725 - hac - 20533 - 140559887421824 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,731 - hac - 20533 - 140559887421824 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:04,738 - hac - 20533 - 140559887421824 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 13:58:07,116 - hac - 20533 - 140559887421824 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 14:03:56,880 - main - 21105 - 139956641710464 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 14:03:56,881 - main - 21105 - 139956641710464 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 14:03:56,881 - utils - 21105 - 139956641710464 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 14:03:56,882 - main - 21105 - 139956641710464 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 14:03:56,887 - main - 21105 - 139956641710464 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 14:03:56,888 - main - 21105 - 139956641710464 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 14:03:56,900 - hac - 21105 - 139956641710464 - Describing clusters
+scripts.hac - INFO - 2024-05-13 14:03:56,916 - hac - 21105 - 139956641710464 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,921 - hac - 21105 - 139956641710464 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,926 - hac - 21105 - 139956641710464 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,931 - hac - 21105 - 139956641710464 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,936 - hac - 21105 - 139956641710464 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,941 - hac - 21105 - 139956641710464 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:56,946 - hac - 21105 - 139956641710464 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:03:58,215 - hac - 21105 - 139956641710464 - Cluster 4: Topic with the most papers: protein
+scripts.hac - INFO - 2024-05-13 14:03:58,217 - hac - 21105 - 139956641710464 - Cluster 4: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:03:58,227 - hac - 21105 - 139956641710464 - Cluster 6: Topic with the most papers: health
+scripts.hac - INFO - 2024-05-13 14:03:58,228 - hac - 21105 - 139956641710464 - Cluster 6: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:03:58,238 - hac - 21105 - 139956641710464 - Cluster 1: Topic with the most papers: vaccine
+scripts.hac - INFO - 2024-05-13 14:03:58,240 - hac - 21105 - 139956641710464 - Cluster 1: Topic with the fewest papers: cell
+scripts.hac - INFO - 2024-05-13 14:03:58,251 - hac - 21105 - 139956641710464 - Cluster 2: Topic with the most papers: cell
+scripts.hac - INFO - 2024-05-13 14:03:58,254 - hac - 21105 - 139956641710464 - Cluster 2: Topic with the fewest papers: drug
+scripts.hac - INFO - 2024-05-13 14:03:58,264 - hac - 21105 - 139956641710464 - Cluster 3: Topic with the most papers: patient
+scripts.hac - INFO - 2024-05-13 14:03:58,266 - hac - 21105 - 139956641710464 - Cluster 3: Topic with the fewest papers: cell
+scripts.hac - INFO - 2024-05-13 14:03:58,276 - hac - 21105 - 139956641710464 - Cluster 5: Topic with the most papers: sample
+scripts.hac - INFO - 2024-05-13 14:03:58,278 - hac - 21105 - 139956641710464 - Cluster 5: Topic with the fewest papers: vaccine
+scripts.hac - INFO - 2024-05-13 14:03:58,291 - hac - 21105 - 139956641710464 - Cluster 0: Topic with the most papers: drug
+scripts.hac - INFO - 2024-05-13 14:03:58,293 - hac - 21105 - 139956641710464 - Cluster 0: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:03:59,715 - hac - 21105 - 139956641710464 - Saved max and min topic for each cluster in results/hac/max_min_topic_per_cluster.csv
+scripts.hac - INFO - 2024-05-13 14:03:59,716 - hac - 21105 - 139956641710464 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png
+__main__ - INFO - 2024-05-13 14:13:18,858 - main - 21871 - 140460533195136 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 14:13:18,859 - main - 21871 - 140460533195136 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 14:13:18,859 - utils - 21871 - 140460533195136 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 14:13:18,860 - main - 21871 - 140460533195136 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 14:13:18,865 - main - 21871 - 140460533195136 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=False, metadata=False, umap=True)
+__main__ - INFO - 2024-05-13 14:13:18,866 - main - 21871 - 140460533195136 - Projection of inter-article distances with UMAP
+scripts.hac - INFO - 2024-05-13 14:13:18,884 - hac - 21871 - 140460533195136 - Describing clusters
+scripts.hac - INFO - 2024-05-13 14:13:18,904 - hac - 21871 - 140460533195136 - Cluster 4: topic
+protein    604
+health       5
+patient      4
+sample       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,913 - hac - 21871 - 140460533195136 - Cluster 6: topic
+health     656
+vaccine     16
+sample      10
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,919 - hac - 21871 - 140460533195136 - Cluster 1: topic
+vaccine    470
+protein     36
+patient     17
+sample      15
+drug         9
+cell         1
+health       1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,927 - hac - 21871 - 140460533195136 - Cluster 2: topic
+cell       579
+patient     41
+protein     34
+health      13
+vaccine      5
+drug         2
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,933 - hac - 21871 - 140460533195136 - Cluster 3: topic
+patient    502
+sample      38
+health      17
+cell         1
+drug         1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,941 - hac - 21871 - 140460533195136 - Cluster 5: topic
+sample     479
+cell        10
+protein      6
+drug         2
+health       2
+vaccine      1
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:18,948 - hac - 21871 - 140460533195136 - Cluster 0: topic
+drug       343
+protein     35
+health      24
+patient     19
+cell        18
+vaccine      5
+sample       3
+Name: count, dtype: int64
+scripts.hac - INFO - 2024-05-13 14:13:20,206 - hac - 21871 - 140460533195136 - Cluster 4: Topic with the most papers: protein
+scripts.hac - INFO - 2024-05-13 14:13:20,208 - hac - 21871 - 140460533195136 - Cluster 4: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:13:20,212 - hac - 21871 - 140460533195136 - Cluster 6: Topic with the most papers: health
+scripts.hac - INFO - 2024-05-13 14:13:20,215 - hac - 21871 - 140460533195136 - Cluster 6: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:13:20,220 - hac - 21871 - 140460533195136 - Cluster 1: Topic with the most papers: vaccine
+scripts.hac - INFO - 2024-05-13 14:13:20,223 - hac - 21871 - 140460533195136 - Cluster 1: Topic with the fewest papers: cell
+scripts.hac - INFO - 2024-05-13 14:13:20,229 - hac - 21871 - 140460533195136 - Cluster 2: Topic with the most papers: cell
+scripts.hac - INFO - 2024-05-13 14:13:20,232 - hac - 21871 - 140460533195136 - Cluster 2: Topic with the fewest papers: drug
+scripts.hac - INFO - 2024-05-13 14:13:20,235 - hac - 21871 - 140460533195136 - Cluster 3: Topic with the most papers: patient
+scripts.hac - INFO - 2024-05-13 14:13:20,238 - hac - 21871 - 140460533195136 - Cluster 3: Topic with the fewest papers: cell
+scripts.hac - INFO - 2024-05-13 14:13:20,244 - hac - 21871 - 140460533195136 - Cluster 5: Topic with the most papers: sample
+scripts.hac - INFO - 2024-05-13 14:13:20,247 - hac - 21871 - 140460533195136 - Cluster 5: Topic with the fewest papers: vaccine
+scripts.hac - INFO - 2024-05-13 14:13:20,252 - hac - 21871 - 140460533195136 - Cluster 0: Topic with the most papers: drug
+scripts.hac - INFO - 2024-05-13 14:13:20,254 - hac - 21871 - 140460533195136 - Cluster 0: Topic with the fewest papers: sample
+scripts.hac - INFO - 2024-05-13 14:13:21,687 - hac - 21871 - 140460533195136 - Saved max and min topic for each cluster in results/hac/max_min_topic_per_cluster.csv
+scripts.hac - INFO - 2024-05-13 14:13:21,688 - hac - 21871 - 140460533195136 - Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png

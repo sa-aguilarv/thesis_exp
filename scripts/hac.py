@@ -133,3 +133,44 @@ def get_topic_cluster_df(max_topic_for_doc, y_hac):
     u.create_dir_if_not_exists(save_path)
     df.to_csv(f'{save_path}/topic_cluster_df.csv', index=False)
     logger.info('Saved topic cluster DataFrame in %s', save_path)
+
+def describe_clusters():
+    logger = logging.getLogger(__name__)
+    filename = 'results/hac/topic_cluster_df.csv'
+    df = pd.read_csv(filename)
+    logger.info('Describing clusters')
+
+    # Create a new column 'topic_count' that contains the count of each topic within its cluster
+    df['topic_count'] = df.groupby(['cluster', 'topic'])['topic'].transform('count')
+
+    for cluster in df['cluster'].unique():
+        cluster_df = df[df['cluster'] == cluster]
+        logger.info('Cluster %s: %s', cluster, cluster_df['topic'].value_counts())
+
+    # Plot the distribution of topics in each cluster
+    plt.figure(figsize=(12,8))
+    sns.countplot(data=df, x='cluster', hue='topic', palette='Set2')
+    max_min_tuple = {}
+    for cluster in df['cluster'].unique():
+        cluster_df = df[df['cluster'] == cluster]
+        topic_max = cluster_df['topic'].value_counts().idxmax()
+        logger.info('Cluster %s: Topic with the most papers: %s', cluster, topic_max)
+        topic_min = cluster_df['topic'].value_counts().idxmin()
+        logger.info('Cluster %s: Topic with the fewest papers: %s', cluster, topic_min)
+        max_min_tuple[cluster] = {'max': topic_max, 'min': topic_min}
+
+    plt.title('Distribution of topics in each cluster', fontsize=14)
+    plt.grid(axis='y', linestyle='--', alpha=0.6)
+    plt.xlabel('Cluster', fontsize=12)
+    plt.ylabel('Number of papers', fontsize=12)
+    plt.legend(title='Topic', title_fontsize=12, fontsize=12)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+
+    plt.savefig('results/hac/cluster_topic_distribution.png', bbox_inches='tight')
+
+    # save the max and min topic for each cluster in a csv file
+    max_min_df = pd.DataFrame(max_min_tuple).T
+    max_min_df.to_csv('results/hac/max_min_topic_per_cluster.csv')
+    logger.info('Saved max and min topic for each cluster in results/hac/max_min_topic_per_cluster.csv')
+    logger.info('Saved cluster topic distribution plot in results/hac/cluster_topic_distribution.png')

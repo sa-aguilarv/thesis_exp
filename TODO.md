@@ -358,6 +358,23 @@ TOTAL: 38897
   - [ ] Get [topic coherence](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-coherence) --deprecated, no time
     - We get the coherence of each topic, and identify which are the worst and best topics // TODO: **Which knowledge claims are in these 'worst' and 'best' topics? Which social biases were involved?** Address this in the discussion.
 
+- [x] Qualitative analysis of topics and clusters
+  - [x] Describe how topics mix together
+  - [x] Describe how topics branch into other topics
+  - [x] Describe any additional observations
+
+- [ ] Quantitative analysis of topics and clusters
+  - [x] Plot the topics distribution for each cluster
+  - What is the most important topic for each cluster?
+  - What is the least important topic for each cluster?
+  - [ ] Create a heatmap to visualize the similarity between topics
+  - Metric: cosine similarity
+  - [ ] Create a heatmap to visualize the similarity between clusters
+  - [ ] Visualize the most and least important words for each topic
+    - [ ] Which plot would be adecuate for this?
+  - [ ] Plot the coherence for each topic
+    - What are the best and worst topics?
+
 ### 5.1. Results
 
 - 7 topic labels:
@@ -366,7 +383,7 @@ TOTAL: 38897
   INFO - Topic labels: ['1_protein' '2_vaccine' '3_patient' '4_cell' '5_drug' '6_sample' '7_health']
   ```
 
-- UMAP scatterplot description:
+- Qualitative analysis:
 
   - Green circle: protein
     - Mixes with: health, patient
@@ -406,6 +423,20 @@ TOTAL: 38897
     - Branches with: protein, cell, drug
     - **Distant branch: health**
     - Branches = mixes? protein
+
+- Quantitative analysis:
+
+  - Topic distribution per clusters:
+
+    | cluster |   max   |   min   |
+    |---------|---------|---------|
+    |    0    |  drug   | sample  |
+    |    1    | vaccine |  cell   |
+    |    2    |  cell   |  drug   |
+    |    3    | patient |  cell   |
+    |    4    | protein | sample  |
+    |    5    | sample  | vaccine |
+    |    6    | health  | sample  |
 
 ### 5.2. Observations
 
@@ -458,6 +489,7 @@ TOTAL: 38897
     - [x] Removed zeros to avoid log(0) issue
     - [x] Calculated entropy values with base ln
   - [x] Plot entropy values per topic
+    - [ ] Re-order the values for them to go from the highest to the lowest
 
 - [ ] Get diagnostic topics --deprecated, no time
   - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
@@ -496,6 +528,7 @@ TOTAL: 38897
   - [ ] Update README.medatata
     - [x] Add requirements
     - [x] Add explanation on how to set up the workspace
-    - [x] Create huggingface dataset
+    - [ ] Create huggingface dataset
+    - [ ] Mention changes made on tmtoolkit library
 
 - [ ] Untrack ``TODO.md`` file

@@ -1,0 +1,8 @@
+,max,min
+4,protein,sample
+6,health,sample
+1,vaccine,cell
+2,cell,drug
+3,patient,cell
+5,sample,vaccine
+0,drug,sample
