@@ -409,13 +409,28 @@ TOTAL: 38897
 
 ### 5.2. Observations
 
-- 'Vaccine' is the most interdisciplinary field. //TODO: Analyze this topic metrics compared to the others.
+- 'Vaccine' looks like the most interdisciplinary topic. //TODO: Analyze this topic metrics compared to the others. How can we measure this interdisciplinarity?
 
-- 
+- 'Protein' mixes with topics that are not branching into it, and it is beginning a subcluster of 'health'. //TODO: Could this be considered a reinterpretation of the topic health? Analyze how this 'reinterpretation' could be measured.
+
+- 'Drug' mixes with one of its branches, 'protein'. //TODO: What does this mean in linguistics?
+
+- 'Cell' mixes with a topic that is branching into it ('vaccine'), and it is beggining a subcluster of 'drug'. //TODO: Is the reinterpretation of drugs leading to new vaccines? This flow hints toward subclusters or "distant branches" being the process of reinterpretation, **since the understanding of drugs in the context of cells leads to vaccines**.
+  - 'Protein' has a subcluster, yet it's mixing with topics that are not branching into it. What could this mean? That the reinterpretation of health in the context of proteins is not leading anywhere concrete yet?
+
+- 'Patient' mixes with a topic that is branching into it ('health'). However, it doesn't have any subcluster. //TODO: Does this mean that reinterpretation isn't ocurring?
+
+- 'Health' mixes and branches with 'patient' and 'vaccine'. //TODO: **Could this mean that these topics share the same context?**
+
+- 'Sample' mixes witth two topics that branch into it ('patient', 'health'), and it is beginning a subcluster of 'protein'. //TODO: **This hints toward the reinterpretation of protein, in the context of sample, leading to patient health.**
+
+- 'Vaccine' mixes with a topic that is branching into it ('protein'), and it is beginning a subcluster of 'health'. //TODO: **This hints toward the reinterpretation of health, in the context of vaccine, leading to protein.**
+
+- This methodology suggests an approach to represent the process of reinterpretation and where it leads to in the contexts of topics.
 
 ## 6. Evaluation of interdisciplinary research
 
-- [ ] Description of publications through scientometrics
+- [ ] Description of publications through scientometrics --deprecated, no time
   - [ ] Papers yearly distributions
     - [x] Get papers publication year
     - [ ] Get #papers published each year
