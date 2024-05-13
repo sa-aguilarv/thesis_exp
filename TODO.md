@@ -284,19 +284,6 @@ TOTAL: 38897
     - [x] With K = #optimal topics
   - [x] Save document-topic and topic-word distributions as dense matrices
 
-- [ ] Topics evaluation metrics in tmtoolkit // ~~TODO: Validate viability of using them over scikitlearn's metrics~~
-  - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
-    - We use top words to label the topics to get an **abstract representation** of their meaning
-  - [ ] Get [marginal topics and word distributions](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Marginal-topic-and-word-distributions)
-    - We identify which topics are more important for the corpus, and which words are more important for the topics
-    - We get the **topic word distribution** with `best_tm.topic_word_`
-  - [ ] Get [word disctinctiveness](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Word-distinctiveness-and-saliency)
-    - We identify which words are the most informative words in the corpus
-  - [ ] Get [topic word relevance](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-word-relevance)
-    - We get the most and least relevant words for each topic considering the corpus
-  - [ ] Get [topic coherence](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-coherence)
-    - We get the coherence of each topic, and identify which are the worst and best topics // TODO: **Which knowledge claims are in these 'worst' and 'best' topics? Which social biases were involved?** Address this in the discussion.
-
 ### 4.1. Results
 
 - Corpus descriptors:
@@ -311,13 +298,17 @@ TOTAL: 38897
   - random state: 20191122
   - alpha: 1/k
 
-- Topic models evaluation:
+- Topic models evaluation approaches:
   - #optimal topics: 7
     - perplexity: -2142812.760859973
     - coherence: -350.63710556159606
   - #unique disciplines: 16
     - perplexity: -2131273.3350453577
     - coherence: -388.0514510303825
+
+- Distributions for each approach:
+  - document-topic
+  - topic-word
 
 - Unique disciplines in dataset: **16**
   - Disciplines: Medicine, Mathematics, Engineering, Sociology, Materials Science, Physics, Environmental Science, Psychology, Computer Science, Chemistry, Business, Economics, Biology, Geography, Political Science, History
@@ -328,22 +319,54 @@ TOTAL: 38897
 
 - The distribution of disciplines in the overall dataset is probably skewed. **We didn't balance the dataset since our goal was to find how biases play part in creating interdisciplinary research**. // TODO: Address this in the methodology and discussion. Validate if the distribution is skewed.
 
+- Using LDA with tmtoolkit requires changing the import definition of the module, otherwise it doesn't work.
+
 ## 5. Hierarchichal Agglomerative Clustering
 
-- [ ] Topic aggregation
+- [x] Topic aggregation review
   - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They aggregated multiple topic models
-    - They created clusters using cosine distances. **What is the advantage of using that over Jensen Shannon divergence?** //TODO: Cover this in the discusion
-  - [ ] Get cosine distances between papers
-  - [ ] Get clusters
-    - [ ] Selection of clustering parameters
-      - [ ] Check parameters used in that same [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
-    - [ ] Apply Hierarchical agglomerative clustering
+    - They created clusters using cosine distances and hierarchical agglomerative clustering. **What is the advantage of using that over Jensen Shannon divergence?** //TODO: Cover this in the discusion
+
+- [x] Apply hierarchical agglomerative clustering (HAC)
+  - [x] Selection of clustering parameters
+    - [x] Check parameters used in that same [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
+      - Cosine distances
+      - Average linkage method
+  - [x] Fit document-topic distribution to HAC
+
+- [ ] Projection of inter-article distances with UMAP
+  - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
+    - They used UMAP for dimension reduction with no. n_neighbors (200) and random state
+  - [ ] Prepare UMAP requirements in a dataframe
+    - [x] Get HAC
+    - [x] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
+      - [x] Replace topic number for label
   
-  - [ ] Projection of inter-article distances
-    - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
-      - They used UMAP for dimension reduction
-    - [ ] Get UMAP plot
+- [ ] Topics evaluation metrics in tmtoolkit // ~~TODO: Validate viability of using them over scikitlearn's metrics~~
+  - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
+    - We use top words to label the topics to get an **abstract representation** of their meaning
+  - [ ] Get [marginal topics and word distributions](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Marginal-topic-and-word-distributions)
+    - We identify which topics are more important for the corpus, and which words are more important for the topics
+    - We get the **topic word distribution** with `best_tm.topic_word_`
+  - [ ] Get [word disctinctiveness](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Word-distinctiveness-and-saliency)
+    - We identify which words are the most informative words in the corpus
+  - [ ] Get [topic word relevance](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-word-relevance)
+    - We get the most and least relevant words for each topic considering the corpus
+  - [ ] Get [topic coherence](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Topic-coherence)
+    - We get the coherence of each topic, and identify which are the worst and best topics // TODO: **Which knowledge claims are in these 'worst' and 'best' topics? Which social biases were involved?** Address this in the discussion.
+
+### 5.1. Results
+
+- 7 topic labels:
+
+  ```Python
+  INFO - Topic labels: ['1_protein' '2_vaccine' '3_patient' '4_cell' '5_drug' '6_sample' '7_health']
+  ```
+
+- HAC
+
+### 5.2. Observations
 
 ## 6. Evaluation of interdisciplinary research
 

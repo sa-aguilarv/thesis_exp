@@ -20,7 +20,8 @@ from tmtoolkit.utils import enable_logging, disable_logging
 from tmtoolkit.corpus import (load_corpus_from_picklefile, dtm)
 from tmtoolkit.topicmod.tm_lda import evaluate_topic_models
 from tmtoolkit.topicmod.evaluate import results_by_parameter
-from tmtoolkit.topicmod.model_stats import (word_distinctiveness, most_distinct_words, least_distinct_words)
+from tmtoolkit.bow.bow_stats import doc_lengths
+from tmtoolkit.topicmod.model_stats import generate_topic_labels_from_top_words
 import scipy as sp
 import pandas as pd
 from tmtoolkit.topicmod.visualize import plot_eval_results
@@ -186,3 +187,28 @@ def get_topics(params):
     u.save_dense_matrix(doc_topic_distr, f'{save_path}/doc_topic_distr.txt')
     u.save_dense_matrix(topic_word_distr, f'{save_path}/topic_word_distr.txt')
     logger.info('Saved document-topic and topic-word distributions in %s', save_path)
+
+def get_topic_labels():
+    logger = logging.getLogger(__name__)
+    vocab_filename = 'results/tm/vocab.pkl'
+    dtm_filename = 'results/tm/dtm_sparse.npz'
+    topic_word_dist_filename = 'results/tm/7_topics/topic_word_distr.txt'
+    doc_topic_dist_filename = 'results/tm/7_topics/doc_topic_distr.txt'
+
+    vocab = u.load_object(vocab_filename)
+    dtm= sp.sparse.load_npz(dtm_filename)
+    vocab = np.array(vocab)   # we need this to be an array
+    doc_len = doc_lengths(dtm)
+    topic_word_dist = u.load_dense_matrix(topic_word_dist_filename)
+    doc_topic_dist = u.load_dense_matrix(doc_topic_dist_filename)
+
+
+    topic_labels = generate_topic_labels_from_top_words(
+        topic_word_dist,
+        doc_topic_dist,
+        doc_len,
+        np.array(vocab),
+        lambda_=0.6
+    )
+
+    logger.info('Topic labels: %s', topic_labels)

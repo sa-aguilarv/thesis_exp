@@ -5,9 +5,16 @@
         "numIter": 1000,
         "randomState": 20191122,
         "eta": 0.1,
-        "maxTopics": 500,
+        "maxTopics": 100,
         "minTopics": 1,
-        "stepTopics": 50,
-        "bestK": 16
+        "stepTopics": 10,
+        "bestK": 7
+    },
+    "hacParams": {
+        "linkage": "average",
+        "metric": "cosine",
+        "numClusters": 7,
+        "numNeighbors": 200,
+        "randomState": 1234
     }
 }

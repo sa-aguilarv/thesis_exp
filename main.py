@@ -11,6 +11,7 @@ from scripts import eda
 from scripts import utils as u
 from scripts import etl
 from scripts import tm
+from scripts import hac
 
 def set_up_logging():
     """Set up the logging configuration.
@@ -71,7 +72,11 @@ def main():
         
     elif args.umap:
         logger.info('Projection of inter-article distances with UMAP')
-        
-        
+        #tm.get_topic_labels()
+        #filename = 'results/tm/7_topics/doc_topic_distr.txt'
+        #hac.get_clusters(filename, config['hacParams'])
+        filename = 'results/hac/topic_cluster_df.csv'
+        hac.get_umap(filename, config['hacParams'])
+
 if __name__ == '__main__':
     main()
