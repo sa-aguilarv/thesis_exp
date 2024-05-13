@@ -3,6 +3,7 @@
 /cord-19-tools
 /inspiration
 /deprecated
+/.env
 
 /results/tm/eval/topics_1_20/eval_results_by_topics.pkl
 /results/tm/eval/topics_1_20/eval_results.pkl
