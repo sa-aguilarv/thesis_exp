@@ -10,9 +10,9 @@ Hence, we address the following problem: given a corpus of scientific papers, fi
 
 1. OS: Ubuntu LTS 20.04
 
-2. Download python: https://www.python.org/downloads/ --latest release is fine
+2. Download [python](https://www.python.org/downloads/) --latest release is fine
 
-3. Install miniconda: https://docs.anaconda.com/free/miniconda/miniconda-install/
+3. Install [miniconda](https://docs.anaconda.com/free/miniconda/miniconda-install/)
 
 ## Set up work environment
 
@@ -38,10 +38,16 @@ Hence, we address the following problem: given a corpus of scientific papers, fi
 
 5. Run application with these parameters in this order:
 
-    1. python main.py --eda
-    2. python main.py --metadata
-    3. python main.py --corpus
-    4. python main.py --eval
-    5. python main.py --lda
-    6. python main.py --umap
-    7. python main.py --entropy
+    1. `python main.py --eda`
+
+    2. `python main.py --metadata`
+
+    3. `python main.py --corpus`
+
+    4. `python main.py --eval`
+
+    5. `python main.py --lda`
+
+    6. `python main.py --umap`
+
+    7. `python main.py --entropy`
