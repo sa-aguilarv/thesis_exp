@@ -446,17 +446,18 @@ TOTAL: 38897
     - [ ] Create circle plot to visualize countries representaiton in the dataset
   - [ ] Get authors sex distribution --deprecated, no time
 
-- [ ] Capture the dispersion of disciplines
+- [x] Capture the dispersion of disciplines
   - [ ] Get Silhouette values --deprecated, no time
     - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
-  - [ ] Get topic entropy values
+  - [x] Get topic entropy values
     - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - How diverse are the topics? Which one is the most diverse?
     - Which characteristics do these topics have? e.g., affiliations, disciplines, funding institutions
     - What is the topic entropy over time?
-    - [x] Calculate Jensen-Shannon divergences for document-topic distribution
-      - This gives the JS distances between documents
-    - [ ] 
+    - [x] Normalized document-topic probabilities to ensure they sum up to 1
+    - [x] Removed zeros to avoid log(0) issue
+    - [x] Calculated entropy values with base ln
+  - [x] Plot entropy values per topic
 
 - [ ] Get diagnostic topics --deprecated, no time
   - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
@@ -471,13 +472,30 @@ TOTAL: 38897
   - [ ] For all 5 top words of each diagnostic topic, get the sentences that contain the 5 words with the highest PMI
     - Are these common premises within the field?
 
+### 6.1. Results
+
+- Topic entropy values:
+  - Highest: health, 7.26
+  - Lowest: drug, 6.81
+  - Topics 'protein', 'vaccine', 'patient', and 'sample' have entropy values within a range of 7.00-7.20
+
+### 6.2. Observations
+
+- The most interdisciplinary topic wasn't 'vaccine' but 'health'. //TODO: It is misguiding to base our interpretations from the UMAP graph only. Address this in the discussion.
+
+- Health was the only topic that seemingly mixed and branched with the same topics, 'patient' and 'vaccine'. //TODO: Could this be associated with its highest entropy value? Address this in the discussion.
+
 ## 7. Replicate results
 
 - [ ] Re-run the project and compare original results with these Observations --deprecated, no time
 
 ## Additional
 
-- [ ] Review documentation
-  - [ ] Verify requirements.txt file
+- [x] Review documentation
+  - [x] Verify requirements.txt file
+  - [ ] Update README.medatata
+    - [x] Add requirements
+    - [x] Add explanation on how to set up the workspace
+    - [x] Create huggingface dataset
 
 - [ ] Untrack ``TODO.md`` file

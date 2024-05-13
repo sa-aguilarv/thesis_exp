@@ -20311,3 +20311,33 @@ scripts.entropy - INFO - 2024-05-13 03:34:32,762 - entropy - 58595 - 13985880279
 entropy    6.819762
 Name: 4, dtype: object
 scripts.entropy - INFO - 2024-05-13 03:34:34,505 - entropy - 58595 - 139858802794880 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 03:51:20,136 - main - 59621 - 140415274525056 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:51:20,138 - main - 59621 - 140415274525056 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:51:20,140 - utils - 59621 - 140415274525056 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:51:20,141 - main - 59621 - 140415274525056 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:51:20,152 - main - 59621 - 140415274525056 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:51:20,153 - main - 59621 - 140415274525056 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:51:20,154 - entropy - 59621 - 140415274525056 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:51:20,163 - entropy - 59621 - 140415274525056 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:51:20,172 - entropy - 59621 - 140415274525056 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:51:20,181 - entropy - 59621 - 140415274525056 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:51:22,065 - entropy - 59621 - 140415274525056 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 04:11:11,116 - main - 62437 - 139789650604416 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 04:11:11,128 - main - 62437 - 139789650604416 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 04:11:11,138 - utils - 62437 - 139789650604416 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 04:11:11,139 - main - 62437 - 139789650604416 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 04:11:11,145 - main - 62437 - 139789650604416 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 04:11:11,147 - main - 62437 - 139789650604416 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 04:11:11,148 - entropy - 62437 - 139789650604416 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 04:11:11,177 - entropy - 62437 - 139789650604416 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 04:11:11,183 - entropy - 62437 - 139789650604416 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 04:11:11,185 - entropy - 62437 - 139789650604416 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 04:11:12,406 - entropy - 62437 - 139789650604416 - Completed entropy calculation
