@@ -383,6 +383,20 @@ TOTAL: 38897
   INFO - Topic labels: ['1_protein' '2_vaccine' '3_patient' '4_cell' '5_drug' '6_sample' '7_health']
   ```
 
+- Hierarchichal agglomerative clustering parameters:
+  - Linkage: average
+  - Metric: cosine
+  - #clusters: 7
+
+- UMAP parameters:
+  - #neighbors: 200
+  - random state: 1234
+  - Metric: cosine
+
+- Cosine similarity heatmap:
+  - Method: average
+  - Distances: cosine
+
 - Qualitative analysis:
 
   - Green circle: protein

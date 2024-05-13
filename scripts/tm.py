@@ -13,6 +13,7 @@ from scripts import utils as u
 import random
 random.seed(20191113) # to make the sampling reproducible
 import numpy as np
+np.random.seed(42)
 np.set_printoptions(precision=5)
 from tqdm import tqdm
 import os
@@ -27,6 +28,10 @@ import pandas as pd
 from tmtoolkit.topicmod.visualize import plot_eval_results
 import matplotlib.pyplot as plt
 from scripts import utils as u
+from sklearn.metrics.pairwise import cosine_similarity
+import seaborn as sns
+from scipy.cluster.hierarchy import linkage
+
 
 def get_dtm(filename):
     """ Get the document-term matrix.
@@ -77,10 +82,6 @@ def get_unique_disciplines(df):
         unique_fields = set(ls)
         tota_unique_fields.update(unique_fields)
     logger.debug('%s total unique fields of study: %s', len(tota_unique_fields), tota_unique_fields)
-    # To get fields frequencies
-    # unique_fields= [list(x) for x in set(tuple(x) for x in fields_ls)]
-    # logger.debug('%s unique fields of study: %s', len(unique_fields), unique_fields)
-    #subject_areas_sizes = df.groupby("fieldsOfStudy").size().reset_index(name="counts")
 
 def sort_list(lst_str):
     """ Sort a list.
@@ -189,6 +190,12 @@ def get_topics(params):
     logger.info('Saved document-topic and topic-word distributions in %s', save_path)
 
 def get_topic_labels():
+    """ Get topic labels.
+    Args:
+        None
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     vocab_filename = 'results/tm/vocab.pkl'
     dtm_filename = 'results/tm/dtm_sparse.npz'
@@ -212,3 +219,55 @@ def get_topic_labels():
     )
 
     logger.info('Topic labels: %s', topic_labels)
+
+def describe_topics():
+    get_cosine_sim_between_topics()
+
+def get_cosine_sim_between_topics():
+    """ Get the cosine similarity matrix from the document-topic distribution, and plot a heatmap.
+    Args:
+        None
+    Returns:
+        None
+    """
+    logger = logging.getLogger(__name__)
+    filename = 'results/tm/7_topics/doc_topic_distr.txt'
+    doc_topic_dist = u.load_dense_matrix(filename)
+
+    logger.debug('Document-topic distribution shape: %s', doc_topic_dist.shape)
+
+    similarity_matrix = cosine_similarity(doc_topic_dist.T)
+
+    # Set the diagonal of the similarity matrix to 0
+    np.fill_diagonal(similarity_matrix, 0)
+
+    logger.debug('Cosine similarity matrix shape: %s', similarity_matrix.shape)
+
+    plt.figure(figsize=(10, 10))
+    topic_label_dict = {0:'protein',
+                        1:'vaccine',
+                        2:'patient',
+                        3:'cell',
+                        4:'drug',
+                        5:'sample',
+                        6:'health'}
+    
+    # Create a clustermap with the row dendrogram
+    row_linkage = linkage(similarity_matrix, method='average')
+
+    cmap = sns.light_palette("blue", reverse=True, as_cmap=True)
+    sns.set_theme(font_scale=1.4)
+    g = sns.clustermap(similarity_matrix,
+                        row_linkage=row_linkage,
+                        cmap=cmap,
+                        vmin=0, 
+                        vmax=0.18, 
+                        xticklabels=[topic_label_dict[i] for i in range(7)],
+                        yticklabels=[topic_label_dict[i] for i in range(7)], annot=True, 
+                        fmt=".2f", 
+                        annot_kws={"size": 16},
+                        cbar_kws={'label': 'cosine distance', 'ticks': [0.04, 0.08, 0.12, 0.16]})
+
+    plt.setp(g.ax_heatmap.get_yticklabels(), rotation=0)  # Rotate y-tick labels
+    plt.setp(g.ax_heatmap.get_xticklabels(), rotation=90)  # Rotate x-tick labels
+    plt.savefig('results/tm/7_topics/cosine_similarity.png', bbox_inches='tight')

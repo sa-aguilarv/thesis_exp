@@ -69,16 +69,16 @@ def main():
 
     elif args.lda:
         logger.info('Estimation of document-topic and topic-word distributions with LDA model')
-        tm.get_topics(config['ldaParams'])
-        
+        #tm.get_topics(config['ldaParams'])
+        #tm.describe_topics()
     elif args.umap:
         logger.info('Projection of inter-article distances with UMAP')
-        # tm.get_topic_labels()
-        # filename = 'results/tm/7_topics/doc_topic_distr.txt'
-        # hac.get_clusters(filename, config['hacParams'])
-        # filename = 'results/hac/topic_cluster_df.csv'
-        # hac.get_umap(filename, config['hacParams'])
-        # hac.get_umap_plot()
+        tm.get_topic_labels()
+        filename = 'results/tm/7_topics/doc_topic_distr.txt'
+        hac.get_clusters(filename, config['hacParams'])
+        filename = 'results/hac/topic_cluster_df.csv'
+        hac.get_umap(filename, config['hacParams'])
+        hac.get_umap_plot()
         hac.describe_clusters()
     elif args.entropy:
         logger.info('Measurement of entropy values per topic')
