@@ -75,8 +75,9 @@ def main():
         #tm.get_topic_labels()
         #filename = 'results/tm/7_topics/doc_topic_distr.txt'
         #hac.get_clusters(filename, config['hacParams'])
-        filename = 'results/hac/topic_cluster_df.csv'
-        hac.get_umap(filename, config['hacParams'])
+        #filename = 'results/hac/topic_cluster_df.csv'
+        #hac.get_umap(filename, config['hacParams'])
+        hac.get_umap_plot()
 
 if __name__ == '__main__':
     main()

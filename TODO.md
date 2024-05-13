@@ -335,13 +335,15 @@ TOTAL: 38897
       - Average linkage method
   - [x] Fit document-topic distribution to HAC
 
-- [ ] Projection of inter-article distances with UMAP
+- [x] Projection of inter-article distances with UMAP
   - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - They used UMAP for dimension reduction with no. n_neighbors (200) and random state
-  - [ ] Prepare UMAP requirements in a dataframe
+  - [x] Prepare UMAP requirements in a dataframe
     - [x] Get HAC
     - [x] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
       - [x] Replace topic number for label
+  - [x] Get UMAP embedding
+  - [x] Create scatterplot based on clusters, topics and UMAP embedding
   
 - [ ] Topics evaluation metrics in tmtoolkit // ~~TODO: Validate viability of using them over scikitlearn's metrics~~
   - [ ] Get [labels for topics](https://tmtoolkit.readthedocs.io/en/latest/topic_modeling.html#Generating-labels-for-topics)
@@ -364,9 +366,52 @@ TOTAL: 38897
   INFO - Topic labels: ['1_protein' '2_vaccine' '3_patient' '4_cell' '5_drug' '6_sample' '7_health']
   ```
 
-- HAC
+- UMAP scatterplot description:
+
+  - Green circle: protein
+    - Mixes with: health, patient
+    - Branches with: drug, vaccine, cell
+    - **Distant branch: health**
+    - **Branches = mixes? No**
+
+  - Blue triangle: drug
+    - Mixes with: patient, health, protein
+    - Branches with: vaccine, protein
+    - **Branches = mixes? protein**
+
+  - Gray cross: cell
+    - Mixes with: sample, drug, vaccine, patient
+    - Branches with: vaccine, protein
+    - **Distant branch: drug**
+    - **Branches = mixes? vaccine**
+
+  - Pink diamond: patient
+    - Mixes with: health
+    - Branches with: health, vaccine
+    - **Branches = mixes? health**
+
+  - Beige x: health
+    - Mixes with: vaccine, patient
+    - Branches with: vaccine, patient
+    - **Branches = mixes? Yes**
+
+  - Yellow star: sample
+    - Mixes with: protein, health, drug, patient
+    - Branches with: patient, health
+    - **Distant branch: protein**
+    - **Branches = mixes? patient, health**
+
+  - Orange square: vaccine
+    - Mixes with: protein, health, sample
+    - Branches with: protein, cell, drug
+    - **Distant branch: health**
+    - Branches = mixes? protein
 
 ### 5.2. Observations
+
+- 'Vaccine' is the most interdisciplinary field. //TODO: Analyze this topic metrics compared to the others.
+
+- 
 
 ## 6. Evaluation of interdisciplinary research
 
