@@ -20152,3 +20152,162 @@ __main__ - DEBUG - 2024-05-13 00:35:31,766 - main - 49197 - 140451644842368 - In
 __main__ - INFO - 2024-05-13 00:35:31,767 - main - 49197 - 140451644842368 - Projection of inter-article distances with UMAP
 scripts.hac - INFO - 2024-05-13 00:35:31,781 - hac - 49197 - 140451644842368 - Creating UMAP plot
 scripts.hac - INFO - 2024-05-13 00:35:31,782 - hac - 49197 - 140451644842368 - DF shape: (4025, 4)
+__main__ - INFO - 2024-05-13 02:02:30,165 - main - 53552 - 139949613490560 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:02:30,166 - main - 53552 - 139949613490560 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:02:30,166 - utils - 53552 - 139949613490560 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:02:30,167 - main - 53552 - 139949613490560 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:02:30,174 - main - 53552 - 139949613490560 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:02:30,175 - main - 53552 - 139949613490560 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:02:30,176 - entropy - 53552 - 139949613490560 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:13:04,063 - main - 54060 - 140548771312000 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:13:04,065 - main - 54060 - 140548771312000 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:13:04,067 - utils - 54060 - 140548771312000 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:13:04,067 - main - 54060 - 140548771312000 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:13:04,077 - main - 54060 - 140548771312000 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:13:04,077 - main - 54060 - 140548771312000 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:13:04,078 - entropy - 54060 - 140548771312000 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:15:11,171 - main - 54278 - 139989478154624 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:15:11,174 - main - 54278 - 139989478154624 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:15:11,175 - utils - 54278 - 139989478154624 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:15:11,176 - main - 54278 - 139989478154624 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:15:11,195 - main - 54278 - 139989478154624 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:15:11,196 - main - 54278 - 139989478154624 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:15:11,197 - entropy - 54278 - 139989478154624 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:27:06,576 - main - 54862 - 140180325556608 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:27:06,578 - main - 54862 - 140180325556608 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:27:06,579 - utils - 54862 - 140180325556608 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:27:06,580 - main - 54862 - 140180325556608 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:27:06,593 - main - 54862 - 140180325556608 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:27:06,595 - main - 54862 - 140180325556608 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:27:06,596 - entropy - 54862 - 140180325556608 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:37:32,003 - main - 55228 - 139660749062528 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:37:32,006 - main - 55228 - 139660749062528 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:37:32,007 - utils - 55228 - 139660749062528 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:37:32,007 - main - 55228 - 139660749062528 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:37:32,018 - main - 55228 - 139660749062528 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:37:32,019 - main - 55228 - 139660749062528 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:37:32,019 - entropy - 55228 - 139660749062528 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:38:37,540 - main - 55375 - 139648357101952 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:38:37,543 - main - 55375 - 139648357101952 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:38:37,545 - utils - 55375 - 139648357101952 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:38:37,546 - main - 55375 - 139648357101952 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:38:37,558 - main - 55375 - 139648357101952 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:38:37,558 - main - 55375 - 139648357101952 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:38:37,559 - entropy - 55375 - 139648357101952 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:54:22,473 - main - 55998 - 140280007946624 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:54:22,483 - main - 55998 - 140280007946624 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:54:22,489 - utils - 55998 - 140280007946624 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:54:22,490 - main - 55998 - 140280007946624 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:54:22,503 - main - 55998 - 140280007946624 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:54:22,505 - main - 55998 - 140280007946624 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:54:22,506 - entropy - 55998 - 140280007946624 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 02:55:29,853 - main - 56138 - 139722398228864 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 02:55:29,854 - main - 56138 - 139722398228864 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 02:55:29,855 - utils - 56138 - 139722398228864 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:55:29,855 - main - 56138 - 139722398228864 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 02:55:29,862 - main - 56138 - 139722398228864 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 02:55:29,863 - main - 56138 - 139722398228864 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 02:55:29,864 - entropy - 56138 - 139722398228864 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 03:03:40,515 - main - 56505 - 140167989584256 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:03:40,517 - main - 56505 - 140167989584256 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:03:40,518 - utils - 56505 - 140167989584256 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:03:40,519 - main - 56505 - 140167989584256 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:03:40,526 - main - 56505 - 140167989584256 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:03:40,526 - main - 56505 - 140167989584256 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:03:40,527 - entropy - 56505 - 140167989584256 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 03:08:04,749 - main - 56703 - 139634487480704 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:08:04,751 - main - 56703 - 139634487480704 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:08:04,753 - utils - 56703 - 139634487480704 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:08:04,754 - main - 56703 - 139634487480704 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:08:04,765 - main - 56703 - 139634487480704 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:08:04,766 - main - 56703 - 139634487480704 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:08:04,766 - entropy - 56703 - 139634487480704 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 03:09:41,306 - main - 56873 - 140312599478656 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:09:41,307 - main - 56873 - 140312599478656 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:09:41,308 - utils - 56873 - 140312599478656 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:09:41,308 - main - 56873 - 140312599478656 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:09:41,315 - main - 56873 - 140312599478656 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:09:41,316 - main - 56873 - 140312599478656 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:09:41,317 - entropy - 56873 - 140312599478656 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 03:10:55,579 - main - 57058 - 139981226205568 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:10:55,582 - main - 57058 - 139981226205568 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:10:55,583 - utils - 57058 - 139981226205568 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:10:55,584 - main - 57058 - 139981226205568 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:10:55,598 - main - 57058 - 139981226205568 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:10:55,599 - main - 57058 - 139981226205568 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:10:55,600 - entropy - 57058 - 139981226205568 - Starting entropy calculation
+__main__ - INFO - 2024-05-13 03:23:26,290 - main - 57572 - 140003376636288 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:23:26,291 - main - 57572 - 140003376636288 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:23:26,291 - utils - 57572 - 140003376636288 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:23:26,292 - main - 57572 - 140003376636288 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:23:26,297 - main - 57572 - 140003376636288 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:23:26,298 - main - 57572 - 140003376636288 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:23:26,298 - entropy - 57572 - 140003376636288 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:23:26,310 - entropy - 57572 - 140003376636288 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:23:26,318 - entropy - 57572 - 140003376636288 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:23:26,324 - entropy - 57572 - 140003376636288 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:23:27,874 - entropy - 57572 - 140003376636288 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 03:28:34,419 - main - 57908 - 140701933252992 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:28:34,421 - main - 57908 - 140701933252992 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:28:34,422 - utils - 57908 - 140701933252992 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:28:34,423 - main - 57908 - 140701933252992 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:28:34,431 - main - 57908 - 140701933252992 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:28:34,432 - main - 57908 - 140701933252992 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:28:34,433 - entropy - 57908 - 140701933252992 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:28:34,446 - entropy - 57908 - 140701933252992 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:28:34,452 - entropy - 57908 - 140701933252992 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:28:34,459 - entropy - 57908 - 140701933252992 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:28:36,169 - entropy - 57908 - 140701933252992 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 03:29:44,603 - main - 58133 - 140399780262272 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:29:44,605 - main - 58133 - 140399780262272 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:29:44,606 - utils - 58133 - 140399780262272 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:29:44,606 - main - 58133 - 140399780262272 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:29:44,614 - main - 58133 - 140399780262272 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:29:44,615 - main - 58133 - 140399780262272 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:29:44,615 - entropy - 58133 - 140399780262272 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:29:44,628 - entropy - 58133 - 140399780262272 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:29:44,635 - entropy - 58133 - 140399780262272 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:29:44,644 - entropy - 58133 - 140399780262272 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:29:46,485 - entropy - 58133 - 140399780262272 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 03:33:02,103 - main - 58409 - 139878390813056 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:33:02,105 - main - 58409 - 139878390813056 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:33:02,106 - utils - 58409 - 139878390813056 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:33:02,107 - main - 58409 - 139878390813056 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:33:02,120 - main - 58409 - 139878390813056 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:33:02,122 - main - 58409 - 139878390813056 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:33:02,123 - entropy - 58409 - 139878390813056 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:33:02,138 - entropy - 58409 - 139878390813056 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:33:02,145 - entropy - 58409 - 139878390813056 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:33:02,150 - entropy - 58409 - 139878390813056 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:33:03,945 - entropy - 58409 - 139878390813056 - Completed entropy calculation
+__main__ - INFO - 2024-05-13 03:34:32,713 - main - 58595 - 139858802794880 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 03:34:32,715 - main - 58595 - 139858802794880 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 03:34:32,715 - utils - 58595 - 139858802794880 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:34:32,716 - main - 58595 - 139858802794880 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 03:34:32,725 - main - 58595 - 139858802794880 - Input arguments: Namespace(corpus=False, eda=False, entropy=True, eval=False, lda=False, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 03:34:32,727 - main - 58595 - 139858802794880 - Measurement of entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:34:32,727 - entropy - 58595 - 139858802794880 - Starting entropy calculation
+scripts.entropy - INFO - 2024-05-13 03:34:32,743 - entropy - 58595 - 139858802794880 - Plotting entropy values per topic
+scripts.entropy - INFO - 2024-05-13 03:34:32,753 - entropy - 58595 - 139858802794880 - Topic with highest entropy: topic       health
+entropy    7.26058
+Name: 6, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:34:32,762 - entropy - 58595 - 139858802794880 - Topic with lowest entropy: topic          drug
+entropy    6.819762
+Name: 4, dtype: object
+scripts.entropy - INFO - 2024-05-13 03:34:34,505 - entropy - 58595 - 139858802794880 - Completed entropy calculation

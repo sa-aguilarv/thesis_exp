@@ -450,10 +450,13 @@ TOTAL: 38897
   - [ ] Get Silhouette values --deprecated, no time
     - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
   - [ ] Get topic entropy values
-    - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
+    - [x] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)
     - How diverse are the topics? Which one is the most diverse?
     - Which characteristics do these topics have? e.g., affiliations, disciplines, funding institutions
     - What is the topic entropy over time?
+    - [x] Calculate Jensen-Shannon divergences for document-topic distribution
+      - This gives the JS distances between documents
+    - [ ] 
 
 - [ ] Get diagnostic topics --deprecated, no time
   - [ ] Check how they did it in this [paper](https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24533)

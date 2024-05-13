@@ -17,6 +17,7 @@ def parse_input() -> argparse.Namespace:
     parser.add_argument("--eval", action="store_true", help="Topic modeling")
     parser.add_argument("--lda", action="store_true", help="Get topics with LDA model")
     parser.add_argument("--umap", action="store_true", help="Visualize topics with UMAP")
+    parser.add_argument("--entropy", action="store_true", help="Calculate entropy values per topic")
     return parser.parse_args()
 
 def write_output_file(): #TODO: create a function to write the output to a file

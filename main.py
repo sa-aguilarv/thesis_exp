@@ -12,6 +12,7 @@ from scripts import utils as u
 from scripts import etl
 from scripts import tm
 from scripts import hac
+from scripts import entropy as e
 
 def set_up_logging():
     """Set up the logging configuration.
@@ -72,12 +73,17 @@ def main():
         
     elif args.umap:
         logger.info('Projection of inter-article distances with UMAP')
-        #tm.get_topic_labels()
-        #filename = 'results/tm/7_topics/doc_topic_distr.txt'
-        #hac.get_clusters(filename, config['hacParams'])
-        #filename = 'results/hac/topic_cluster_df.csv'
-        #hac.get_umap(filename, config['hacParams'])
+        tm.get_topic_labels()
+        filename = 'results/tm/7_topics/doc_topic_distr.txt'
+        hac.get_clusters(filename, config['hacParams'])
+        filename = 'results/hac/topic_cluster_df.csv'
+        hac.get_umap(filename, config['hacParams'])
         hac.get_umap_plot()
+
+    elif args.entropy:
+        logger.info('Measurement of entropy values per topic')
+        filename = 'results/tm/7_topics/doc_topic_distr.txt'
+        e.get_entropy_values(filename)
 
 if __name__ == '__main__':
     main()
