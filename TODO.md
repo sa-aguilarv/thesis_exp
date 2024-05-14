@@ -367,8 +367,8 @@ TOTAL: 38897
   - [x] Plot the topics distribution for each cluster
   - What is the most important topic for each cluster?
   - What is the least important topic for each cluster?
-  - [ ] Create a heatmap to visualize the similarity between topics
-  - Metric: cosine similarity
+  - [x] Create a heatmap to visualize the similarity between topics
+  - Metric: cosine similarity, average linkage
   - [ ] Create a heatmap to visualize the similarity between clusters
   - [ ] Visualize the most and least important words for each topic
     - [ ] Which plot would be adecuate for this?
@@ -393,12 +393,11 @@ TOTAL: 38897
   - random state: 1234
   - Metric: cosine
 
-- Cosine similarity heatmap:
+- Cosine similarity heatmap parameters:
   - Method: average
   - Distances: cosine
 
 - Qualitative analysis:
-
   - Green circle: protein
     - Mixes with: health, patient
     - Branches with: drug, vaccine, cell
@@ -439,7 +438,6 @@ TOTAL: 38897
     - Branches = mixes? protein
 
 - Quantitative analysis:
-
   - Topic distribution per clusters:
 
     | cluster |   max   |   min   |
@@ -452,26 +450,68 @@ TOTAL: 38897
     |    5    | sample  | vaccine |
     |    6    | health  | sample  |
 
+  - Cosine similarity:
+
+    - health associates with patient (0.18)
+    - samples associates with vaccine (0.16)
+    - cell associates with protein (0.15)
+    - drug associates with cell (0.13)
+
 ### 5.2. Observations
 
-- 'Vaccine' looks like the most interdisciplinary topic. //TODO: Analyze this topic metrics compared to the others. How can we measure this interdisciplinarity?
+- Qualitative analysis:
 
-- 'Protein' mixes with topics that are not branching into it, and it is beginning a subcluster of 'health'. //TODO: Could this be considered a reinterpretation of the topic health? Analyze how this 'reinterpretation' could be measured.
+  - 'Vaccine' looks like the most interdisciplinary topic. //TODO: Analyze this topic metrics compared to the others. How can we measure this interdisciplinarity?
 
-- 'Drug' mixes with one of its branches, 'protein'. //TODO: What does this mean in linguistics?
+  - 'Protein' mixes with topics that are not branching into it, and it is beginning a subcluster of 'health'. //TODO: Could this be considered a reinterpretation of the topic health? Analyze how this 'reinterpretation' could be measured.
 
-- 'Cell' mixes with a topic that is branching into it ('vaccine'), and it is beggining a subcluster of 'drug'. //TODO: Is the reinterpretation of drugs leading to new vaccines? This flow hints toward subclusters or "distant branches" being the process of reinterpretation, **since the understanding of drugs in the context of cells leads to vaccines**.
-  - 'Protein' has a subcluster, yet it's mixing with topics that are not branching into it. What could this mean? That the reinterpretation of health in the context of proteins is not leading anywhere concrete yet?
+  - 'Drug' mixes with one of its branches, 'protein'. //TODO: What does this mean in linguistics?
 
-- 'Patient' mixes with a topic that is branching into it ('health'). However, it doesn't have any subcluster. //TODO: Does this mean that reinterpretation isn't ocurring?
+  - 'Cell' mixes with a topic that is branching into it ('vaccine'), and it is beggining a subcluster of 'drug'. //TODO: Is the reinterpretation of drugs leading to new vaccines? This flow hints toward subclusters or "distant branches" being the process of reinterpretation, **since the understanding of drugs in the context of cells leads to vaccines**.
+    - 'Protein' has a subcluster, yet it's mixing with topics that are not branching into it. What could this mean? That the reinterpretation of health in the context of proteins is not leading anywhere concrete yet?
 
-- 'Health' mixes and branches with 'patient' and 'vaccine'. //TODO: **Could this mean that these topics share the same context?**
+  - 'Patient' mixes with a topic that is branching into it ('health'). However, it doesn't have any subcluster. //TODO: Does this mean that reinterpretation isn't ocurring?
 
-- 'Sample' mixes witth two topics that branch into it ('patient', 'health'), and it is beginning a subcluster of 'protein'. //TODO: **This hints toward the reinterpretation of protein, in the context of sample, leading to patient health.**
+  - 'Health' mixes and branches with 'patient' and 'vaccine'. //TODO: **Could this mean that these topics share the same context?**
 
-- 'Vaccine' mixes with a topic that is branching into it ('protein'), and it is beginning a subcluster of 'health'. //TODO: **This hints toward the reinterpretation of health, in the context of vaccine, leading to protein.**
+  - 'Sample' mixes with two topics that branch into it ('patient', 'health'), and it is beginning a subcluster of 'protein'. //TODO: **This hints toward the reinterpretation of protein, in the context of sample, leading to patient health.**
 
-- This methodology suggests an approach to represent the process of reinterpretation and where it leads to in the contexts of topics.
+  - 'Vaccine' mixes with a topic that is branching into it ('protein'), and it is beginning a subcluster of 'health'. //TODO: **This hints toward the reinterpretation of health, in the context of vaccine, leading to protein.**
+
+  - This methodology suggests an approach to represent the process of reinterpretation and where it leads to in the contexts of topics.
+
+- Quantitative analysis:
+
+  - Topic distribution per cluster:
+    - Max counts strongly suggest **each cluster represents a topic** since all clusters were majorly represented by a unique topic.
+    - Topics drug, protein and health do not majorly mix with sample.
+    - Topics vaccine and patient do not majorly mix with cell.
+    - Topic cell does not majorly mix with drug.
+    - Topic sample does not majorly mix with vaccine.
+  
+  - Topics similarity and behavior:
+    - All topics seem to be characteristic topics. This since their cosine values are close to zero.
+
+    - Topic cell is associating with protein while not mixing with drug. In the UMAP, we see this lack of affinity for cell to mix with drug through the drug subcluster. // TODO: **What does this mean if we look at the UMAP?** Address this in the discussion.
+
+    - Topic health is associated with patient while not mixing with sample. In the UMAP, it looks like health and patient are mixing and branching.
+
+    - Topic drug is associated with cell, while not mixing with sample. In the UMAP, it looks as if drug is associating with protein. **This is because, although drug is more similar to cell, there are more papers from protein, that's why in the UMAP protein shows more**. // TODO: Address this in the discussion. Are the findings from the UMAP connected to the findings of the cosine topics distribution per cluster and topics similarity?
+
+    - Topic sample is associated with vaccine, while not mixing with vaccine. It is interesting how, although both topics are similar, they are not generally mixing with each other. According to the distribution of topics, it is mixing with cell. In the UMAP, we see that it is mixing with two topics that are branching into it, patient and health, and we see in the heatmap that sample, after vaccine, has equal similarity with patient and health (0.13). We also see in the UMAP that sample is beginning a subcluster for protein, and this matches the topic distribution of the cluster since protein is not majorly mixing with sample. // TODO: **What could it mean that although a topic is similar to another one, it is not mixing with it**, yet it leads to a tight relationship with other topics?
+      - Could this be a hint for reinterpretation? Because sample is similar to protein and vaccine, but sample isn't mixing with protein and vaccine. Vaccine is generally less represented in sample, so let's focus on protein. Since sample keeps it as something separate, let's understand protein as a topic that shares contextual features, yet it is not mixing with it for some reason. Why? // TODO: Address this in the general discussion. Compare their entropy values since this might be an indicator onto why they are not mixing together. **Is protein entropy higher than sample**? **CONSIDER: THE TOPICS WITH THE HIGHEST ENTROPY ARE THE MOST IMPORTANT SINCE THEY ARE MORE INTERDISCIPLINARY**
+      - //TODO: We found highly interdisciplinary topics in the corpus. Address this in the general discussion.
+
+    - Topic vaccine is associated with sample, but not mixing with it. Vaccine is mixing the least with cell and health. In the UMAP, it is mixing and branching with protein, the topic with more counts in vaccine. Protein shares the second spot of similarity with vaccine compared to all other topics. In the UMAP we also see vaccine is forming a subcluster of health, and health is one of the two with whom it is mixing the least.
+      - **Vaccine and protein are similar, are mixing together and branching into each other. Why is this not happening with sample?** // TODO: Compare entropy values between vaccine, protein and sample. Analyze their similarities, their branches, their subclusters, and how they're mixing with each other.
+
+    - Topic protein is associated with cell, and is the least mixing with sample. In the UMAP, we see that it is mixing with topics that are not branching with it (health, patient). Moreover, these two topics are the one that are the least similar with protein. Why is it that protein is mixing with topics that are not similar? // TODO: Address the entropy values.
+
+    - Topic patient is associated with health, and is the least mixing with cell. Patient is similar to health and it is mixing with it. In the UMAP, we see that patient is mixing with health, a topic that is branching into it. This matches both how they are similar and, compared to the rest, health is majorly represented in patient along with sample. However, the opposite doesn't happen since health is not majorly represented by sample. // TODO: Patient is similar to health, and it is mixing with it, yet health is not mixing (accepting members?) of patient. Check their entropy values.
+
+- General:
+  - It seems that protein, sample, and vaccine are the most reactive topics. // TODO: Which different reactions do these topics have compared to the rest? What are their entropy values?
+  - Protein mixes with those with whom it is the least similar (health, patient). // TODO: **Why is that?** Protein seems like the most interesting topic.
 
 ## 6. Evaluation of interdisciplinary research
 
