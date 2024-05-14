@@ -70,7 +70,8 @@ def main():
     elif args.lda:
         logger.info('Estimation of document-topic and topic-word distributions with LDA model')
         #tm.get_topics(config['ldaParams'])
-        #tm.describe_topics()
+        tm.describe_topics()
+
     elif args.umap:
         logger.info('Projection of inter-article distances with UMAP')
         tm.get_topic_labels()

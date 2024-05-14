@@ -23,6 +23,8 @@ from tmtoolkit.topicmod.tm_lda import evaluate_topic_models
 from tmtoolkit.topicmod.evaluate import results_by_parameter
 from tmtoolkit.bow.bow_stats import doc_lengths
 from tmtoolkit.topicmod.model_stats import generate_topic_labels_from_top_words
+from tmtoolkit.topicmod.model_io import ldamodel_top_topic_words
+from tmtoolkit.topicmod.visualize import generate_wordclouds_for_topic_words
 import scipy as sp
 import pandas as pd
 from tmtoolkit.topicmod.visualize import plot_eval_results
@@ -31,7 +33,7 @@ from scripts import utils as u
 from sklearn.metrics.pairwise import cosine_similarity
 import seaborn as sns
 from scipy.cluster.hierarchy import linkage
-
+import plotly.express as px
 
 def get_dtm(filename):
     """ Get the document-term matrix.
@@ -221,7 +223,74 @@ def get_topic_labels():
     logger.info('Topic labels: %s', topic_labels)
 
 def describe_topics():
-    get_cosine_sim_between_topics()
+    logger = logging.getLogger(__name__)
+    logger.info('Calculating topics similarity')
+    #get_cosine_sim_between_topics()
+    #get_top_100_words()
+    get_treemap_for_topics()
+
+def get_treemap_for_topics():
+    logger = logging.getLogger(__name__)
+    logger.info('Getting treemap for topics')
+
+    filename = 'results/tm/7_topics/topics_top_50_words.csv'
+    df = pd.read_csv(filename, index_col=0)
+    df = df.T
+    df = df.reset_index()
+    df = df.rename(columns={'index': 'topic'})
+    # drop topic column
+    df = df.drop(columns=['topic']) # Each col now represents a topic
+
+    logger.info('Creating treemap for each topic')
+    for col in df.columns:
+        # split the column name to get the word and its weight
+        word_prob_df = df[col].str.split(' ', expand=True)
+        word_prob_df.columns = ['Word', 'Probability']
+        # remove parentheses from probability column
+        word_prob_df['Probability'] = word_prob_df['Probability'].str.replace('(', '')
+        word_prob_df['Probability'] = word_prob_df['Probability'].str.replace(')', '')
+        word_prob_df['Probability'] = word_prob_df['Probability'].astype(float)
+        logger.debug('Word probability DF shape: %s', word_prob_df.shape)
+
+        fig = px.treemap(word_prob_df, 
+                        path=['Word'], 
+                        values='Probability', 
+                        color='Probability',
+                        color_continuous_scale='RdBu',
+                        title=f'Topic "{col}" top 50 words',
+                        color_continuous_midpoint=np.average(word_prob_df['Probability']))
+        fig.update_layout(paper_bgcolor='white', plot_bgcolor='white', margin=dict(l=0, r=0, t=40, b=0))
+        fig.write_image(f'results/tm/7_topics/treemap_topic_{col}.png')
+        logger.info('Saved treemap for topic %s', col)
+        
+
+def get_top_100_words():
+    logger = logging.getLogger(__name__)
+    logger.info('Getting 10 top words for each topic')
+    topic_word_dist_filename = 'results/tm/7_topics/topic_word_distr.txt'
+    topic_word_dist = u.load_dense_matrix(topic_word_dist_filename)
+    
+    logger.debug('Topic-word distribution shape: %s', topic_word_dist.shape)
+
+    # Create a df for the first 10 words of each topic
+    vocab = u.load_object('results/tm/vocab.pkl')
+
+    topic_label_dict = {0:'protein',
+                    1:'vaccine',
+                    2:'patient',
+                    3:'cell',
+                    4:'drug',
+                    5:'sample',
+                    6:'health'}
+
+    df = ldamodel_top_topic_words(topic_word_distrib=topic_word_dist,
+                                vocab=vocab,
+                                top_n=50)
+    df.columns = [np.arange(1, len(df.columns) + 1)]
+    df.index = [topic_label_dict[i] for i in topic_label_dict]
+    df.to_csv(f'results/tm/7_topics/topics_top_50_words.csv', index=True)
+
+    
 
 def get_cosine_sim_between_topics():
     """ Get the cosine similarity matrix from the document-topic distribution, and plot a heatmap.

@@ -21359,3 +21359,242 @@ __main__ - DEBUG - 2024-05-13 16:42:23,653 - main - 35301 - 140286003650944 - In
 __main__ - INFO - 2024-05-13 16:42:23,655 - main - 35301 - 140286003650944 - Estimation of document-topic and topic-word distributions with LDA model
 scripts.tm - DEBUG - 2024-05-13 16:42:23,665 - tm - 35301 - 140286003650944 - Document-topic distribution shape: (4025, 7)
 scripts.tm - DEBUG - 2024-05-13 16:42:23,669 - tm - 35301 - 140286003650944 - Cosine similarity matrix shape: (7, 7)
+__main__ - INFO - 2024-05-13 18:36:50,360 - main - 40662 - 139827580547456 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:36:50,361 - main - 40662 - 139827580547456 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:36:50,362 - utils - 40662 - 139827580547456 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:36:50,362 - main - 40662 - 139827580547456 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:36:50,368 - main - 40662 - 139827580547456 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:36:50,368 - main - 40662 - 139827580547456 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:36:50,369 - tm - 40662 - 139827580547456 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:36:50,369 - tm - 40662 - 139827580547456 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:36:50,721 - tm - 40662 - 139827580547456 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:39:25,683 - main - 40857 - 140323358208384 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:39:25,684 - main - 40857 - 140323358208384 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:39:25,684 - utils - 40857 - 140323358208384 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:39:25,685 - main - 40857 - 140323358208384 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:39:25,690 - main - 40857 - 140323358208384 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:39:25,691 - main - 40857 - 140323358208384 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:39:25,691 - tm - 40857 - 140323358208384 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:39:25,691 - tm - 40857 - 140323358208384 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:39:25,714 - tm - 40857 - 140323358208384 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:40:41,811 - main - 41059 - 140282782847360 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:40:41,812 - main - 41059 - 140282782847360 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:40:41,813 - utils - 41059 - 140282782847360 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:40:41,813 - main - 41059 - 140282782847360 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:40:41,818 - main - 41059 - 140282782847360 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:40:41,819 - main - 41059 - 140282782847360 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:40:41,819 - tm - 41059 - 140282782847360 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:40:41,820 - tm - 41059 - 140282782847360 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:40:41,842 - tm - 41059 - 140282782847360 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:44:31,429 - main - 41401 - 140307045237120 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:44:31,431 - main - 41401 - 140307045237120 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:44:31,431 - utils - 41401 - 140307045237120 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:44:31,431 - main - 41401 - 140307045237120 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:44:31,437 - main - 41401 - 140307045237120 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:44:31,438 - main - 41401 - 140307045237120 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:44:31,439 - tm - 41401 - 140307045237120 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:44:31,439 - tm - 41401 - 140307045237120 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:44:31,472 - tm - 41401 - 140307045237120 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:53:22,010 - main - 41784 - 140594024825216 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:53:22,011 - main - 41784 - 140594024825216 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:53:22,012 - utils - 41784 - 140594024825216 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:53:22,012 - main - 41784 - 140594024825216 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:53:22,018 - main - 41784 - 140594024825216 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:53:22,019 - main - 41784 - 140594024825216 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:53:22,019 - tm - 41784 - 140594024825216 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:53:22,019 - tm - 41784 - 140594024825216 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:53:22,044 - tm - 41784 - 140594024825216 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:54:33,581 - main - 41956 - 140279144948096 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:54:33,582 - main - 41956 - 140279144948096 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:54:33,582 - utils - 41956 - 140279144948096 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:54:33,583 - main - 41956 - 140279144948096 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:54:33,588 - main - 41956 - 140279144948096 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:54:33,589 - main - 41956 - 140279144948096 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:54:33,589 - tm - 41956 - 140279144948096 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:54:33,590 - tm - 41956 - 140279144948096 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:54:33,612 - tm - 41956 - 140279144948096 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 18:55:21,570 - main - 42105 - 140480295321984 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 18:55:21,571 - main - 42105 - 140480295321984 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 18:55:21,572 - utils - 42105 - 140480295321984 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:55:21,572 - main - 42105 - 140480295321984 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 18:55:21,577 - main - 42105 - 140480295321984 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 18:55:21,578 - main - 42105 - 140480295321984 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 18:55:21,578 - tm - 42105 - 140480295321984 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 18:55:21,579 - tm - 42105 - 140480295321984 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 18:55:21,600 - tm - 42105 - 140480295321984 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:02:41,890 - main - 42562 - 140136079872384 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:02:41,891 - main - 42562 - 140136079872384 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:02:41,891 - utils - 42562 - 140136079872384 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:02:41,892 - main - 42562 - 140136079872384 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:02:41,897 - main - 42562 - 140136079872384 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:02:41,898 - main - 42562 - 140136079872384 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:02:41,899 - tm - 42562 - 140136079872384 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:02:41,899 - tm - 42562 - 140136079872384 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:02:41,922 - tm - 42562 - 140136079872384 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:08:01,747 - main - 42893 - 139692595122560 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:08:01,748 - main - 42893 - 139692595122560 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:08:01,748 - utils - 42893 - 139692595122560 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:08:01,749 - main - 42893 - 139692595122560 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:08:01,754 - main - 42893 - 139692595122560 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:08:01,755 - main - 42893 - 139692595122560 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:08:01,755 - tm - 42893 - 139692595122560 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:08:01,756 - tm - 42893 - 139692595122560 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:08:01,778 - tm - 42893 - 139692595122560 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:17:39,503 - main - 43246 - 140664276230528 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:17:39,504 - main - 43246 - 140664276230528 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:17:39,505 - utils - 43246 - 140664276230528 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:17:39,505 - main - 43246 - 140664276230528 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:17:39,512 - main - 43246 - 140664276230528 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:17:39,513 - main - 43246 - 140664276230528 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:17:39,514 - tm - 43246 - 140664276230528 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:17:39,515 - tm - 43246 - 140664276230528 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:17:39,538 - tm - 43246 - 140664276230528 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:28:10,625 - main - 43652 - 139797738496384 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:28:10,626 - main - 43652 - 139797738496384 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:28:10,627 - utils - 43652 - 139797738496384 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:28:10,627 - main - 43652 - 139797738496384 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:28:10,632 - main - 43652 - 139797738496384 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:28:10,633 - main - 43652 - 139797738496384 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:28:10,634 - tm - 43652 - 139797738496384 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:28:10,634 - tm - 43652 - 139797738496384 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:28:10,655 - tm - 43652 - 139797738496384 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:28:48,508 - main - 43804 - 140377675542912 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:28:48,509 - main - 43804 - 140377675542912 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:28:48,510 - utils - 43804 - 140377675542912 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:28:48,510 - main - 43804 - 140377675542912 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:28:48,515 - main - 43804 - 140377675542912 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:28:48,516 - main - 43804 - 140377675542912 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:28:48,517 - tm - 43804 - 140377675542912 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:28:48,517 - tm - 43804 - 140377675542912 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:28:48,545 - tm - 43804 - 140377675542912 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:30:25,789 - main - 44201 - 139783738454400 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:30:26,112 - main - 44201 - 139783738454400 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:30:26,114 - utils - 44201 - 139783738454400 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:30:26,115 - main - 44201 - 139783738454400 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:30:26,130 - main - 44201 - 139783738454400 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:30:26,133 - main - 44201 - 139783738454400 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:30:26,134 - tm - 44201 - 139783738454400 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:30:26,136 - tm - 44201 - 139783738454400 - Getting 10 top words for each topic
+scripts.tm - DEBUG - 2024-05-13 19:30:26,164 - tm - 44201 - 139783738454400 - Topic-word distribution shape: (7, 18920)
+__main__ - INFO - 2024-05-13 19:44:52,083 - main - 45002 - 140289369956736 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:44:52,097 - main - 45002 - 140289369956736 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:44:52,097 - utils - 45002 - 140289369956736 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:44:52,098 - main - 45002 - 140289369956736 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:44:52,105 - main - 45002 - 140289369956736 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:44:52,106 - main - 45002 - 140289369956736 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:44:52,106 - tm - 45002 - 140289369956736 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:44:52,107 - tm - 45002 - 140289369956736 - Getting treemap for topics
+__main__ - INFO - 2024-05-13 19:53:10,270 - main - 45530 - 140546221764992 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:53:10,607 - main - 45530 - 140546221764992 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:53:10,608 - utils - 45530 - 140546221764992 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:53:10,609 - main - 45530 - 140546221764992 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:53:10,621 - main - 45530 - 140546221764992 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:53:10,622 - main - 45530 - 140546221764992 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:53:10,623 - tm - 45530 - 140546221764992 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:53:10,624 - tm - 45530 - 140546221764992 - Getting treemap for topics
+scripts.tm - DEBUG - 2024-05-13 19:53:10,687 - tm - 45530 - 140546221764992 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 19:56:38,673 - main - 45813 - 140135395389824 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 19:56:38,674 - main - 45813 - 140135395389824 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 19:56:38,674 - utils - 45813 - 140135395389824 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:56:38,675 - main - 45813 - 140135395389824 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 19:56:38,682 - main - 45813 - 140135395389824 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 19:56:38,682 - main - 45813 - 140135395389824 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 19:56:38,683 - tm - 45813 - 140135395389824 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 19:56:38,683 - tm - 45813 - 140135395389824 - Getting treemap for topics
+scripts.tm - DEBUG - 2024-05-13 19:56:38,739 - tm - 45813 - 140135395389824 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:12:32,159 - main - 48436 - 140299420393856 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:12:32,160 - main - 48436 - 140299420393856 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:12:32,161 - utils - 48436 - 140299420393856 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:12:32,161 - main - 48436 - 140299420393856 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:12:32,166 - main - 48436 - 140299420393856 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:12:32,167 - main - 48436 - 140299420393856 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:12:32,168 - tm - 48436 - 140299420393856 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:12:32,168 - tm - 48436 - 140299420393856 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:12:32,210 - tm - 48436 - 140299420393856 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:12:32,218 - tm - 48436 - 140299420393856 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:18:48,459 - main - 48963 - 139965672272256 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:18:48,461 - main - 48963 - 139965672272256 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:18:48,461 - utils - 48963 - 139965672272256 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:18:48,461 - main - 48963 - 139965672272256 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:18:48,467 - main - 48963 - 139965672272256 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:18:48,467 - main - 48963 - 139965672272256 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:18:48,468 - tm - 48963 - 139965672272256 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:18:48,468 - tm - 48963 - 139965672272256 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:18:48,526 - tm - 48963 - 139965672272256 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:18:48,534 - tm - 48963 - 139965672272256 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:23:07,949 - main - 49420 - 140711856288128 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:23:07,950 - main - 49420 - 140711856288128 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:23:07,951 - utils - 49420 - 140711856288128 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:23:07,951 - main - 49420 - 140711856288128 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:23:07,957 - main - 49420 - 140711856288128 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:23:07,958 - main - 49420 - 140711856288128 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:23:07,958 - tm - 49420 - 140711856288128 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:23:07,958 - tm - 49420 - 140711856288128 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:23:07,998 - tm - 49420 - 140711856288128 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:23:08,006 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:10,551 - tm - 49420 - 140711856288128 - Saved treemap for topic protein
+scripts.tm - DEBUG - 2024-05-13 20:23:10,561 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:11,311 - tm - 49420 - 140711856288128 - Saved treemap for topic vaccine
+scripts.tm - DEBUG - 2024-05-13 20:23:11,330 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:12,011 - tm - 49420 - 140711856288128 - Saved treemap for topic patient
+scripts.tm - DEBUG - 2024-05-13 20:23:12,030 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:12,771 - tm - 49420 - 140711856288128 - Saved treemap for topic cell
+scripts.tm - DEBUG - 2024-05-13 20:23:12,793 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:13,495 - tm - 49420 - 140711856288128 - Saved treemap for topic drug
+scripts.tm - DEBUG - 2024-05-13 20:23:13,518 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:14,223 - tm - 49420 - 140711856288128 - Saved treemap for topic sample
+scripts.tm - DEBUG - 2024-05-13 20:23:14,242 - tm - 49420 - 140711856288128 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:23:14,923 - tm - 49420 - 140711856288128 - Saved treemap for topic health
+__main__ - INFO - 2024-05-13 20:26:09,888 - main - 49793 - 139905410941312 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:26:09,889 - main - 49793 - 139905410941312 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:26:09,890 - utils - 49793 - 139905410941312 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:26:09,890 - main - 49793 - 139905410941312 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:26:09,895 - main - 49793 - 139905410941312 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:26:09,896 - main - 49793 - 139905410941312 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:26:09,897 - tm - 49793 - 139905410941312 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:26:09,897 - tm - 49793 - 139905410941312 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:26:09,939 - tm - 49793 - 139905410941312 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:26:09,948 - tm - 49793 - 139905410941312 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:28:04,713 - main - 50083 - 140314355351936 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:28:05,027 - main - 50083 - 140314355351936 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:28:05,028 - utils - 50083 - 140314355351936 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:28:05,029 - main - 50083 - 140314355351936 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:28:05,035 - main - 50083 - 140314355351936 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:28:05,036 - main - 50083 - 140314355351936 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:28:05,037 - tm - 50083 - 140314355351936 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:28:05,037 - tm - 50083 - 140314355351936 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:28:05,088 - tm - 50083 - 140314355351936 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:28:05,096 - tm - 50083 - 140314355351936 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:31:02,918 - main - 50413 - 140170526900608 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:31:02,919 - main - 50413 - 140170526900608 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:31:02,920 - utils - 50413 - 140170526900608 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:31:02,920 - main - 50413 - 140170526900608 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:31:02,927 - main - 50413 - 140170526900608 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:31:02,928 - main - 50413 - 140170526900608 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:31:02,928 - tm - 50413 - 140170526900608 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:31:02,929 - tm - 50413 - 140170526900608 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:31:02,986 - tm - 50413 - 140170526900608 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:31:02,996 - tm - 50413 - 140170526900608 - Word probability DF shape: (50, 2)
+__main__ - INFO - 2024-05-13 20:32:13,092 - main - 50698 - 139699143901568 - Application started in /media/sophie/dataspace/MBCI/thesis_exp
+__main__ - INFO - 2024-05-13 20:32:13,093 - main - 50698 - 139699143901568 - Set up logging configuration: level is 10
+scripts.utils - DEBUG - 2024-05-13 20:32:13,094 - utils - 50698 - 139699143901568 - Loaded config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:32:13,094 - main - 50698 - 139699143901568 - Config file: {'dataPath': './data/comm_use_subset/pdf_json/', 'resultsPath': './results/', 'ldaParams': {'numIter': 1000, 'randomState': 20191122, 'eta': 0.1, 'maxTopics': 100, 'minTopics': 1, 'stepTopics': 10, 'bestK': 7}, 'hacParams': {'linkage': 'average', 'metric': 'cosine', 'numClusters': 7, 'numNeighbors': 200, 'randomState': 1234}}
+__main__ - DEBUG - 2024-05-13 20:32:13,103 - main - 50698 - 139699143901568 - Input arguments: Namespace(corpus=False, eda=False, entropy=False, eval=False, lda=True, metadata=False, umap=False)
+__main__ - INFO - 2024-05-13 20:32:13,104 - main - 50698 - 139699143901568 - Estimation of document-topic and topic-word distributions with LDA model
+scripts.tm - INFO - 2024-05-13 20:32:13,104 - tm - 50698 - 139699143901568 - Calculating topics similarity
+scripts.tm - INFO - 2024-05-13 20:32:13,104 - tm - 50698 - 139699143901568 - Getting treemap for topics
+scripts.tm - INFO - 2024-05-13 20:32:13,180 - tm - 50698 - 139699143901568 - Creating treemap for each topic
+scripts.tm - DEBUG - 2024-05-13 20:32:13,194 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:16,987 - tm - 50698 - 139699143901568 - Saved treemap for topic protein
+scripts.tm - DEBUG - 2024-05-13 20:32:17,005 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:17,919 - tm - 50698 - 139699143901568 - Saved treemap for topic vaccine
+scripts.tm - DEBUG - 2024-05-13 20:32:17,938 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:18,743 - tm - 50698 - 139699143901568 - Saved treemap for topic patient
+scripts.tm - DEBUG - 2024-05-13 20:32:18,756 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:19,607 - tm - 50698 - 139699143901568 - Saved treemap for topic cell
+scripts.tm - DEBUG - 2024-05-13 20:32:19,622 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:20,450 - tm - 50698 - 139699143901568 - Saved treemap for topic drug
+scripts.tm - DEBUG - 2024-05-13 20:32:20,462 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:21,203 - tm - 50698 - 139699143901568 - Saved treemap for topic sample
+scripts.tm - DEBUG - 2024-05-13 20:32:21,221 - tm - 50698 - 139699143901568 - Word probability DF shape: (50, 2)
+scripts.tm - INFO - 2024-05-13 20:32:21,966 - tm - 50698 - 139699143901568 - Saved treemap for topic health

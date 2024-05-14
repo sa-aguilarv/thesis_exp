@@ -369,10 +369,11 @@ TOTAL: 38897
   - What is the least important topic for each cluster?
   - [x] Create a heatmap to visualize the similarity between topics
   - Metric: cosine similarity, average linkage
-  - [ ] Create a heatmap to visualize the similarity between clusters
-  - [ ] Visualize the most and least important words for each topic
-    - [ ] Which plot would be adecuate for this?
-  - [ ] Plot the coherence for each topic
+  - [ ] Visualize the most and least important words for each topic // TODO: In the results section, it goes under HAC, in the methodology, it goes with TM
+    - [x] Which plot would be adecuate for this?
+      - [Treemaps](https://plotly.com/python-api-reference/generated/plotly.express.treemap.html?highlight=color_continuous%20scale)
+      - Since I'm not considering all words, I can't normalize the probabilities because the values won't add up to 1
+  - [ ] Plot the coherence for each topic --deprecated, no time
     - What are the best and worst topics?
 
 ### 5.1. Results
@@ -574,6 +575,10 @@ TOTAL: 38897
 ## 7. Replicate results
 
 - [ ] Re-run the project and compare original results with these Observations --deprecated, no time
+
+## Conclusions
+
+- The clusters are the topics
 
 ## Additional
 
