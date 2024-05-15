@@ -559,6 +559,13 @@ TOTAL: 38897
   - [ ] For all 5 top words of each diagnostic topic, get the sentences that contain the 5 words with the highest PMI
     - Are these common premises within the field?
 
+### Ao. for analysis
+
+- [ ] Get most representative authors for each topic
+  - [ ] Get IDs for the top 10 docs per each topic
+  - [ ] Get authors corresponding to those IDs
+  - [ ] Save author-topic df
+
 ### 6.1. Results
 
 - Topic entropy values:

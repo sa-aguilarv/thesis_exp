@@ -28,6 +28,7 @@ from tmtoolkit.corpus import (Corpus, save_corpus_to_picklefile, load_corpus_fro
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scripts import tm
+import json
 
 def collect_ao_metadata(filename):
     """ Collect metadata from Semantic Scholar API.
@@ -263,3 +264,40 @@ def diachronic_analysis(df):
     save_path = 'results/bibliometrics'
     u.create_dir_if_not_exists(save_path)
     plt.savefig(f'{save_path}/diachronic_analysis.png')
+
+def authors_analysis():
+    """ From the doc_topic_distr matrix, get the top 10 documents for each topic.
+    Returns:
+        None
+    """
+
+    filename = 'results/tm/7_topics/doc_topic_distr.txt'
+    doc_topic_distr = u.load_dense_matrix(filename)
+    doc_labels = u.load_object('results/tm/doc_labels.pkl')
+
+    # Get the indices of the top 10 documents for each topic
+    topic_doc_distr = doc_topic_distr.T # topic-doc
+    top_10_docs_index_list = np.argsort(-topic_doc_distr, axis=1)[:, :10]
+
+    top_10_docs_per_topic_ids = []
+    for i in range(len(top_10_docs_index_list)):
+        ids = [doc_labels[i] for i in top_10_docs_index_list[i]]
+        # Remove 'data_w_ao_metadata' from ids
+        ids = [x.split('-')[1] for x in ids]
+        top_10_docs_per_topic_ids.append(ids)
+
+    topic_label_dict = {0:'protein',
+                    1:'vaccine',
+                    2:'patient',
+                    3:'cell',
+                    4:'drug',
+                    5:'sample',
+                    6:'health'}
+    
+    top_10_ids = {}
+    for i in range(len(top_10_docs_per_topic_ids)):
+        top_10_ids[topic_label_dict[i]] = top_10_docs_per_topic_ids[i]
+    
+    # Save dict as json
+    with open('results/bibliometrics/top_10_ids_per_topic.json', 'w') as fp:
+        json.dump(top_10_ids, fp)

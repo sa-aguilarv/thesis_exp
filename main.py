@@ -89,8 +89,8 @@ def main():
 
     elif args.biblio:
         logger.info('Bibliometric analysis')
-        filename = 'results/data_w_ao_metadata.csv'
-        etl.biblio_analysis(filename)
-
+        #filename = 'results/data_w_ao_metadata.csv'
+        #etl.biblio_analysis(filename)
+        etl.authors_analysis()
 if __name__ == '__main__':
     main()
