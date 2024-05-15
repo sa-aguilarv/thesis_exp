@@ -69,7 +69,7 @@ def main():
 
     elif args.lda:
         logger.info('Estimation of document-topic and topic-word distributions with LDA model')
-        #tm.get_topics(config['ldaParams'])
+        tm.get_topics(config['ldaParams'])
         tm.describe_topics()
 
     elif args.umap:
@@ -81,10 +81,16 @@ def main():
         hac.get_umap(filename, config['hacParams'])
         hac.get_umap_plot()
         hac.describe_clusters()
+
     elif args.entropy:
         logger.info('Measurement of entropy values per topic')
         filename = 'results/tm/7_topics/doc_topic_distr.txt'
         e.get_entropy_values(filename)
+
+    elif args.biblio:
+        logger.info('Bibliometric analysis')
+        filename = 'results/data_w_ao_metadata.csv'
+        etl.biblio_analysis(filename)
 
 if __name__ == '__main__':
     main()

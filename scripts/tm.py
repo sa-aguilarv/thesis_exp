@@ -6,6 +6,11 @@ Functions:
     get_unique_disciplines: Get the unique disciplines.
     models_evaluation: Evaluate topic models.
     get_topics: Get topics with LDA model.
+    get_topic_labels: Get topic labels.
+    describe_topics: Describe topics.
+    get_treemap_for_topics: Get the treemap for topics.
+    get_top_100_words: Get the top 100 words.
+    get_cosine_sim_between_topics: Get the cosine similarity matrix from the document-topic distribution, and plot a heatmap.
 """
 import logging
 import warnings
@@ -66,8 +71,10 @@ def get_number_disciplines():
     """
     logger = logging.getLogger(__name__)
     filename = 'results/data_w_ao_metadata.csv'
-    df = pd.read_csv(filename, usecols=['fieldsOfStudy'])
-    get_unique_disciplines(df)
+    df = pd.read_csv(filename, usecols=['paper_id', 'fieldsOfStudy'])
+    logger.debug('DF shape: %s', df.shape)
+    unique_disc = get_unique_disciplines(df)
+    logger.debug('Number of unique disciplines: %s', len(unique_disc))
 
 def get_unique_disciplines(df):
     """ Get the unique disciplines.
@@ -84,6 +91,7 @@ def get_unique_disciplines(df):
         unique_fields = set(ls)
         tota_unique_fields.update(unique_fields)
     logger.debug('%s total unique fields of study: %s', len(tota_unique_fields), tota_unique_fields)
+    return tota_unique_fields
 
 def sort_list(lst_str):
     """ Sort a list.
@@ -223,13 +231,25 @@ def get_topic_labels():
     logger.info('Topic labels: %s', topic_labels)
 
 def describe_topics():
+    """ Describe topics.
+    Args:
+        None
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     logger.info('Calculating topics similarity')
-    #get_cosine_sim_between_topics()
-    #get_top_100_words()
+    get_cosine_sim_between_topics()
+    get_top_100_words()
     get_treemap_for_topics()
 
 def get_treemap_for_topics():
+    """ Get the treemap for topics.
+    Args:
+        None
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     logger.info('Getting treemap for topics')
 
@@ -238,15 +258,14 @@ def get_treemap_for_topics():
     df = df.T
     df = df.reset_index()
     df = df.rename(columns={'index': 'topic'})
-    # drop topic column
     df = df.drop(columns=['topic']) # Each col now represents a topic
 
     logger.info('Creating treemap for each topic')
     for col in df.columns:
-        # split the column name to get the word and its weight
+        # Split the column name to get the word and its weight
         word_prob_df = df[col].str.split(' ', expand=True)
         word_prob_df.columns = ['Word', 'Probability']
-        # remove parentheses from probability column
+        # Remove parentheses from probability column
         word_prob_df['Probability'] = word_prob_df['Probability'].str.replace('(', '')
         word_prob_df['Probability'] = word_prob_df['Probability'].str.replace(')', '')
         word_prob_df['Probability'] = word_prob_df['Probability'].astype(float)
@@ -265,6 +284,12 @@ def get_treemap_for_topics():
         
 
 def get_top_100_words():
+    """ Get the top 100 words.
+    Args:
+        None
+    Returns:
+        None
+    """
     logger = logging.getLogger(__name__)
     logger.info('Getting 10 top words for each topic')
     topic_word_dist_filename = 'results/tm/7_topics/topic_word_distr.txt'
@@ -272,7 +297,6 @@ def get_top_100_words():
     
     logger.debug('Topic-word distribution shape: %s', topic_word_dist.shape)
 
-    # Create a df for the first 10 words of each topic
     vocab = u.load_object('results/tm/vocab.pkl')
 
     topic_label_dict = {0:'protein',
@@ -289,8 +313,6 @@ def get_top_100_words():
     df.columns = [np.arange(1, len(df.columns) + 1)]
     df.index = [topic_label_dict[i] for i in topic_label_dict]
     df.to_csv(f'results/tm/7_topics/topics_top_50_words.csv', index=True)
-
-    
 
 def get_cosine_sim_between_topics():
     """ Get the cosine similarity matrix from the document-topic distribution, and plot a heatmap.

@@ -516,16 +516,16 @@ TOTAL: 38897
 
 ## 6. Evaluation of interdisciplinary research
 
-- [ ] Description of publications through scientometrics --deprecated, no time
-  - [ ] Papers yearly distributions
+- [x] Description of publications through scientometrics
+  - [x] Papers yearly distributions
     - [x] Get papers publication year
-    - [ ] Get #papers published each year
+    - [x] Get #papers published each year
     - [ ] Plot line diagram: x-year, y-#papers published
-  - [ ] Papers disciplines distributions
+  - [ ] Papers disciplines distributions --deprecated, no time
     - [x] Get papers disciplines
     - [ ] Get #papers per discipline
     - [ ] Create circle plot to visualize disciplines representation in the dataset
-  - [ ] Papers country distributions
+  - [ ] Papers country distributions --deprecated, no time
     - [x] Get papers affiliations
     - [ ] Get countries from papers affiliations
     - [ ] Get #papers per country

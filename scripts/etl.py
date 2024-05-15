@@ -8,6 +8,7 @@ Functions:
     merge_dfs: Merge the source data and the ao metadata.
     corpus_creation: Corpus formation. This function creates a corpus from a tabular file.
     corpus_preprocessing: Data cleaning. This function lemmatizes the text, removes non-nouns, removes common and uncommon words, and saves the clean corpus.
+    biblio_analysis: Bibliometric analysis. This function performs a bibliometric analysis of the source data.
 """
 from scripts import utils as u
 import pandas as pd
@@ -24,6 +25,9 @@ from tmtoolkit.utils import enable_logging
 enable_logging()
 from tmtoolkit.corpus import (Corpus, save_corpus_to_picklefile, load_corpus_from_picklefile, print_summary, lemmatize, filter_for_pos, to_lowercase,
     remove_punctuation, filter_clean_tokens, remove_common_tokens, remove_uncommon_tokens, tokens_table, dtm)
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scripts import tm
 
 def collect_ao_metadata(filename):
     """ Collect metadata from Semantic Scholar API.
@@ -220,3 +224,42 @@ def corpus_preprocessing(filename):
 
     save_corpus_to_picklefile(corpus_norm, f'{save_path}/clean_corpus.pkl')
     logger.debug('Saved clean corpus to %s', f'{save_path}/clean_corpus.pkl')
+
+def biblio_analysis(filename):
+    """ Bibliometric analysis. This function performs a bibliometric analysis of the source data.
+    Args:
+        filename (str): The filename.
+    Returns:
+        None
+    """
+    logger = logging.getLogger(__name__)
+    df = pd.read_csv(filename, usecols=['paper_id', 'year'])
+    logger.debug('DF shape: %s', df.shape)
+    diachronic_analysis(df)
+
+def diachronic_analysis(df):
+    """ Diachronic analysis of the corpus.
+    Args:
+        df (pd.DataFrame): The dataframe.
+    Returns:
+        None
+    """
+    logger = logging.getLogger(__name__)
+    logger.info('Diachronic analysis of the corpus')
+
+    sns.set_theme(style="whitegrid")
+    plt.figure(figsize=(12, 6))
+    fontsize=18
+    df = df.groupby('year').size().reset_index(name='counts')
+    sns.lineplot(x='year', y='counts', data=df, marker='o', color='black')
+    plt.title('Diachronic analysis of the corpus', fontsize=fontsize)
+    plt.xlabel('Year', fontsize=fontsize)
+    plt.ylabel('Number of papers', fontsize=fontsize)
+    plt.xticks(fontsize=fontsize)
+    plt.yticks(fontsize=fontsize)
+    plt.grid(axis='y', linestyle='--')
+
+    plt.tight_layout()
+    save_path = 'results/bibliometrics'
+    u.create_dir_if_not_exists(save_path)
+    plt.savefig(f'{save_path}/diachronic_analysis.png')
