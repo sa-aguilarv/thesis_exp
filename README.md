@@ -65,3 +65,7 @@ Hence, we address the following problem: given a corpus of scientific papers, fi
     ```Python
     python main.py --entropy
     ```
+
+    ```Python
+    python main.py --biblio
+    ```
