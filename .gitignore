@@ -12,5 +12,7 @@
 
 /results/tm/7_topics/doc_topic_distr.txt
 /results/tm/7_topics/topic_word_distr.txt
-results/tm/16_topics/doc_topic_distr.txt
-results/tm/16_topics/topic_word_distr.txt
+/results/tm/16_topics/doc_topic_distr.txt
+/results/tm/16_topics/topic_word_distr.txt
+
+/TODO.md
